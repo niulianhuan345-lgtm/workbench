@@ -648,7 +648,7 @@ async function toggleTask(id){
   renderAll();await saveTasks();
 }
 async function saveTasks(){
-  try{await fetch('/api/tasks/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(tasks)});toast('已保存')}catch(e){/*Pages mode*/}
+  try{await fetch('/api/tasks/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(tasks)});toast('已保存')}catch(e){toast('保存失败','err')}
 }
 
 // ── PROJECTS ──
@@ -711,51 +711,51 @@ function renderKnowledge(){
 }
 
 function renderKnowledgeNav(){
-  let h='';
+  let html='';
   // v2 format
   if(knowledge.platforms){
-    h+=`<div class="knav-cat"><div class="knav-cat-h">🌐 平台情报</div>`;
+    html+=`<div class="knav-cat"><div class="knav-cat-h">🌐 平台情报</div>`;
     knowledge.platforms.forEach(p=>{
       let n=(p.articles||[]).length;
-      h+=`<div class="knav-item${kcat==='p'&&kid===p.id?' on':''}" onclick="kcat='p';kid='${p.id}';renderKnowledgeDetail()">
+      html+=`<div class="knav-item${kcat==='p'&&kid===p.id?' on':''}" onclick="kcat='p';kid='${p.id}';renderKnowledgeDetail()">
         <span class="kni-icon">${p.icon||'📄'}</span>
         <span class="kni-name">${h(p.name)}</span>
         ${n>0?`<span class="b">${n}</span>`:''}
       </div>`;
     });
-    h+='</div>';
+    html+='</div>';
 
     if(knowledge.internal){
-      h+=`<div class="knav-cat"><div class="knav-cat-h">🏠 内部知识</div>`;
+      html+=`<div class="knav-cat"><div class="knav-cat-h">🏠 内部知识</div>`;
       knowledge.internal.forEach(item=>{
-        h+=`<div class="knav-item${kcat==='i'&&kid===item.id?' on':''}" onclick="kcat='i';kid='${item.id}';renderKnowledgeDetail()">
+        html+=`<div class="knav-item${kcat==='i'&&kid===item.id?' on':''}" onclick="kcat='i';kid='${item.id}';renderKnowledgeDetail()">
           <span class="kni-icon">${item.icon||'📄'}</span>
           <span class="kni-name">${h(item.name)}</span>
         </div>`;
       });
-      h+='</div>';
+      html+='</div>';
     }
-    document.getElementById('knav').innerHTML=h;
+    document.getElementById('knav').innerHTML=html;
     // 默认选中第一个平台
     if(!kcat&&knowledge.platforms.length){kcat='p';kid=knowledge.platforms[0].id;renderKnowledgeDetail();}
     return;
   }
   // v1 fallback
   knowledge.categories.forEach(cat=>{
-    h+=`<div class="knav-cat"><div class="knav-cat-h">${h(cat.name)}</div>`;
+    html+=`<div class="knav-cat"><div class="knav-cat-h">${h(cat.name)}</div>`;
     cat.items.forEach(item=>{
       let on=kcat===cat.id&&kid===item.id;
       let st=item.status||'stable';
       let dotCls=st==='active'?'active':st==='limited'?'limited':'stable';
-      h+=`<div class="knav-item${on?' on':''}" onclick="kcat='${cat.id}';kid='${item.id}';renderKnowledgeDetail()">
+      html+=`<div class="knav-item${on?' on':''}" onclick="kcat='${cat.id}';kid='${item.id}';renderKnowledgeDetail()">
         <span class="kni-icon">${item.icon||'📄'}</span>
         <span class="kni-name">${h(item.name)}</span>
         <span class="kni-dot ${dotCls}"></span>
       </div>`;
     });
-    h+='</div>';
+    html+='</div>';
   });
-  document.getElementById('knav').innerHTML=h;
+  document.getElementById('knav').innerHTML=html;
 }
 
 function renderKnowledgeDetail(){
@@ -778,9 +778,9 @@ function renderKnowledgeDetail(){
     let have=stats.articles_with_body||0;
     let pct=total>0?Math.round(have/total*100):0;
     
-    let h='';
+    let html='';
     // 头部
-    h+=`<div class="kd-card">
+    html+=`<div class="kd-card">
       <div class="kd-h">
         <div class="kd-icon">${item.icon||'📄'}</div>
         <div class="kd-info">
