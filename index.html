@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hermes 总控台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Variables ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Backgrounds */
+  --bg-page: #faf9f7;
+  --bg-card: #ffffff;
+  --bg-nav: #0f172a;
+  --bg-nav-hover: rgba(255,255,255,0.06);
+  --bg-nav-active: rgba(99,102,241,0.12);
+
+  /* Text */
+  --text-primary: #1a1a2e;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+  --text-nav: rgba(255,255,255,0.55);
+  --text-nav-active: #ffffff;
+
+  /* Accent */
+  --accent: #4f46e5;
+  --accent-light: #6366f1;
+  --accent-glow: rgba(99,102,241,0.15);
+  --amber: #d97706;
+  --amber-bg: rgba(217,119,6,0.08);
+  --green: #059669;
+  --green-bg: rgba(5,150,105,0.08);
+  --red: #dc2626;
+
+  /* Borders & Shadows */
+  --border-subtle: #f0f0f0;
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.03);
+  --shadow-hover: 0 4px 12px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.04);
+
+  /* Spacing */
+  --nav-width: 220px;
+  --radius-card: 10px;
+  --radius-sm: 6px;
+  --radius-pill: 100px;
+
+  /* Typography */
+  --font-sans: "Inter", "PingFang SC", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Layout ── */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* ═══ SIDEBAR ═══ */
+.sidebar {
+  width: var(--nav-width);
+  background: var(--bg-nav);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.sidebar-brand {
+  padding: 28px 24px 32px;
+}
+
+.sidebar-brand .logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  background: linear-gradient(135deg, #818cf8, #6366f1, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sidebar-brand .subtitle {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 12px;
+}
+
+.nav-section-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  padding: 16px 12px 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--text-nav);
+  font-size: 13.5px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+}
+
+.nav-item:hover {
+  color: rgba(255,255,255,0.85);
+  background: var(--bg-nav-hover);
+}
+
+.nav-item.active {
+  color: var(--text-nav-active);
+  background: var(--bg-nav-active);
+}
+
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  background: linear-gradient(180deg, #818cf8, #4f46e5);
+}
+
+.nav-item .nav-icon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.nav-item.active .nav-icon { opacity: 1; }
+
+.nav-item .badge {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--amber);
+  background: var(--amber-bg);
+  padding: 1px 7px;
+  border-radius: var(--radius-pill);
+  line-height: 1.6;
+}
+
+.sidebar-footer {
+  padding: 16px 24px 20px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.sidebar-footer .time {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.sidebar-footer .status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 6px rgba(34,197,94,0.5);
+  flex-shrink: 0;
+}
+
+/* ═══ MAIN ═══ */
+.main {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-page);
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 40px 28px;
+  flex-shrink: 0;
+}
+
+.topbar-left h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.topbar-left .breadcrumb {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-card);
+  min-width: 260px;
+  transition: box-shadow 0.15s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: var(--shadow-hover), 0 0 0 2px var(--accent-glow);
+}
+
+.search-box svg {
+  flex-shrink: 0;
+  opacity: 0.3;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-primary);
+  width: 100%;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+/* Content Area */
+.content {
+  padding: 0 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Stat Cards Row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(99,102,241,0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stat-card:hover::after { opacity: 1; }
+
+.stat-card .stat-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: rgba(99,102,241,0.06);
+  color: var(--accent);
+}
+
+.stat-card .stat-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.stat-card .stat-sub {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+}
+
+/* Section Card */
+.section-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.section-header {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.section-header h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.section-header .section-meta {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.section-body {
+  padding: 24px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-body .placeholder-text {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+/* Scrollbar */
+.main::-webkit-scrollbar {
+  width: 4px;
+}
+.main::-webkit-scrollbar-track {
+  background: transparent;
+}
+.main::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.08);
+  border-radius: 10px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(99,102,241,0.18);
+  color: var(--text-primary);
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo">HERMES</div>
+      <div class="subtitle">Intelligence Platform</div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">工作区</div>
+
+      <a class="nav-item active">
+        <span class="nav-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </span>
+        总控台
+      </a>
+
+      <a class="nav-item">
+        <span class="nav-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </span>
+        我的待办
+        <span class="badge">23</span>
+      </a>
+
+      <a class="nav-item">
+        <span class="nav-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </span>
+        项目
+      </a>
+
+      <a class="nav-item">
+        <span class="nav-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </span>
+        HerMes 运行
+      </a>
+
+      <div class="nav-section-label">工具</div>
+
+      <a class="nav-item">
+        <span class="nav-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </span>
+        报表
+      </a>
+
+      <a class="nav-item">
+        <span class="nav-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </span>
+        设置
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="time" id="time">--</div>
+      <div class="status">
+       <span class="status-dot" style="background:#22c55e; box-shadow: 0 0 6px rgba(34,197,94,0.5);"></span>
+        Gateway 运行中 · 启动于 5/21 13:35 · 最后心跳 5/27 09:30
+     </div>
+        <div style="font-size:10px; color:rgba(255,255,255,0.2); margin-top:2px;">网关进程 PID 30592 · gateway.log · 运行 ~5d20h · RSS ~48MB · 最后心跳 5/27 09:30 · 隧道保活 crontab 5min/次 ✓ (最后 5/27 09:30) · Dashboard :8080 ✓ (PID 25764 npx serve 启动于 5/26 14:14, PID 30523 serve3.py 启动于 5/26 15:29) · 需求文件 :8892 ✓ (PID 37139, 启动于 5/25 13:09) · 总控台 server.py ✓ (PID 66081, 启动于 5/25 18:25) · 校验于 5/27 09:30
+    </div>
+  </aside>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <main class="main">
+
+    <div class="topbar">
+      <div class="topbar-left">
+        <h1>总控台</h1>
+        <div class="breadcrumb">Dashboard / Overview</div>
+      </div>
+      <div class="topbar-right">
+        <div class="search-box">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="搜索任务、项目..." />
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- Stat Cards -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <div class="stat-label">需求文档</div>
+          <div class="stat-value">71</div>
+          <div class="stat-sub">需求与设计文档 .md 核心 71 份 · hermes-需求(10) + AIONE智能层(6) + AIONE(45: 00规划5+阶段一13+阶段二16+阶段三5+阶段四6) + 需求索引(1) + AutoOneBP(6) + 总控台(3) · 校验于 5/27 09:30 · 交付包_0526 额外 42 份</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="stat-label">活跃项目</div>
+          <div class="stat-value">4</div>
+          <div class="stat-sub">Hermes需求 · AIONE · AIONE智能层 · AutoOneBP</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="stat-label">今日响应次数</div>
+          <div class="stat-value">--</div>
+          <div class="stat-sub">Agent API 调用 · 截至 09:30 · Gateway 运行中 (PID 30592, 启动于 5/21 13:35, RSS ~48MB) · deepseek-v4-pro · cron 隧道保活 5min/次 ✓ · 5/27 09:30</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="stat-label">对话响应时间</div>
+          <div class="stat-value">--</div>
+          <div class="stat-sub">最近心跳 5/27 09:30 · deepseek-v4-pro · cron 自动巡检活跃 (09:30) · Gateway 正常运行 · RSS ~48MB · 5/27 09:30</div>
+        </div>
+      </div>
+
+      <!-- 需求文档列表 -->
+      <div class="section-card">
+        <div class="section-header">
+          <h2>Hermes 需求文档</h2>
+          <span class="section-meta">共 71 份 (核心) + 交付包 42 份 · 更新于 2026-05-27 09:30</span>
+        </div>
+        <div class="section-body" style="display:block; text-align:left; padding:20px 24px;">
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / hermes-需求 (10)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 知识学习系统-产品设计 🆕</li>
+            <li>· 总控台-知识Tab改造-PRD 🆕</li>
+            <li>· 2026-05-25-项目立项审批流程方案</li>
+            <li>· 2026-05-20-跨维度联想引擎设计</li>
+            <li>· 2026-05-20-行动推荐引擎设计</li>
+            <li>· 2026-05-20-深圳AB测试分析报告</li>
+            <li>· 2026-05-20-意图路由器设计</li>
+            <li>· 2026-05-20-意图路由器落地方案</li>
+            <li>· 2026-05-20-上下文管理器设计</li>
+            <li>· 2026-05-20-AIONE智能层详细设计</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / AIONE智能层 (6)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· AIONE自动化管道 · AIONE产品规划方案 · AIONE智能层总体规划 · AIONE产品功能总体规划 (4 规划文件)</li>
+            <li>· 01-意图识别路由/需求文档 · 01-意图识别路由/Agent技能 (2 文件)</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / AIONE · 阶段一-能分析的助理 (13)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 1.1 投放全景诊断 · 1.2 关键词分析 · 1.3 场景分析 · 1.4 计划分析 · 1.5 人群分析 · 1.6 创意分析 (各 需求文档+Skill定义 · 12文件) + 投放参谋-测试用例 (1) = 13文件</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / AIONE · 阶段二-能主动的助理 (16)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 2.1 每日早安(需求文档+技术设计×2) · 2.2 异常实时预警(需求文档×2+Skill) · 2.3 创意疲劳提醒 · 2.4 关键词批量优化 · 2.5 智能预算重分配 · 2.6 操作效果追踪 · 2.7 计划优化分析 (共16文件)</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / AIONE · 阶段三-有记忆的助理 (5)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 3.1 操作历史记忆(需求文档) · 3.3 用户偏好学习(需求文档) · 3.4 周期性记忆(需求文档) · 3.6 跨店铺品线对比(需求文档+Skill定义) · 3.2/3.5 状态说明(交付包内)</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / AIONE · 阶段四-能进化的助理 (6) 🆕</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 4.1-反馈学习 · 4.2-操作模式学习 · 4.3-大促智能管理 · 4.4-行业知识 · 4.5-跨账户优化 · 4.6-策略模拟 (各含需求文档 · 共6份 · 新增于 5/26 16:19~16:22)</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / AIONE · 00-总体规划 (5)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 产品功能总体规划 · 产品规划方案 v3 · 产品规划方案 · 自动化管道 · 需求文件目录规范</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px; margin-top:0;">📁 交付包 / AIONE_0526 (42) 🆕 新增于 5/26</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 包含 整体规划(1) + 00-总体规划(1) + 阶段一(12) + 阶段二(15) + 阶段三(7) + 阶段四(6) · 共 42 份需求与设计文档交付包 · 含 Skill定义、需求文档、技术设计 · 含状态说明 2 份</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px; margin-top:0;">📁 需求索引 (1)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 需求索引.md — 全量需求文档导航 (1份)</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 需求文件 / AutoOneBP (6)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 定时批量暂停/完整设计方案 · 定时批量暂停/需求文档 · 定时批量暂停/技术设计文档 · 定时批量暂停/改动说明_全场景 · 定时批量暂停/改动说明_给前端 · 定时批量暂停/改动说明_单次定时</li>
+          </ul>
+          <div style="font-size:13px; font-weight:500; color:var(--text-secondary); margin-bottom:10px;">📁 总控台 (3) — 顶层 .html 文件 (v3~v7 + 工作台)</div>
+          <ul style="list-style:none; padding:0; margin:0 0 18px 0; font-size:13px; color:var(--text-primary); line-height:2;">
+            <li>· 总控台v3-产品需求</li>
+            <li>· 总控台v4-产品需求 🆕</li>
+            <li>· 总控台/总控台产品需求文档 🆕</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+function updateTime() {
+  var now = new Date();
+  var h = String(now.getHours()).padStart(2, '0');
+  var m = String(now.getMinutes()).padStart(2, '0');
+  document.getElementById('time').textContent =
+    h + ':' + m + ' · ' + now.getFullYear() + '/' +
+    String(now.getMonth()+1).padStart(2,'0') + '/' +
+    String(now.getDate()).padStart(2,'0');
+}
+updateTime();
+setInterval(updateTime, 10000);
+</script>
+</body>
+</html>
