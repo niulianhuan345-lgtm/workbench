@@ -247,6 +247,24 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;font-size:14px;font-weig
   .search-box{max-width:95vw;margin:0 8px}
 }
 </style>
+
+<script>
+// Gist mode error handler
+window.addEventListener('error',function(e){
+  if(e.target.tagName==='IMG'||e.target.tagName==='LINK')return;
+  console.error('Page error:',e.error||e.message);
+  // 不阻止页面运行
+});
+// 隐藏 fetch 错误
+const origFetch=window.fetch;
+window.fetch=function(...args){
+  return origFetch.apply(this,args).catch(e=>{
+    console.warn('Fetch failed (Gist mode, expected):',args[0]);
+    return new Response('{}',{status:200,headers:{'Content-Type':'application/json'}});
+  });
+};
+</script>
+
 </head>
 <body>
 
@@ -318,25 +336,31 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;font-size:14px;font-weig
 <div class="toasts" id="toasts"></div>
 
 <script>
+<script>
+var _EMBED_tasks = [{"id":"aione-biz-1","title":"计划层级预算分析","status":"done","project":"AIONE","group":"生意管家","owner":"","deadline":"","note":"周二创建skill","ai":true},{"id":"aione-biz-2","title":"定时输出预算分析","status":"pending","project":"AIONE","group":"生意管家","owner":"","deadline":"","note":"后续规划","ai":true},{"id":"aione-biz-3","title":"按预算分析方案执行计划预算更改","status":"pending","project":"AIONE","group":"生意管家","owner":"","deadline":"","note":"后续规划","ai":true},{"id":"aione-smb-1","title":"SMB — 拆分详细操作日志","status":"pending","project":"AIONE","group":"SMB/投放","owner":"梅冬阳","deadline":"","note":"","ai":false},{"id":"aione-smb-2","title":"SMB — 客户接入流程整理","status":"done","project":"AIONE","group":"SMB/投放","owner":"牛连欢","deadline":"","note":"","ai":false},{"id":"aione-smb-3","title":"AIPL人群分析报告","status":"pending","project":"AIONE","group":"SMB/投放","owner":"","deadline":"5月中旬","note":"","ai":false},{"id":"aione-smb-4","title":"小目标加切换按钮","status":"in_progress","project":"AIONE","group":"SMB/投放","owner":"康恒/曾文旭","deadline":"本周三","note":"对接前端","ai":false},{"id":"aione-smb-5","title":"AI ONE 加人群流转报告","status":"pending","project":"AIONE","group":"SMB/投放","owner":"牛连欢","deadline":"","note":"需要设计","ai":true},{"id":"aione-smb-6","title":"投放方案分析 — 托管页面设计","status":"in_progress","project":"AIONE","group":"SMB/投放","owner":"牛连欢","deadline":"","note":"算法完成、页面待设计","ai":true},{"id":"aione-smb-7","title":"龙-小米-周报专项实现","status":"pending","project":"AIONE","group":"SMB/投放","owner":"牛连欢","deadline":"","note":"需研究实现方案","ai":true},{"id":"aione-upg-1","title":"创意测试","status":"pending","project":"AIONE","group":"升级","owner":"刘强/陈涛/陈博轩","deadline":"","note":"待升级完测试","ai":false},{"id":"aione-upg-2","title":"后台任务监控","status":"pending","project":"AIONE","group":"升级","owner":"刘强/陈涛/陈博轩","deadline":"","note":"待升级完测试","ai":false},{"id":"aione-upg-3","title":"新功能整理成MD文档","status":"pending","project":"AIONE","group":"升级","owner":"牛连欢","deadline":"","note":"AIONE功能规划","ai":true},{"id":"auto-1","title":"天猫、京东擎天柱日历预算测试","status":"in_progress","project":"AutoOneBP","group":"擎天柱","owner":"牛连欢","deadline":"","note":"测试中","ai":false},{"id":"auto-2","title":"上线后AIONE同步更新","status":"pending","project":"AutoOneBP","group":"擎天柱","owner":"","deadline":"","note":"待擎天柱上线后","ai":true},{"id":"andy-1","title":"全品类人群数据 — 每月获取一次","status":"done","project":"Andy数据","group":"数据获取","owner":"","deadline":"","note":"","ai":false},{"id":"andy-2","title":"一级类目人群数据 — 每月获取一次","status":"done","project":"Andy数据","group":"数据获取","owner":"","deadline":"","note":"","ai":false},{"id":"andy-3","title":"本店+竞品商品人群数据 — 每日使用","status":"done","project":"Andy数据","group":"数据获取","owner":"","deadline":"","note":"","ai":false},{"id":"andy-4","title":"人群分析内容接入AIONE做分析展示","status":"pending","project":"Andy数据","group":"分析展示","owner":"","deadline":"","note":"","ai":true},{"id":"andy-5","title":"人群推广批量屏蔽人群","status":"pending","project":"Andy数据","group":"分析展示","owner":"邱海亮/曾文旭","deadline":"","note":"","ai":false},{"id":"proj-1","title":"项目立项流程搭建到钉钉审批","status":"pending","project":"项目立项","group":"审批流程","owner":"牛连欢","deadline":"5月中旬前","note":"","ai":true},{"id":"proj-2","title":"SaaS域名申请流程搭建到宜搭审批","status":"pending","project":"项目立项","group":"审批流程","owner":"牛连欢","deadline":"5月中旬前","note":"","ai":true},{"id":"jt-1","title":"更换模型查看新模型评分效果","status":"in_progress","project":"金投赏","group":"6月15号前","owner":"牛连欢","deadline":"6月15号","note":"","ai":false},{"id":"jt-2","title":"尽可能和人工打分分数相近","status":"pending","project":"金投赏","group":"6月15号前","owner":"牛连欢","deadline":"6月15号","note":"","ai":false},{"id":"jt-3","title":"同历届获奖作品跑打分模型看分数差距","status":"pending","project":"金投赏","group":"6月15号前","owner":"牛连欢","deadline":"6月15号","note":"","ai":true},{"id":"jt-4","title":"解决打分不一致问题","status":"pending","project":"金投赏","group":"6月15号前","owner":"牛连欢","deadline":"6月15号","note":"","ai":false},{"id":"quan-1","title":"自动发送客户垫款催付信息","status":"pending","project":"泉哥需求","group":"待处理","owner":"","deadline":"","note":"OA垫款申请→自动判断→催款消息到群","ai":true},{"id":"quan-2","title":"小米预算通知增加品类修改内容","status":"pending","project":"泉哥需求","group":"待处理","owner":"","deadline":"","note":"","ai":false},{"id":"quan-3","title":"擎天柱配置增加同步预估出价到出价上下线","status":"done","project":"泉哥需求","group":"待处理","owner":"","deadline":"","note":"","ai":false}];
+var _EMBED_projects = [{"id":"aione","name":"AIONE","icon":"🧠","phases":"00 总体规划:done → 阶段一 能分析的助理:done → 阶段二 能主动的助理:done → 阶段三 能决策的助理:pending","files":[{"name":"00-总体规划","type":"folder","children":[{"name":"AIONE产品功能总体规划.md","type":"md","path":"需求文件/AIONE/00-总体规划/AIONE产品功能总体规划.md"},{"name":"AIONE产品规划方案-v3.md","type":"md","path":"需求文件/AIONE/00-总体规划/AIONE产品规划方案-v3.md"},{"name":"AIONE产品规划方案.md","type":"md","path":"需求文件/AIONE/00-总体规划/AIONE产品规划方案.md"},{"name":"AIONE自动化管道.md","type":"md","path":"需求文件/AIONE/00-总体规划/AIONE自动化管道.md"},{"name":"需求文件目录规范.md","type":"md","path":"需求文件/AIONE/00-总体规划/需求文件目录规范.md"}]},{"name":"阶段一-能分析的助理","type":"folder","children":[{"name":"1.1-投放全景诊断","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.1-投放全景诊断/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.1-投放全景诊断/需求文档.md"}]},{"name":"1.2-关键词深度分析","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.2-关键词深度分析/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.2-关键词深度分析/需求文档.md"}]},{"name":"1.3-场景对比分析","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.3-场景对比分析/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.3-场景对比分析/需求文档.md"}]},{"name":"1.4-计划排名分析","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.4-计划排名分析/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.4-计划排名分析/需求文档.md"}]},{"name":"1.5-人群效果分析","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.5-人群效果分析/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.5-人群效果分析/需求文档.md"}]},{"name":"1.6-创意素材分析","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.6-创意素材分析/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段一-能分析的助理/1.6-创意素材分析/需求文档.md"}]}]},{"name":"阶段二-能主动的助理","type":"folder","children":[{"name":"2.1-每日早安","type":"folder","children":[{"name":"技术设计文档-v2.2.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.1-每日早安/技术设计文档-v2.2.md"},{"name":"技术设计文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.1-每日早安/技术设计文档.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.1-每日早安/需求文档.md"}]},{"name":"2.2-异常实时预警","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.2-异常实时预警/Skill定义.md"},{"name":"需求文档-v2.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.2-异常实时预警/需求文档-v2.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.2-异常实时预警/需求文档.md"}]},{"name":"2.3-创意疲劳提醒","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.3-创意疲劳提醒/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.3-创意疲劳提醒/需求文档.md"}]},{"name":"2.4-关键词批量优化","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.4-关键词批量优化/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.4-关键词批量优化/需求文档.md"}]},{"name":"2.5-智能预算重分配","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.5-智能预算重分配/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.5-智能预算重分配/需求文档.md"}]},{"name":"2.6-操作效果追踪","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.6-操作效果追踪/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.6-操作效果追踪/需求文档.md"}]},{"name":"2.7-计划优化分析","type":"folder","children":[{"name":"Skill定义.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.7-计划优化分析/Skill定义.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AIONE/阶段二-能主动的助理/2.7-计划优化分析/需求文档.md"}]}]}]},{"id":"autoonebp","name":"AutoOneBP","icon":"🔧","phases":"定时批量暂停 设计:done → 定时批量暂停 开发:done → 日历预算测试:in_progress → 擎天柱上线:in_progress → AIONE同步:pending","files":[{"name":"定时批量暂停","type":"folder","children":[{"name":"完整设计方案.md","type":"md","path":"需求文件/AutoOneBP/定时批量暂停/完整设计方案.md"},{"name":"技术设计文档.md","type":"md","path":"需求文件/AutoOneBP/定时批量暂停/技术设计文档.md"},{"name":"改动说明_全场景.md","type":"md","path":"需求文件/AutoOneBP/定时批量暂停/改动说明_全场景.md"},{"name":"改动说明_单次定时.md","type":"md","path":"需求文件/AutoOneBP/定时批量暂停/改动说明_单次定时.md"},{"name":"改动说明_给前端.md","type":"md","path":"需求文件/AutoOneBP/定时批量暂停/改动说明_给前端.md"},{"name":"需求文档.md","type":"md","path":"需求文件/AutoOneBP/定时批量暂停/需求文档.md"},{"name":"在线预览.html","type":"html","path":"需求文件/AutoOneBP/定时批量暂停/在线预览.html"},{"name":"批量修改定时投放.html","type":"html","path":"需求文件/AutoOneBP/定时批量暂停/批量修改定时投放.html"},{"name":"真实组件预览_Drawer.html","type":"html","path":"需求文件/AutoOneBP/定时批量暂停/真实组件预览_Drawer.html"},{"name":"真实组件预览_菜单.html","type":"html","path":"需求文件/AutoOneBP/定时批量暂停/真实组件预览_菜单.html"},{"name":"页面设计.html","type":"html","path":"需求文件/AutoOneBP/定时批量暂停/页面设计.html"}]}]},{"id":"hermes","name":"Hermes需求","icon":"📋","phases":"智能层设计:done → 意图路由:done → 上下文管理:done → 跨维度联想:done → 行动推荐:done → AB测试报告:done → 审批流程:done","files":[{"name":"2026-05-20-AIONE智能层详细设计.md","type":"md","path":"需求文件/hermes-需求/2026-05-20-AIONE智能层详细设计.md"},{"name":"2026-05-20-上下文管理器设计.md","type":"md","path":"需求文件/hermes-需求/2026-05-20-上下文管理器设计.md"},{"name":"2026-05-20-意图路由器落地方案.md","type":"md","path":"需求文件/hermes-需求/2026-05-20-意图路由器落地方案.md"},{"name":"2026-05-20-意图路由器设计.md","type":"md","path":"需求文件/hermes-需求/2026-05-20-意图路由器设计.md"},{"name":"2026-05-20-深圳AB测试分析报告.md","type":"md","path":"需求文件/hermes-需求/2026-05-20-深圳AB测试分析报告.md"},{"name":"2026-05-20-行动推荐引擎设计.md","type":"md","path":"需求文件/hermes-需求/2026-05-20-行动推荐引擎设计.md"},{"name":"2026-05-20-跨维度联想引擎设计.md","type":"md","path":"需求文件/hermes-需求/2026-05-20-跨维度联想引擎设计.md"},{"name":"2026-05-25-项目立项审批流程方案.md","type":"md","path":"需求文件/hermes-需求/2026-05-25-项目立项审批流程方案.md"},{"name":"总控台-知识Tab改造-PRD.md","type":"md","path":"需求文件/hermes-需求/总控台-知识Tab改造-PRD.md"},{"name":"知识学习系统-产品设计.md","type":"md","path":"需求文件/hermes-需求/知识学习系统-产品设计.md"}]},{"id":"analysis","name":"投放分析","icon":"📊","phases":"AB测试 效率分析:done → AB测试 对照组:done → 预算红线评估:done → 门店效率分级:done → 双层约束框架:done","files":[{"name":"2026-05-19-AB测试投放效率深度分析.md","type":"md","path":"投放分析/2026-05-19-AB测试投放效率深度分析.md"},{"name":"2026-05-19-ROI与总订单增量分析.md","type":"md","path":"投放分析/2026-05-19-ROI与总订单增量分析.md"},{"name":"2026-05-19-对照组投放效率更优分析.md","type":"md","path":"投放分析/2026-05-19-对照组投放效率更优分析.md"},{"name":"毛利率vs净利率双层约束投放框架.md","type":"md","path":"投放分析/毛利率vs净利率双层约束投放框架.md"},{"name":"瑞幸店均投放红线评估方法论.md","type":"md","path":"投放分析/瑞幸店均投放红线评估方法论.md"},{"name":"瑞幸投放红线评估报告.pdf","type":"pdf","path":"投放分析/瑞幸投放红线评估报告.pdf"}]},{"id":"design","name":"产品设计","icon":"🎨","phases":"技能体系设计:done → 待办管理设计:done → 总控台v4:done → 总控台v5:done → 总控台v6:done → 总控台v7:in_progress","files":[{"name":"待办管理系统设计方案.md","type":"md","path":"产品设计/待办管理系统设计方案.md"},{"name":"技能关系图.md","type":"md","path":"产品设计/技能关系图.md"},{"name":"需求索引.md","type":"md","path":"产品设计/需求索引.md"}]}];
+var _EMBED_knowledge = {"updated":"05-27","version":2,"platforms":[{"id":"tmall","name":"天猫/阿里妈妈","icon":"🐱","source_label":"万堂书院","source_url":"https://shuyuan.taobao.com","method":"Selenium headless + API","freq":"每日09:00","stats":{"total_courses":160,"articles_with_body":11,"categories":6,"last_fetch":"2026-05-27 09:15"},"knowledge_summary":{"title":"万堂书院课程体系","sections":[{"heading":"课程分类（6大类）","items":["商家阶段：新手商家、成长进阶","营销产品：万相台无界版、百灵、达摩盘、创意中心等","经营场景：新品/爆品/内容营销、人群拉新/运营","节点热点：618、双11、双12、38节","行业属性：服饰/美妆/母婴/食品/数码/家居/运动","内容来源：官方精品、讲师自研"]},{"heading":"当前热点（618专题）","items":["618抢先购-大快消行业流量布局与ROI优化","618抢先购-服饰运动户外开门红放量技巧","智赢618-阿里妈妈推广产品最新资讯","全站推广官方实操必修课（43节）","秒懂万相台无界投放底层逻辑（13节）"]},{"heading":"顶级讲师","items":["东子：870项知识/9万粉","蛋蛋：890项/8.6万粉","随风：669项/4.4万粉","吉聪：401项/1.4万粉"]},{"heading":"已学课程正文","items":["什么是淘宝客推广（67111浏览/4.5分）— CPS按成交付费原理","📅 05-27 新增10篇618+日常运营直播课程（雨夜/米线/蛋蛋/随风/小鱼 等讲师）","⚠️ 课程均为LIVE直播形式，详情页需登录认证，正文仅含元数据。后续关注直播回放转录"]}]},"articles":[{"id":"38408","title":"转化提效","url":"https://shuyuan.taobao.com/course/detail?id=38408","type":"LIVE","lector":"清风","tags":["成长进阶","官方精品"],"pv":36,"startTime":"2026-05-26 12:50:40","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/转化提效.md"},{"id":"38411","title":"ROI优化","url":"https://shuyuan.taobao.com/course/detail?id=38411","type":"LIVE","lector":"许文强","tags":["618","成长进阶","官方精品"],"pv":27,"startTime":"2026-05-26 15:31:30","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/ROI优化.md"},{"id":"38412","title":"618大服饰货品冲刺","url":"https://shuyuan.taobao.com/course/detail?id=38412","type":"LIVE","lector":"小鱼","tags":["618","万相台无界版","成长进阶","官方精品"],"pv":13,"startTime":"2026-05-27 15:30:00","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/618大服饰货品冲刺.md"},{"id":"38413","title":"618抢先购-服饰/运动户外/珠宝饰品开门红放量技巧！","url":"https://shuyuan.taobao.com/course/detail?id=38413","type":"LIVE","lector":"万堂书院小二","tags":["万相台无界版","新手商家","官方精品"],"pv":34,"startTime":"2026-05-27 10:00:00","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/618抢先购-服饰_运动户外_珠宝饰品开门红放量技巧！.md"},{"id":"38414","title":"618抢先购高毛利品破峰","url":"https://shuyuan.taobao.com/course/detail?id=38414","type":"LIVE","lector":"随风","tags":["成长进阶","官方精品"],"pv":5,"startTime":"2026-05-27 13:00:00","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/618抢先购高毛利品破峰.md"},{"id":"38415","title":"新星计划-新手商家流量痛点解决与福利派送","url":"https://shuyuan.taobao.com/course/detail?id=38415","type":"LIVE","lector":"万堂书院小二","tags":["新手商家","官方精品"],"pv":2093,"startTime":"2026-05-26 13:58:10","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送.md"},{"id":"38416","title":"618抢先购-食品/健康/宠企/玩美生活开门红破峰专场","url":"https://shuyuan.taobao.com/course/detail?id=38416","type":"LIVE","lector":"万堂书院小二","tags":["食品健康","成长进阶","官方精品"],"pv":52,"startTime":"2026-05-27 10:00:00","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/618抢先购-食品_健康_宠企_玩美生活开门红破峰专场.md"},{"id":"38417","title":"新手商家流量问题解决","url":"https://shuyuan.taobao.com/course/detail?id=38417","type":"LIVE","lector":"蛋蛋","tags":["万相台无界版","成长进阶","官方精品"],"pv":38,"startTime":"2026-05-26 13:59:17","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/新手商家流量问题解决.md"},{"id":"38419","title":"618抢先购-低毛利产品破峰","url":"https://shuyuan.taobao.com/course/detail?id=38419","type":"LIVE","lector":"米线","tags":["618","新品营销","爆品营销","成长进阶","官方精品"],"pv":15,"startTime":"2026-05-27 15:30:00","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/618抢先购-低毛利产品破峰.md"},{"id":"38420","title":"全店销量破峰","url":"https://shuyuan.taobao.com/course/detail?id=38420","type":"LIVE","lector":"雨夜","tags":["万相台无界版","成长进阶","官方精品"],"pv":31,"startTime":"2026-05-27 10:00:00","fetched":"2026-05-27 09:15","markdown_file":"平台知识/万相台无界/文章/全店销量破峰.md"}],"daily_log":[{"date":"05-27","action":"课程抓取(v2)","new":10,"note":"新增 10 篇课程 (09:15)"},{"date":"05-26","action":"接入万堂书院API","new":1,"note":"Selenium方案验证通过，分页扫描300+课程"}]},{"id":"jd","name":"京东/京准通","icon":"🐕","source_label":"京东帮助中心","source_url":"https://helpcenter.jd.com","method":"搜索API已接入（knowledge-search.jd.com）","freq":"待配置","stats":{"total_courses":0,"articles_with_body":0,"last_fetch":null},"knowledge_summary":{"title":"京准通投放知识","sections":[{"heading":"已接入数据源","items":["knowledge-search.jd.com 搜索API已调通","kt=3(学习中心)「京准通」286条、「广告投放」880条","⚠️ 搜索API返回筛选器数据，文章详情待解析"]},{"heading":"产品矩阵（来自训练数据）","items":["京东快车/购物触点/京东海投/京东展位","京挑客CPS/DMP数坊/全站营销"]}]},"articles":[],"daily_log":[{"date":"05-26","action":"搜索API接入","new":0,"note":"POST方法成功，文章内容提取开发中"}]},{"id":"xhs","name":"小红书/聚光","icon":"📕","source_label":"聚光平台","source_url":"https://ad.xiaohongshu.com","method":"curl hash监控（待升级Selenium）","freq":"每日","stats":{"total_courses":0,"articles_with_body":0,"last_fetch":"待迁移"},"knowledge_summary":{"title":"聚光平台投放知识","sections":[{"heading":"5大营销目标","items":["产品种草/商品销量/客资收集/直播推广/抢占赛道"]},{"heading":"平台版本","items":["当前 5.2.540，40+异步模块","蒲公英 v1.17.0"]}]},"articles":[],"daily_log":[]},{"id":"vip","name":"唯品会","icon":"🛍️","source_label":"唯品会VOP","source_url":"https://vop.vip.com","method":"curl监控（待升级Selenium）","freq":"每日","stats":{"total_courses":0,"articles_with_body":0,"last_fetch":"待迁移"},"knowledge_summary":{"title":"唯品会营销投放知识","sections":[{"heading":"产品矩阵","items":["唯享客CPS联盟/品牌专区/特卖活动/内容广告/VOP开放平台"]}]},"articles":[],"daily_log":[]}],"internal":[{"id":"aione","name":"AIONE产品设计","icon":"🎯","knowledge_summary":{"title":"AIONE四阶段","sections":[{"heading":"进度","items":["阶段一✅ 6/6 | 阶段二🚧 6/7 | 阶段三🚧 5/6 | 阶段四🚧 6/6","总23/25需求文档完成"]}]}},{"id":"analysis","name":"分析框架","icon":"📐","knowledge_summary":{"title":"投放分析方法","sections":[{"heading":"核心方法","items":["AB测试：费比/ROI/蚕食率","门店分级v3：6维加权评分"]}]}}]};
+var _EMBED_skills = ["生意管家","关键词投放","人群定向","定时批量暂停","每日早安","周维度分析","项目立项审批","智能出价擎天柱","云报表导出","客户接入"];
+var _EMBED_system = {"agent":"running","uptime":"00:00","started":"5/27 14:00","dingtalk":"已连接","cron":[{"name":"隧道保活","schedule":"*/5 * * * *","status":"running"},{"name":"每日早安","schedule":"3 9 * * 1-5","status":"running"},{"name":"周维度报告","schedule":"17 10 * * 1","status":"running"},{"name":"数据同步","schedule":"13 */2 * * *","status":"running"},{"name":"总控台扫描","schedule":"*/30 * * * *","status":"running"}],"platKB":["万相台无界","天猫","京东","小红书","唯品会","数据分析","淘宝闪购","外卖行业","咖啡行业"]};
+var _EMBED_tokens = [{"date":"5/25","task":"工作台 v3 全量优化","tokens_in":62389,"tokens_out":20563,"cost":1.51,"model":"deepseek-v4-pro"},{"date":"5/25","task":"v7 PRD 生成","tokens_in":52493,"tokens_out":55161,"cost":2.31,"model":"deepseek-v4-pro"},{"date":"5/25","task":"v5 PRD 生成","tokens_in":67463,"tokens_out":23158,"cost":0.99,"model":"deepseek-v4-pro"},{"date":"5/25","task":"v6 PRD 生成","tokens_in":98032,"tokens_out":34790,"cost":1.62,"model":"deepseek-v4-pro"},{"date":"5/25","task":"工作台 v2 优化","tokens_in":70901,"tokens_out":18028,"cost":1.45,"model":"deepseek-v4-pro"},{"date":"5/25","task":"总控台架构重构","tokens_in":0,"tokens_out":0,"cost":0,"model":"手工编写"},{"date":"5/24","task":"周报生成","tokens_in":12000,"tokens_out":4500,"cost":0.18,"model":"deepseek-v4-flash"},{"date":"5/24","task":"AB测试分析","tokens_in":28000,"tokens_out":8200,"cost":0.42,"model":"deepseek-v4-pro"},{"date":"5/23","task":"门店打标 v4","tokens_in":45000,"tokens_out":12000,"cost":0.65,"model":"deepseek-v4-pro"},{"date":"5/23","task":"日报生成","tokens_in":8000,"tokens_out":2500,"cost":0.12,"model":"deepseek-v4-flash"},{"date":"5/22","task":"门店效率分级","tokens_in":52000,"tokens_out":15000,"cost":0.78,"model":"deepseek-v4-pro"},{"date":"5/22","task":"预算红线评估","tokens_in":35000,"tokens_out":9800,"cost":0.52,"model":"deepseek-v4-pro"},{"date":"5/21","task":"AB测试方案设计","tokens_in":42000,"tokens_out":11000,"cost":0.61,"model":"deepseek-v4-pro"},{"date":"5/21","task":"定时批量暂停设计","tokens_in":18000,"tokens_out":6500,"cost":0.28,"model":"deepseek-v4-pro"},{"date":"5/20","task":"AIONE智能层设计","tokens_in":38000,"tokens_out":14000,"cost":0.6,"model":"deepseek-v4-pro"},{"date":"5/20","task":"意图路由器设计","tokens_in":25000,"tokens_out":9000,"cost":0.38,"model":"deepseek-v4-pro"}];
+</script>
+
 // ── STATE ──
 let tasks=[],projects=[],knowledge=[],skills=[],sys={},tokens=[];
 let tab='overview',tfilt='all',pfilt='all',viewMode='list',editing=null,loading=true,kcat=null,kid=null;
 
 // ── INIT ──
-async function init(){
+function init(){
   loading=true;
   try{
-    let [t,p,k,s,y,tk]=await Promise.all([
-      fetch('data/tasks.json').then(r=>{if(!r.ok)throw new Error('tasks');return r.json()}),
-      fetch('data/projects.json').then(r=>{if(!r.ok)throw new Error('projects');return r.json()}),
-      fetch('data/knowledge-v2.json').then(r=>r.ok?r.json():fetch('data/knowledge.json').then(r=>r.json())),
-      fetch('data/skills.json').then(r=>{if(!r.ok)throw new Error('skills');return r.json()}),
-      fetch('data/system.json').then(r=>{if(!r.ok)throw new Error('system');return r.json()}),
-      fetch('data/tokens.json').then(r=>r.ok?r.json():[])
-    ]);
-    tasks=t;projects=p;knowledge=k;skills=s;sys=y;tokens=tk;
+    tasks=_EMBED_tasks||[];
+    projects=_EMBED_projects||[];
+    knowledge=_EMBED_knowledge||{};
+    skills=_EMBED_skills||[];
+    sys=_EMBED_system||{};
+    tokens=_EMBED_tokens||[];
   }catch(e){
-    toast('数据加载失败，请检查服务','err');
+    console.error('数据加载失败',e);
   }
   loading=false;
   updateTime();
@@ -348,7 +372,7 @@ init();
 setInterval(checkRefresh,60000);
 async function checkRefresh(){
   try{
-    let r=await fetch('data/system.json',{cache:'no-store'});
+    return; // Gist mode: no refresh
     if(!r.ok)return;
     let s=await r.json();
     if(s.started!==sys.started){
@@ -648,7 +672,7 @@ async function toggleTask(id){
   renderAll();await saveTasks();
 }
 async function saveTasks(){
-  try{await fetch('/api/tasks/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(tasks)});toast('已保存')}catch(e){/*Pages mode*/}
+  try{await fetch('/api/tasks/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(tasks)});toast('已保存')}catch(e){/*Gist mode: no backend*/}
 }
 
 // ── PROJECTS ──
@@ -696,10 +720,17 @@ function kcatById(id){return knowledge.categories.find(c=>c.id===id)}
 function kitemById(catId,itemId){let cat=kcatById(catId);return cat?cat.items.find(i=>i.id===itemId):null}
 
 function renderKnowledge(){
-  if(!knowledge||!knowledge.categories)return;
-  if(!kcat||!kcatById(kcat)){
-    kcat=knowledge.categories[0].id;
-    kid=knowledge.categories[0].items[0].id;
+  if(!knowledge)return;
+  if(!knowledge.categories && !knowledge.platforms)return;
+  if(knowledge.platforms){
+    // v2: use platforms
+    if(!kcat){kcat='p';kid=knowledge.platforms[0].id;}
+  }else{
+    // v1: use categories
+    if(!kcat||!kcatById(kcat)){
+      kcat=knowledge.categories[0].id;
+      kid=knowledge.categories[0].items[0].id;
+    }
   }
   renderKnowledgeNav();
   renderKnowledgeDetail();
@@ -801,11 +832,11 @@ function renderKnowledgeDetail(){
           <div class="kd-art-h"><span>${a.type||'📝'}</span> ${h(a.title)}</div>
           <div class="kd-art-meta">
             ${(a.tags||[]).map(t=>`<span class="kd-tag">${h(t)}</span>`).join(' ')}
-            ${a.lector?`<span style="color:var(--tx3);font-size:11px">👤 ${h(a.lector)}</span>`:''}
+            ${a.lecturer?`<span style="color:var(--tx3);font-size:11px">👤 ${h(a.lecturer)}</span>`:''}
           </div>
           <div class="kd-art-foot">
-            <a href="${a.url||'#'}" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px">🔗 查看原文</a>
-            <span style="font-size:11px;color:var(--tx3)">${a.fetched||''}</span>
+            <a href="${a.source_url||'#'}" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px">🔗 查看原文</a>
+            <span style="font-size:11px;color:var(--tx3)">${a.learned_at||''}</span>
           </div>
         </div>`;
       });
