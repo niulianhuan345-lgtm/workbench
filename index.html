@@ -801,11 +801,11 @@ function renderKnowledgeDetail(){
           <div class="kd-art-h"><span>${a.type||'📝'}</span> ${h(a.title)}</div>
           <div class="kd-art-meta">
             ${(a.tags||[]).map(t=>`<span class="kd-tag">${h(t)}</span>`).join(' ')}
-            ${a.lecturer?`<span style="color:var(--tx3);font-size:11px">👤 ${h(a.lecturer)}</span>`:''}
+            ${a.lector?`<span style="color:var(--tx3);font-size:11px">👤 ${h(a.lector)}</span>`:''}
           </div>
           <div class="kd-art-foot">
-            <a href="${a.source_url||'#'}" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px">🔗 查看原文</a>
-            <span style="font-size:11px;color:var(--tx3)">${a.learned_at||''}</span>
+            <a href="${a.url||'#'}" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px">🔗 查看原文</a>
+            <span style="font-size:11px;color:var(--tx3)">${a.fetched||''}</span>
           </div>
         </div>`;
       });
