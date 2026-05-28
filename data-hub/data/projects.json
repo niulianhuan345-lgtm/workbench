@@ -2,97 +2,542 @@
   {
     "id": "aione",
     "name": "AIONE",
-    "phases": "生意管家Skill:done→SMB功能完善:in_progress→京品智接入:in_progress→其他升级:pending",
+    "phases": "阶段一-能分析的助理:done→阶段二-能主动的助理:done→阶段三-有记忆的助理:in_progress→阶段四-能进化的助理:pending→阶段五-能执行的助理:pending",
     "files": [
       {
-        "name": "需求文档",
+        "name": "00-总体规划",
         "type": "folder",
         "children": [
           {
-            "name": "总控台产品需求文档-v4.md",
+            "name": "AIONE产品功能总体规划-v4.md",
             "type": "doc",
-            "size": "16KB",
-            "url": "",
-            "content": ""
+            "size": "8KB"
           },
           {
-            "name": "总控台产品需求文档.md",
+            "name": "AIONE产品功能总体规划.md",
             "type": "doc",
-            "size": "10KB",
-            "url": "",
-            "content": ""
+            "size": "3KB"
+          },
+          {
+            "name": "AIONE产品规划方案-v3.md",
+            "type": "doc",
+            "size": "10KB"
+          },
+          {
+            "name": "AIONE产品规划方案.md",
+            "type": "doc",
+            "size": "15KB"
           }
         ]
       },
       {
-        "name": "设计规格",
+        "name": "阶段一-能分析的助理",
         "type": "folder",
         "children": [
           {
-            "name": "2026-05-09-plan-schedule-design.md",
-            "type": "doc",
-            "size": "10KB",
-            "url": "",
-            "content": ""
+            "name": "1.1-投放全景诊断",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "8KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "14KB"
+              }
+            ]
           },
           {
-            "name": "2026-05-11-life-secretary-design.md",
-            "type": "doc",
-            "size": "5KB",
-            "url": "",
-            "content": ""
+            "name": "1.2-关键词深度分析",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "19KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "24KB"
+              }
+            ]
           },
           {
-            "name": "2026-05-15-plan-schedule-redesign.md",
-            "type": "doc",
-            "size": "9KB",
-            "url": "",
-            "content": ""
+            "name": "1.3-场景对比分析",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "6KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "4KB"
+              }
+            ]
           },
           {
-            "name": "2026-05-19-keyword-analysis-design.md",
+            "name": "1.4-计划排名分析",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "7KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "4KB"
+              }
+            ]
+          },
+          {
+            "name": "1.5-人群效果分析",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "7KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "4KB"
+              }
+            ]
+          },
+          {
+            "name": "1.6-创意素材分析",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "8KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "4KB"
+              }
+            ]
+          },
+          {
+            "name": "投放参谋-测试用例.md",
             "type": "doc",
-            "size": "16KB",
-            "url": "",
-            "content": ""
+            "size": "12KB"
           }
         ]
       },
       {
-        "name": "数据中枢UI",
+        "name": "阶段二-能主动的助理",
         "type": "folder",
         "children": [
           {
-            "name": "数据中枢 (React+Vite)",
-            "type": "code",
-            "size": "760KB built",
-            "url": "",
-            "content": ""
+            "name": "2.1-每日早安",
+            "type": "folder",
+            "children": [
+              {
+                "name": "技术设计文档-v2.2.md",
+                "type": "doc",
+                "size": "20KB"
+              },
+              {
+                "name": "技术设计文档.md",
+                "type": "doc",
+                "size": "14KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "22KB"
+              }
+            ]
+          },
+          {
+            "name": "2.2-异常实时预警",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "8KB"
+              },
+              {
+                "name": "需求文档-v2.md",
+                "type": "doc",
+                "size": "5KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "7KB"
+              }
+            ]
+          },
+          {
+            "name": "2.3-创意疲劳提醒",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "7KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "10KB"
+              }
+            ]
+          },
+          {
+            "name": "2.4-关键词批量优化",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "8KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "9KB"
+              }
+            ]
+          },
+          {
+            "name": "2.5-智能预算重分配",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "8KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "7KB"
+              }
+            ]
+          },
+          {
+            "name": "2.6-操作效果追踪",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "7KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "16KB"
+              }
+            ]
+          },
+          {
+            "name": "2.7-计划优化分析",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "3KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "6KB"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "工作台 & 看板",
+        "name": "阶段三-有记忆的助理",
         "type": "folder",
         "children": [
           {
-            "name": "工作台.html",
-            "type": "code",
-            "size": "24KB",
-            "url": "",
-            "content": ""
+            "name": "3.1-操作历史记忆",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "6KB"
+              }
+            ]
           },
           {
-            "name": "看板.html",
-            "type": "code",
-            "size": "18KB",
-            "url": "",
-            "content": ""
+            "name": "3.3-用户偏好学习",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "9KB"
+              }
+            ]
+          },
+          {
+            "name": "3.4-周期性记忆",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "8KB"
+              }
+            ]
+          },
+          {
+            "name": "3.6-跨店铺品线对比",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "5KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "8KB"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "阶段四-能进化的助理",
+        "type": "folder",
+        "children": [
+          {
+            "name": "4.1-反馈学习",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "5KB"
+              }
+            ]
+          },
+          {
+            "name": "4.2-操作模式学习",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "5KB"
+              }
+            ]
+          },
+          {
+            "name": "4.3-大促智能管理",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "8KB"
+              }
+            ]
+          },
+          {
+            "name": "4.4-行业知识",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "5KB"
+              }
+            ]
+          },
+          {
+            "name": "4.5-跨账户优化",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "5KB"
+              }
+            ]
+          },
+          {
+            "name": "4.6-策略模拟",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "6KB"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "阶段五-能执行的助理",
+        "type": "folder",
+        "children": [
+          {
+            "name": "2.4-关键词批量优化-升级.md",
+            "type": "doc",
+            "size": "5KB"
+          },
+          {
+            "name": "2.5-智能预算重分配-升级.md",
+            "type": "doc",
+            "size": "7KB"
+          },
+          {
+            "name": "2.7-计划优化分析-升级.md",
+            "type": "doc",
+            "size": "6KB"
+          },
+          {
+            "name": "5.1-计划创建向导",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "7KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "10KB"
+              }
+            ]
+          },
+          {
+            "name": "5.2-关键词操作执行",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "6KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "9KB"
+              }
+            ]
+          },
+          {
+            "name": "5.3-出价智能调控",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "6KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "11KB"
+              }
+            ]
+          },
+          {
+            "name": "5.4-人群策略执行",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "8KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "11KB"
+              }
+            ]
+          },
+          {
+            "name": "5.5-策略模版跟投",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "10KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "12KB"
+              }
+            ]
+          },
+          {
+            "name": "5.6-全站推广操控",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "15KB"
+              }
+            ]
+          },
+          {
+            "name": "5.7-批量操作引擎",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "5KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "12KB"
+              }
+            ]
+          },
+          {
+            "name": "5.8-大促模式管理",
+            "type": "folder",
+            "children": [
+              {
+                "name": "Skill定义.md",
+                "type": "doc",
+                "size": "6KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "11KB"
+              }
+            ]
           }
         ]
       }
     ],
-    "description": "AI智能体广告投放管理平台，基于阿里妈妈万相台无界系统，通过自然语言交互管理广告投放计划。当前聚焦生意管家Skill已上线、SMB功能完善、京品智接入、整体升级迭代四大阶段。"
+    "description": "AIONE智能投放助理，5阶段进化路线：分析→主动→记忆→进化→执行。当前已完成前2阶段交付，第3阶段开发中。"
   },
   {
     "id": "autoonebp",
