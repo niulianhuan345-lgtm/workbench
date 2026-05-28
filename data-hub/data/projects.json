@@ -2,70 +2,97 @@
   {
     "id": "aione",
     "name": "AIONE",
-    "phases": "生意管家Skill上线:done→SMB功能完善:in_progress→其他升级&京品智:in_progress→持续迭代:pending",
+    "phases": "生意管家Skill:done→SMB功能完善:in_progress→京品智接入:in_progress→其他升级:pending",
     "files": [
       {
         "name": "需求文档",
         "type": "folder",
         "children": [
           {
-            "name": "生意管家需求.md",
+            "name": "总控台产品需求文档-v4.md",
             "type": "doc",
-            "size": "12KB",
+            "size": "16KB",
             "url": "",
             "content": ""
           },
           {
-            "name": "SMB功能规划.md",
+            "name": "总控台产品需求文档.md",
             "type": "doc",
-            "size": "8KB",
-            "url": "",
-            "content": ""
-          },
-          {
-            "name": "AIONE功能规划.md",
-            "type": "doc",
-            "size": "15KB",
+            "size": "10KB",
             "url": "",
             "content": ""
           }
         ]
       },
       {
-        "name": "产品设计",
+        "name": "设计规格",
         "type": "folder",
         "children": [
           {
-            "name": "人群流转报告设计.fig",
-            "type": "image",
-            "size": "2.4MB",
+            "name": "2026-05-09-plan-schedule-design.md",
+            "type": "doc",
+            "size": "10KB",
             "url": "",
             "content": ""
           },
           {
-            "name": "投放方案分析页面.fig",
-            "type": "image",
-            "size": "1.8MB",
-            "url": "",
-            "content": ""
-          }
-        ]
-      },
-      {
-        "name": "API文档",
-        "type": "folder",
-        "children": [
-          {
-            "name": "MCP接口文档.md",
+            "name": "2026-05-11-life-secretary-design.md",
             "type": "doc",
             "size": "5KB",
+            "url": "",
+            "content": ""
+          },
+          {
+            "name": "2026-05-15-plan-schedule-redesign.md",
+            "type": "doc",
+            "size": "9KB",
+            "url": "",
+            "content": ""
+          },
+          {
+            "name": "2026-05-19-keyword-analysis-design.md",
+            "type": "doc",
+            "size": "16KB",
+            "url": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "name": "数据中枢UI",
+        "type": "folder",
+        "children": [
+          {
+            "name": "数据中枢 (React+Vite)",
+            "type": "code",
+            "size": "760KB built",
+            "url": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "name": "工作台 & 看板",
+        "type": "folder",
+        "children": [
+          {
+            "name": "工作台.html",
+            "type": "code",
+            "size": "24KB",
+            "url": "",
+            "content": ""
+          },
+          {
+            "name": "看板.html",
+            "type": "code",
+            "size": "18KB",
             "url": "",
             "content": ""
           }
         ]
       }
     ],
-    "description": "AI智能体广告投放管理平台，基于阿里妈妈万相台无界系统，通过自然语言交互管理广告投放计划。当前聚焦生意管家Skill上线、SMB功能完善、京品智对接三大模块。"
+    "description": "AI智能体广告投放管理平台，基于阿里妈妈万相台无界系统，通过自然语言交互管理广告投放计划。当前聚焦生意管家Skill已上线、SMB功能完善、京品智接入、整体升级迭代四大阶段。"
   },
   {
     "id": "autoonebp",
@@ -73,31 +100,30 @@
     "phases": "天猫擎天柱测试:in_progress→京东擎天柱测试:pending→AIONE同步更新:pending",
     "files": [
       {
-        "name": "测试报告",
+        "name": "项目代码",
         "type": "folder",
         "children": [
           {
-            "name": "天猫日历预算.xlsx",
-            "type": "doc",
-            "size": "3.2MB",
-            "url": "",
-            "content": ""
-          },
-          {
-            "name": "京东日历预算.xlsx",
-            "type": "doc",
-            "size": "2.8MB",
+            "name": "onebp-main-main (UMI Max)",
+            "type": "code",
+            "size": "大项目",
             "url": "",
             "content": ""
           }
         ]
       },
       {
-        "name": "AutoOneBP说明书.docx",
-        "type": "doc",
-        "size": "8.5MB",
-        "url": "",
-        "content": ""
+        "name": "说明书",
+        "type": "folder",
+        "children": [
+          {
+            "name": "AutoOneBP-说明书.docx",
+            "type": "doc",
+            "size": "8.5MB",
+            "url": "",
+            "content": ""
+          }
+        ]
       }
     ],
     "description": "天猫/京东擎天柱日历预算测试与验证，确保AIONE同步更新，打通多平台广告投放自动化。"
