@@ -1,1 +1,552 @@
-["生意管家","关键词投放","人群定向","定时批量暂停","每日早安","周维度分析","项目立项审批","智能出价擎天柱","云报表导出","客户接入"]
+[
+  {
+    "name": "apple-notes",
+    "category": "apple",
+    "desc": "\"Manage Apple Notes via memo CLI: create, search, edit.\""
+  },
+  {
+    "name": "apple-reminders",
+    "category": "apple",
+    "desc": "\"Apple Reminders via remindctl: add, list, complete.\""
+  },
+  {
+    "name": "findmy",
+    "category": "apple",
+    "desc": "\"Track Apple devices/AirTags via FindMy.app on macOS.\""
+  },
+  {
+    "name": "imessage",
+    "category": "apple",
+    "desc": "Send and receive iMessages/SMS via the imsg CLI on macOS."
+  },
+  {
+    "name": "macos-computer-use",
+    "category": "apple",
+    "desc": "|"
+  },
+  {
+    "name": "claude-code",
+    "category": "autonomous-ai-agents",
+    "desc": "\"Delegate coding to Claude Code CLI (features, PRs).\""
+  },
+  {
+    "name": "codex",
+    "category": "autonomous-ai-agents",
+    "desc": "\"Delegate coding to OpenAI Codex CLI (features, PRs).\""
+  },
+  {
+    "name": "hermes-agent",
+    "category": "autonomous-ai-agents",
+    "desc": "\"Configure, extend, or contribute to Hermes Agent.\""
+  },
+  {
+    "name": "opencode",
+    "category": "autonomous-ai-agents",
+    "desc": "\"Delegate coding to OpenCode CLI (features, PR review).\""
+  },
+  {
+    "name": "architecture-diagram",
+    "category": "creative",
+    "desc": "\"Dark-themed SVG architecture/cloud/infra diagrams as HTML.\""
+  },
+  {
+    "name": "ascii-art",
+    "category": "creative",
+    "desc": "\"ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.\""
+  },
+  {
+    "name": "ascii-video",
+    "category": "creative",
+    "desc": "\"ASCII video: convert video/audio to colored ASCII MP4/GIF.\""
+  },
+  {
+    "name": "baoyu-comic",
+    "category": "creative",
+    "desc": "\"Knowledge comics (知识漫画): educational, biography, tutorial.\""
+  },
+  {
+    "name": "baoyu-infographic",
+    "category": "creative",
+    "desc": "\"Infographics: 21 layouts x 21 styles (信息图, 可视化).\""
+  },
+  {
+    "name": "claude-design",
+    "category": "creative",
+    "desc": "Design one-off HTML artifacts (landing, deck, prototype)."
+  },
+  {
+    "name": "comfyui",
+    "category": "creative",
+    "desc": "\"Generate images, video, and audio with ComfyUI — install, launch, manage nodes/models, run workflow"
+  },
+  {
+    "name": "design-md",
+    "category": "creative",
+    "desc": "Author/validate/export Google's DESIGN.md token spec files."
+  },
+  {
+    "name": "excalidraw",
+    "category": "creative",
+    "desc": "\"Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).\""
+  },
+  {
+    "name": "humanizer",
+    "category": "creative",
+    "desc": "\"Humanize text: strip AI-isms and add real voice.\""
+  },
+  {
+    "name": "ideation",
+    "category": "creative",
+    "desc": "\"Generate project ideas via creative constraints.\""
+  },
+  {
+    "name": "manim-video",
+    "category": "creative",
+    "desc": "\"Manim CE animations: 3Blue1Brown math/algo videos.\""
+  },
+  {
+    "name": "p5js",
+    "category": "creative",
+    "desc": "\"p5.js sketches: gen art, shaders, interactive, 3D.\""
+  },
+  {
+    "name": "pixel-art",
+    "category": "creative",
+    "desc": "\"Pixel art w/ era palettes (NES, Game Boy, PICO-8).\""
+  },
+  {
+    "name": "popular-web-designs",
+    "category": "creative",
+    "desc": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS."
+  },
+  {
+    "name": "pretext",
+    "category": "creative",
+    "desc": "\"Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII ar"
+  },
+  {
+    "name": "sketch",
+    "category": "creative",
+    "desc": "\"Throwaway HTML mockups: 2-3 design variants to compare.\""
+  },
+  {
+    "name": "songwriting-and-ai-music",
+    "category": "creative",
+    "desc": "\"Songwriting craft and Suno AI music prompts.\""
+  },
+  {
+    "name": "touchdesigner-mcp",
+    "category": "creative",
+    "desc": "\"Control a running TouchDesigner instance via twozero MCP — create operators, set parameters, wire c"
+  },
+  {
+    "name": "ace-budget-reallocation",
+    "category": "data-science",
+    "desc": "ACE增量模型：三维（Accuracy确定性×Cost成本×Expansion空间=商圈排名）筛选门店，过滤漏斗A→E→C，输出SABCD五级+TGI特征+停投代价+腾挪方案+AB验证框架。触发词：A"
+  },
+  {
+    "name": "advertising-weekly-report",
+    "category": "data-science",
+    "desc": "广告投放周报/月报生成。从 Metabase 拉取数据→按固定格式写核心周总结→生成 PPT。触发词：周报、月报、更新周报、周总结、周维度分析、广告周报。"
+  },
+  {
+    "name": "jupyter-live-kernel",
+    "category": "data-science",
+    "desc": "\"Iterative Python via live Jupyter kernel (hamelnb).\""
+  },
+  {
+    "name": "large-scale-store-data-analysis",
+    "category": "data-science",
+    "desc": ">"
+  },
+  {
+    "name": "metabase-automation",
+    "category": "data-science",
+    "desc": "Metabase 看板数据自动拉取与日报/周报生成。触发词：Metabase、看板数据、日报更新、周报自动生成、数据检查、Card查询。"
+  },
+  {
+    "name": "ruixing-reporting",
+    "category": "data-science",
+    "desc": "瑞幸广告投放日报/周报自动生成。从 Metabase Dashboard 29 拉取数据，经数据完整性检查后按固定格式输出。触发词：更新日报、更新周报、瑞幸日报、数据检查、Metabase 拉数据。"
+  },
+  {
+    "name": "store-efficiency-grading",
+    "category": "data-science",
+    "desc": "门店经营质量综合评分（SABCD六维打标）。当用户要求门店效率评分、SABC分级、多维度评分时使用。如需预算腾挪（停投/加投/增量最大化），请用 ace-budget-reallocation 的 A"
+  },
+  {
+    "name": "kanban-orchestrator",
+    "category": "devops",
+    "desc": "Decomposition playbook + anti-temptation rules for an orchestrator profile routing work through Kanb"
+  },
+  {
+    "name": "kanban-worker",
+    "category": "devops",
+    "desc": "Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is auto-injected "
+  },
+  {
+    "name": "static-site-deployment",
+    "category": "devops",
+    "desc": "Deploy static HTML/JSON sites for the user — local server, GitHub Pages, Vercel, Surge. When the use"
+  },
+  {
+    "name": "static-site-github-pages",
+    "category": "devops",
+    "desc": "部署单页应用到 GitHub Pages — 数据内嵌、自动同步、永久链接。触发条件：用户需要稳定的公开链接分享 HTML 页面、工作台、仪表盘。"
+  },
+  {
+    "name": "webhook-subscriptions",
+    "category": "devops",
+    "desc": "\"Webhook subscriptions: event-driven agent runs.\""
+  },
+  {
+    "name": "himalaya",
+    "category": "email",
+    "desc": "\"Himalaya CLI: IMAP/SMTP email from terminal.\""
+  },
+  {
+    "name": "minecraft-modpack-server",
+    "category": "gaming",
+    "desc": "\"Host modded Minecraft servers (CurseForge, Modrinth).\""
+  },
+  {
+    "name": "pokemon-player",
+    "category": "gaming",
+    "desc": "\"Play Pokemon via headless emulator + RAM reads.\""
+  },
+  {
+    "name": "codebase-inspection",
+    "category": "github",
+    "desc": "\"Inspect codebases w/ pygount: LOC, languages, ratios.\""
+  },
+  {
+    "name": "github-auth",
+    "category": "github",
+    "desc": "\"GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.\""
+  },
+  {
+    "name": "github-code-review",
+    "category": "github",
+    "desc": "\"Review PRs: diffs, inline comments via gh or REST.\""
+  },
+  {
+    "name": "github-issues",
+    "category": "github",
+    "desc": "\"Create, triage, label, assign GitHub issues via gh or REST.\""
+  },
+  {
+    "name": "github-pages-deploy",
+    "category": "github",
+    "desc": "\"Deploy static sites to GitHub Pages via the workbench repo — build, copy, push.\""
+  },
+  {
+    "name": "github-pr-workflow",
+    "category": "github",
+    "desc": "\"GitHub PR lifecycle: branch, commit, open, CI, merge.\""
+  },
+  {
+    "name": "github-repo-management",
+    "category": "github",
+    "desc": "\"Clone/create/fork repos; manage remotes, releases.\""
+  },
+  {
+    "name": "native-mcp",
+    "category": "mcp",
+    "desc": "\"MCP client: connect servers, register tools (stdio/HTTP).\""
+  },
+  {
+    "name": "gif-search",
+    "category": "media",
+    "desc": "\"Search/download GIFs from Tenor via curl + jq.\""
+  },
+  {
+    "name": "heartmula",
+    "category": "media",
+    "desc": "\"HeartMuLa: Suno-like song generation from lyrics + tags.\""
+  },
+  {
+    "name": "songsee",
+    "category": "media",
+    "desc": "\"Audio spectrograms/features (mel, chroma, MFCC) via CLI.\""
+  },
+  {
+    "name": "spotify",
+    "category": "media",
+    "desc": "\"Spotify: play, search, queue, manage playlists and devices.\""
+  },
+  {
+    "name": "youtube-content",
+    "category": "media",
+    "desc": "\"YouTube transcripts to summaries, threads, blogs.\""
+  },
+  {
+    "name": "huggingface-hub",
+    "category": "mlops",
+    "desc": "\"HuggingFace hf CLI: search/download/upload models, datasets.\""
+  },
+  {
+    "name": "evaluating-llms-harness",
+    "category": "mlops · evaluation",
+    "desc": "\"lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).\""
+  },
+  {
+    "name": "weights-and-biases",
+    "category": "mlops · evaluation",
+    "desc": "\"W&B: log ML experiments, sweeps, model registry, dashboards.\""
+  },
+  {
+    "name": "llama-cpp",
+    "category": "mlops · inference",
+    "desc": "llama.cpp local GGUF inference + HF Hub model discovery."
+  },
+  {
+    "name": "obliteratus",
+    "category": "mlops · inference",
+    "desc": "\"OBLITERATUS: abliterate LLM refusals (diff-in-means).\""
+  },
+  {
+    "name": "serving-llms-vllm",
+    "category": "mlops · inference",
+    "desc": "\"vLLM: high-throughput LLM serving, OpenAI API, quantization.\""
+  },
+  {
+    "name": "audiocraft-audio-generation",
+    "category": "mlops · models",
+    "desc": "\"AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.\""
+  },
+  {
+    "name": "segment-anything-model",
+    "category": "mlops · models",
+    "desc": "\"SAM: zero-shot image segmentation via points, boxes, masks.\""
+  },
+  {
+    "name": "dspy",
+    "category": "mlops · research",
+    "desc": "\"DSPy: declarative LM programs, auto-optimize prompts, RAG.\""
+  },
+  {
+    "name": "obsidian",
+    "category": "note-taking",
+    "desc": "Read, search, create, and edit notes in the Obsidian vault."
+  },
+  {
+    "name": "ab-test-analysis",
+    "category": "productivity",
+    "desc": "广告投放 AB 测试数据分析与方案设计。当用户要求分析 AB 测试数据（Excel/CSV）、对比测试组 vs 对照组的投放效率、计算费比/ ROI/ 蚕食率、按时段拆解投放效果时使用。也涵盖 AB "
+  },
+  {
+    "name": "aione-design-pipeline",
+    "category": "productivity",
+    "desc": "\"AIONE 产品功能设计全流程：钉钉需求识别 → 调研现有资料 → 方案设计 → 需求文档+Skill定义 → 用户确认 → 交付。触发：用户要求在 AIONE 平台设计新功能、写产品需求文档、输出"
+  },
+  {
+    "name": "airtable",
+    "category": "productivity",
+    "desc": "Airtable REST API via curl. Records CRUD, filters, upserts."
+  },
+  {
+    "name": "google-workspace",
+    "category": "productivity",
+    "desc": "\"Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.\""
+  },
+  {
+    "name": "lightweight-workbench",
+    "category": "productivity",
+    "desc": "Build lightweight, data-driven dashboards/workbenches with JSON backend + auto-scanner + zero-dep se"
+  },
+  {
+    "name": "linear",
+    "category": "productivity",
+    "desc": "\"Linear: manage issues, projects, teams via GraphQL + curl.\""
+  },
+  {
+    "name": "maps",
+    "category": "productivity",
+    "desc": "\"Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.\""
+  },
+  {
+    "name": "nano-pdf",
+    "category": "productivity",
+    "desc": "\"Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).\""
+  },
+  {
+    "name": "neural-memory",
+    "category": "productivity",
+    "desc": "增强记忆管理。当用户说\"记住这个\"\"以后都这样\"\"别再做这个了\"\"你忘了吗\"，或需要回顾、整理、关联过往记忆时使用。提供结构化记忆录入、定期审查清理、记忆关联图谱。触发词：记住、别忘了、上次、你记得吗"
+  },
+  {
+    "name": "notion",
+    "category": "productivity",
+    "desc": "\"Notion API + ntn CLI: pages, databases, markdown, Workers.\""
+  },
+  {
+    "name": "ocr-and-documents",
+    "category": "productivity",
+    "desc": "\"Extract text from PDFs/scans (pymupdf, marker-pdf).\""
+  },
+  {
+    "name": "pm-knowledge-hub",
+    "category": "productivity",
+    "desc": "\"Build and maintain a multi-platform product knowledge base with automated daily learning, HTML dash"
+  },
+  {
+    "name": "powerpoint",
+    "category": "productivity",
+    "desc": "\"Create, read, edit .pptx decks, slides, notes, templates.\""
+  },
+  {
+    "name": "product-requirements",
+    "category": "productivity",
+    "desc": "Design and write product requirement documents (PRD/需求文档). Use when the user asks to design a new pr"
+  },
+  {
+    "name": "project-dashboard",
+    "category": "productivity",
+    "desc": "为用户牛连欢的个人项目生成项目看板 HTML 页面。左树形导航 + 右卡片内容、每项链接实际文件、进度可视化、变更记录时间线。触发：用户说\"建个看板\"\"生成项目看板\"\"帮我做个 XX 项目看板\"。"
+  },
+  {
+    "name": "sequential-thinking",
+    "category": "productivity",
+    "desc": "结构化链式推理。当遇到复杂分析（多变量、跨维度）、问题诊断、方案设计等需要严谨推理的任务时使用。强制分步思考、每步验证、不跳步。触发词：分析一下、排查、诊断、设计、架构、方案、根因、为什么、复杂、多维"
+  },
+  {
+    "name": "teams-meeting-pipeline",
+    "category": "productivity",
+    "desc": "\"Operate the Teams meeting summary pipeline via Hermes CLI — summarize meetings, inspect pipeline st"
+  },
+  {
+    "name": "weather-report",
+    "category": "productivity",
+    "desc": "Generate Chinese weather reports with Open-Meteo API — fetch forecasts, map WMO weather codes to Chi"
+  },
+  {
+    "name": "workbench-dashboard",
+    "category": "productivity",
+    "desc": "\"Manage the AIONE 总控台 workbench — 5-tab dashboard (概览/任务/项目/系统/知识) for task management, project trac"
+  },
+  {
+    "name": "xlsx",
+    "category": "productivity",
+    "desc": "Excel/CSV 数据处理全能工具。当用户需要读取 Excel/CSV 文件、数据清洗、公式计算、图表生成、格式转换、批量处理时使用。触发词：Excel、xlsx、csv、表格、数据清洗、图表、公式"
+  },
+  {
+    "name": "godmode",
+    "category": "red-teaming",
+    "desc": "\"Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.\""
+  },
+  {
+    "name": "arxiv",
+    "category": "research",
+    "desc": "\"Search arXiv papers by keyword, author, category, or ID.\""
+  },
+  {
+    "name": "blogwatcher",
+    "category": "research",
+    "desc": "\"Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.\""
+  },
+  {
+    "name": "llm-wiki",
+    "category": "research",
+    "desc": "\"Karpathy's LLM Wiki: build/query interlinked markdown KB.\""
+  },
+  {
+    "name": "platform-knowledge-research",
+    "category": "research",
+    "desc": "投放平台知识学习：自动发现、抓取、整理广告投放平台（天猫/京东/小红书/唯品会等）官方学习中心的知识。触发条件：用户要求学习某个平台的投放知识、更新知识库、找学习资源。"
+  },
+  {
+    "name": "polymarket",
+    "category": "research",
+    "desc": "\"Query Polymarket: markets, prices, orderbooks, history.\""
+  },
+  {
+    "name": "research-paper-writing",
+    "category": "research",
+    "desc": "\"Write ML papers for NeurIPS/ICML/ICLR: design→submit.\""
+  },
+  {
+    "name": "openhue",
+    "category": "smart-home",
+    "desc": "\"Control Philips Hue lights, scenes, rooms via OpenHue CLI.\""
+  },
+  {
+    "name": "xurl",
+    "category": "social-media",
+    "desc": "\"X/Twitter via xurl CLI: post, search, DM, media, v2 API.\""
+  },
+  {
+    "name": "debugging-hermes-tui-commands",
+    "category": "software-development",
+    "desc": "\"Debug Hermes TUI slash commands: Python, gateway, Ink UI.\""
+  },
+  {
+    "name": "hermes-agent-skill-authoring",
+    "category": "software-development",
+    "desc": "\"Author in-repo SKILL.md: frontmatter, validator, structure.\""
+  },
+  {
+    "name": "node-inspect-debugger",
+    "category": "software-development",
+    "desc": "\"Debug Node.js via --inspect + Chrome DevTools Protocol CLI.\""
+  },
+  {
+    "name": "plan",
+    "category": "software-development",
+    "desc": "\"Plan mode: write markdown plan to .hermes/plans/, no exec.\""
+  },
+  {
+    "name": "python-debugpy",
+    "category": "software-development",
+    "desc": "\"Debug Python: pdb REPL + debugpy remote (DAP).\""
+  },
+  {
+    "name": "requesting-code-review",
+    "category": "software-development",
+    "desc": "\"Pre-commit review: security scan, quality gates, auto-fix.\""
+  },
+  {
+    "name": "spike",
+    "category": "software-development",
+    "desc": "\"Throwaway experiments to validate an idea before build.\""
+  },
+  {
+    "name": "subagent-driven-development",
+    "category": "software-development",
+    "desc": "\"Execute plans via delegate_task subagents (2-stage review).\""
+  },
+  {
+    "name": "systematic-debugging",
+    "category": "software-development",
+    "desc": "\"4-phase root cause debugging: understand bugs before fixing.\""
+  },
+  {
+    "name": "test-driven-development",
+    "category": "software-development",
+    "desc": "\"TDD: enforce RED-GREEN-REFACTOR, tests before code.\""
+  },
+  {
+    "name": "umi-max-development",
+    "category": "software-development",
+    "desc": "Work with UMI Max v4 (Ant Design Pro) frontend projects — routes, auth bypass, build, and local serv"
+  },
+  {
+    "name": "writing-plans",
+    "category": "software-development",
+    "desc": "\"Write implementation plans: bite-sized tasks, paths, code.\""
+  },
+  {
+    "name": "dingtalk-gateway",
+    "category": "系统",
+    "desc": "钉钉 Gateway 配置、运维、文件收发、故障排查。当用户需要配置钉钉连接、排查 Gateway 问题、收发文件、管理钉钉机器人时使用。"
+  },
+  {
+    "name": "dogfood",
+    "category": "系统",
+    "desc": "\"Exploratory QA of web apps: find bugs, evidence, reports.\""
+  },
+  {
+    "name": "yuanbao",
+    "category": "系统",
+    "desc": "\"Yuanbao (元宝) groups: @mention users, query info/members.\""
+  }
+]

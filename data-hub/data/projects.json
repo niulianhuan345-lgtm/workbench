@@ -2,267 +2,65 @@
   {
     "id": "aione",
     "name": "AIONE",
-    "icon": "🧠",
-    "phases": "00 总体规划:done → 阶段一 能分析的助理:done → 阶段二 能主动的助理:done → 阶段三 能决策的助理:pending",
+    "phases": "生意管家Skill上线:done→SMB功能完善:in_progress→其他升级&京品智:in_progress→持续迭代:pending",
     "files": [
       {
-        "name": "00-总体规划",
+        "name": "需求文档",
         "type": "folder",
         "children": [
           {
-            "name": "AIONE产品功能总体规划.md",
-            "type": "md",
-            "path": "需求文件/AIONE/00-总体规划/AIONE产品功能总体规划.md"
+            "name": "生意管家需求.md",
+            "type": "doc",
+            "size": "12KB",
+            "url": "",
+            "content": ""
           },
           {
-            "name": "AIONE产品规划方案-v3.md",
-            "type": "md",
-            "path": "需求文件/AIONE/00-总体规划/AIONE产品规划方案-v3.md"
+            "name": "SMB功能规划.md",
+            "type": "doc",
+            "size": "8KB",
+            "url": "",
+            "content": ""
           },
           {
-            "name": "AIONE产品规划方案.md",
-            "type": "md",
-            "path": "需求文件/AIONE/00-总体规划/AIONE产品规划方案.md"
-          },
-          {
-            "name": "AIONE自动化管道.md",
-            "type": "md",
-            "path": "需求文件/AIONE/00-总体规划/AIONE自动化管道.md"
-          },
-          {
-            "name": "需求文件目录规范.md",
-            "type": "md",
-            "path": "需求文件/AIONE/00-总体规划/需求文件目录规范.md"
+            "name": "AIONE功能规划.md",
+            "type": "doc",
+            "size": "15KB",
+            "url": "",
+            "content": ""
           }
         ]
       },
       {
-        "name": "阶段一-能分析的助理",
+        "name": "产品设计",
         "type": "folder",
         "children": [
           {
-            "name": "1.1-投放全景诊断",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.1-投放全景诊断/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.1-投放全景诊断/需求文档.md"
-              }
-            ]
+            "name": "人群流转报告设计.fig",
+            "type": "image",
+            "size": "2.4MB",
+            "url": "",
+            "content": ""
           },
           {
-            "name": "1.2-关键词深度分析",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.2-关键词深度分析/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.2-关键词深度分析/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "1.3-场景对比分析",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.3-场景对比分析/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.3-场景对比分析/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "1.4-计划排名分析",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.4-计划排名分析/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.4-计划排名分析/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "1.5-人群效果分析",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.5-人群效果分析/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.5-人群效果分析/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "1.6-创意素材分析",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.6-创意素材分析/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段一-能分析的助理/1.6-创意素材分析/需求文档.md"
-              }
-            ]
+            "name": "投放方案分析页面.fig",
+            "type": "image",
+            "size": "1.8MB",
+            "url": "",
+            "content": ""
           }
         ]
       },
       {
-        "name": "阶段二-能主动的助理",
+        "name": "API文档",
         "type": "folder",
         "children": [
           {
-            "name": "2.1-每日早安",
-            "type": "folder",
-            "children": [
-              {
-                "name": "技术设计文档-v2.2.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.1-每日早安/技术设计文档-v2.2.md"
-              },
-              {
-                "name": "技术设计文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.1-每日早安/技术设计文档.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.1-每日早安/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "2.2-异常实时预警",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.2-异常实时预警/Skill定义.md"
-              },
-              {
-                "name": "需求文档-v2.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.2-异常实时预警/需求文档-v2.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.2-异常实时预警/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "2.3-创意疲劳提醒",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.3-创意疲劳提醒/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.3-创意疲劳提醒/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "2.4-关键词批量优化",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.4-关键词批量优化/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.4-关键词批量优化/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "2.5-智能预算重分配",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.5-智能预算重分配/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.5-智能预算重分配/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "2.6-操作效果追踪",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.6-操作效果追踪/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.6-操作效果追踪/需求文档.md"
-              }
-            ]
-          },
-          {
-            "name": "2.7-计划优化分析",
-            "type": "folder",
-            "children": [
-              {
-                "name": "Skill定义.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.7-计划优化分析/Skill定义.md"
-              },
-              {
-                "name": "需求文档.md",
-                "type": "md",
-                "path": "需求文件/AIONE/阶段二-能主动的助理/2.7-计划优化分析/需求文档.md"
-              }
-            ]
+            "name": "MCP接口文档.md",
+            "type": "doc",
+            "size": "5KB",
+            "url": "",
+            "content": ""
           }
         ]
       }
@@ -271,188 +69,188 @@
   {
     "id": "autoonebp",
     "name": "AutoOneBP",
-    "icon": "🔧",
-    "phases": "定时批量暂停 设计:done → 定时批量暂停 开发:done → 日历预算测试:in_progress → 擎天柱上线:in_progress → AIONE同步:pending",
+    "phases": "天猫擎天柱测试:in_progress→京东擎天柱测试:pending→AIONE同步更新:pending",
     "files": [
       {
-        "name": "定时批量暂停",
+        "name": "测试报告",
         "type": "folder",
         "children": [
           {
-            "name": "完整设计方案.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/完整设计方案.md"
+            "name": "天猫日历预算.xlsx",
+            "type": "doc",
+            "size": "3.2MB",
+            "url": "",
+            "content": ""
           },
           {
-            "name": "技术设计文档.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/技术设计文档.md"
+            "name": "京东日历预算.xlsx",
+            "type": "doc",
+            "size": "2.8MB",
+            "url": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "name": "AutoOneBP说明书.docx",
+        "type": "doc",
+        "size": "8.5MB",
+        "url": "",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "id": "andy",
+    "name": "Andy数据",
+    "phases": "人群数据获取:done→人群分析报告:in_progress→批量屏蔽人群:pending→出价管理:in_progress→批量暂停:pending",
+    "files": [
+      {
+        "name": "人群数据",
+        "type": "folder",
+        "children": [
+          {
+            "name": "全品类人群-2026Q1.csv",
+            "type": "code",
+            "size": "15MB",
+            "url": "",
+            "content": ""
           },
           {
-            "name": "改动说明_全场景.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/改动说明_全场景.md"
+            "name": "类目人群-2026Q1.csv",
+            "type": "code",
+            "size": "8MB",
+            "url": "",
+            "content": ""
           },
           {
-            "name": "改动说明_单次定时.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/改动说明_单次定时.md"
-          },
+            "name": "商品人群-每日.xlsx",
+            "type": "doc",
+            "size": "2MB",
+            "url": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "name": "分析报告",
+        "type": "folder",
+        "children": [
           {
-            "name": "改动说明_给前端.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/改动说明_给前端.md"
-          },
-          {
-            "name": "需求文档.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/需求文档.md"
-          },
-          {
-            "name": "在线预览.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/在线预览.html"
-          },
-          {
-            "name": "批量修改定时投放.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/批量修改定时投放.html"
-          },
-          {
-            "name": "真实组件预览_Drawer.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/真实组件预览_Drawer.html"
-          },
-          {
-            "name": "真实组件预览_菜单.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/真实组件预览_菜单.html"
-          },
-          {
-            "name": "页面设计.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/页面设计.html"
+            "name": "人群分析模版.md",
+            "type": "doc",
+            "size": "3KB",
+            "url": "",
+            "content": ""
           }
         ]
       }
     ]
   },
   {
-    "id": "hermes",
-    "name": "Hermes需求",
-    "icon": "📋",
-    "phases": "智能层设计:done → 意图路由:done → 上下文管理:done → 跨维度联想:done → 行动推荐:done → AB测试报告:done → 审批流程:done",
+    "id": "project-init",
+    "name": "项目立项",
+    "phases": "钉钉审批流:in_progress→宜搭审批流:in_progress→全流程上线:pending",
     "files": [
       {
-        "name": "2026-05-20-AIONE智能层详细设计.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-20-AIONE智能层详细设计.md"
-      },
-      {
-        "name": "2026-05-20-上下文管理器设计.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-20-上下文管理器设计.md"
-      },
-      {
-        "name": "2026-05-20-意图路由器落地方案.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-20-意图路由器落地方案.md"
-      },
-      {
-        "name": "2026-05-20-意图路由器设计.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-20-意图路由器设计.md"
-      },
-      {
-        "name": "2026-05-20-深圳AB测试分析报告.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-20-深圳AB测试分析报告.md"
-      },
-      {
-        "name": "2026-05-20-行动推荐引擎设计.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-20-行动推荐引擎设计.md"
-      },
-      {
-        "name": "2026-05-20-跨维度联想引擎设计.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-20-跨维度联想引擎设计.md"
-      },
-      {
-        "name": "2026-05-25-项目立项审批流程方案.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/2026-05-25-项目立项审批流程方案.md"
-      },
-      {
-        "name": "总控台-知识Tab改造-PRD.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/总控台-知识Tab改造-PRD.md"
-      },
-      {
-        "name": "知识学习系统-产品设计.md",
-        "type": "md",
-        "path": "需求文件/hermes-需求/知识学习系统-产品设计.md"
+        "name": "审批流程",
+        "type": "folder",
+        "children": [
+          {
+            "name": "项目立项审批单设计.fig",
+            "type": "image",
+            "size": "1.2MB",
+            "url": "",
+            "content": ""
+          },
+          {
+            "name": "SaaS域名申请审批单.fig",
+            "type": "image",
+            "size": "0.8MB",
+            "url": "",
+            "content": ""
+          }
+        ]
       }
     ]
   },
   {
-    "id": "analysis",
-    "name": "投放分析",
-    "icon": "📊",
-    "phases": "AB测试 效率分析:done → AB测试 对照组:done → 预算红线评估:done → 门店效率分级:done → 双层约束框架:done",
+    "id": "jintoushang",
+    "name": "金投赏",
+    "phases": "模型选型:in_progress→评分校准:in_progress→历史作品验证:pending→提交:pending",
     "files": [
       {
-        "name": "2026-05-19-AB测试投放效率深度分析.md",
-        "type": "md",
-        "path": "投放分析/2026-05-19-AB测试投放效率深度分析.md"
+        "name": "评分模型",
+        "type": "folder",
+        "children": [
+          {
+            "name": "历届获奖作品集.zip",
+            "type": "doc",
+            "size": "45MB",
+            "url": "",
+            "content": ""
+          },
+          {
+            "name": "人工评分基准.xlsx",
+            "type": "doc",
+            "size": "1.5MB",
+            "url": "",
+            "content": ""
+          }
+        ]
       },
       {
-        "name": "2026-05-19-ROI与总订单增量分析.md",
-        "type": "md",
-        "path": "投放分析/2026-05-19-ROI与总订单增量分析.md"
-      },
-      {
-        "name": "2026-05-19-对照组投放效率更优分析.md",
-        "type": "md",
-        "path": "投放分析/2026-05-19-对照组投放效率更优分析.md"
-      },
-      {
-        "name": "毛利率vs净利率双层约束投放框架.md",
-        "type": "md",
-        "path": "投放分析/毛利率vs净利率双层约束投放框架.md"
-      },
-      {
-        "name": "瑞幸店均投放红线评估方法论.md",
-        "type": "md",
-        "path": "投放分析/瑞幸店均投放红线评估方法论.md"
-      },
-      {
-        "name": "瑞幸投放红线评估报告.pdf",
-        "type": "pdf",
-        "path": "投放分析/瑞幸投放红线评估报告.pdf"
+        "name": "提交截止",
+        "type": "folder",
+        "children": [
+          {
+            "name": "6月15日",
+            "type": "doc",
+            "size": "-",
+            "url": "",
+            "content": ""
+          }
+        ]
       }
     ]
   },
   {
-    "id": "design",
-    "name": "产品设计",
-    "icon": "🎨",
-    "phases": "技能体系设计:done → 待办管理设计:done → 总控台v4:done → 总控台v5:done → 总控台v6:done → 总控台v7:in_progress",
+    "id": "quange",
+    "name": "泉哥需求",
+    "phases": "擎天柱同步出价:done→垫款催付系统:in_progress→小米通知优化:pending",
     "files": [
       {
-        "name": "待办管理系统设计方案.md",
-        "type": "md",
-        "path": "产品设计/待办管理系统设计方案.md"
+        "name": "OA系统",
+        "type": "folder",
+        "children": [
+          {
+            "name": "垫款申请接口文档.md",
+            "type": "doc",
+            "size": "3KB",
+            "url": "",
+            "content": ""
+          }
+        ]
       },
       {
-        "name": "技能关系图.md",
-        "type": "md",
-        "path": "产品设计/技能关系图.md"
-      },
-      {
-        "name": "需求索引.md",
-        "type": "md",
-        "path": "产品设计/需求索引.md"
+        "name": "通知模板",
+        "type": "folder",
+        "children": [
+          {
+            "name": "催款消息模板.md",
+            "type": "doc",
+            "size": "1KB",
+            "url": "",
+            "content": ""
+          },
+          {
+            "name": "小米预算变更通知模板.md",
+            "type": "doc",
+            "size": "1KB",
+            "url": "",
+            "content": ""
+          }
+        ]
       }
     ]
   }
