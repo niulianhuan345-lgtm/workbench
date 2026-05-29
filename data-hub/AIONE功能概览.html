@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIONE 项目功能概览</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#faf9f7; color:#1a1a2e; padding:32px; max-width:1200px; margin:0 auto; }
+h1 { font-size:24px; font-weight:700; color:#1a1a2e; margin-bottom:4px; }
+.subtitle { color:#6b7280; font-size:14px; margin-bottom:32px; }
+.card { background:#fff; border-radius:12px; padding:24px; margin-bottom:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); border:1px solid #f3f4f6; }
+.card h2 { font-size:16px; font-weight:600; color:#4f46e5; margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+.card h2 .icon { font-size:20px; }
+.badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; font-weight:500; margin-left:8px; }
+.badge-done { background:#ecfdf5; color:#059669; }
+.badge-progress { background:#eff6ff; color:#3b82f6; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th { text-align:left; padding:8px 12px; border-bottom:2px solid #f3f4f6; color:#6b7280; font-weight:500; font-size:11px; text-transform:uppercase; letter-spacing:0.5px; }
+td { padding:10px 12px; border-bottom:1px solid #f9fafb; color:#374151; }
+tr:hover td { background:#faf9f7; }
+.metric-grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin-bottom:24px; }
+.metric { background:#fff; border-radius:8px; padding:16px; border:1px solid #f3f4f6; }
+.metric .label { font-size:11px; color:#9ca3af; text-transform:uppercase; letter-spacing:0.5px; }
+.metric .value { font-size:24px; font-weight:700; color:#1a1a2e; margin:4px 0; }
+.metric .desc { font-size:11px; color:#6b7280; }
+.tag { display:inline-block; padding:2px 6px; border-radius:3px; font-size:10px; font-weight:500; margin-right:4px; }
+.tag-react { background:#e0f2fe; color:#0369a1; }
+.tag-ts { background:#e0e7ff; color:#4338ca; }
+.tag-umi { background:#fef3c7; color:#92400e; }
+.tag-antd { background:#fce7f3; color:#be185d; }
+.section-label { font-size:11px; color:#9ca3af; text-transform:uppercase; letter-spacing:1px; margin:24px 0 8px; }
+.footer { text-align:center; color:#9ca3af; font-size:11px; margin-top:40px; }
+.flow { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12px; color:#6b7280; margin:12px 0; }
+.flow-step { background:#f3f4f6; padding:6px 12px; border-radius:6px; font-weight:500; color:#374151; }
+.flow-arrow { color:#9ca3af; }
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media (max-width:768px) { .metric-grid { grid-template-columns:repeat(2,1fr); } .two-col { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<h1>🤖 AI·ONE 项目功能概览</h1>
+<p class="subtitle">基于 @umijs/max · React 18 · TypeScript · Ant Design 6 · 代码库快照 2026-05</p>
+
+<!-- 项目指标 -->
+<div class="metric-grid">
+  <div class="metric"><div class="label">总页面</div><div class="value">7</div><div class="desc">Chat · 知识库 · 托管中心 · 模型中心等</div></div>
+  <div class="metric"><div class="label">组件数</div><div class="value">36</div><div class="desc">含 Dialogue / GeneralInput / ChatView 等</div></div>
+  <div class="metric"><div class="label">服务模块</div><div class="value">19</div><div class="desc">chat / knowledgeBase / mcp / llmConfig …</div></div>
+  <div class="metric"><div class="label">测试文件</div><div class="value">30</div><div class="desc">vitest + Playwright · 149 条</div></div>
+</div>
+
+<!-- 技术栈 -->
+<div class="card">
+  <h2><span class="icon">⚙️</span> 技术栈</h2>
+  <table>
+    <tr><th>层级</th><th>技术选型</th></tr>
+    <tr><td>框架</td><td><span class="tag tag-umi">Umi 4</span> @umijs/max · React 18 · TypeScript 5</td></tr>
+    <tr><td>UI</td><td><span class="tag tag-antd">Ant Design 6</span> @ant-design/pro-components · @ant-design/x · antd-style</td></tr>
+    <tr><td>状态</td><td>Umi useModel（全局 hook 注册）· 12 个全局 model</td></tr>
+    <tr><td>样式</td><td>antd-style (CSS-in-JS) + Tailwind CSS 3 + Less (global)</td></tr>
+    <tr><td>通信</td><td>SSE 流式 (@ant-design/x-sdk XStream) · 指数退避重连</td></tr>
+    <tr><td>图表</td><td>ECharts 6 · @antv/gpt-vis (AI 图表渲染)</td></tr>
+    <tr><td>表格</td><td>@univerjs (在线 Excel) · exceljs · xlsx</td></tr>
+    <tr><td>存储</td><td>阿里云 OSS · ali-oss SDK</td></tr>
+    <tr><td>测试</td><td>vitest 4 + @testing-library/react + Playwright</td></tr>
+    <tr><td>校验</td><td>zod 4 · 运行时数据校验</td></tr>
+  </table>
+</div>
+
+<!-- 页面路由 -->
+<div class="card">
+  <h2><span class="icon">🗺️</span> 页面路由 (7 页)</h2>
+  <table>
+    <tr><th>路由</th><th>页面</th><th>功能概述</th></tr>
+    <tr><td><code>/chat</code></td><td>Chat 首页</td><td>问候语 · 技能选择器 · 热门推荐 · 输入框（空状态）</td></tr>
+    <tr><td><code>/chat/:sessionId</code></td><td>ChatView</td><td>SSE 流式对话 · 多智能体任务树 · 思考链 · Markdown/图表/表格渲染</td></tr>
+    <tr><td><code>/knowledge-base</code></td><td>KnowledgeBase</td><td>文件上传 (md/html/xlsx/docx/pdf等) · OSS 存储 · 状态跟踪</td></tr>
+    <tr><td><code>/hosting-center</code></td><td>HostingCenter</td><td>自动化广告托管 · 计划管理 · 定时任务配置</td></tr>
+    <tr><td><code>/model-center</code></td><td>ModelCenter</td><td>LLM 配置管理 · 调用日志 · MCP 工具注册 · 技能管理</td></tr>
+    <tr><td><code>/onebp/:page</code></td><td>OnebpPage</td><td>云报表 iframe 嵌入 · 跨域代理</td></tr>
+    <tr><td><code>/saas-manager</code></td><td>SaasManager</td><td>多租户管理 · 账户配置</td></tr>
+  </table>
+</div>
+
+<!-- 核心功能模块 -->
+<div class="two-col">
+  <div class="card">
+    <h2><span class="icon">💬</span> 智能对话引擎</h2>
+    <table>
+      <tr><td>流式响应</td><td>SSE + XStream · RAF 批量调度 · 自动重连</td></tr>
+      <tr><td>多智能体</td><td>多 Agent 任务编排 · 思考链 · 计划结论分离</td></tr>
+      <tr><td>对话管理</td><td>历史列表 · 重命名 · 删除 · 搜索 · 分页加载</td></tr>
+      <tr><td>深度思考</td><td>Thinking 模式 · 思维过程可视化</td></tr>
+      <tr><td>技能系统</td><td>多技能切换 · 预置提示词 · 热门推荐</td></tr>
+      <tr><td>输入增强</td><td>Slot 模板填充 · Cascader 关键词触发 · 附件上传</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📊</span> 富媒体输出</h2>
+    <table>
+      <tr><td>Markdown</td><td>@ant-design/x-markdown · 代码高亮 · 表格</td></tr>
+      <tr><td>图表</td><td>ECharts 柱/折/饼 · @antv/gpt-vis AI 图表</td></tr>
+      <tr><td>表格</td><td>TablePanel 交互表格 · 排序/筛选</td></tr>
+      <tr><td>Excel</td><td>@univerjs 在线编辑 · ExcelPanel</td></tr>
+      <tr><td>HTML</td><td>HTMLStrRenderer · 内嵌页面渲染</td></tr>
+      <tr><td>飞书</td><td>FeishuDocsPanel · 飞书文档嵌入</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🧠</span> 知识库 & 记忆</h2>
+    <table>
+      <tr><td>文件上传</td><td>md/html/xlsx/docx/pptx/txt/pdf 多格式</td></tr>
+      <tr><td>OSS 存储</td><td>阿里云 OSS · 云端持久化</td></tr>
+      <tr><td>记忆面板</td><td>MemoryPanel · Agent 持久记忆管理</td></tr>
+      <tr><td>知识库 API</td><td>文件列表 · 上传 · 删除 · 状态追踪</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔧</span> 工具 & 集成</h2>
+    <table>
+      <tr><td>MCP 协议</td><td>Model Context Protocol · 工具注册/发现/调用</td></tr>
+      <tr><td>定时任务</td><td>ScheduledTask · cron 表达式 · 下次执行预览</td></tr>
+      <tr><td>任务确认</td><td>执行前确认机制 · Batch 确认</td></tr>
+      <tr><td>操作日志</td><td>operationLog · 全链路追踪</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- SSE 流程 -->
+<div class="card">
+  <h2><span class="icon">⚡</span> SSE 流式对话流程</h2>
+  <div class="flow">
+    <span class="flow-step">用户提交</span><span class="flow-arrow">→</span>
+    <span class="flow-step">附件上传</span><span class="flow-arrow">→</span>
+    <span class="flow-step">querySSE POST</span><span class="flow-arrow">→</span>
+    <span class="flow-step">XStream 迭代</span><span class="flow-arrow">→</span>
+    <span class="flow-step">chunkBuffer RAF调度</span><span class="flow-arrow">→</span>
+    <span class="flow-step">combineData 合并</span><span class="flow-arrow">→</span>
+    <span class="flow-step">handleTaskData 重组</span><span class="flow-arrow">→</span>
+    <span class="flow-step">updateChatList 渲染</span>
+  </div>
+  <p style="font-size:12px;color:#9ca3af;margin-top:8px">请求拦截器自动注入 account_id · 断线指数退避重连 · continueConversation 恢复未完成消息</p>
+</div>
+
+<!-- 全局状态 Model -->
+<div class="card">
+  <h2><span class="icon">🗃️</span> 全局状态 (Umi useModel · 12 个)</h2>
+  <table>
+    <tr><th>Model</th><th>职责</th></tr>
+    <tr><td>useAccount</td><td>广告账户列表 · activeAccount · authAccountList</td></tr>
+    <tr><td>useConversations</td><td>对话列表 · 当前会话 · 侧边栏折叠</td></tr>
+    <tr><td>useChat</td><td>首页 → ChatView 输入传递</td></tr>
+    <tr><td>useSkills</td><td>助手/技能列表 · activeSkill</td></tr>
+    <tr><td>useGeneralInput</td><td>Sender slotConfig 跨页共享 · applyTemplate 原子更新</td></tr>
+    <tr><td>useAutomation</td><td>自动化托管状态 · 执行时间选择</td></tr>
+    <tr><td>usePromptDrawer</td><td>预置提示词抽屉</td></tr>
+    <tr><td>useReportTemplate</td><td>报告模板管理</td></tr>
+    <tr><td>useTour</td><td>新手引导</td></tr>
+    <tr><td>useFirstVisit</td><td>首次访问检测</td></tr>
+    <tr><td>useOnebpPageShop</td><td>云报表店铺选择</td></tr>
+    <tr><td>useSppearance</td><td>外观/主题设置</td></tr>
+  </table>
+</div>
+
+<!-- 服务层 -->
+<div class="card">
+  <h2><span class="icon">🌐</span> API 服务层 (19 模块)</h2>
+  <table>
+    <tr><th>模块</th><th>功能</th><th>模块</th><th>功能</th></tr>
+    <tr><td>chat</td><td>对话 · 消息 · 停止 · 重连</td><td>knowledgeBase</td><td>知识库文件 CRUD</td></tr>
+    <tr><td>mcp</td><td>MCP 工具管理</td><td>memory</td><td>Agent 记忆读写</td></tr>
+    <tr><td>automated</td><td>自动化投放</td><td>task</td><td>任务管理</td></tr>
+    <tr><td>crowd</td><td>人群包管理</td><td>addWord</td><td>关键词添加</td></tr>
+    <tr><td>llmConfig</td><td>LLM 配置</td><td>llmLogs</td><td>LLM 调用日志</td></tr>
+    <tr><td>modelCenter</td><td>模型中心</td><td>template</td><td>模板管理</td></tr>
+    <tr><td>upload</td><td>文件上传</td><td>feishu</td><td>飞书集成</td></tr>
+    <tr><td>user</td><td>用户管理</td><td>operationLog</td><td>操作日志</td></tr>
+    <tr><td>file</td><td>文件管理</td><td>launchStructureAnalyze</td><td>投放结构分析</td></tr>
+    <tr><td>latencyMetrics</td><td>延迟监控</td><td></td><td></td></tr>
+  </table>
+</div>
+
+<!-- 测试覆盖 -->
+<div class="card">
+  <h2><span class="icon">🧪</span> 测试覆盖 (30 文件 · 149 条)</h2>
+  <table>
+    <tr><th>层级</th><th>文件数</th><th>测试数</th><th>覆盖重点</th></tr>
+    <tr><td>utils</td><td>7</td><td>~55</td><td>eventReducer · historyFromEvents · querySSE · handleTaskData</td></tr>
+    <tr><td>Dialogue 渲染</td><td>8</td><td>~25</td><td>DynamicLoader · SchemaRenderer · BudgetConfirmTable</td></tr>
+    <tr><td>GeneralInput</td><td>2</td><td>15</td><td>键盘事件 · Cascader · Slot 替换</td></tr>
+    <tr><td>hooks</td><td>1</td><td>8</td><td>usePromptClick · slotConfig 拆分</td></tr>
+    <tr><td>models</td><td>1</td><td>7</td><td>useGeneralInput · applyTemplate</td></tr>
+    <tr><td>ModelCenter</td><td>3</td><td>~10</td><td>ComponentRegistry · CRUD</td></tr>
+    <tr><td>services</td><td>1</td><td>5</td><td>componentRegistry API</td></tr>
+    <tr><td>e2e (Playwright)</td><td>2</td><td>~4</td><td>页面加载冒烟 · SSE 流式端到端</td></tr>
+  </table>
+</div>
+
+<div class="footer">
+  AI·ONE Frontend · 私有项目 · 仅供内部使用 · 快照 2026-05-29
+</div>
+
+</body>
+</html>
