@@ -3,511 +3,212 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>A股看盘 · Hermes</title>
+<title>A股看盘 v2 · AI 选股</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  
   :root {
-    --bg: #0d1117;
-    --surface: #161b22;
-    --card: #1a1f2b;
-    --border: #30363d;
-    --text: #e6edf3;
-    --text-secondary: #8b949e;
-    --text-tertiary: #6e7681;
-    --red: #f85149;
-    --green: #3fb950;
-    --accent: #58a6ff;
+    --bg: #0d1117; --surface: #161b22; --card: #1a1f2b;
+    --border: #30363d; --text: #e6edf3; --t2: #8b949e; --t3: #6e7681;
+    --red: #f85149; --green: #3fb950; --accent: #58a6ff;
+    --yellow: #d29922; --orange: #f0883e;
     --radius: 10px;
-    --font: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", monospace;
+    --font: -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",monospace;
   }
-
-  body {
-    font-family: var(--font);
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100dvh;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* ===== Layout ===== */
-  .layout {
-    display: flex;
-    min-height: 100dvh;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
+  body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100dvh; }
+  
+  .layout { display: flex; min-height: 100dvh; max-width: 1200px; margin: 0 auto; }
+  
   .sidebar {
-    width: 200px;
-    min-width: 200px;
-    background: var(--surface);
-    border-right: 1px solid var(--border);
-    padding: 20px 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    position: sticky;
-    top: 0;
-    height: 100dvh;
+    width: 190px; min-width: 190px; background: var(--surface);
+    border-right: 1px solid var(--border); padding: 16px 10px;
+    display: flex; flex-direction: column; gap: 1px;
+    position: sticky; top: 0; height: 100dvh;
   }
-
-  .sidebar-logo {
-    font-size: 15px;
-    font-weight: 700;
-    padding: 8px 12px;
-    margin-bottom: 16px;
-    letter-spacing: -0.02em;
-  }
-
-  .sidebar-logo .dot {
-    color: var(--red);
-  }
-
+  .sidebar-logo { font-size: 14px; font-weight: 700; padding: 8px 10px; margin-bottom: 12px; }
+  .sidebar-logo .r { color: var(--red); }
   .nav-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 9px 12px;
-    border-radius: 6px;
-    font-size: 13px;
-    color: var(--text-secondary);
-    cursor: pointer;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    font-family: inherit;
-    transition: all 0.15s;
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px; border-radius: 6px; font-size: 12px;
+    color: var(--t2); cursor: pointer; border: none; background: none;
+    width: 100%; text-align: left; font-family: inherit;
   }
-
   .nav-item:hover { background: rgba(255,255,255,0.05); color: var(--text); }
   .nav-item.active { background: rgba(88,166,255,0.12); color: var(--accent); }
-  .nav-icon { font-size: 16px; width: 24px; text-align: center; }
+  .nav-icon { font-size: 15px; width: 22px; }
+  .sidebar-footer { margin-top: auto; padding: 10px; font-size: 10px; color: var(--t3); border-top: 1px solid var(--border); }
+  .update-dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--green); margin-right: 4px; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
 
-  .sidebar-footer {
-    margin-top: auto;
-    padding: 12px;
-    font-size: 11px;
-    color: var(--text-tertiary);
-    border-top: 1px solid var(--border);
+  .main { flex: 1; padding: 20px 24px; overflow-y: auto; }
+  .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+  .header h1 { font-size: 17px; font-weight: 700; }
+  .header .time { font-size: 11px; color: var(--t3); text-align: right; }
+
+  /* Index Cards */
+  .index-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-bottom: 16px; }
+  .index-card { background: var(--card); border-radius: var(--radius); padding: 14px 16px; border: 1px solid var(--border); }
+  .index-card .name { font-size: 10px; color: var(--t3); margin-bottom: 2px; }
+  .index-card .price { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .index-card .change-row { display: flex; align-items: center; gap: 4px; margin-top: 2px; font-size: 12px; font-weight: 600; }
+  .index-card .extra { margin-top: 4px; font-size: 10px; color: var(--t3); }
+  .up { color: var(--red); } .down { color: var(--green); }
+
+  /* Signal Cards */
+  .signal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 8px; margin-bottom: 16px; }
+  .signal-card {
+    background: var(--card); border-radius: 8px; padding: 14px 16px;
+    border: 1px solid var(--border); border-left: 3px solid var(--accent);
   }
+  .signal-card.severity-high { border-left-color: var(--red); }
+  .signal-card.severity-medium { border-left-color: var(--yellow); }
+  .sig-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .sig-name { font-size: 13px; font-weight: 600; }
+  .sig-code { font-size: 10px; color: var(--t3); font-family: monospace; }
+  .sig-price { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .sig-reasons { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .sig-tag { padding: 2px 7px; font-size: 10px; border-radius: 3px; font-weight: 600; }
+  .sig-tag.warn { background: rgba(248,81,73,0.15); color: var(--red); }
+  .sig-tag.info { background: rgba(210,153,34,0.15); color: var(--yellow); }
+  .sig-tag.good { background: rgba(63,185,80,0.15); color: var(--green); }
 
-  .update-dot {
-    display: inline-block;
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--green);
-    margin-right: 4px;
-    animation: pulse 2s infinite;
-  }
+  /* Leaders */
+  .leaders-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 10px; }
+  .sector-group { margin-bottom: 10px; }
+  .sector-name { font-size: 11px; font-weight: 700; color: var(--t2); margin-bottom: 4px; padding-bottom: 2px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .stock-row { display: grid; grid-template-columns: 1fr auto auto; align-items: center; padding: 5px 8px; font-size: 12px; border-radius: 3px; gap: 8px; }
+  .stock-row:hover { background: rgba(255,255,255,0.02); }
+  .stock-code { font-size: 10px; color: var(--t3); margin-left: 4px; font-family: monospace; }
+  .stock-price { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+  .stock-change { font-weight: 600; font-size: 11px; min-width: 52px; text-align: right; }
 
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
+  /* Knowledge */
+  .knowledge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 10px; }
+  .k-card { background: var(--surface); border-radius: 8px; padding: 14px 16px; border: 1px solid var(--border); }
+  .k-card h4 { font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+  .k-card p { font-size: 11px; color: var(--t2); line-height: 1.5; }
+  .k-card .tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag { padding: 2px 7px; font-size: 10px; border-radius: 3px; }
+  .tag.b { background: rgba(88,166,255,0.1); color: var(--accent); }
+  .tag.r { background: rgba(248,81,73,0.1); color: var(--red); }
+  .tag.g { background: rgba(63,185,80,0.1); color: var(--green); }
+  .tag.y { background: rgba(210,153,34,0.1); color: var(--yellow); }
 
-  /* ===== Main ===== */
-  .main {
-    flex: 1;
-    padding: 24px 28px;
-    overflow-y: auto;
-  }
+  .page { display: none; } .page.active { display: block; }
+  .loading { text-align: center; padding: 32px; color: var(--t3); font-size: 13px; }
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
+  /* Mobile */
+  .bottom-nav { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 5px 5px env(safe-area-inset-bottom,5px); z-index: 100; }
+  .bottom-nav-inner { display: flex; gap: 1px; max-width: 500px; margin: 0 auto; }
+  .bottom-tab { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 4px 3px; border-radius: 5px; border: none; background: none; font-family: inherit; font-size: 9px; color: var(--t3); cursor: pointer; }
+  .bottom-tab .tab-icon { font-size: 16px; }
+  .bottom-tab.active { color: var(--accent); background: rgba(88,166,255,0.06); }
 
-  .header h1 {
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-
-  .header .time {
-    font-size: 12px;
-    color: var(--text-tertiary);
-    text-align: right;
-    line-height: 1.5;
-  }
-
-  /* ===== Index Cards ===== */
-  .index-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .index-card {
-    background: var(--card);
-    border-radius: var(--radius);
-    padding: 16px 18px;
-    border: 1px solid var(--border);
-  }
-
-  .index-card .name {
-    font-size: 11px;
-    color: var(--text-tertiary);
-    margin-bottom: 4px;
-  }
-
-  .index-card .price {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .index-card .change-row {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 4px;
-    font-size: 13px;
-    font-weight: 600;
-  }
-
-  .index-card .extra-info {
-    margin-top: 8px;
-    font-size: 11px;
-    color: var(--text-tertiary);
-    display: flex;
-    gap: 12px;
-  }
-
-  .up { color: var(--red); }
-  .down { color: var(--green); }
-
-  /* ===== Section Card ===== */
-  .section {
-    background: var(--card);
-    border-radius: var(--radius);
-    padding: 18px 20px;
-    border: 1px solid var(--border);
-    margin-bottom: 16px;
-  }
-
-  .section h3 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .section h3 .dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
-  }
-
-  /* ===== Leader Table ===== */
-  .sector-group {
-    margin-bottom: 16px;
-  }
-
-  .sector-name {
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--text-secondary);
-    margin-bottom: 6px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-  }
-
-  .stock-row {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: center;
-    padding: 7px 10px;
-    font-size: 13px;
-    border-radius: 4px;
-    gap: 12px;
-  }
-
-  .stock-row:hover { background: rgba(255,255,255,0.03); }
-
-  .stock-code {
-    font-size: 11px;
-    color: var(--text-tertiary);
-    margin-left: 6px;
-    font-family: monospace;
-  }
-
-  .stock-price {
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    text-align: right;
-  }
-
-  .stock-change {
-    font-weight: 600;
-    font-size: 12px;
-    min-width: 56px;
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .leaders-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 14px;
-  }
-
-  /* ===== Knowledge Cards ===== */
-  .knowledge-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 14px;
-  }
-
-  .knowledge-card {
-    background: var(--surface);
-    border-radius: 8px;
-    padding: 16px 18px;
-    border: 1px solid var(--border);
-    cursor: default;
-  }
-
-  .knowledge-card h4 {
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-
-  .knowledge-card p {
-    font-size: 12px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
-
-  .knowledge-card .rules {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .tag {
-    display: inline-block;
-    padding: 2px 8px;
-    font-size: 11px;
-    border-radius: 4px;
-    background: rgba(88,166,255,0.1);
-    color: var(--accent);
-    border: 1px solid rgba(88,166,255,0.2);
-  }
-
-  .tag.red { background: rgba(248,81,73,0.1); color: var(--red); border-color: rgba(248,81,73,0.2); }
-  .tag.green { background: rgba(63,185,80,0.1); color: var(--green); border-color: rgba(63,185,80,0.2); }
-  .tag.yellow { background: rgba(210,153,34,0.1); color: #d29922; border-color: rgba(210,153,34,0.2); }
-
-  /* ===== Market Status ===== */
-  .status-bar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    color: var(--text-tertiary);
-    margin-bottom: 16px;
-  }
-
-  .market-open { color: var(--green); }
-  .market-closed { color: var(--text-tertiary); }
-
-  /* ===== Page ===== */
-  .page { display: none; }
-  .page.active { display: block; }
-
-  .loading {
-    text-align: center;
-    padding: 40px;
-    color: var(--text-tertiary);
-  }
-
-  /* ===== Bottom Nav (Mobile) ===== */
-  .bottom-nav {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--surface);
-    border-top: 1px solid var(--border);
-    padding: 6px 6px env(safe-area-inset-bottom, 6px);
-    z-index: 100;
-    backdrop-filter: blur(20px);
-  }
-
-  .bottom-nav-inner {
-    display: flex;
-    gap: 2px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .bottom-tab {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1px;
-    padding: 5px 4px;
-    border-radius: 6px;
-    border: none;
-    background: none;
-    font-family: inherit;
-    font-size: 10px;
-    color: var(--text-tertiary);
-    cursor: pointer;
-  }
-
-  .bottom-tab .tab-icon { font-size: 18px; }
-  .bottom-tab.active { color: var(--accent); background: rgba(88,166,255,0.08); }
-
-  /* ===== Responsive ===== */
   @media (max-width: 768px) {
-    .sidebar { display: none; }
-    .bottom-nav { display: block; }
-    .main { padding: 16px 12px 90px; }
-    .index-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-    .index-card .price { font-size: 18px; }
+    .sidebar { display: none; } .bottom-nav { display: block; }
+    .main { padding: 14px 10px 80px; }
+    .index-grid { grid-template-columns: repeat(2,1fr); gap: 6px; }
+    .index-card .price { font-size: 17px; }
+    .signal-grid { grid-template-columns: 1fr; }
     .leaders-grid { grid-template-columns: 1fr; }
     .knowledge-grid { grid-template-columns: 1fr; }
-    .header h1 { font-size: 16px; }
   }
-
-  @media (min-width: 769px) {
-    .bottom-nav { display: none; }
-  }
+  @media (min-width: 769px) { .bottom-nav { display: none; } }
 </style>
 </head>
 <body>
 
 <div class="layout">
-  <!-- Sidebar -->
   <nav class="sidebar" id="sidebar">
-    <div class="sidebar-logo"><span class="dot">●</span> A股看盘</div>
-    <button class="nav-item active" data-page="market">
-      <span class="nav-icon">📊</span> 大盘行情
-    </button>
-    <button class="nav-item" data-page="leaders">
-      <span class="nav-icon">🏢</span> 龙头监控
-    </button>
-    <button class="nav-item" data-page="knowledge">
-      <span class="nav-icon">📖</span> 交易知识
-    </button>
-    <button class="nav-item" data-page="rules">
-      <span class="nav-icon">⚙️</span> 风控规则
-    </button>
-    <div class="sidebar-footer">
-      <span class="update-dot"></span> 数据每 5 分钟刷新
-    </div>
+    <div class="sidebar-logo"><span class="r">●</span> A股看盘 v2</div>
+    <button class="nav-item active" data-page="market"><span class="nav-icon">📊</span>大盘行情</button>
+    <button class="nav-item" data-page="ai"><span class="nav-icon">🤖</span>AI 异动</button>
+    <button class="nav-item" data-page="leaders"><span class="nav-icon">🏢</span>龙头监控</button>
+    <button class="nav-item" data-page="knowledge"><span class="nav-icon">📖</span>选股知识</button>
+    <button class="nav-item" data-page="strategy"><span class="nav-icon">🎯</span>选股策略</button>
+    <div class="sidebar-footer"><span class="update-dot"></span>数据自动刷新</div>
   </nav>
 
-  <!-- Main -->
   <main class="main">
-    
+
     <!-- ====== 大盘行情 ====== -->
     <div class="page active" id="page-market">
-      <div class="header">
-        <h1>📊 大盘行情</h1>
-        <div class="time" id="market-time">加载中...</div>
-      </div>
-      <div class="status-bar" id="market-status">加载中...</div>
-      <div class="index-grid" id="index-grid">
-        <div class="loading">⏳ 获取实时数据...</div>
+      <div class="header"><h1>📊 大盘行情</h1><div class="time" id="m-time">加载中...</div></div>
+      <div class="index-grid" id="index-grid"><div class="loading">⏳ 获取实时数据...</div></div>
+    </div>
+
+    <!-- ====== AI 异动 ====== -->
+    <div class="page" id="page-ai">
+      <div class="header"><h1>🤖 AI 异常检测</h1><div class="time" id="a-time">加载中...</div></div>
+      <div class="signal-grid" id="signal-grid"><div class="loading">⏳ 扫描异常信号...</div></div>
+      <div style="font-size:11px;color:var(--t3);margin-top:8px">
+        ⚡ 自动扫描 45 只龙头股，检测异常波动（涨跌幅>5%）、高振幅（>8%）、高换手（>5%）信号
       </div>
     </div>
 
     <!-- ====== 龙头监控 ====== -->
     <div class="page" id="page-leaders">
-      <div class="header">
-        <h1>🏢 板块龙头监控</h1>
-        <div class="time" id="leaders-time">加载中...</div>
-      </div>
-      <div class="section">
-        <div class="leaders-grid" id="leaders-grid">
-          <div class="loading">⏳ 获取龙头数据...</div>
-        </div>
-      </div>
+      <div class="header"><h1>🏢 板块龙头监控</h1><div class="time" id="l-time">加载中...</div></div>
+      <div class="leaders-grid" id="leaders-grid"><div class="loading">⏳ 获取龙头数据...</div></div>
     </div>
 
-    <!-- ====== 交易知识 ====== -->
+    <!-- ====== 选股知识 ====== -->
     <div class="page" id="page-knowledge">
-      <div class="header">
-        <h1>📖 交易知识体系</h1>
-        <div class="time">A 股系统化投资知识</div>
-      </div>
+      <div class="header"><h1>📖 选股知识体系</h1><div class="time">借鉴 go-stock 33 种技术形态</div></div>
       <div class="knowledge-grid">
-        <div class="knowledge-card">
-          <h4>📈 均线系统</h4>
-          <p>MA5 超短 · MA10 短线 · MA20 波段生命线 · MA60 中期牛熊分界 · MA120 牛熊线 · MA250 年线</p>
-          <div class="rules">
-            <span class="tag green">金叉=买入</span><span class="tag red">死叉=卖出</span><span class="tag">多头排列=持股</span>
-          </div>
-        </div>
-        <div class="knowledge-card">
-          <h4>📉 MACD</h4>
-          <p>零轴上金叉=强势买点 · 零轴下=反弹需谨慎 · 顶背离=见顶 · 底背离=见底 · 空中加油=主升浪</p>
-        </div>
-        <div class="knowledge-card">
-          <h4>📊 KDJ / RSI</h4>
-          <p>KDJ: K/D>80超买 · K/D<20超卖 · RSI: >70超买 · <30超卖 · 50为多空分界线</p>
-        </div>
-        <div class="knowledge-card">
-          <h4>🔍 量价八法</h4>
-          <p>放量上涨→持有 · 缩量上涨→警惕 · 放量下跌→止损 · 缩量下跌→关注止跌 · 放量突破→跟进 · 缩量突破→假突破</p>
-        </div>
-        <div class="knowledge-card">
-          <h4>📈 买入信号 TOP5</h4>
-          <p>① 均线金叉+MACD金叉共振 ② 底背离+KDJ超卖金叉 ③ 放量突破平台 ④ 启明星形态 ⑤ MACD零轴上二次金叉</p>
-          <div class="rules"><span class="tag green">共振最可靠</span></div>
-        </div>
-        <div class="knowledge-card">
-          <h4>📉 卖出信号 TOP5</h4>
-          <p>① 均线死叉+MACD死叉共振 ② 顶背离+KDJ超买死叉 ③ 高位放量滞涨 ④ 断头铡刀 ⑤ 黄昏星</p>
-          <div class="rules"><span class="tag red">断头铡刀=立即离场</span></div>
-        </div>
-        <div class="knowledge-card">
-          <h4>📅 看盘流程</h4>
-          <p>盘前(9:00前)→外盘+消息 · 竞价(9:15-9:25)→高开/低开幅度 · 前30分→判断方向 · 盘中→板块轮动 · 尾盘→次日预判</p>
-        </div>
-        <div class="knowledge-card">
-          <h4>🏦 板块轮动规律</h4>
-          <p>复苏初期→金融+周期 · 过热期→消费+成长 · 减速期→防御+高股息 · 政策驱动→跟随主线</p>
-        </div>
+        <div class="k-card"><h4>📈 趋势类指标</h4><p>MACD金叉 · KDJ金叉 · 均线多头排列 · 均线空头排列 · 向上突破5日均线 · 空中加油</p><div class="tags"><span class="tag g">金叉=买</span><span class="tag r">死叉=卖</span></div></div>
+        <div class="k-card"><h4>📊 量价形态</h4><p>放量突破 · 低位资金净流入 · 高位资金净流出 · 连涨放量 · 下跌无量 · 天量法则 · 窄幅整理</p><div class="tags"><span class="tag g">放量突破</span><span class="tag b">启动信号</span></div></div>
+        <div class="k-card"><h4>🕯️ K线反转形态</h4><p>早晨之星 · 曙光初现 · 旭日东升 · 倒转锤头 · 穿头破脚 · 强势多方炮 · 拨云见日</p><div class="tags"><span class="tag g">底部反转</span></div></div>
+        <div class="k-card"><h4>🕯️ K线见顶形态</h4><p>黄昏之星 · 乌云盖顶 · 射击之星 · 身怀六甲 · 三只乌鸦 · 断头铡刀</p><div class="tags"><span class="tag r">顶部信号</span><span class="tag y">减仓</span></div></div>
+        <div class="k-card"><h4>🔥 连阳/连阴</h4><p>七仙女下凡(七连阴) · 八仙过海(八连阳) · 九阳神功 · 四串阳 · 连涨/连跌天数</p></div>
+        <div class="k-card"><h4>💰 基本面维度</h4><p>PE(TTM) · PB · PEG · ROE · 净利润增长率 · 毛利率 · 现金流 · 负债率 · 股东人数</p></div>
+        <div class="k-card"><h4>💵 资金面维度</h4><p>主力净流入 · 超大单/大单 · 北向资金 · 融资融券 · 行业资金流 · 筹码集中度</p></div>
+        <div class="k-card"><h4>📰 消息面维度</h4><p>券商研报 · 公司公告 · 互动问答 · 龙虎榜 · 涨停板 · 异动监控 · 财经日历</p></div>
       </div>
     </div>
 
-    <!-- ====== 风控规则 ====== -->
-    <div class="page" id="page-rules">
-      <div class="header">
-        <h1>⚙️ 风控规则</h1>
-        <div class="time">交易纪律</div>
-      </div>
+    <!-- ====== 选股策略 ====== -->
+    <div class="page" id="page-strategy">
+      <div class="header"><h1>🎯 选股策略库</h1><div class="time">手自一体选股框架</div></div>
       <div class="knowledge-grid">
-        <div class="knowledge-card">
-          <h4>💰 仓位管理</h4>
-          <p>永不满仓（保留20-30%现金）· 单票≤总仓位20-30% · 多头排列7-8成 · 震荡5成 · 空头3成以下</p>
+        <div class="k-card">
+          <h4>🔍 突破型选股</h4>
+          <p>放量突破平台（成交量>5日均量1.5倍）+ MACD零轴上金叉 + 均线多头排列 + 流通市值<100亿</p>
+          <div class="tags"><span class="tag g">强势股</span><span class="tag b">短线</span></div>
         </div>
-        <div class="knowledge-card">
-          <h4>🛑 止损纪律</h4>
-          <p>单笔亏损≤总资金2-3% · 个股止损-5%~-8% · 盈亏比≥2:1才开仓 · 连续止损3笔→暂停1周</p>
+        <div class="k-card">
+          <h4>📉 超跌反弹</h4>
+          <p>连续下跌>20% + RSI<30超卖 + KDJ底背离 + 成交量萎缩后突然放量 + 基本面未恶化</p>
+          <div class="tags"><span class="tag y">抄底</span><span class="tag b">中短线</span></div>
         </div>
-        <div class="knowledge-card">
-          <h4>📋 A股特有规则</h4>
-          <p>T+1（当天买次天卖）· 主板±10% · 创业板/科创板±20% · 100股/手 · 9:30-11:30, 13:00-15:00</p>
+        <div class="k-card">
+          <h4>💎 价值发现</h4>
+          <p>PE<行业平均 + ROE>15% + 净利润增长率>30% + PEG<1 + 股息率>2% + 机构持仓增加</p>
+          <div class="tags"><span class="tag g">白马股</span><span class="tag b">中长线</span></div>
         </div>
-        <div class="knowledge-card">
-          <h4>⚠️ 关键看盘信号</h4>
-          <p>黄白线背离→分化 · 跌停家数突增→恐慌 · 券商异动→先行指标 · 北向资金大额流出/流入→外资态度</p>
-          <div class="rules"><span class="tag yellow">⚠️ 风险提示</span></div>
+        <div class="k-card">
+          <h4>💰 资金跟随</h4>
+          <p>北向资金连续5日净买入 + 主力资金净流入>1亿 + 融资余额增加 + 换手率3%-10%</p>
+          <div class="tags"><span class="tag b">聪明钱</span><span class="tag g">跟随</span></div>
+        </div>
+        <div class="k-card">
+          <h4>🔥 题材驱动</h4>
+          <p>板块涨幅>3% + 板块内涨停股>3只 + 龙头股率先涨停 + 政策/事件催化 + 资金持续流入</p>
+          <div class="tags"><span class="tag r">热点</span><span class="tag y">高风险</span></div>
+        </div>
+        <div class="k-card">
+          <h4>🛡️ 防御配置</h4>
+          <p>高股息率>4% + PE<15 + 负债率<50% + 现金流稳定 + 行业龙头(银行/电力/煤炭)</p>
+          <div class="tags"><span class="tag g">低风险</span><span class="tag b">长期</span></div>
+        </div>
+        <div class="k-card">
+          <h4>📐 均线共振</h4>
+          <p>MA5>MA10>MA20>MA60多头排列 + 股价回踩MA20不破 + MACD零轴上 + KDJ金叉</p>
+          <div class="tags"><span class="tag g">趋势跟踪</span></div>
+        </div>
+        <div class="k-card">
+          <h4>🔄 轮动埋伏</h4>
+          <p>板块处于轮动低位 + 估值分位<30% + 政策预期 + 龙头股止跌企稳 + 底部放量</p>
+          <div class="tags"><span class="tag y">潜伏</span><span class="tag b">中线</span></div>
         </div>
       </div>
     </div>
@@ -516,153 +217,108 @@
 </div>
 
 <!-- Mobile Bottom Nav -->
-<nav class="bottom-nav" id="bottom-nav">
+<nav class="bottom-nav">
   <div class="bottom-nav-inner">
-    <button class="bottom-tab active" data-page="market">
-      <span class="tab-icon">📊</span> 行情
-    </button>
-    <button class="bottom-tab" data-page="leaders">
-      <span class="tab-icon">🏢</span> 龙头
-    </button>
-    <button class="bottom-tab" data-page="knowledge">
-      <span class="tab-icon">📖</span> 知识
-    </button>
-    <button class="bottom-tab" data-page="rules">
-      <span class="tab-icon">⚙️</span> 风控
-    </button>
+    <button class="bottom-tab active" data-page="market"><span class="tab-icon">📊</span>行情</button>
+    <button class="bottom-tab" data-page="ai"><span class="tab-icon">🤖</span>异动</button>
+    <button class="bottom-tab" data-page="leaders"><span class="tab-icon">🏢</span>龙头</button>
+    <button class="bottom-tab" data-page="knowledge"><span class="tab-icon">📖</span>知识</button>
+    <button class="bottom-tab" data-page="strategy"><span class="tab-icon">🎯</span>策略</button>
   </div>
 </nav>
 
 <script>
-// ===== Navigation =====
+// Navigation
 function switchPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + name).classList.add('active');
-  document.querySelectorAll('.nav-item, .bottom-tab').forEach(el => {
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.nav-item,.bottom-tab').forEach(el => {
     el.classList.toggle('active', el.dataset.page === name);
   });
 }
-
-document.querySelectorAll('.nav-item, .bottom-tab').forEach(el => {
+document.querySelectorAll('.nav-item,.bottom-tab').forEach(el => {
   el.addEventListener('click', () => switchPage(el.dataset.page));
 });
 
-// ===== Data Loading =====
+// Data
 const DATA_URL = './data/market.json';
-
 async function loadData() {
   try {
-    const res = await fetch(DATA_URL + '?t=' + Date.now());
-    if (!res.ok) throw new Error(res.status);
-    return await res.json();
-  } catch(e) {
-    console.error('Load error:', e);
-    return null;
-  }
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    return r.ok ? await r.json() : null;
+  } catch(e) { return null; }
 }
 
-// ===== Market Status =====
-function getMarketStatus() {
-  const now = new Date();
-  const h = now.getHours(), m = now.getMinutes();
-  const time = h * 60 + m;
-  
-  // 交易时间 9:30-11:30, 13:00-15:00
-  if ((time >= 570 && time < 690) || (time >= 780 && time < 900)) {
-    return { open: true, text: '🟢 交易中', cls: 'market-open' };
-  } else if (time < 570) {
-    return { open: false, text: '⏳ 盘前 · 等待开盘', cls: 'market-closed' };
-  } else if (time >= 690 && time < 780) {
-    return { open: false, text: '🔸 午间休市', cls: 'market-closed' };
-  } else {
-    return { open: false, text: '🔴 已收盘', cls: 'market-closed' };
-  }
-}
-
-// ===== Render Index Cards =====
+// Render indices
 function renderIndices(indices) {
-  const container = document.getElementById('index-grid');
-  if (!indices || indices.length === 0) {
-    container.innerHTML = '<div class="loading">暂无数据</div>';
-    return;
-  }
-  
-  const status = getMarketStatus();
-  document.getElementById('market-status').innerHTML = status.text;
-  
-  container.innerHTML = indices.map(idx => {
-    const isUp = idx.change_pct >= 0;
-    const colorClass = isUp ? 'up' : 'down';
-    const sign = isUp ? '+' : '';
-    return `
-      <div class="index-card">
-        <div class="name">${idx.name}</div>
-        <div class="price">${idx.current.toLocaleString('zh-CN', {minimumFractionDigits: 2})}</div>
-        <div class="change-row ${colorClass}">
-          <span>${sign}${idx.change_pct.toFixed(2)}%</span>
-          <span>${sign}${idx.change.toFixed(2)}</span>
-        </div>
-        <div class="extra-info">
-          <span>成交 ${idx.amount}亿</span>
-        </div>
-      </div>
-    `;
+  if (!indices?.length) return;
+  document.getElementById('index-grid').innerHTML = indices.map(i => {
+    const up = i.change_pct >= 0, c = up ? 'up' : 'down', s = up ? '+' : '';
+    return `<div class="index-card">
+      <div class="name">${i.name}</div>
+      <div class="price">${i.current.toLocaleString('zh',{minimumFractionDigits:2})}</div>
+      <div class="change-row ${c}"><span>${s}${i.change_pct.toFixed(2)}%</span><span>${s}${i.change.toFixed(2)}</span></div>
+      <div class="extra">成交 ${i.amount}亿</div>
+    </div>`;
   }).join('');
 }
 
-// ===== Render Leaders =====
+// Render AI signals
+function renderSignals(signals) {
+  if (!signals?.length) {
+    document.getElementById('signal-grid').innerHTML = '<div style="padding:20px;color:var(--t3);text-align:center">✅ 当前无异常信号</div>';
+    return;
+  }
+  document.getElementById('signal-grid').innerHTML = signals.map(s => {
+    const up = s.change_pct >= 0;
+    const cls = s.severity === 'high' ? 'severity-high' : 'severity-medium';
+    return `<div class="signal-card ${cls}">
+      <div class="sig-header">
+        <div><span class="sig-name">${s.name}</span><span class="sig-code"> ${s.code}</span></div>
+        <span class="sig-price ${up?'up':'down'}">${up?'+':''}${s.change_pct.toFixed(1)}%</span>
+      </div>
+      <div class="sig-reasons">
+        ${s.reasons.map(r => {
+          const tagCls = r.includes('暴涨')||r.includes('暴跌')?'warn':r.includes('换手')?'info':'good';
+          return `<span class="sig-tag ${tagCls}">${r}</span>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// Render leaders
 function renderLeaders(leaders) {
-  const container = document.getElementById('leaders-grid');
-  if (!leaders || leaders.length === 0) {
-    container.innerHTML = '<div class="loading">暂无数据</div>';
-    return;
-  }
-  
-  container.innerHTML = leaders.map(group => {
-    const stocks = (group.stocks || []).map(s => {
-      const isUp = s.change_pct >= 0;
-      const colorClass = isUp ? 'up' : 'down';
-      const sign = isUp ? '+' : '';
-      return `
-        <div class="stock-row">
-          <span>${s.name}<span class="stock-code">${s.code}</span></span>
-          <span class="stock-price">${s.price.toFixed(2)}</span>
-          <span class="stock-change ${colorClass}">${sign}${s.change_pct.toFixed(2)}%</span>
-        </div>
-      `;
+  if (!leaders?.length) return;
+  document.getElementById('leaders-grid').innerHTML = leaders.map(g => {
+    const stocks = (g.stocks||[]).map(s => {
+      const up = s.change_pct >= 0, c = up ? 'up' : 'down', sign = up ? '+' : '';
+      return `<div class="stock-row">
+        <span>${s.name}<span class="stock-code">${s.code}</span></span>
+        <span class="stock-price">${s.price.toFixed(2)}</span>
+        <span class="stock-change ${c}">${sign}${s.change_pct.toFixed(2)}%</span>
+      </div>`;
     }).join('');
-    
-    return `
-      <div class="sector-group">
-        <div class="sector-name">${group.sector}</div>
-        ${stocks}
-      </div>
-    `;
+    return `<div class="sector-group"><div class="sector-name">${g.sector}</div>${stocks}</div>`;
   }).join('');
 }
 
-// ===== Main =====
+// Main
 async function refresh() {
-  const data = await loadData();
-  if (!data) return;
+  const d = await loadData();
+  if (!d) return;
+  const t = d.updated || '--';
+  document.getElementById('m-time').textContent = '更新 '+t;
+  document.getElementById('a-time').textContent = '更新 '+t;
+  document.getElementById('l-time').textContent = '更新 '+t;
   
-  const now = data.updated || '--';
-  document.getElementById('market-time').textContent = '更新于 ' + now;
-  document.getElementById('leaders-time').textContent = '更新于 ' + now;
-  
-  renderIndices(data.indices);
-  renderLeaders(data.leaders);
+  renderIndices(d.indices);
+  renderSignals(d.ai_signals);
+  renderLeaders(d.leaders);
 }
 
 refresh();
-setInterval(refresh, 5 * 60 * 1000);
-
-// Auto-refresh more frequently during trading hours
-const status = getMarketStatus();
-if (status.open) {
-  setInterval(refresh, 60 * 1000); // Every 1 min during trading
-}
+setInterval(refresh, 3*60*1000);
 </script>
-
 </body>
 </html>
