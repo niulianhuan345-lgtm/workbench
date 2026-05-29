@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-29T13:45:19",
+  "updated": "2026-05-29T14:16:58",
   "cron_jobs": [
     {
       "id": "458668e3ab27",
       "name": "每日课程发现与知识探索",
       "status": "active",
       "schedule": "0 9 * * *",
-      "next_relative": "19小时后",
+      "next_relative": "18小时后",
       "last_relative": "",
       "last_status": "ok",
       "last_error": "",
@@ -18,12 +18,12 @@
     {
       "date": "2026-05-29",
       "model": "deepseek-v4-pro",
-      "sessions": 5,
-      "input_tokens": 378835,
-      "output_tokens": 117671,
-      "tokens": 496506,
-      "cost": 0.2672,
-      "task": "deepseek-v4-pro · 5次"
+      "sessions": 7,
+      "input_tokens": 541424,
+      "output_tokens": 151398,
+      "tokens": 692822,
+      "cost": 0.3672,
+      "task": "deepseek-v4-pro · 7次"
     }
   ]
 }
