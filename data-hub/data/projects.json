@@ -537,7 +537,588 @@
         ]
       }
     ],
-    "description": "AIONE智能投放助理，5阶段进化路线：分析→主动→记忆→进化→执行。当前已完成前2阶段交付，第3阶段开发中。"
+    "description": "AIONE智能投放助理，5阶段进化路线：分析→主动→记忆→进化→执行。当前已完成前2阶段交付，第3阶段开发中。",
+    "phaseModules": {
+      "阶段一-能分析的助理": [
+        {
+          "id": "1.1",
+          "name": "投放全景诊断",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "8KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "14KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "1.2",
+          "name": "关键词深度分析",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "19KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "24KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "1.3",
+          "name": "场景对比分析",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "6KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "4KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "1.4",
+          "name": "计划排名分析",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "7KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "4KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "1.5",
+          "name": "人群效果分析",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "7KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "4KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "1.6",
+          "name": "创意素材分析",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "8KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "4KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        }
+      ],
+      "阶段二-能主动的助理": [
+        {
+          "id": "2.1",
+          "name": "每日早安推送",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "技术设计文档-v2.2.md",
+              "size": "20KB"
+            },
+            {
+              "name": "技术设计文档.md",
+              "size": "14KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "22KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "2.2",
+          "name": "异常实时预警",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "8KB"
+            },
+            {
+              "name": "需求文档-v2.md",
+              "size": "5KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "7KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "2.3",
+          "name": "创意疲劳提醒",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "7KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "10KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "2.4",
+          "name": "关键词批量优化",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "8KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "9KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "2.5",
+          "name": "智能预算重分配",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "8KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "7KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "2.6",
+          "name": "操作效果追踪",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "7KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "16KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "2.7",
+          "name": "计划优化分析",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "3KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "6KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        }
+      ],
+      "阶段三-有记忆的助理": [
+        {
+          "id": "3.1",
+          "name": "操作历史记忆",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "6KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "3.2",
+          "name": "对话上下文",
+          "confirmed": true,
+          "files": [],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "3.3",
+          "name": "用户偏好学习",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "9KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "3.4",
+          "name": "周期性记忆",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "8KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "3.5",
+          "name": "人群包创建",
+          "confirmed": true,
+          "files": [],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "3.6",
+          "name": "跨店铺品线对比",
+          "confirmed": true,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "5KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "8KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        }
+      ],
+      "阶段四-能进化的助理": [
+        {
+          "id": "4.1",
+          "name": "反馈学习",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "5KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "4.2",
+          "name": "操作模式学习",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "5KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "4.4",
+          "name": "行业知识库",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "5KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "4.5",
+          "name": "跨账户优化",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "5KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "4.6",
+          "name": "策略模拟",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "6KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        }
+      ],
+      "阶段五-能执行的助理": [
+        {
+          "id": "5.1",
+          "name": "计划创建向导",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "7KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "10KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "5.2",
+          "name": "关键词操作执行",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "6KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "9KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "5.3",
+          "name": "出价智能调控",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "6KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "11KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "5.4",
+          "name": "人群策略执行",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "8KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "11KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "5.5",
+          "name": "策略模版跟投",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "10KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "12KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "5.6",
+          "name": "全站推广操控",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "需求文档.md",
+              "size": "15KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "5.7",
+          "name": "批量操作引擎",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "5KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "12KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        },
+        {
+          "id": "5.8",
+          "name": "大促模式管理",
+          "confirmed": false,
+          "files": [
+            {
+              "name": "Skill定义.md",
+              "size": "6KB"
+            },
+            {
+              "name": "需求文档.md",
+              "size": "11KB"
+            }
+          ],
+          "taskProgress": {
+            "done": 0,
+            "total": 0
+          }
+        }
+      ]
+    },
+    "phaseList": [
+      "阶段一-能分析的助理",
+      "阶段二-能主动的助理",
+      "阶段三-有记忆的助理",
+      "阶段四-能进化的助理",
+      "阶段五-能执行的助理"
+    ]
   },
   {
     "id": "autoonebp",
@@ -571,7 +1152,9 @@
         ]
       }
     ],
-    "description": "天猫/京东擎天柱日历预算测试与验证，确保AIONE同步更新，打通多平台广告投放自动化。"
+    "description": "天猫/京东擎天柱日历预算测试与验证，确保AIONE同步更新，打通多平台广告投放自动化。",
+    "phaseModules": {},
+    "phaseList": []
   },
   {
     "id": "andy",
@@ -619,7 +1202,9 @@
         ]
       }
     ],
-    "description": "人群数据获取与分析系统，支持全品类/类目/商品三级人群数据采集，结合AIONE进行人群分析展示与推广优化。"
+    "description": "人群数据获取与分析系统，支持全品类/类目/商品三级人群数据采集，结合AIONE进行人群分析展示与推广优化。",
+    "phaseModules": {},
+    "phaseList": []
   },
   {
     "id": "project-init",
@@ -647,7 +1232,9 @@
         ]
       }
     ],
-    "description": "项目立项与审批流程数字化，通过钉钉审批+宜搭流程实现SaaS域名申请、项目立项的线上化管理。"
+    "description": "项目立项与审批流程数字化，通过钉钉审批+宜搭流程实现SaaS域名申请、项目立项的线上化管理。",
+    "phaseModules": {},
+    "phaseList": []
   },
   {
     "id": "jintoushang",
@@ -688,7 +1275,9 @@
         ]
       }
     ],
-    "description": "金投赏AI评分模型开发，更换模型评估评分效果，与人工评分对齐，并对比历届获奖作品跑分验证。"
+    "description": "金投赏AI评分模型开发，更换模型评估评分效果，与人工评分对齐，并对比历届获奖作品跑分验证。",
+    "phaseModules": {},
+    "phaseList": []
   },
   {
     "id": "quange",
@@ -729,6 +1318,8 @@
         ]
       }
     ],
-    "description": "泉哥专项需求，包含擎天柱同步出价、垫款催付系统、小米预算变更通知等功能模块。"
+    "description": "泉哥专项需求，包含擎天柱同步出价、垫款催付系统、小米预算变更通知等功能模块。",
+    "phaseModules": {},
+    "phaseList": []
   }
 ]
