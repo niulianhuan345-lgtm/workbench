@@ -565,7 +565,8 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": []
         },
         {
           "id": "1.2",
@@ -592,7 +593,8 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": []
         },
         {
           "id": "1.3",
@@ -619,7 +621,8 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": []
         },
         {
           "id": "1.4",
@@ -646,7 +649,8 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": []
         },
         {
           "id": "1.5",
@@ -673,7 +677,8 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": []
         },
         {
           "id": "1.6",
@@ -700,7 +705,8 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": []
         }
       ],
       "阶段二-能主动的助理": [
@@ -737,7 +743,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.1",
+              "name": "投放全景诊断"
+            }
+          ]
         },
         {
           "id": "2.2",
@@ -772,7 +784,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.1",
+              "name": "投放全景诊断"
+            },
+            {
+              "id": "1.4",
+              "name": "计划排名分析"
+            }
+          ]
         },
         {
           "id": "2.3",
@@ -799,7 +821,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.6",
+              "name": "创意素材分析"
+            }
+          ]
         },
         {
           "id": "2.4",
@@ -830,7 +858,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.2",
+              "name": "关键词深度分析"
+            }
+          ]
         },
         {
           "id": "2.5",
@@ -861,7 +895,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.4",
+              "name": "计划排名分析"
+            },
+            {
+              "id": "2.2",
+              "name": "异常实时预警"
+            }
+          ]
         },
         {
           "id": "2.6",
@@ -888,7 +932,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.1",
+              "name": "投放全景诊断"
+            }
+          ]
         },
         {
           "id": "2.7",
@@ -919,7 +969,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.4",
+              "name": "计划排名分析"
+            },
+            {
+              "id": "2.4",
+              "name": "关键词批量优化"
+            }
+          ]
         }
       ],
       "阶段三-有记忆的助理": [
@@ -940,7 +1000,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "2.6",
+              "name": "操作效果追踪"
+            },
+            {
+              "id": "1.1",
+              "name": "投放全景诊断"
+            }
+          ]
         },
         {
           "id": "3.2",
@@ -955,7 +1025,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            }
+          ]
         },
         {
           "id": "3.3",
@@ -974,7 +1050,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            }
+          ]
         },
         {
           "id": "3.4",
@@ -993,7 +1075,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            }
+          ]
         },
         {
           "id": "3.5",
@@ -1008,7 +1096,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.5",
+              "name": "人群效果分析"
+            },
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            }
+          ]
         },
         {
           "id": "3.6",
@@ -1035,7 +1133,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.1",
+              "name": "投放全景诊断"
+            },
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            }
+          ]
         }
       ],
       "阶段四-能进化的助理": [
@@ -1056,7 +1164,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.3",
+              "name": "用户偏好学习"
+            },
+            {
+              "id": "3.4",
+              "name": "周期性记忆"
+            }
+          ]
         },
         {
           "id": "4.2",
@@ -1075,7 +1193,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            },
+            {
+              "id": "3.4",
+              "name": "周期性记忆"
+            }
+          ]
         },
         {
           "id": "4.4",
@@ -1094,7 +1222,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.6",
+              "name": "跨店铺品线对比"
+            },
+            {
+              "id": "3.4",
+              "name": "周期性记忆"
+            }
+          ]
         },
         {
           "id": "4.5",
@@ -1113,7 +1251,13 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.6",
+              "name": "跨店铺品线对比"
+            }
+          ]
         },
         {
           "id": "4.6",
@@ -1132,7 +1276,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "4.1",
+              "name": "反馈学习"
+            },
+            {
+              "id": "4.2",
+              "name": "操作模式学习"
+            }
+          ]
         }
       ],
       "阶段五-能执行的助理": [
@@ -1161,7 +1315,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            },
+            {
+              "id": "4.2",
+              "name": "操作模式学习"
+            }
+          ]
         },
         {
           "id": "5.2",
@@ -1188,7 +1352,21 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.2",
+              "name": "关键词深度分析"
+            },
+            {
+              "id": "2.4",
+              "name": "关键词批量优化"
+            },
+            {
+              "id": "4.2",
+              "name": "操作模式学习"
+            }
+          ]
         },
         {
           "id": "5.3",
@@ -1215,7 +1393,21 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.4",
+              "name": "计划排名分析"
+            },
+            {
+              "id": "2.5",
+              "name": "智能预算重分配"
+            },
+            {
+              "id": "4.2",
+              "name": "操作模式学习"
+            }
+          ]
         },
         {
           "id": "5.4",
@@ -1242,7 +1434,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "1.5",
+              "name": "人群效果分析"
+            },
+            {
+              "id": "3.5",
+              "name": "人群包创建"
+            }
+          ]
         },
         {
           "id": "5.5",
@@ -1269,7 +1471,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.4",
+              "name": "周期性记忆"
+            },
+            {
+              "id": "4.2",
+              "name": "操作模式学习"
+            }
+          ]
         },
         {
           "id": "5.6",
@@ -1288,7 +1500,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            },
+            {
+              "id": "4.2",
+              "name": "操作模式学习"
+            }
+          ]
         },
         {
           "id": "5.7",
@@ -1315,7 +1537,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.1",
+              "name": "操作历史记忆"
+            },
+            {
+              "id": "4.2",
+              "name": "操作模式学习"
+            }
+          ]
         },
         {
           "id": "5.8",
@@ -1342,7 +1574,17 @@
           "taskProgress": {
             "done": 0,
             "total": 0
-          }
+          },
+          "dependsOn": [
+            {
+              "id": "3.4",
+              "name": "周期性记忆"
+            },
+            {
+              "id": "4.6",
+              "name": "策略模拟"
+            }
+          ]
         }
       ]
     },
