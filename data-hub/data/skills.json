@@ -378,6 +378,18 @@
     "status": "active"
   },
   {
+    "name": "feishu-doc-editing",
+    "category": "productivity",
+    "desc": "飞书文档 API 编辑操作指南。当需要读取/编辑飞书在线文档时使用。涵盖 block 树结构、嵌套关系、表格处理、安全操作原则。",
+    "status": "active"
+  },
+  {
+    "name": "feishu-docs",
+    "category": "productivity",
+    "desc": "Create, read, and edit Feishu/Lark documents via Open API. Use when the user asks to create a Feishu doc, copy content to Feishu, edit a wiki page, or add sections to a Feishu document.",
+    "status": "active"
+  },
+  {
     "name": "google-workspace",
     "category": "productivity",
     "desc": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
