@@ -356,7 +356,7 @@
   {
     "name": "aione-design-pipeline",
     "category": "productivity",
-    "desc": "AIONE 产品功能设计全流程：钉钉需求识别 → 调研现有资料 → 方案设计 → 需求文档+Skill定义 → 用户确认 → 交付。也覆盖：跨阶段审计（分批制作后的冲突/重复/缺失检查和修复）。触发：用户要求在 AIONE 平台设计新功能、写产品需求文档、输出 Skill 定义、审查规划一致性。",
+    "desc": "AIONE 产品功能设计全流程：钉钉需求识别 → 调研现有资料 → 方案设计 → 需求文档+Skill定义 → 用户确认 → 交付。触发：用户要求在 AIONE 平台设计新功能、写产品需求文档、输出 Skill 定义。核心原则：助理行为视角（不是系统功能视角），代码与大模型分离架构，按需产出（行为型只需需求文档，操作型才需Skill定义）。",
     "status": "active"
   },
   {
@@ -369,6 +369,12 @@
     "name": "google-workspace",
     "category": "productivity",
     "desc": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+    "status": "active"
+  },
+  {
+    "name": "hermes-data-hub",
+    "category": "productivity",
+    "desc": "Hermes 数据中心 — mobile-first 看板，展示门店打标、AB测试、报告、系统状态。部署在 GitHub Pages。触发：加数据模块、更新看板、查门店数据。",
     "status": "active"
   },
   {
@@ -471,6 +477,12 @@
     "name": "godmode",
     "category": "red-teaming",
     "desc": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+    "status": "active"
+  },
+  {
+    "name": "a-share-stock-trading",
+    "category": "research",
+    "desc": "A股系统化投资知识体系：覆盖宏观经济→大盘指数→板块趋势→龙头股→技术分析买卖点→实时看盘能力。触发词：A股、炒股、股票、大盘、板块、龙头、看盘、K线、均线、MACD、买入点、卖出点、上证、深证、创业板、科创板。",
     "status": "active"
   },
   {
