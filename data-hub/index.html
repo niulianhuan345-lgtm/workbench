@@ -1,93 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>数据中枢 · AIONE</title>
-    <meta name="description" content="A sleek AI product manager dashboard centralizing task tracking, AI plugin control, knowledge updates, and actionable platform alerts for efficient decision-making." />
-    <meta name="robots" content="noindex, nofollow" />
-    <style>
-      html, body { height: 100%; margin: 0; }
-      #root { height: 100%; }
-      /* ── 密码门禁 ── */
-      #pw-gate {
-        position: fixed !important; top: 0 !important; left: 0 !important;
-        width: 100% !important; height: 100% !important;
-        background: #faf9f7 !important; z-index: 99999 !important;
-        display: flex !important; align-items: center !important; justify-content: center !important;
-        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif !important;
-      }
-      #pw-gate.hidden { display: none !important; }
-      .pw-box {
-        background: #fff; border-radius: 16px; padding: 48px 40px 36px;
-        box-shadow: 0 2px 12px rgba(0,0,0,.04), 0 8px 32px rgba(0,0,0,.03);
-        width: 360px; text-align: center;
-      }
-      .pw-box h2 { margin: 0 0 6px; font-size: 22px; font-weight: 600; color: #1a1a1a; }
-      .pw-box p  { margin: 0 0 28px; font-size: 13px; color: #999; }
-      .pw-box input {
-        width: 100%; box-sizing: border-box; padding: 12px 16px;
-        border: 1.5px solid #e5e5e5; border-radius: 10px;
-        font-size: 15px; outline: none; transition: border-color .2s;
-      }
-      .pw-box input:focus { border-color: #6366f1; }
-      .pw-box button {
-        width: 100%; margin-top: 16px; padding: 12px 0;
-        background: #6366f1; color: #fff; border: none;
-        border-radius: 10px; font-size: 15px; font-weight: 500;
-        cursor: pointer; transition: background .2s;
-      }
-      .pw-box button:hover { background: #4f46e5; }
-      .pw-error { color: #ef4444; font-size: 12px; margin-top: 10px; min-height: 18px; }
-    </style>
-    <script type="module" crossorigin src="./assets/index-CDWfLtG9.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DGDa1Fis.css">
-  </head>
-  <body>
-    <div id="pw-gate">
-      <div class="pw-box">
-        <h2>🔐 数据中枢</h2>
-        <p>请输入密码以继续访问</p>
-        <input id="pw-input" type="password" placeholder="输入密码" autofocus />
-        <button id="pw-submit">进入</button>
-        <div id="pw-error" class="pw-error"></div>
-      </div>
-    </div>
-    <div id="root"></div>
-    <script>
-      (function() {
-        var PW_HASH = 'b10249b3b99c35a0fca54c73c2194879343ff6ebd35fe937b20f4e528522bb8c';
-        var gate = document.getElementById('pw-gate');
-        var input = document.getElementById('pw-input');
-        var submit = document.getElementById('pw-submit');
-        var error = document.getElementById('pw-error');
 
-        async function sha256(text) {
-          var encoder = new TextEncoder();
-          var data = encoder.encode(text);
-          var buf = await crypto.subtle.digest('SHA-256', data);
-          return Array.from(new Uint8Array(buf))
-            .map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
-        }
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Premium Minimalist Dashboard UI</title>
+      <meta name="description" content="A sleek AI product manager dashboard centralizing task tracking, AI plugin control, knowledge updates, and actionable platform alerts for efficient decision-making." />
+      <meta name="robots" content="noindex, nofollow" />
+      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      
+      <script type="module" crossorigin src="./assets/index-CDWfLtG9.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-DGDa1Fis.css">
+    </head>
 
-        if (sessionStorage.getItem('_dh_auth') === PW_HASH) {
-          gate.classList.add('hidden');
-          return;
-        }
-
-        submit.addEventListener('click', async function() {
-          var hash = await sha256(input.value);
-          if (hash === PW_HASH) {
-            sessionStorage.setItem('_dh_auth', PW_HASH);
-            gate.classList.add('hidden');
-          } else {
-            error.textContent = '密码错误，请重试';
-          }
-        });
-        input.addEventListener('keydown', function(e) {
-          if (e.key === 'Enter') submit.click();
-        });
-      })();
-    </script>
-  </body>
-</html>
+    <body>
+      
+      <div id="root"></div>
+      
+    </body>
+  </html>
+  

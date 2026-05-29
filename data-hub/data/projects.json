@@ -1385,9 +1385,81 @@
     ]
   },
   {
+    "id": "shengji",
+    "name": "生意管家Skill",
+    "phases": "Skill开发:in_progress→提效验证:pending",
+    "files": [],
+    "description": "AI生意管家Skill开发，赋能运营自主创建投放策略",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
+    "id": "smb",
+    "name": "SMB",
+    "phases": "优化日志:done→操作日志拆分:in_progress→AIPL报告:in_progress→小目标切换:in_progress→人群流转:in_progress→投放方案分析:in_progress→周报专项:in_progress→客户接入流程:done",
+    "files": [],
+    "description": "SMB中小客户智能投放，含AIPL人群分析、投放方案分析、龙-小米周报专项",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
+    "id": "texiu",
+    "name": "特秀",
+    "phases": "AI圈选人群:in_progress→人群包逻辑优化:in_progress",
+    "files": [],
+    "description": "特秀广告AI人群圈选与人群包逻辑优化",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
+    "id": "jingpinzhi",
+    "name": "京品智",
+    "phases": "UI优化:in_progress→框架升级:pending",
+    "files": [],
+    "description": "京品智UI优化（5月底）与内部框架升级",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
+    "id": "hongpinzhi",
+    "name": "红品智",
+    "phases": "客咨收集:pending→星伴计划:pending",
+    "files": [],
+    "description": "红品智客咨收集与星伴计划需求",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
+    "id": "queqicid",
+    "name": "鹊起CID",
+    "phases": "UD数据看板:in_progress",
+    "files": [],
+    "description": "鹊起CID自动汇总UD智汇投和CID店铺数据的小时报/日报/周报看板",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
+    "id": "hermes-kb",
+    "name": "Hermes知识库",
+    "phases": "浏览器点击:done→对话绑定店铺:in_progress→爬虫浏览器:in_progress→618全可用:pending",
+    "files": [],
+    "description": "Hermes Agent AI知识库，618前完全可用。含浏览器前端点击、扫码登录、爬虫隐形浏览器",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
+    "id": "bailing",
+    "name": "百灵日报",
+    "phases": "日报上线:done→透视升级:done→运营试用:in_progress",
+    "files": [],
+    "description": "百灵日报自动化日报，已提效50%，运营正在试用",
+    "phaseModules": {},
+    "phaseList": []
+  },
+  {
     "id": "autoonebp",
     "name": "AutoOneBP",
-    "phases": "天猫擎天柱测试:in_progress→京东擎天柱测试:pending→AIONE同步更新:pending",
+    "phases": "擎天柱日历预算:in_progress→Andy人群数据:done→人群批量屏蔽:pending→虚拟组出价修改:done→定时批量暂停:pending",
     "files": [
       {
         "name": "项目代码",
@@ -1416,14 +1488,14 @@
         ]
       }
     ],
-    "description": "天猫/京东擎天柱日历预算测试与验证，确保AIONE同步更新，打通多平台广告投放自动化。",
+    "description": "天猫/京东擎天柱日历预算测试，Andy人群数据采集，虚拟组出价修改，定时批量暂停计划",
     "phaseModules": {},
     "phaseList": []
   },
   {
     "id": "andy",
     "name": "Andy数据",
-    "phases": "人群数据获取:done→人群分析报告:in_progress→批量屏蔽人群:pending→出价管理:in_progress→批量暂停:pending",
+    "phases": "全品类人群:done→类目人群:done→商品人群:done→人群分析报告:in_progress→批量屏蔽:pending",
     "files": [
       {
         "name": "人群数据",
@@ -1466,7 +1538,7 @@
         ]
       }
     ],
-    "description": "人群数据获取与分析系统，支持全品类/类目/商品三级人群数据采集，结合AIONE进行人群分析展示与推广优化。",
+    "description": "Andy人群数据获取，已完成三级人群数据采集，推进人群分析报告与批量屏蔽",
     "phaseModules": {},
     "phaseList": []
   },
