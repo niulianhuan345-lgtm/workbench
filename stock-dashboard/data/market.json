@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29 11:46:33",
+  "updated": "2026-05-29 11:51:50",
   "indices": [
     {
       "name": "上证指数",
@@ -9,7 +9,6 @@
       "open": 4110.52,
       "high": 4112.96,
       "low": 4079.57,
-      "volume": 45638.1,
       "amount": 9635.3
     },
     {
@@ -20,7 +19,6 @@
       "open": 15957.11,
       "high": 15981.93,
       "low": 15653.98,
-      "volume": 5479345.8,
       "amount": 11535.6
     },
     {
@@ -31,7 +29,6 @@
       "open": 4141.91,
       "high": 4158.69,
       "low": 4052.39,
-      "volume": 1439082.3,
       "amount": 5449.1
     },
     {
@@ -42,11 +39,9 @@
       "open": 1850.27,
       "high": 1855.26,
       "low": 1772.81,
-      "volume": 1395.2,
       "amount": 1098.7
     }
   ],
-  "sectors": [],
   "leaders": [
     {
       "sector": "白酒",
@@ -392,6 +387,112 @@
           "change_pct": -1.75
         }
       ]
+    }
+  ],
+  "ai_signals": [
+    {
+      "code": "000002",
+      "name": "万 科Ａ",
+      "price": 3.64,
+      "change_pct": 9.97,
+      "reasons": [
+        "暴涨10%",
+        "振幅9%",
+        "换手率138012571.0%"
+      ],
+      "severity": "high"
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "price": 143.93,
+      "change_pct": -6.36,
+      "reasons": [
+        "暴跌6%",
+        "换手率1706.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "001979",
+      "name": "招商蛇口",
+      "price": 8.83,
+      "change_pct": 5.24,
+      "reasons": [
+        "暴涨5%",
+        "换手率24700.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "603501",
+      "name": "豪威集团",
+      "price": 97.01,
+      "change_pct": -4.8,
+      "reasons": [
+        "换手率168600.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "002241",
+      "name": "歌尔股份",
+      "price": 26.98,
+      "change_pct": -4.33,
+      "reasons": [
+        "换手率200.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "000858",
+      "name": "五 粮 液",
+      "price": 84.98,
+      "change_pct": 4.28,
+      "reasons": [
+        "换手率6700.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "600048",
+      "name": "保利发展",
+      "price": 5.85,
+      "change_pct": 4.28,
+      "reasons": [
+        "换手率16000.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "price": 1327.73,
+      "change_pct": 4.06,
+      "reasons": [
+        "换手率2000.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "688041",
+      "name": "海光信息",
+      "price": 301.86,
+      "change_pct": -3.98,
+      "reasons": [
+        "换手率385.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "600690",
+      "name": "海尔智家",
+      "price": 20.9,
+      "change_pct": 3.93,
+      "reasons": [
+        "换手率8900.0%"
+      ],
+      "severity": "medium"
     }
   ]
 }
