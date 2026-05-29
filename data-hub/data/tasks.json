@@ -24,7 +24,7 @@
   {
     "id": "aione-sk-3",
     "title": "定时输出预算分析",
-    "status": "等待排期",
+    "status": "进行中",
     "project": "AIONE",
     "group": "生意管家Skill·后续规划",
     "owner": "",
@@ -40,14 +40,14 @@
       {
         "id": "aione-sk-3-2",
         "title": "数据源对接",
-        "status": "待开始"
+        "status": "未开始"
       }
     ]
   },
   {
     "id": "aione-sk-4",
     "title": "按预算分析方案直接执行计划预算更改",
-    "status": "产品设计中",
+    "status": "进行中",
     "project": "AIONE",
     "group": "生意管家Skill·后续规划",
     "owner": "",
@@ -58,7 +58,7 @@
   {
     "id": "aione-sk-5",
     "title": "MCP接口调不通，待官方解决",
-    "status": "前端开发中",
+    "status": "进行中",
     "project": "AIONE",
     "group": "生意管家Skill·待解决",
     "owner": "",
@@ -69,7 +69,7 @@
   {
     "id": "aione-smb-1",
     "title": "后续拆分详细操作日志",
-    "status": "前端开发中",
+    "status": "进行中",
     "project": "AIONE",
     "group": "SMB",
     "owner": "梅冬阳",
@@ -91,7 +91,7 @@
   {
     "id": "aione-smb-3",
     "title": "小目标加切换按钮",
-    "status": "后端待开发",
+    "status": "进行中",
     "project": "AIONE",
     "group": "SMB",
     "owner": "康恒、曾文旭",
@@ -107,14 +107,14 @@
       {
         "id": "aione-smb-3-2",
         "title": "技术方案评审",
-        "status": "待讨论"
+        "status": "进行中"
       }
     ]
   },
   {
     "id": "aione-smb-4",
     "title": "AIONE加人群流转报告",
-    "status": "后端开发中",
+    "status": "进行中",
     "project": "AIONE",
     "group": "SMB",
     "owner": "牛连欢",
@@ -125,7 +125,7 @@
   {
     "id": "aione-smb-5",
     "title": "SMB客户接入流程整理",
-    "status": "产品设计中",
+    "status": "进行中",
     "project": "AIONE",
     "group": "SMB",
     "owner": "牛连欢",
@@ -136,7 +136,7 @@
   {
     "id": "aione-smb-6",
     "title": "投放方案分析-支持选择计划层级托管",
-    "status": "前端开发中",
+    "status": "进行中",
     "project": "AIONE",
     "group": "SMB",
     "owner": "牛连欢",
@@ -147,7 +147,7 @@
   {
     "id": "aione-smb-7",
     "title": "龙-小米-周报专项实现",
-    "status": "等待排期",
+    "status": "进行中",
     "project": "AIONE",
     "group": "SMB",
     "owner": "牛连欢",
@@ -158,7 +158,7 @@
   {
     "id": "aione-up-1",
     "title": "创意测试",
-    "status": "待开始",
+    "status": "未开始",
     "project": "AIONE",
     "group": "其他升级",
     "owner": "刘强、陈涛、陈博轩",
@@ -169,7 +169,7 @@
   {
     "id": "aione-up-2",
     "title": "后台任务监控",
-    "status": "待开始",
+    "status": "未开始",
     "project": "AIONE",
     "group": "其他升级",
     "owner": "刘强、陈涛、陈博轩",
@@ -180,7 +180,7 @@
   {
     "id": "aione-up-3",
     "title": "新功能整理成MD文档",
-    "status": "待开始",
+    "status": "未开始",
     "project": "AIONE",
     "group": "其他升级",
     "owner": "牛连欢",
@@ -191,7 +191,7 @@
   {
     "id": "aione-jpz-1",
     "title": "UI优化",
-    "status": "待开始",
+    "status": "未开始",
     "project": "AIONE",
     "group": "京品智",
     "owner": "卢子凤、牛连欢",
@@ -202,7 +202,7 @@
   {
     "id": "aione-jpz-2",
     "title": "内部框架升级",
-    "status": "待开始",
+    "status": "未开始",
     "project": "AIONE",
     "group": "京品智",
     "owner": "",
@@ -213,7 +213,7 @@
   {
     "id": "auto-1",
     "title": "天猫京东擎天柱日历预算测试",
-    "status": "待开始",
+    "status": "未开始",
     "project": "AutoOneBP",
     "group": "擎天柱",
     "owner": "牛连欢",
@@ -224,12 +224,12 @@
       {
         "id": "auto-1-1",
         "title": "Taro框架搭建",
-        "status": "待开始"
+        "status": "未开始"
       },
       {
         "id": "auto-1-2",
         "title": "页面路由设计",
-        "status": "待开始"
+        "status": "未开始"
       }
     ]
   },
@@ -269,7 +269,7 @@
   {
     "id": "andy-4",
     "title": "人群分析内容增加到AIONE做分析展示",
-    "status": "后端开发中",
+    "status": "进行中",
     "project": "Andy数据",
     "group": "人群分析",
     "owner": "",
@@ -280,7 +280,7 @@
   {
     "id": "andy-5",
     "title": "人群推广批量屏蔽人群",
-    "status": "前端开发中",
+    "status": "进行中",
     "project": "Andy数据",
     "group": "人群推广",
     "owner": "邱海亮、曾文旭",
@@ -291,7 +291,7 @@
   {
     "id": "andy-6",
     "title": "虚拟组支持对单个计划出价进行修改",
-    "status": "待开始",
+    "status": "未开始",
     "project": "Andy数据",
     "group": "人群推广",
     "owner": "",
@@ -302,7 +302,7 @@
   {
     "id": "andy-7",
     "title": "定时批量暂停计划",
-    "status": "待开始",
+    "status": "未开始",
     "project": "Andy数据",
     "group": "人群推广",
     "owner": "",
@@ -313,7 +313,7 @@
   {
     "id": "xm-1",
     "title": "项目立项流程搭建到钉钉审批",
-    "status": "待讨论",
+    "status": "进行中",
     "project": "项目立项",
     "group": "",
     "owner": "牛连欢",
@@ -335,7 +335,7 @@
   {
     "id": "jts-1",
     "title": "更换模型查看新模型评分效果",
-    "status": "待开始",
+    "status": "未开始",
     "project": "金投赏",
     "group": "",
     "owner": "牛连欢",
@@ -346,7 +346,7 @@
   {
     "id": "jts-2",
     "title": "尽可能和人工打分分数相近",
-    "status": "待开始",
+    "status": "未开始",
     "project": "金投赏",
     "group": "",
     "owner": "牛连欢",
@@ -357,7 +357,7 @@
   {
     "id": "jts-3",
     "title": "同历届获奖作品跑分对比",
-    "status": "待开始",
+    "status": "未开始",
     "project": "金投赏",
     "group": "",
     "owner": "牛连欢",
@@ -368,7 +368,7 @@
   {
     "id": "jts-4",
     "title": "解决打分不一致问题",
-    "status": "待开始",
+    "status": "未开始",
     "project": "金投赏",
     "group": "",
     "owner": "牛连欢",
@@ -390,7 +390,7 @@
   {
     "id": "quan-2",
     "title": "小米更改预算后通知增加品类修改内容",
-    "status": "前端开发中",
+    "status": "进行中",
     "project": "泉哥需求",
     "group": "",
     "owner": "",
@@ -412,7 +412,7 @@
   {
     "id": "quan-4",
     "title": "财务收款同步到线上（垫款核销）",
-    "status": "待开始",
+    "status": "未开始",
     "project": "泉哥需求",
     "group": "",
     "owner": "",
@@ -423,7 +423,7 @@
   {
     "id": "quan-5",
     "title": "催款消息指定群和人",
-    "status": "待开始",
+    "status": "未开始",
     "project": "泉哥需求",
     "group": "",
     "owner": "",

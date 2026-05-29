@@ -1421,24 +1421,6 @@
     "phaseList": []
   },
   {
-    "id": "hongpinzhi",
-    "name": "红品智",
-    "phases": "客咨收集:pending→星伴计划:pending",
-    "files": [],
-    "description": "红品智客咨收集与星伴计划需求",
-    "phaseModules": {},
-    "phaseList": []
-  },
-  {
-    "id": "queqicid",
-    "name": "鹊起CID",
-    "phases": "UD数据看板:in_progress",
-    "files": [],
-    "description": "鹊起CID自动汇总UD智汇投和CID店铺数据的小时报/日报/周报看板",
-    "phaseModules": {},
-    "phaseList": []
-  },
-  {
     "id": "hermes-kb",
     "name": "Hermes知识库",
     "phases": "浏览器点击:done→对话绑定店铺:in_progress→爬虫浏览器:in_progress→618全可用:pending",
