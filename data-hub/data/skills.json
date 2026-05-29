@@ -372,6 +372,12 @@
     "status": "active"
   },
   {
+    "name": "hermes-data-hub",
+    "category": "productivity",
+    "desc": "Hermes 数据中心 — mobile-first 看板，展示门店打标、AB测试、报告、系统状态。部署在 GitHub Pages。触发：加数据模块、更新看板、查门店数据。",
+    "status": "active"
+  },
+  {
     "name": "lightweight-workbench",
     "category": "productivity",
     "desc": "Build lightweight, data-driven dashboards/workbenches with JSON backend + auto-scanner + zero-dep server. Use when user asks for 总控台, workbench, dashboard, 工作台, or internal tool.",
@@ -471,6 +477,12 @@
     "name": "godmode",
     "category": "red-teaming",
     "desc": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+    "status": "active"
+  },
+  {
+    "name": "a-share-stock-trading",
+    "category": "research",
+    "desc": "A股系统化投资知识体系：覆盖宏观经济→大盘指数→板块趋势→龙头股→技术分析买卖点→实时看盘能力。触发词：A股、炒股、股票、大盘、板块、龙头、看盘、K线、均线、MACD、买入点、卖出点、上证、深证、创业板、科创板。",
     "status": "active"
   },
   {
