@@ -1,5 +1,5 @@
 {
-  "updated": "05-28",
+  "updated": "05-30",
   "version": 2,
   "platforms": [
     {
@@ -413,8 +413,55 @@
           }
         ]
       },
-      "articles": [],
+      "articles": [
+        {
+          "id": "jd-46145119",
+          "title": "付费流量破局——建材类目京准通投放技巧与ROI提升",
+          "url": "//xue.jd.com/liveDetail/27555/46145119",
+          "type": "LIVE",
+          "lector": "",
+          "tags": ["京准通", "建材", "ROI"],
+          "createTime": "2026-05-26",
+          "fetched": "2026-05-30"
+        },
+        {
+          "id": "jd-45865040",
+          "title": "618广告进阶3：工业品广告投放如何降本增效",
+          "url": "//xue.jd.com/liveDetail/27252/45865040",
+          "type": "LIVE",
+          "lector": "王刚",
+          "tags": ["618", "工业品", "降本增效"],
+          "createTime": "2026-05-19",
+          "fetched": "2026-05-30"
+        },
+        {
+          "id": "jd-45868011",
+          "title": "618广告投放：掌握新品快车投放的底层逻辑",
+          "url": "//xue.jd.com/liveDetail/27104/45868011",
+          "type": "LIVE",
+          "lector": "",
+          "tags": ["618", "新品快车"],
+          "createTime": "2026-05-16",
+          "fetched": "2026-05-30"
+        },
+        {
+          "id": "jd-45812186",
+          "title": "618新商广告投放：京东广告官方\"保姆级\"入门课程",
+          "url": "//xue.jd.com/liveDetail/26661/45812186",
+          "type": "LIVE",
+          "lector": "",
+          "tags": ["618", "新商", "入门"],
+          "createTime": "2026-05-11",
+          "fetched": "2026-05-30"
+        }
+      ],
       "daily_log": [
+        {
+          "date": "05-30",
+          "action": "每日扫描",
+          "new": 4,
+          "note": "搜索API发现4篇5月新文章（京准通+广告投放），文章详情待解析"
+        },
         {
           "date": "05-26",
           "action": "搜索API接入",
@@ -483,6 +530,86 @@
       },
       "articles": [],
       "daily_log": []
+    },
+    {
+      "id": "ocean",
+      "name": "巨量引擎/巨量学",
+      "icon": "🎵",
+      "source_label": "巨量学",
+      "source_url": "https://school.oceanengine.com",
+      "method": "SSR首页curl可抓，子页面SPA需Selenium",
+      "freq": "每日",
+      "stats": {
+        "total_courses": 5,
+        "articles_with_body": 0,
+        "last_fetch": "2026-05-30"
+      },
+      "knowledge_summary": {
+        "title": "巨量引擎投放知识体系",
+        "sections": [
+          {
+            "heading": "商业产品矩阵",
+            "items": [
+              "巨量千川/搜索/品牌种草/竞价/随心推",
+              "企业号/巨量云图/工作台/Dou+/即创"
+            ]
+          },
+          {
+            "heading": "最近课程（05-21~05-28）",
+            "items": [
+              "心智人群种草营销专题 | 05-28 | 268人",
+              "巨量云图AiMars人群洞察Agent新功能培训 | 05-28 ⭐AI",
+              "大促期即创AI素材提效实战 | 05-27",
+              "夏日情绪营销热点专题 | 05-26",
+              "多行业AI工具培训 | 05-21"
+            ]
+          }
+        ]
+      },
+      "articles": [],
+      "daily_log": [
+        {
+          "date": "05-30",
+          "action": "首次扫描(SSR首页)",
+          "new": 5,
+          "note": "SSR首页抓取成功，发现5门近期课程含AI新功能培训"
+        }
+      ]
+    },
+    {
+      "id": "baidu",
+      "name": "百度营销",
+      "icon": "🔵",
+      "source_label": "百度营销中心",
+      "source_url": "https://yingxiao.baidu.com",
+      "method": "SPA需Selenium",
+      "freq": "待接入",
+      "stats": {
+        "total_courses": 0,
+        "articles_with_body": 0,
+        "last_fetch": null
+      },
+      "knowledge_summary": {
+        "title": "百度营销投放知识（待探索）",
+        "sections": [
+          {
+            "heading": "状态",
+            "items": [
+              "页面可访问(HTTP 200)，SPA架构需Selenium",
+              "新发现平台，待用户确认后接入"
+            ]
+          }
+        ]
+      },
+      "articles": [],
+      "daily_log": [
+        {
+          "date": "05-30",
+          "action": "发现新平台",
+          "new": 0,
+          "note": "yingxiao.baidu.com可访问，SPA需Selenium"
+        }
+      ]
     }
   ],
   "internal": [
