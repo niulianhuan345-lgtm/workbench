@@ -11,10 +11,10 @@
       "method": "Selenium headless + API",
       "freq": "每日09:00",
       "stats": {
-        "total_courses": 160,
-        "articles_with_body": 19,
+        "total_courses": 29,
+        "articles_with_body": 29,
         "categories": 6,
-        "last_fetch": "2026-05-28 09:17"
+        "last_fetch": "2026-05-30 09:08"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -50,14 +50,169 @@
           {
             "heading": "已学课程正文",
             "items": [
-              "什么是淘宝客推广（67111浏览/4.5分）— CPS按成交付费原理",
-              "📅 05-27 新增10篇618+日常运营直播课程（雨夜/米线/蛋蛋/随风/小鱼 等讲师）",
-              "⚠️ 课程均为LIVE直播形式，详情页需登录认证，正文仅含元数据。后续关注直播回放转录"
+              "📅 05-30 新增 10 篇课程（子睿/清风/南瓜/万堂书院小二/清晰/米线/蛋蛋/东子 等讲师）",
+              "课程均为LIVE直播形式，包含配套推广模板",
+              "⚠️ 详情页需登录认证，正文仅含元数据。后续关注直播回放转录"
             ]
           }
         ]
       },
       "articles": [
+        {
+          "id": "38455",
+          "title": "618抢先购大服饰行业新品上架布局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38455&platform=",
+          "type": "LIVE",
+          "lector": "东子",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 18,
+          "startTime": "2026-06-01 10:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/618抢先购大服饰行业新品上架布局.md"
+        },
+        {
+          "id": "38456",
+          "title": "南瓜老师连麦诊断",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38456&platform=",
+          "type": "LIVE",
+          "lector": "南瓜",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 15,
+          "startTime": "2026-06-03 19:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/南瓜老师连麦诊断_38456.md"
+        },
+        {
+          "id": "38457",
+          "title": "南瓜老师连麦诊断",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38457&platform=",
+          "type": "LIVE",
+          "lector": "南瓜",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 34,
+          "startTime": "2026-06-17 19:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/南瓜老师连麦诊断_38457.md"
+        },
+        {
+          "id": "38458",
+          "title": "潜力品冲量布局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38458&platform=",
+          "type": "LIVE",
+          "lector": "蛋蛋",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 22,
+          "startTime": "2026-06-01 13:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/潜力品冲量布局.md"
+        },
+        {
+          "id": "38461",
+          "title": "618冲刺-618拉新破圈",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38461&platform=",
+          "type": "LIVE",
+          "lector": "米线",
+          "tags": [
+            "618",
+            "新品营销",
+            "爆品营销",
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 12,
+          "startTime": "2026-06-01 13:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-618拉新破圈.md"
+        },
+        {
+          "id": "38464",
+          "title": "新手商家流量问题解决",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38464&platform=",
+          "type": "LIVE",
+          "lector": "清晰",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 11,
+          "startTime": "2026-06-01 14:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/新手商家流量问题解决.md"
+        },
+        {
+          "id": "38465",
+          "title": "新星计划-新手商家流量痛点解决与福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38465&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 25,
+          "startTime": "2026-06-01 14:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送.md"
+        },
+        {
+          "id": "38466",
+          "title": "清风老师连麦诊断",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38466&platform=",
+          "type": "LIVE",
+          "lector": "清风",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 8,
+          "startTime": "2026-06-10 19:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/清风老师连麦诊断_38466.md"
+        },
+        {
+          "id": "38467",
+          "title": "清风老师连麦诊断",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38467&platform=",
+          "type": "LIVE",
+          "lector": "清风",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 7,
+          "startTime": "2026-06-24 19:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/清风老师连麦诊断_38467.md"
+        },
+        {
+          "id": "38468",
+          "title": "新星计划-新手商家福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38468&platform=",
+          "type": "LIVE",
+          "lector": "子睿",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 2,
+          "startTime": "2026-06-01 16:00:00",
+          "fetched": "2026-05-30 09:08",
+          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家福利派送.md"
+        },
         {
           "id": "38431",
           "title": "快速打爆",
@@ -361,6 +516,12 @@
       ],
       "daily_log": [
         {
+          "date": "05-30",
+          "action": "course_fetch_v2",
+          "new": 10,
+          "note": "New 10 courses (2026-05-30 09:08)"
+        },
+        {
           "date": "05-28",
           "action": "course_fetch_v2",
           "new": 9,
@@ -413,55 +574,8 @@
           }
         ]
       },
-      "articles": [
-        {
-          "id": "jd-46145119",
-          "title": "付费流量破局——建材类目京准通投放技巧与ROI提升",
-          "url": "//xue.jd.com/liveDetail/27555/46145119",
-          "type": "LIVE",
-          "lector": "",
-          "tags": ["京准通", "建材", "ROI"],
-          "createTime": "2026-05-26",
-          "fetched": "2026-05-30"
-        },
-        {
-          "id": "jd-45865040",
-          "title": "618广告进阶3：工业品广告投放如何降本增效",
-          "url": "//xue.jd.com/liveDetail/27252/45865040",
-          "type": "LIVE",
-          "lector": "王刚",
-          "tags": ["618", "工业品", "降本增效"],
-          "createTime": "2026-05-19",
-          "fetched": "2026-05-30"
-        },
-        {
-          "id": "jd-45868011",
-          "title": "618广告投放：掌握新品快车投放的底层逻辑",
-          "url": "//xue.jd.com/liveDetail/27104/45868011",
-          "type": "LIVE",
-          "lector": "",
-          "tags": ["618", "新品快车"],
-          "createTime": "2026-05-16",
-          "fetched": "2026-05-30"
-        },
-        {
-          "id": "jd-45812186",
-          "title": "618新商广告投放：京东广告官方\"保姆级\"入门课程",
-          "url": "//xue.jd.com/liveDetail/26661/45812186",
-          "type": "LIVE",
-          "lector": "",
-          "tags": ["618", "新商", "入门"],
-          "createTime": "2026-05-11",
-          "fetched": "2026-05-30"
-        }
-      ],
+      "articles": [],
       "daily_log": [
-        {
-          "date": "05-30",
-          "action": "每日扫描",
-          "new": 4,
-          "note": "搜索API发现4篇5月新文章（京准通+广告投放），文章详情待解析"
-        },
         {
           "date": "05-26",
           "action": "搜索API接入",
@@ -530,86 +644,6 @@
       },
       "articles": [],
       "daily_log": []
-    },
-    {
-      "id": "ocean",
-      "name": "巨量引擎/巨量学",
-      "icon": "🎵",
-      "source_label": "巨量学",
-      "source_url": "https://school.oceanengine.com",
-      "method": "SSR首页curl可抓，子页面SPA需Selenium",
-      "freq": "每日",
-      "stats": {
-        "total_courses": 5,
-        "articles_with_body": 0,
-        "last_fetch": "2026-05-30"
-      },
-      "knowledge_summary": {
-        "title": "巨量引擎投放知识体系",
-        "sections": [
-          {
-            "heading": "商业产品矩阵",
-            "items": [
-              "巨量千川/搜索/品牌种草/竞价/随心推",
-              "企业号/巨量云图/工作台/Dou+/即创"
-            ]
-          },
-          {
-            "heading": "最近课程（05-21~05-28）",
-            "items": [
-              "心智人群种草营销专题 | 05-28 | 268人",
-              "巨量云图AiMars人群洞察Agent新功能培训 | 05-28 ⭐AI",
-              "大促期即创AI素材提效实战 | 05-27",
-              "夏日情绪营销热点专题 | 05-26",
-              "多行业AI工具培训 | 05-21"
-            ]
-          }
-        ]
-      },
-      "articles": [],
-      "daily_log": [
-        {
-          "date": "05-30",
-          "action": "首次扫描(SSR首页)",
-          "new": 5,
-          "note": "SSR首页抓取成功，发现5门近期课程含AI新功能培训"
-        }
-      ]
-    },
-    {
-      "id": "baidu",
-      "name": "百度营销",
-      "icon": "🔵",
-      "source_label": "百度营销中心",
-      "source_url": "https://yingxiao.baidu.com",
-      "method": "SPA需Selenium",
-      "freq": "待接入",
-      "stats": {
-        "total_courses": 0,
-        "articles_with_body": 0,
-        "last_fetch": null
-      },
-      "knowledge_summary": {
-        "title": "百度营销投放知识（待探索）",
-        "sections": [
-          {
-            "heading": "状态",
-            "items": [
-              "页面可访问(HTTP 200)，SPA架构需Selenium",
-              "新发现平台，待用户确认后接入"
-            ]
-          }
-        ]
-      },
-      "articles": [],
-      "daily_log": [
-        {
-          "date": "05-30",
-          "action": "发现新平台",
-          "new": 0,
-          "note": "yingxiao.baidu.com可访问，SPA需Selenium"
-        }
-      ]
     }
   ],
   "internal": [
