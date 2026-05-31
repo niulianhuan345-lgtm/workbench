@@ -1,7 +1,7 @@
 {
-  "sessions": 52,
-  "tokens": 411067,
-  "input_tokens": 311401,
-  "output_tokens": 99666,
-  "cost": 0.2222
+  "sessions": 75,
+  "tokens": 578925,
+  "input_tokens": 441776,
+  "output_tokens": 137149,
+  "cost": 0.3115
 }
