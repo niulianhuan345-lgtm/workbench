@@ -1,5 +1,5 @@
 {
-  "updated": "05-30",
+  "updated": "05-31",
   "version": 2,
   "platforms": [
     {
@@ -14,7 +14,7 @@
         "total_courses": 29,
         "articles_with_body": 29,
         "categories": 6,
-        "last_fetch": "2026-05-30 09:08"
+        "last_fetch": "2026-05-31 09:12"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -515,6 +515,12 @@
         }
       ],
       "daily_log": [
+        {
+          "date": "05-31",
+          "action": "course_fetch_v2",
+          "new": 0,
+          "note": "No new courses (2026-05-31 09:12)"
+        },
         {
           "date": "05-30",
           "action": "course_fetch_v2",
