@@ -1,18 +1,1 @@
-[
-  {
-    "name": "deepseek-v4-pro",
-    "calls": 444,
-    "input_tokens": 2826788,
-    "output_tokens": 846598,
-    "tokens": 3673386,
-    "cost": 14.2549
-  },
-  {
-    "name": "gemini-2.5-flash",
-    "calls": 5,
-    "input_tokens": 67333,
-    "output_tokens": 1825,
-    "tokens": 69158,
-    "cost": 0.0812
-  }
-]
+[]
