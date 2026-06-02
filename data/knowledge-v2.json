@@ -1,5 +1,5 @@
 {
-  "updated": "05-31",
+  "updated": "06-02",
   "version": 2,
   "platforms": [
     {
@@ -11,10 +11,10 @@
       "method": "Selenium headless + API",
       "freq": "每日09:00",
       "stats": {
-        "total_courses": 29,
-        "articles_with_body": 29,
+        "total_courses": 39,
+        "articles_with_body": 39,
         "categories": 6,
-        "last_fetch": "2026-06-01 09:00"
+        "last_fetch": "2026-06-02 09:06"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -512,9 +512,173 @@
           "startTime": "2026-05-27 10:00:00",
           "fetched": "2026-05-27 09:15",
           "markdown_file": "平台知识/万相台无界/文章/全店销量破峰.md"
+        },
+        {
+          "id": "38486",
+          "title": "新星计划-新手商家流量痛点解决与福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38486&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 27,
+          "startTime": "2026-06-02 14:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38486.md"
+        },
+        {
+          "id": "38484",
+          "title": "新手商家福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38484&platform=",
+          "type": "LIVE",
+          "lector": "蛋蛋",
+          "tags": [
+            "万相台无界版",
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 5,
+          "startTime": "2026-06-02 16:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/新手商家福利派送.md"
+        },
+        {
+          "id": "38483",
+          "title": "618冲刺-家享生活万相台无界实操进阶",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38483&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 21,
+          "startTime": "2026-06-02 10:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-家享生活万相台无界实操进阶.md"
+        },
+        {
+          "id": "38482",
+          "title": "爆品调优",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38482&platform=",
+          "type": "LIVE",
+          "lector": "吉聪",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 5,
+          "startTime": "2026-06-04 10:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/爆品调优.md"
+        },
+        {
+          "id": "38481",
+          "title": "销量冲刺",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38481&platform=",
+          "type": "LIVE",
+          "lector": "吉聪",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 5,
+          "startTime": "2026-06-02 13:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/销量冲刺.md"
+        },
+        {
+          "id": "38479",
+          "title": "新品/潜力品调优",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38479&platform=",
+          "type": "LIVE",
+          "lector": "南瓜",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 4,
+          "startTime": "2026-06-04 13:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/新品_潜力品调优.md"
+        },
+        {
+          "id": "38478",
+          "title": "爆款选品",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38478&platform=",
+          "type": "LIVE",
+          "lector": "南瓜",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 6,
+          "startTime": "2026-06-02 10:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/爆款选品.md"
+        },
+        {
+          "id": "38477",
+          "title": "618冲刺大服饰行业人群冲刺布局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38477&platform=",
+          "type": "LIVE",
+          "lector": "东子",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 9,
+          "startTime": "2026-06-03 13:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺大服饰行业人群冲刺布局.md"
+        },
+        {
+          "id": "38476",
+          "title": "关键词冲刺布局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38476&platform=",
+          "type": "LIVE",
+          "lector": "蛋蛋",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 22,
+          "startTime": "2026-06-03 10:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/关键词冲刺布局.md"
+        },
+        {
+          "id": "38475",
+          "title": "新商成长-中小商家如何做好日销",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38475&platform=",
+          "type": "LIVE",
+          "lector": "米线",
+          "tags": [
+            "618",
+            "新品营销",
+            "爆品营销",
+            "万相台无界版",
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 17,
+          "startTime": "2026-06-03 14:00:00",
+          "fetched": "2026-06-02 09:06",
+          "markdown_file": "平台知识/万相台无界/文章/新商成长-中小商家如何做好日销.md"
         }
       ],
       "daily_log": [
+        {
+          "date": "06-02",
+          "action": "course_fetch_v2",
+          "new": 10,
+          "note": "New 10 courses: 新星计划-新手商家流量痛点解决与福利派送, 新手商家福利派送, 618冲刺-家享生活万相台无界实操进阶, 爆品调优, 销量冲刺, 新品/潜力品调优, 爆款选品, 618冲刺大服饰行业人群冲刺布局, 关键词冲刺布局, 新商成长-中小商家如何做好日销 (curl, 2026-06-02 09:06)"
+        },
         {
           "date": "06-01",
           "action": "course_fetch_v2",
