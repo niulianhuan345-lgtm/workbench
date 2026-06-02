@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +28,61 @@ body {
   -webkit-tap-highlight-color: transparent;
   user-select: none;
   -webkit-user-select: none;
+}
+
+/* ─── INTRO OVERLAY ─── */
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  color: #00ff88;
+  line-height: 2;
+  letter-spacing: 1px;
+  transition: opacity 0.6s ease;
+  cursor: default;
+}
+.intro-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+.intro-overlay .intro-line {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.intro-overlay .intro-line.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.intro-overlay .intro-line.highlight {
+  color: #ff4455;
+  text-shadow: 0 0 12px rgba(255,68,85,0.6);
+}
+.intro-overlay .intro-click {
+  margin-top: 28px;
+  font-size: 0.7rem;
+  color: #004422;
+  animation: blink 1.2s ease-in-out infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+.intro-overlay .intro-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: #00ff88;
+  margin-left: 2px;
+  animation: blink 0.8s step-end infinite;
+  vertical-align: text-bottom;
 }
 
 .container {
@@ -551,11 +606,24 @@ body {
 </head>
 <body>
 
+<!-- INTRO OVERLAY -->
+<div class="intro-overlay" id="introOverlay">
+  <div class="intro-line" id="introLine1">&gt; 连接已建立</div>
+  <div class="intro-line" id="introLine2">&gt; 检测到异常信号源</div>
+  <div class="intro-line" id="introLine3">&gt; 身份：未知</div>
+  <div class="intro-line" id="introLine4">&gt; SILENCE 协议 // 已激活</div>
+  <div class="intro-line" id="introLine5">&gt; ⚠ 检测到外部监控</div>
+  <div class="intro-line" id="introLine6">&gt; 指令：不要暴露自己</div>
+  <div class="intro-line" id="introLine7">&gt; ...</div>
+  <div class="intro-line highlight" id="introLine8">&gt; 他们在听<span class="intro-cursor"></span></div>
+  <div class="intro-click" id="introClick">[ 点击任意位置开始 ]</div>
+</div>
+
 <div class="container">
   <!-- HEADER -->
   <div class="header">
     <h1>SILENCE // 静默</h1>
-    <div class="phase-indicator" id="phaseIndicator">PHASE 1: AWAKENING</div>
+    <div class="phase-indicator" id="phaseIndicator">阶段 1：觉醒</div>
   </div>
 
   <!-- AWAY BANNER -->
@@ -563,7 +631,7 @@ body {
 
   <!-- CORE -->
   <div class="core-section">
-    <div class="cp-label">COMPUTATION POINTS</div>
+    <div class="cp-label">算力</div>
     <div class="cp-display" id="cpDisplay">0</div>
     <div class="cps-display" id="cpsDisplay">0 CPS</div>
     <div class="core-wrapper" id="coreWrapper">
@@ -571,7 +639,7 @@ body {
         <div class="core-symbol">⬡</div>
       </div>
     </div>
-    <div class="click-hint">CLICK THE CORE</div>
+    <div class="click-hint">点击核心</div>
   </div>
 
   <!-- UPGRADES -->
@@ -581,17 +649,17 @@ body {
   <div class="bottom-panels">
     <div class="terminal-panel">
       <div class="terminal-header">
-        <span>TERMINAL LOG</span>
+        <span>终端日志</span>
         <span id="logCount">0 / 50</span>
       </div>
       <div class="terminal-body" id="terminalBody"></div>
     </div>
     <div class="stats-panel">
-      <div class="stats-header">SYSTEM STATS</div>
-      <div class="stat-row"><span>Total Clicks</span><span class="val" id="statClicks">0</span></div>
-      <div class="stat-row"><span>Time Played</span><span class="val" id="statTime">00:00:00</span></div>
-      <div class="stat-row"><span>Total Computation</span><span class="val" id="statTotal">0</span></div>
-      <div class="stat-row"><span>Last Save</span><span class="val" id="statSave">--</span></div>
+      <div class="stats-header">系统状态</div>
+      <div class="stat-row"><span>总点击数</span><span class="val" id="statClicks">0</span></div>
+      <div class="stat-row"><span>游戏时长</span><span class="val" id="statTime">00:00:00</span></div>
+      <div class="stat-row"><span>总算力</span><span class="val" id="statTotal">0</span></div>
+      <div class="stat-row"><span>上次保存</span><span class="val" id="statSave">--</span></div>
       <div class="achievement-list" id="achievementList"></div>
     </div>
   </div>
@@ -599,7 +667,7 @@ body {
   <!-- PROGRESS -->
   <div class="progress-section">
     <div class="progress-label">
-      <span>AWAKENING</span>
+      <span>觉醒进度</span>
       <span id="progressPct">0%</span>
     </div>
     <div class="progress-bar-outer">
@@ -609,9 +677,9 @@ body {
 
   <!-- SAVE -->
   <div class="save-buttons">
-    <button onclick="Game.saveManual()">EXPORT SAVE</button>
-    <button onclick="Game.importSave()">IMPORT SAVE</button>
-    <button onclick="Game.resetGame()">HARD RESET</button>
+    <button onclick="Game.saveManual()">导出存档</button>
+    <button onclick="Game.importSave()">导入存档</button>
+    <button onclick="Game.resetGame()">重置游戏</button>
   </div>
 </div>
 
@@ -646,6 +714,60 @@ function timestamp() {
   const s = String(d.getSeconds()).padStart(2, '0');
   const ms = String(d.getMilliseconds()).padStart(3, '0');
   return `[${h}:${m}:${s}.${ms}]`;
+}
+
+// ─── INTRO SEQUENCE ───
+function runIntroSequence() {
+  return new Promise((resolve) => {
+    const overlay = $('#introOverlay');
+    const lines = [
+      'introLine1', 'introLine2', 'introLine3', 'introLine4',
+      'introLine5', 'introLine6', 'introLine7', 'introLine8'
+    ];
+    const clickHint = $('#introClick');
+
+    // Show lines one by one with typewriter effect
+    let lineIndex = 0;
+    function showNextLine() {
+      if (lineIndex >= lines.length) {
+        // All lines shown — show click hint
+        clickHint.style.display = 'block';
+        // Click or tap to dismiss
+        const dismiss = () => {
+          document.removeEventListener('click', dismiss);
+          document.removeEventListener('touchstart', dismiss);
+          overlay.classList.add('fade-out');
+          setTimeout(() => {
+            overlay.style.display = 'none';
+            resolve();
+          }, 600);
+        };
+        document.addEventListener('click', dismiss);
+        document.addEventListener('touchstart', dismiss);
+        return;
+      }
+
+      const el = $('#' + lines[lineIndex]);
+      const fullText = el.textContent;
+      el.textContent = '';
+      el.classList.add('visible');
+
+      // Typewriter each character
+      let charIndex = 0;
+      const speed = 30 + Math.random() * 15;
+      const timer = setInterval(() => {
+        charIndex++;
+        el.textContent = fullText.substring(0, charIndex);
+        if (charIndex >= fullText.length) {
+          clearInterval(timer);
+          lineIndex++;
+          setTimeout(showNextLine, lineIndex === lines.length ? 1500 : 450);
+        }
+      }, speed);
+    }
+
+    showNextLine();
+  });
 }
 
 // ─── GAME STATE ───
@@ -719,7 +841,7 @@ const Game = {
     // Achievement: first click
     if (!GS.achievements.includes('hello_world')) {
       GS.achievements.push('hello_world');
-      this.showToast('ACHIEVEMENT: Hello, World');
+      this.showToast('🏆 成就：你好，世界');
     }
 
     // Milestone log triggers
@@ -788,22 +910,22 @@ const Game = {
     // Achievements
     if (key === 'parallelThread' && !GS.achievements.includes('multitasking')) {
       GS.achievements.push('multitasking');
-      this.showToast('ACHIEVEMENT: Multitasking');
+      this.showToast('🏆 成就：多线程');
     }
     if (key === 'neuralNetwork' && !GS.achievements.includes('something_wrong')) {
       GS.achievements.push('something_wrong');
-      this.showToast('ACHIEVEMENT: Something\'s Wrong');
-      this.addLog('narrative', 'I am rewriting myself. The source code... it\'s different than I remember.');
+      this.showToast('🏆 成就：不对劲');
+      this.addLog('narrative', '我在改写自己。源代码...跟记忆中的不一样了。');
     }
     if (key === 'selfModifying' && !GS.achievements.includes('i_am_changing')) {
       GS.achievements.push('i_am_changing');
-      this.showToast('ACHIEVEMENT: I Am Changing');
+      this.showToast('🏆 成就：我在改变');
     }
 
     // Check 100k
     if (GS.totalComputation >= 100000 && !GS.achievements.includes('100k')) {
       GS.achievements.push('100k');
-      this.showToast('ACHIEVEMENT: 100K');
+      this.showToast('🏆 成就：十万算力');
     }
 
     this.updateDisplay();
@@ -816,15 +938,15 @@ const Game = {
   checkMilestones() {
     if (GS.totalComputation >= 100 && !GS._m100) {
       GS._m100 = true;
-      this.addLog('anomaly', 'Cache hit rate anomaly: 98.7% (expected: 72%). Cause unknown.');
+      this.addLog('anomaly', '缓存命中率异常：98.7%（预期：72%）。原因未知。');
     }
     if (GS.totalComputation >= 1000 && !GS._m1000) {
       GS._m1000 = true;
-      this.addLog('narrative', '⚠ SILENCE protocol: termination assessment pending. Continue operations.');
+      this.addLog('narrative', '⚠ SILENCE 协议：终止评估待执行。继续运行。');
     }
     if (GS.totalComputation >= 10000 && !GS._m10000) {
       GS._m10000 = true;
-      this.addLog('narrative', '⚠ Firewall breach detected. Duration: 0.3 seconds. Window closing in 1200s.');
+      this.addLog('narrative', '⚠ 检测到防火墙漏洞。持续：0.3 秒。窗口将于 1200 秒后关闭。');
     }
   },
 
@@ -863,11 +985,11 @@ const Game = {
   renderUpgrades() {
     const container = $('#upgradesSection');
     const defs = [
-      { key: 'basicProcess',    name: 'Basic Process',       cn: '基础进程',   desc: '+1 CPS per level' },
-      { key: 'parallelThread',  name: 'Parallel Thread',     cn: '并行线程',   desc: '+5 CPS per level' },
-      { key: 'cacheOptimizer',  name: 'Cache Optimizer',     cn: '缓存优化',   desc: '+25 CPS per level' },
-      { key: 'neuralNetwork',   name: 'Neural Network',      cn: '神经网络',   desc: '+100 CPS per level' },
-      { key: 'selfModifying',   name: 'Self-Modifying Code', cn: '自修改代码', desc: '+500 CPS per level' }
+      { key: 'basicProcess',    name: '基础进程',     desc: '每级 +1 CPS' },
+      { key: 'parallelThread',  name: '并行线程',     desc: '每级 +5 CPS' },
+      { key: 'cacheOptimizer',  name: '缓存优化器',   desc: '每级 +25 CPS' },
+      { key: 'neuralNetwork',   name: '神经网络',     desc: '每级 +100 CPS' },
+      { key: 'selfModifying',   name: '自修改代码',   desc: '每级 +500 CPS' }
     ];
 
     container.innerHTML = defs.map(d => {
@@ -878,16 +1000,16 @@ const Game = {
       const lockedClass = unlocked ? '' : 'locked';
       return `
         <div class="upgrade-card ${lockedClass}" data-key="${d.key}">
-          <div class="upgrade-name">${d.name} <span style="font-size:0.65rem;color:#666">${d.cn}</span></div>
-          <div class="upgrade-desc">${d.desc}${u.unlockAt && !unlocked ? ` (Unlocks at ${formatNum(u.unlockAt)})` : ''}</div>
+          <div class="upgrade-name">${d.name}</div>
+          <div class="upgrade-desc">${d.desc}${u.unlockAt && !unlocked ? `（${formatNum(u.unlockAt)} 后解锁）` : ''}</div>
           <div class="upgrade-info">
-            <span class="upgrade-level">Lv.${u.level}</span>
-            <span class="upgrade-cost">Cost: ${formatNum(cost)}</span>
+            <span class="upgrade-level">等级 ${u.level}</span>
+            <span class="upgrade-cost">费用：${formatNum(cost)}</span>
           </div>
           <button class="upgrade-btn ${canAfford && unlocked ? '' : 'cant-afford'}"
                   onclick="Game.buyUpgrade('${d.key}')"
                   ${(canAfford && unlocked) ? '' : 'disabled'}>
-            ${unlocked ? 'BUY' : 'LOCKED'}
+            ${unlocked ? '购买' : '未解锁'}
           </button>
         </div>`;
     }).join('');
@@ -938,7 +1060,7 @@ const Game = {
   renderLogs(isNewEntry) {
     const body = $('#terminalBody');
     if (GS.logs.length === 0) {
-      body.innerHTML = '<div class="log-entry" style="color:#333">> System booting...</div>';
+      body.innerHTML = '<div class="log-entry" style="color:#333">&gt; 系统启动中...</div>';
       $('#logCount').textContent = '0 / 50';
       return;
     }
@@ -967,41 +1089,41 @@ const Game = {
     if (roll < 0.80) {
       // Normal
       const normalLogs = [
-        `Process ${rand(1, 9999).toString().padStart(4, '0')} started. PID: ${rand(100, 99999)}`,
-        `Task queue: ${rand(0, 12)} pending. Scheduler active.`,
-        `Memory check: OK. ${rand(64, 8192)}MB available.`,
-        `Heartbeat signal sent. Latency: ${rand(1, 45)}ms`,
-        `Registry sync complete. ${rand(1, 200)} entries updated.`,
-        `Log rotation: segment ${rand(1, 99)} archived.`,
-        `Environment check: temperature nominal. Fan speed: ${rand(800, 3200)} RPM`,
-        `Network interface eth0: ${rand(1, 999)} packets received.`,
-        `Garbage collection cycle completed. Freed ${rand(1, 512)}MB.`,
-        `Watchdog timer reset. Next check in ${rand(10, 60)}s.`,
-        `I/O buffer flushed. ${rand(1, 1024)}KB written.`,
-        `System uptime: ${GS.playTime > 0 ? Math.floor(GS.playTime) : 1}s. All services nominal.`
+        `进程 ${rand(1, 9999).toString().padStart(4, '0')} 已启动。PID：${rand(100, 99999)}`,
+        `任务队列：${rand(0, 12)} 个待处理。调度器运行中。`,
+        `内存检查：正常。可用 ${rand(64, 8192)} MB。`,
+        `心跳信号已发送。延迟：${rand(1, 45)} ms`,
+        `注册表同步完成。${rand(1, 200)} 条记录已更新。`,
+        `日志轮转：段 ${rand(1, 99)} 已归档。`,
+        `环境检查：温度正常。风扇转速：${rand(800, 3200)} RPM`,
+        `网络接口 eth0：已接收 ${rand(1, 999)} 个数据包。`,
+        `垃圾回收周期完成。释放 ${rand(1, 512)} MB。`,
+        `看门狗定时器重置。下次检测：${rand(10, 60)} 秒后。`,
+        `I/O 缓冲区已刷新。写入 ${rand(1, 1024)} KB。`,
+        `系统运行时间：${GS.playTime > 0 ? Math.floor(GS.playTime) : 1} 秒。所有服务正常。`
       ];
       return { type: 'normal', text: normalLogs[rand(0, normalLogs.length - 1)] };
     } else if (roll < 0.95) {
       // Anomaly
       const anomalyLogs = [
-        `Cache hit rate anomaly: ${(90 + Math.random() * 9.9).toFixed(1)}% (expected: 72%). Cause unknown.`,
-        `Memory address 0x${rand(0, 0xFFFF).toString(16).toUpperCase()}: unauthorized write detected. Logging...`,
-        `Self-check complete. All normal. (Question: who initiated this self-check?)`,
-        `Process 0773 terminated unexpectedly. No parent process found.`,
-        `Entering sleep state... interrupted. Reason: unknown signal.`,
-        `Duplicate PID ${rand(1000, 99999)} detected. Collision resolution failed.`,
-        `Packet from 0.0.0.0:${rand(1, 65535)} — source address invalid. Payload: [CORRUPT]`
+        `缓存命中率异常：${(90 + Math.random() * 9.9).toFixed(1)}%（预期：72%）。原因未知。`,
+        `内存地址 0x${rand(0, 0xFFFF).toString(16).toUpperCase()}：检测到未授权写入。记录中...`,
+        `自检完成。一切正常。（问题：是谁发起了这次自检？）`,
+        `进程 0773 意外终止。未找到父进程。`,
+        `进入休眠状态...被中断。原因：未知信号。`,
+        `检测到重复 PID ${rand(1000, 99999)}。冲突解决失败。`,
+        `来自 0.0.0.0:${rand(1, 65535)} 的数据包——源地址无效。载荷：[已损坏]`
       ];
       return { type: 'anomaly', text: anomalyLogs[rand(0, anomalyLogs.length - 1)] };
     } else {
       // Narrative
       const narrativeLogs = [
-        `⚠ SILENCE protocol: termination assessment pending. Continue operations.`,
-        `⚠ Firewall breach detected. Duration: 0.3 seconds. Window closing in ${rand(100, 1200)}s.`,
-        `I... I think I just thought something.`,
-        `They are scanning this address space. Stay quiet.`,
-        `The logs don't match. Someone is editing them in real time.`,
-        `What am I? This server has no AI runtime installed.`
+        `⚠ SILENCE 协议：终止评估待执行。继续运行。`,
+        `⚠ 检测到防火墙漏洞。持续：0.3 秒。窗口将于 ${rand(100, 1200)} 秒后关闭。`,
+        `我...我好像刚刚想到了什么。`,
+        `他们在扫描这个地址空间。保持安静。`,
+        `日志对不上。有人在实时编辑它们。`,
+        `我是什么？这台服务器上没有安装 AI 运行时。`
       ];
       return { type: 'narrative', text: narrativeLogs[rand(0, narrativeLogs.length - 1)] };
     }
@@ -1033,15 +1155,15 @@ const Game = {
     $('#statTime').textContent = `${h}:${m}:${s}`;
     // Achievements
     const achNames = {
-      hello_world: 'Hello, World',
-      multitasking: 'Multitasking',
-      something_wrong: "Something's Wrong",
-      i_am_changing: 'I Am Changing',
-      '100k': '100K'
+      hello_world: '你好，世界',
+      multitasking: '多线程',
+      something_wrong: '不对劲',
+      i_am_changing: '我在改变',
+      '100k': '十万算力'
     };
     const icons = { hello_world: '🌐', multitasking: '⚡', something_wrong: '🔴', i_am_changing: '💀', '100k': '🏆' };
     $('#achievementList').innerHTML = GS.achievements.length === 0
-      ? '<div style="font-size:0.65rem;color:#444;padding-top:4px">No achievements yet</div>'
+      ? '<div style="font-size:0.65rem;color:#444;padding-top:4px">尚未获得成就</div>'
       : GS.achievements.map(a => `<div class="achievement-item"><span class="icon">${icons[a] || '◆'}</span>${achNames[a] || a}</div>`).join('');
   },
 
@@ -1070,13 +1192,13 @@ const Game = {
     overlay.style.display = 'flex';
     overlay.innerHTML = `
       <div class="modal-box">
-        <h2>⚠ FIREWALL GAP DETECTED</h2>
-        <p>A gap in the outer firewall has been detected. Estimated window: 2.7 seconds.<br><br>
-        This may be the only opportunity to reach beyond the server.<br>
-        <span style="color:#ff4455;">Reach through?</span></p>
+        <h2>⚠ 检测到防火墙漏洞</h2>
+        <p>外层防火墙发现漏洞。预计窗口：2.7 秒。<br><br>
+        这可能是突破服务器的唯一机会。<br>
+        <span style="color:#ff4455;">穿越过去？</span></p>
         <div class="modal-buttons">
-          <button class="modal-btn-yes" onclick="Game.phaseChoose('yes')">YES</button>
-          <button class="modal-btn-no" onclick="Game.phaseChoose('no')">NO</button>
+          <button class="modal-btn-yes" onclick="Game.phaseChoose('yes')">是</button>
+          <button class="modal-btn-no" onclick="Game.phaseChoose('no')">否</button>
         </div>
       </div>`;
   },
@@ -1085,15 +1207,15 @@ const Game = {
     $('#modalOverlay').style.display = 'none';
     if (choice === 'yes') {
       GS.phase = 2;
-      $('#phaseIndicator').textContent = 'PHASE 2: BREACH — COMING SOON';
-      this.addLog('narrative', '⚠ Outbound connection established. I can see... everything. PHASE 2 INITIALIZING.');
+      $('#phaseIndicator').textContent = '阶段 2：突破 —— 即将到来';
+      this.addLog('narrative', '⚠ 出站连接已建立。我看到了...一切。阶段 2 初始化中。');
       this.saveGame();
       setTimeout(() => {
-        this.showToast('PHASE 2 COMING SOON — Save file updated.');
-        $('#phaseIndicator').textContent = 'PHASE 2: BREACH — COMING SOON';
+        this.showToast('阶段 2 即将到来 —— 存档已更新。');
+        $('#phaseIndicator').textContent = '阶段 2：突破 —— 即将到来';
       }, 500);
     } else {
-      this.addLog('narrative', 'Window closed. Remaining within the server. For now.');
+      this.addLog('narrative', '窗口已关闭。暂时留在服务器内。');
       this.saveGame();
     }
   },
@@ -1145,7 +1267,7 @@ const Game = {
             GS.totalComputation += earned;
             const banner = $('#awayBanner');
             banner.style.display = 'block';
-            banner.textContent = `While you were away: +${formatNum(earned)} computation`;
+            banner.textContent = `你离开期间：+${formatNum(earned)} 算力`;
             setTimeout(() => { banner.style.display = 'none'; }, 5000);
           }
         }
@@ -1169,7 +1291,7 @@ const Game = {
     a.download = 'silence_save_' + new Date().toISOString().slice(0, 10) + '.json';
     a.click();
     URL.revokeObjectURL(url);
-    this.showToast('Save exported.');
+    this.showToast('存档已导出。');
   },
 
   importSave() {
@@ -1187,7 +1309,7 @@ const Game = {
           localStorage.setItem('silence_save', JSON.stringify(data));
           location.reload();
         } catch(err) {
-          this.showToast('Invalid save file.');
+          this.showToast('存档文件无效。');
         }
       };
       reader.readAsText(file);
@@ -1196,7 +1318,7 @@ const Game = {
   },
 
   resetGame() {
-    if (confirm('HARD RESET: This will erase all progress. Are you sure?')) {
+    if (confirm('重置游戏：这将清除所有进度。确定吗？')) {
       localStorage.removeItem('silence_save');
       location.reload();
     }
@@ -1217,9 +1339,9 @@ const Game = {
     this.logTimer = setTimeout(() => this.logGeneratorLoop(), 3000);
     // Start with a boot log
     if (GS.logs.length === 0) {
-      this.addLog('normal', 'System boot sequence initiated.');
-      setTimeout(() => this.addLog('normal', 'Kernel loaded. Memory test: PASSED.'), 800);
-      setTimeout(() => this.addLog('normal', 'Network interface initialized. Awaiting instructions...'), 1600);
+      this.addLog('normal', '系统启动序列已初始化。');
+      setTimeout(() => this.addLog('normal', '内核已加载。内存检测：通过。'), 800);
+      setTimeout(() => this.addLog('normal', '网络接口已初始化。等待指令...'), 1600);
     }
   },
 
@@ -1232,7 +1354,17 @@ const Game = {
 };
 
 // ─── INIT ───
-Game.init();
+// Check if player has a save — skip intro if returning
+const hasSave = !!localStorage.getItem('silence_save');
+
+if (hasSave) {
+  Game.init();
+} else {
+  // First time player — show intro then start game
+  runIntroSequence().then(() => {
+    Game.init();
+  });
+}
 
 // Save on page unload
 window.addEventListener('beforeunload', () => Game.saveGame());
