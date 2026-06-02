@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-02T15:42:15",
+  "updated": "2026-06-02T16:13:43",
   "cron_jobs": [
     {
       "id": "37b9dc3f7a43",
       "name": "天猫平台知识学习",
       "status": "active",
       "schedule": "0 9 * * *",
-      "next_relative": "17小时后",
+      "next_relative": "16小时后",
       "last_relative": "6小时前",
       "last_status": "ok",
       "last_error": "",
@@ -54,7 +54,7 @@
       "name": "每日骑行天气提醒",
       "status": "active",
       "schedule": "0 7 * * *",
-      "next_relative": "15小时后",
+      "next_relative": "14小时后",
       "last_relative": "8小时前",
       "last_status": "ok",
       "last_error": "",
@@ -126,12 +126,12 @@
     {
       "date": "2026-06-02",
       "model": "deepseek-v4-pro",
-      "sessions": 175,
-      "input_tokens": 892609,
-      "output_tokens": 269570,
-      "tokens": 1162179,
-      "cost": 0.6228,
-      "task": "deepseek-v4-pro · 175次"
+      "sessions": 190,
+      "input_tokens": 1004908,
+      "output_tokens": 290575,
+      "tokens": 1295483,
+      "cost": 0.6899,
+      "task": "deepseek-v4-pro · 190次"
     },
     {
       "date": "2026-06-02",
