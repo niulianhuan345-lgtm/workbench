@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-02 15:15:18",
+  "updated": "2026-06-02 15:19:42",
   "indices": [
     {
       "name": "上证指数",
@@ -627,7 +627,7 @@
       "change_pct": 5.47,
       "reasons": [
         "暴涨5%",
-        "换手率1000.0%"
+        "换手率500.0%"
       ],
       "severity": "medium"
     },
@@ -638,7 +638,7 @@
       "change_pct": 5.01,
       "reasons": [
         "暴涨5%",
-        "换手率1604.0%"
+        "换手率1514.0%"
       ],
       "severity": "medium"
     },
@@ -679,7 +679,17 @@
       "price": 433.89,
       "change_pct": 3.28,
       "reasons": [
-        "换手率8800.0%"
+        "换手率12400.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "688041",
+      "name": "海光信息",
+      "price": 283.49,
+      "change_pct": 2.95,
+      "reasons": [
+        "换手率517.0%"
       ],
       "severity": "medium"
     },
@@ -700,16 +710,6 @@
       "change_pct": 2.4,
       "reasons": [
         "换手率685.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "000002",
-      "name": "万 科Ａ",
-      "price": 3.39,
-      "change_pct": -2.31,
-      "reasons": [
-        "换手率2639500.0%"
       ],
       "severity": "medium"
     }
