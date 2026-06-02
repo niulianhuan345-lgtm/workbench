@@ -180,24 +180,6 @@
     "status": "active"
   },
   {
-    "name": "jintoushang-ai-scoring",
-    "category": "data-science",
-    "desc": "金投赏 AI 评分系统 — 多模型对抗评审、历史案例参照、语义相似匹配、性能缓存。触发词：金投赏、AI评分、评审、案例打分、历史参照。",
-    "status": "active"
-  },
-  {
-    "name": "jintoushang-scoring",
-    "category": "data-science",
-    "desc": "金投赏 AI 评分系统 v5 — 双模对抗评审、历史参照匹配、分歧仲裁。触发词：金投赏、评分系统、打分量规、历史案例匹配、similarity cache。",
-    "status": "active"
-  },
-  {
-    "name": "jintoushang-scoring-test",
-    "category": "data-science",
-    "desc": "金投赏AI评分系统测试：多模型评审、历史案例参照、PPT提取、语义匹配、缓存查询。触发词：金投赏、评分测试、案例评审、历史参照、相似案例匹配。",
-    "status": "active"
-  },
-  {
     "name": "jupyter-live-kernel",
     "category": "data-science",
     "desc": "Iterative Python via live Jupyter kernel (hamelnb).",
