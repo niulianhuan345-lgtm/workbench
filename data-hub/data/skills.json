@@ -228,12 +228,6 @@
     "status": "active"
   },
   {
-    "name": "static-site-github-pages",
-    "category": "devops",
-    "desc": "部署单页应用到 GitHub Pages — 数据内嵌、自动同步、永久链接。触发条件：用户需要稳定的公开链接分享 HTML 页面、工作台、仪表盘。",
-    "status": "active"
-  },
-  {
     "name": "webhook-subscriptions",
     "category": "devops",
     "desc": "Webhook subscriptions: event-driven agent runs.",
@@ -279,12 +273,6 @@
     "name": "github-issues",
     "category": "github",
     "desc": "Create, triage, label, assign GitHub issues via gh or REST.",
-    "status": "active"
-  },
-  {
-    "name": "github-pages-deploy",
-    "category": "github",
-    "desc": "Deploy static sites to GitHub Pages via the workbench repo — build, copy, push.",
     "status": "active"
   },
   {
@@ -450,12 +438,6 @@
     "status": "active"
   },
   {
-    "name": "product-requirements",
-    "category": "productivity",
-    "desc": "Design and write product requirement documents (PRD/需求文档). Use when the user asks to design a new product feature, write a requirement document, draft user stories, plan a product feature, or iterate on existing product requirements. Covers AIONE AI agent advertising platform conventions and general PRD authoring.",
-    "status": "active"
-  },
-  {
     "name": "project-dashboard",
     "category": "productivity",
     "desc": "为用户牛连欢的个人项目生成项目看板 HTML 页面。左树形导航 + 右卡片内容、每项链接实际文件、进度可视化、变更记录时间线。触发：用户说\"建个看板\"\"生成项目看板\"\"帮我做个 XX 项目看板\"。",
@@ -477,12 +459,6 @@
     "name": "weather-report",
     "category": "productivity",
     "desc": "Generate Chinese weather reports with Open-Meteo API — fetch forecasts, map WMO weather codes to Chinese descriptions, convert wind direction angles and Beaufort scale, and format concise commute/activity reports. Also batch city weather + business impact analysis for ad delivery / food delivery efficiency. Trigger when the user asks for weather, needs a weather report, wants weather-based planning advice, asks about weather impact on delivery efficiency, or sets up daily weather notifications.",
-    "status": "active"
-  },
-  {
-    "name": "workbench-dashboard",
-    "category": "productivity",
-    "desc": "Manage the AIONE 总控台 workbench — 5-tab dashboard (概览/任务/项目/系统/知识) for task management, project tracking, system monitoring, and knowledge learning. Two co-existing versions: vanilla HTML at 总控台/index.html and Ant Design React at 总控台-antd/. Trigger when user mentions 总控台, 工作台, 知识学习, or wants to update dashboard features.",
     "status": "active"
   },
   {
