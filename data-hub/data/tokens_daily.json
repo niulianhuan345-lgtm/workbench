@@ -7,14 +7,8 @@
   },
   {
     "day": "2026-06-02",
-<<<<<<< HEAD
-    "tokens": 2491855,
-    "cost": 9.4544,
-    "sessions": 259
-=======
-    "tokens": 2485293,
-    "cost": 9.425,
-    "sessions": 257
->>>>>>> b255b14 (auto: 数据中枢 refresh 06/02 17:39)
+    "tokens": 2544645,
+    "cost": 9.6796,
+    "sessions": 271
   }
 ]
