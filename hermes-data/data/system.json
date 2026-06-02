@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-02T12:54:06",
+  "updated": "2026-06-02T13:25:35",
   "cron_jobs": [
     {
       "id": "37b9dc3f7a43",
       "name": "天猫平台知识学习",
       "status": "active",
       "schedule": "0 9 * * *",
-      "next_relative": "20小时后",
+      "next_relative": "19小时后",
       "last_relative": "3小时前",
       "last_status": "ok",
       "last_error": "",
@@ -54,7 +54,7 @@
       "name": "每日骑行天气提醒",
       "status": "active",
       "schedule": "0 7 * * *",
-      "next_relative": "18小时后",
+      "next_relative": "17小时后",
       "last_relative": "5小时前",
       "last_status": "ok",
       "last_error": "",
@@ -67,7 +67,7 @@
       "status": "active",
       "schedule": "*/30 * * * *",
       "next_relative": "29分钟后",
-      "last_relative": "16分钟前",
+      "last_relative": "24分钟前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -114,8 +114,8 @@
       "name": "隧道心跳保活",
       "status": "active",
       "schedule": "every 5m",
-      "next_relative": "1分钟后",
-      "last_relative": "3分钟前",
+      "next_relative": "即将执行",
+      "last_relative": "5分钟前",
       "last_status": "ok",
       "last_error": "",
       "script": "tunnel-keepalive.sh",
@@ -126,12 +126,12 @@
     {
       "date": "2026-06-02",
       "model": "deepseek-v4-pro",
-      "sessions": 66,
-      "input_tokens": 393807,
-      "output_tokens": 108987,
-      "tokens": 502794,
-      "cost": 0.2661,
-      "task": "deepseek-v4-pro · 66次"
+      "sessions": 86,
+      "input_tokens": 446825,
+      "output_tokens": 135536,
+      "tokens": 582361,
+      "cost": 0.3123,
+      "task": "deepseek-v4-pro · 86次"
     },
     {
       "date": "2026-06-02",
