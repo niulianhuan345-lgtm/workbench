@@ -47,6 +47,10 @@ body {
   letter-spacing: 1px;
   transition: opacity 0.6s ease;
   cursor: default;
+  touch-action: manipulation;
+}
+.intro-overlay.clickable {
+  cursor: pointer;
 }
 .intro-overlay.fade-out {
   opacity: 0;
@@ -730,20 +734,24 @@ function runIntroSequence() {
     let lineIndex = 0;
     function showNextLine() {
       if (lineIndex >= lines.length) {
-        // All lines shown — show click hint
+        // All lines shown — bind dismiss on overlay itself (catches mobile taps)
+        overlay.classList.add('clickable');
         clickHint.style.display = 'block';
-        // Click or tap to dismiss
+
         const dismiss = () => {
-          document.removeEventListener('click', dismiss);
-          document.removeEventListener('touchstart', dismiss);
+          // Remove both listeners
+          overlay.removeEventListener('click', dismiss);
+          overlay.removeEventListener('pointerdown', dismiss);
+          overlay.classList.remove('clickable');
           overlay.classList.add('fade-out');
           setTimeout(() => {
             overlay.style.display = 'none';
             resolve();
           }, 600);
         };
-        document.addEventListener('click', dismiss);
-        document.addEventListener('touchstart', dismiss);
+
+        overlay.addEventListener('click', dismiss);
+        overlay.addEventListener('pointerdown', dismiss);
         return;
       }
 
