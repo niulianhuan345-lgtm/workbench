@@ -384,12 +384,6 @@
     "status": "active"
   },
   {
-    "name": "feishu-docs",
-    "category": "productivity",
-    "desc": "Create, read, and edit Feishu/Lark documents via Open API. Use when the user asks to create a Feishu doc, copy content to Feishu, edit a wiki page, or add sections to a Feishu document.",
-    "status": "active"
-  },
-  {
     "name": "google-workspace",
     "category": "productivity",
     "desc": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
