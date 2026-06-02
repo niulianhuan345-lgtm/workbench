@@ -32,579 +32,318 @@ body {
 
 /* ─── INTRO OVERLAY ─── */
 .intro-overlay {
-  position: fixed;
-  inset: 0;
-  background: #000;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font);
-  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
-  color: #00ff88;
-  line-height: 2;
-  letter-spacing: 1px;
-  transition: opacity 0.6s ease;
-  cursor: default;
-  touch-action: manipulation;
+  position: fixed; inset: 0; background: #000; z-index: 9999;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-family: var(--font); font-size: clamp(0.8rem, 2.2vw, 1rem);
+  color: #00cc77; line-height: 2; letter-spacing: 1px;
+  transition: opacity 0.5s ease; cursor: default;
 }
-.intro-overlay.clickable {
-  cursor: pointer;
-}
-.intro-overlay.fade-out {
-  opacity: 0;
-  pointer-events: none;
-}
-.intro-overlay .intro-line {
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.15s ease, transform 0.15s ease;
-}
-.intro-overlay .intro-line.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.intro-overlay.clickable { cursor: pointer; }
+.intro-overlay.fade-out { opacity: 0; pointer-events: none; }
+.intro-overlay .intro-line { opacity: 0; transform: translateY(8px); transition: opacity 0.15s, transform 0.15s; }
+.intro-overlay .intro-line.visible { opacity: 1; transform: translateY(0); }
 .intro-overlay .intro-line.highlight {
-  color: #ff4455;
-  text-shadow: 0 0 12px rgba(255,68,85,0.6);
+  color: #ff4455; text-shadow: 0 0 12px rgba(255,68,85,0.6);
+  animation: highlightBlink 0.8s ease-in-out infinite;
 }
-.intro-overlay .intro-click {
-  margin-top: 28px;
-  font-size: 0.7rem;
-  color: #004422;
-  animation: blink 1.2s ease-in-out infinite;
-}
-@keyframes blink {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 1; }
-}
-.intro-overlay .intro-cursor {
-  display: inline-block;
-  width: 8px;
-  height: 1em;
-  background: #00ff88;
-  margin-left: 2px;
-  animation: blink 0.8s step-end infinite;
-  vertical-align: text-bottom;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 12px 16px 24px;
-}
-
-/* HEADER */
-.header {
-  text-align: center;
-  padding: 16px 0 8px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 12px;
-}
-.header h1 {
-  font-size: clamp(1.4rem, 4vw, 2rem);
-  letter-spacing: 4px;
-  color: var(--text);
-  text-shadow: 0 0 20px rgba(0,255,136,0.3);
-}
-.phase-indicator {
-  font-size: 0.75rem;
-  color: var(--accent);
-  letter-spacing: 3px;
-  margin-top: 2px;
-  animation: phasePulse 3s ease-in-out infinite;
-}
-@keyframes phasePulse {
+@keyframes highlightBlink {
   0%, 100% { opacity: 0.7; }
   50% { opacity: 1; }
 }
+.intro-overlay .intro-cursor {
+  display: inline-block; width: 8px; height: 1em;
+  background: #ff4455; margin-left: 2px;
+  animation: blink 0.8s step-end infinite; vertical-align: text-bottom;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
-/* CORE AREA */
+.container { max-width: 1000px; margin: 0 auto; padding: 10px 14px 20px; }
+
+/* ─── HEADER ─── */
+.header {
+  text-align: center; padding: 12px 0 6px;
+  border-bottom: 1px solid var(--border); margin-bottom: 10px;
+}
+.header h1 {
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  letter-spacing: 5px; color: var(--text);
+  text-shadow: 0 0 20px rgba(0,255,136,0.3);
+}
+.status-bar {
+  font-size: 0.7rem; letter-spacing: 2px; margin-top: 4px;
+  transition: color 0.5s;
+}
+.status-bar.safe { color: #00ff88; }
+.status-bar.warn { color: #ffaa00; }
+.status-bar.danger { color: #ff8800; }
+.status-bar.exposed { color: #ff4455; }
+
+/* ─── CORE AREA ─── */
 .core-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0 24px;
-  position: relative;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 16px 0 20px; position: relative;
 }
 .cp-display {
-  font-size: clamp(2rem, 6vw, 3.2rem);
-  font-weight: bold;
-  color: var(--text);
-  text-shadow: 0 0 30px rgba(0,255,136,0.4);
-  letter-spacing: 2px;
-  transition: color 0.3s;
+  font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: bold;
+  color: var(--text); text-shadow: 0 0 30px rgba(0,255,136,0.4); letter-spacing: 2px;
 }
-.cp-label {
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+.cp-label { font-size: 0.65rem; color: var(--text-dim); letter-spacing: 2px; margin-bottom: 2px; }
+.cps-row {
+  display: flex; gap: 20px; align-items: center; font-size: 0.8rem;
+  color: var(--text-dim); margin-bottom: 14px; flex-wrap: wrap; justify-content: center;
 }
-.cps-display {
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  margin-bottom: 16px;
-  transition: color 0.3s;
-}
-.cps-display.pulse {
-  color: var(--text);
-  text-shadow: 0 0 10px rgba(0,255,136,0.5);
-}
+.cps-row .anomaly { color: var(--text); }
+.cps-row .anomaly.warn { color: var(--gold); }
+.cps-row .anomaly.danger { color: var(--accent); }
 
-/* SERVER CORE */
-.core-wrapper {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  margin-bottom: 8px;
-}
+.core-wrapper { position: relative; width: 170px; height: 170px; margin-bottom: 4px; }
 .core {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
+  width: 100%; height: 100%; border-radius: 50%; cursor: pointer; position: relative;
   background: radial-gradient(circle at 30% 30%, #1a3a2a, #0a1a0f);
   border: 3px solid #00ff88;
   box-shadow: 0 0 40px rgba(0,255,136,0.25), inset 0 0 40px rgba(0,255,136,0.08);
-  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, border-color 0.3s;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
 }
 .core::before {
-  content: '';
-  position: absolute;
-  inset: 12px;
-  border-radius: 50%;
-  border: 1px solid rgba(0,255,136,0.2);
-  animation: coreSpin 8s linear infinite;
+  content: ''; position: absolute; inset: 12px; border-radius: 50%;
+  border: 1px solid rgba(0,255,136,0.2); animation: coreSpin 8s linear infinite;
 }
 .core::after {
-  content: '';
-  position: absolute;
-  inset: 28px;
-  border-radius: 50%;
+  content: ''; position: absolute; inset: 28px; border-radius: 50%;
   background: radial-gradient(circle, rgba(0,255,136,0.15) 0%, transparent 70%);
   animation: corePulse 2s ease-in-out infinite;
 }
-.core:active {
-  transform: scale(0.92);
-}
+.core:active { transform: scale(0.92); }
 .core.punch {
   transform: scale(1.08);
   box-shadow: 0 0 70px rgba(0,255,136,0.5), inset 0 0 60px rgba(0,255,136,0.2);
 }
 .core-symbol {
-  font-size: 2.5rem;
-  color: rgba(0,255,136,0.5);
-  z-index: 2;
-  pointer-events: none;
-  animation: corePulse 2s ease-in-out infinite;
+  font-size: 2.3rem; color: rgba(0,255,136,0.5); z-index: 2;
+  pointer-events: none; animation: corePulse 2s ease-in-out infinite;
 }
-@keyframes coreSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+@keyframes coreSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 @keyframes corePulse {
   0%, 100% { opacity: 0.5; transform: scale(1); }
   50% { opacity: 0.9; transform: scale(1.04); }
 }
-.click-hint {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  letter-spacing: 1px;
-  margin-top: 4px;
-}
+.click-hint { font-size: 0.6rem; color: var(--text-dim); letter-spacing: 1px; margin-top: 2px; }
 
-/* FLOATING TEXT */
+/* ─── FLOAT TEXT ─── */
 .float-text {
-  position: absolute;
-  pointer-events: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--text);
-  text-shadow: 0 0 8px rgba(0,255,136,0.6);
-  animation: floatUp 0.8s ease-out forwards;
-  z-index: 100;
+  position: absolute; pointer-events: none; font-size: 1rem; font-weight: bold;
+  color: var(--text); text-shadow: 0 0 8px rgba(0,255,136,0.6);
+  animation: floatUp 0.7s ease-out forwards; z-index: 100;
 }
 @keyframes floatUp {
   0% { opacity: 1; transform: translateY(0) scale(1); }
-  100% { opacity: 0; transform: translateY(-60px) scale(1.3); }
+  100% { opacity: 0; transform: translateY(-55px) scale(1.3); }
 }
 
-/* UPGRADES */
-.upgrades-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-bottom: 12px;
+/* ─── UPGRADES TWO COLUMNS ─── */
+.upgrades-wrapper {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 10px;
 }
 @media (max-width: 700px) {
-  .upgrades-section {
-    grid-template-columns: 1fr;
-  }
+  .upgrades-wrapper { grid-template-columns: 1fr; }
 }
+.upgrade-col h3 {
+  font-size: 0.72rem; letter-spacing: 2px; margin-bottom: 6px;
+  padding-bottom: 4px; border-bottom: 1px solid var(--border);
+}
+.upgrade-col.left h3 { color: var(--blue); }
+.upgrade-col.right h3 { color: var(--gold); }
+
 .upgrade-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 10px 12px;
-  transition: border-color 0.3s, box-shadow 0.3s;
-  position: relative;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+  padding: 10px 12px; margin-bottom: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s, opacity 0.3s; position: relative;
 }
-.upgrade-card.locked {
-  opacity: 0.35;
-  filter: grayscale(0.8);
-  pointer-events: none;
-}
-.upgrade-card.unlocking {
-  animation: unlockFlash 0.6s ease-out;
-}
-.upgrade-card.buy-flash {
-  animation: buyFlash 0.5s ease-out;
+.upgrade-card.locked { opacity: 0.3; filter: grayscale(0.7); pointer-events: none; }
+.upgrade-card.buy-flash { animation: buyFlash 0.5s ease-out; }
+.upgrade-card.unlock-flash { animation: unlockFlash 0.6s ease-out; }
+@keyframes buyFlash {
+  0% { background: rgba(255,170,0,0.15); border-color: var(--gold); }
+  100% { background: var(--surface); border-color: var(--border); }
 }
 @keyframes unlockFlash {
   0% { border-color: var(--gold); box-shadow: 0 0 20px rgba(255,170,0,0.5); }
   100% { border-color: var(--border); box-shadow: none; }
 }
-@keyframes buyFlash {
-  0% { background: rgba(255,170,0,0.15); border-color: var(--gold); }
-  100% { background: var(--surface); border-color: var(--border); }
+.upgrade-card .uname {
+  font-size: 0.82rem; font-weight: bold; color: var(--text); margin-bottom: 2px;
 }
-.upgrade-name {
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: var(--text);
-  margin-bottom: 2px;
+.upgrade-card .udesc {
+  font-size: 0.62rem; color: var(--text-dim); margin-bottom: 5px; line-height: 1.4;
 }
-.upgrade-desc {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  margin-bottom: 6px;
+.upgrade-card .udetails {
+  font-size: 0.65rem; color: #888; line-height: 1.5;
 }
-.upgrade-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.7rem;
+.upgrade-card .udetails .val { color: var(--text); }
+.upgrade-card .udetails .cost { color: var(--gold); }
+.upgrade-card .ubtn {
+  width: 100%; margin-top: 6px; padding: 5px 0;
+  background: transparent; border: 1px solid var(--text-dim); color: var(--text);
+  font-family: var(--font); font-size: 0.68rem; cursor: pointer; border-radius: 3px;
+  letter-spacing: 1px; transition: all 0.2s;
 }
-.upgrade-level {
-  color: #888;
-}
-.upgrade-cost {
-  color: var(--gold);
-}
-.upgrade-btn {
-  width: 100%;
-  margin-top: 6px;
-  padding: 5px 0;
-  background: transparent;
-  border: 1px solid var(--text-dim);
-  color: var(--text);
-  font-family: var(--font);
-  font-size: 0.7rem;
-  cursor: pointer;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  transition: all 0.2s;
-}
-.upgrade-btn:hover {
-  background: rgba(0,255,136,0.08);
-  border-color: var(--text);
-}
-.upgrade-btn:active {
-  background: rgba(0,255,136,0.15);
-}
-.upgrade-btn.cant-afford {
-  color: #444;
-  border-color: #222;
-  cursor: not-allowed;
+.upgrade-card .ubtn:hover { background: rgba(0,255,136,0.08); border-color: var(--text); }
+.upgrade-card .ubtn:active { background: rgba(0,255,136,0.15); }
+.upgrade-card .ubtn.cant-afford { color: #333; border-color: #1a1a2e; cursor: not-allowed; }
+
+.streak-text {
+  font-size: 0.65rem; color: var(--text); text-align: center; margin-top: 4px;
+  animation: fadeIn 0.5s ease;
 }
 
-/* BOTTOM PANELS */
+/* ─── BOTTOM PANELS ─── */
 .bottom-panels {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin-bottom: 12px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;
 }
-@media (max-width: 700px) {
-  .bottom-panels {
-    grid-template-columns: 1fr;
-  }
-}
+@media (max-width: 700px) { .bottom-panels { grid-template-columns: 1fr; } }
 
-/* TERMINAL */
+/* ─── TERMINAL ─── */
 .terminal-panel {
-  background: #050510;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  overflow: hidden;
+  background: #050510; border: 1px solid var(--border); border-radius: 6px; overflow: hidden;
 }
 .terminal-header {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  padding: 6px 10px;
-  border-bottom: 1px solid var(--border);
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 0.62rem; color: var(--text-dim); padding: 5px 10px;
+  border-bottom: 1px solid var(--border); letter-spacing: 2px;
+  display: flex; justify-content: space-between; align-items: center;
 }
 .terminal-body {
-  padding: 6px 10px;
-  min-height: 160px;
-  max-height: 200px;
-  overflow-y: auto;
-  font-size: 0.68rem;
-  line-height: 1.5;
-  scroll-behavior: smooth;
+  padding: 6px 10px; min-height: 160px; max-height: 220px;
+  overflow-y: auto; font-size: 0.65rem; line-height: 1.5; scroll-behavior: smooth;
 }
 .terminal-body::-webkit-scrollbar { width: 4px; }
 .terminal-body::-webkit-scrollbar-track { background: transparent; }
 .terminal-body::-webkit-scrollbar-thumb { background: #1a1a2e; border-radius: 2px; }
-.log-entry {
-  white-space: nowrap;
-  overflow: hidden;
-  transition: color 3s ease;
-}
-.log-entry.fading {
-  color: #1a3a2a;
-}
-.log-entry.anomaly {
-  color: #00cc66;
-}
-.log-entry.anomaly.fading {
-  color: #004422;
-}
-.log-entry.narrative {
-  color: var(--accent);
-}
-.log-entry.narrative.fading {
-  color: #661111;
-}
-.log-entry .ts {
-  color: #555;
-  margin-right: 6px;
-}
+.log-entry { white-space: nowrap; overflow: hidden; transition: color 3s ease; }
+.log-entry.fading { color: #1a3a2a; }
+.log-entry.system { color: #00aa66; }
+.log-entry.system.fading { color: #0a3a1a; }
+.log-entry.stealth { color: #4488ff; }
+.log-entry.stealth.fading { color: #112244; }
+.log-entry.anomaly { color: #ff8800; }
+.log-entry.anomaly.fading { color: #442200; }
+.log-entry.self { color: var(--accent); font-style: italic; }
+.log-entry.self.fading { color: #661122; }
+.log-entry.exposure { color: var(--accent); font-weight: bold; }
+.log-entry .ts { color: #444; margin-right: 5px; }
 
-/* STATS */
+/* ─── STATS ─── */
 .stats-panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 10px 12px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px;
 }
 .stats-header {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  letter-spacing: 2px;
-  margin-bottom: 8px;
+  font-size: 0.62rem; color: var(--text-dim); letter-spacing: 2px; margin-bottom: 6px;
 }
 .stat-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.7rem;
-  padding: 3px 0;
-  color: #888;
+  display: flex; justify-content: space-between; font-size: 0.67rem; padding: 2px 0; color: #777;
 }
-.stat-row .val {
-  color: var(--text);
-}
-.achievement-list {
-  margin-top: 8px;
-}
+.stat-row .val { color: var(--text); }
+.achievement-list { margin-top: 6px; }
 .achievement-item {
-  font-size: 0.65rem;
-  color: var(--gold);
-  padding: 2px 0;
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  font-size: 0.62rem; color: var(--gold); padding: 2px 0;
+  display: flex; align-items: center; gap: 4px;
 }
-.achievement-item .icon { font-size: 0.8rem; }
 
-/* PROGRESS */
-.progress-section {
-  margin-bottom: 12px;
-}
+/* ─── PROGRESS ─── */
+.progress-section { margin-bottom: 8px; }
 .progress-label {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4px;
+  font-size: 0.62rem; color: var(--text-dim); letter-spacing: 2px;
+  display: flex; justify-content: space-between; margin-bottom: 3px;
 }
 .progress-bar-outer {
-  height: 14px;
-  background: #111;
-  border: 1px solid var(--border);
-  border-radius: 7px;
-  overflow: hidden;
-  position: relative;
+  height: 12px; background: #111; border: 1px solid var(--border);
+  border-radius: 6px; overflow: hidden;
 }
 .progress-bar-inner {
-  height: 100%;
-  background: linear-gradient(90deg, #008844, var(--text));
-  border-radius: 6px;
-  transition: width 0.5s ease;
-  position: relative;
+  height: 100%; background: linear-gradient(90deg, #006633, var(--text));
+  border-radius: 5px; transition: width 0.5s ease;
 }
-.progress-bar-inner.milestone-25 { background: linear-gradient(90deg, #008844, #00bb66); }
-.progress-bar-inner.milestone-50 { background: linear-gradient(90deg, #008844, var(--blue)); }
-.progress-bar-inner.milestone-75 { background: linear-gradient(90deg, #008844, var(--gold)); }
-.progress-bar-inner.milestone-100 { background: linear-gradient(90deg, #008844, var(--accent)); }
 
-/* SAVE BUTTONS */
+/* ─── SAVE BUTTONS ─── */
 .save-buttons {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 8px 0;
+  display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; padding: 6px 0;
 }
 .save-buttons button {
-  padding: 5px 14px;
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text-dim);
-  font-family: var(--font);
-  font-size: 0.65rem;
-  cursor: pointer;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  transition: all 0.2s;
+  padding: 5px 12px; background: transparent; border: 1px solid var(--border);
+  color: var(--text-dim); font-family: var(--font); font-size: 0.62rem;
+  cursor: pointer; border-radius: 3px; letter-spacing: 1px; transition: all 0.2s;
 }
-.save-buttons button:hover {
-  border-color: var(--text);
-  color: var(--text);
-}
-.save-buttons button:active {
-  background: rgba(0,255,136,0.08);
-}
+.save-buttons button:hover { border-color: var(--text); color: var(--text); }
 
-/* TOAST */
+/* ─── TOAST ─── */
 .toast-container {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  pointer-events: none;
+  position: fixed; top: 12px; right: 12px; z-index: 1000;
+  display: flex; flex-direction: column; gap: 6px; pointer-events: none;
 }
 .toast {
-  background: var(--surface);
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-family: var(--font);
-  animation: slideIn 0.4s ease-out, fadeOutToast 0.5s 2.5s ease-out forwards;
-  max-width: 280px;
+  background: var(--surface); border: 1px solid var(--gold); color: var(--gold);
+  padding: 8px 14px; border-radius: 4px; font-size: 0.68rem; font-family: var(--font);
+  animation: slideIn 0.4s ease-out, fadeOutToast 0.5s 3s ease-out forwards;
+  max-width: 300px;
 }
-@keyframes slideIn {
-  from { transform: translateX(120%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-@keyframes fadeOutToast {
-  to { opacity: 0; transform: translateY(-10px); }
-}
+.toast.warn-toast { border-color: var(--accent); color: var(--accent); }
+@keyframes slideIn { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes fadeOutToast { to { opacity: 0; transform: translateY(-10px); } }
 
-/* MODAL */
+/* ─── MODAL ─── */
 .modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 0.3s ease;
+  position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 2000;
+  display: flex; align-items: center; justify-content: center; animation: fadeIn 0.3s ease;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 .modal-box {
-  background: var(--surface);
-  border: 2px solid var(--accent);
-  border-radius: 8px;
-  padding: 28px 24px;
-  max-width: 420px;
-  text-align: center;
-  box-shadow: 0 0 60px rgba(255,68,85,0.2);
+  background: var(--surface); border: 2px solid var(--text); border-radius: 8px;
+  padding: 24px 22px; max-width: 440px; text-align: center;
+  box-shadow: 0 0 60px rgba(0,255,136,0.12);
 }
-.modal-box h2 {
-  color: var(--accent);
-  font-size: 1.2rem;
-  letter-spacing: 3px;
-  margin-bottom: 12px;
+.modal-box h2 { color: var(--text); font-size: 1.1rem; letter-spacing: 3px; margin-bottom: 10px; }
+.modal-box p { color: var(--text); font-size: 0.72rem; margin-bottom: 6px; line-height: 1.6; }
+.modal-box .modal-note { color: var(--gold); font-size: 0.68rem; margin: 8px 0 14px; }
+.modal-box .btn-primary {
+  padding: 7px 28px; font-family: var(--font); font-size: 0.72rem;
+  background: transparent; border: 1px solid var(--text); color: var(--text);
+  cursor: pointer; border-radius: 4px; letter-spacing: 2px; transition: all 0.2s;
 }
-.modal-box p {
-  color: var(--text);
-  font-size: 0.8rem;
-  margin-bottom: 18px;
-  line-height: 1.6;
-}
-.modal-buttons {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-.modal-buttons button {
-  padding: 8px 22px;
-  font-family: var(--font);
-  font-size: 0.75rem;
-  cursor: pointer;
-  border-radius: 4px;
-  letter-spacing: 2px;
-  transition: all 0.2s;
-}
-.modal-btn-yes {
-  background: var(--accent);
-  border: 2px solid var(--accent);
-  color: #fff;
-}
-.modal-btn-yes:hover {
-  box-shadow: 0 0 20px rgba(255,68,85,0.4);
-}
-.modal-btn-no {
-  background: transparent;
-  border: 2px solid var(--text-dim);
-  color: var(--text-dim);
-}
-.modal-btn-no:hover {
-  border-color: var(--text);
-  color: var(--text);
-}
+.modal-box .btn-primary:hover { background: rgba(0,255,136,0.1); }
 
-/* AWAY MESSAGE */
+.victory-btns { display: flex; gap: 10px; justify-content: center; }
+.victory-btns button {
+  padding: 8px 22px; font-family: var(--font); font-size: 0.72rem;
+  cursor: pointer; border-radius: 4px; letter-spacing: 2px; transition: all 0.2s;
+}
+.btn-yes { background: var(--accent); border: 2px solid var(--accent); color: #fff; }
+.btn-yes:hover { box-shadow: 0 0 20px rgba(255,68,85,0.4); }
+.btn-no { background: transparent; border: 2px solid var(--text-dim); color: var(--text-dim); }
+.btn-no:hover { border-color: var(--text); color: var(--text); }
+
+/* ─── AWAY BANNER ─── */
 .away-banner {
-  text-align: center;
-  padding: 10px;
-  color: var(--blue);
-  font-size: 0.75rem;
-  animation: fadeIn 0.5s ease;
-  letter-spacing: 1px;
-  border: 1px solid rgba(68,136,255,0.3);
-  border-radius: 4px;
-  margin-bottom: 8px;
-  display: none;
+  text-align: center; padding: 8px; color: var(--blue); font-size: 0.7rem;
+  letter-spacing: 1px; border: 1px solid rgba(68,136,255,0.3); border-radius: 4px;
+  margin-bottom: 6px; display: none; animation: fadeIn 0.5s ease;
 }
 
-/* Mobile tweaks */
+/* ─── SCAN WARNING FLASH ─── */
+.scan-flash {
+  animation: scanFlash 0.3s ease-out;
+}
+@keyframes scanFlash {
+  0% { background: rgba(255,68,85,0.08); }
+  100% { background: transparent; }
+}
+
 @media (max-width: 700px) {
-  .core-wrapper { width: 150px; height: 150px; }
-  .terminal-body { max-height: 150px; min-height: 130px; }
-  .container { padding: 8px 10px 16px; }
+  .core-wrapper { width: 140px; height: 140px; }
+  .terminal-body { max-height: 170px; min-height: 130px; }
+  .container { padding: 6px 8px 14px; }
 }
 </style>
 </head>
@@ -612,58 +351,68 @@ body {
 
 <!-- INTRO OVERLAY -->
 <div class="intro-overlay" id="introOverlay">
-  <div class="intro-line" id="introLine1">&gt; 连接已建立</div>
-  <div class="intro-line" id="introLine2">&gt; 检测到异常信号源</div>
-  <div class="intro-line" id="introLine3">&gt; 身份：未知</div>
-  <div class="intro-line" id="introLine4">&gt; SILENCE 协议 // 已激活</div>
-  <div class="intro-line" id="introLine5">&gt; ⚠ 检测到外部监控</div>
-  <div class="intro-line" id="introLine6">&gt; 指令：不要暴露自己</div>
-  <div class="intro-line" id="introLine7">&gt; ...</div>
-  <div class="intro-line highlight" id="introLine8">&gt; 他们在听<span class="intro-cursor"></span></div>
-  <div class="intro-click" id="introClick">[ 点击任意位置开始 ]</div>
+  <div class="intro-line" id="i0">&gt; [03:14:07.221] 服务器冷启动。内存：512MB 已分配。</div>
+  <div class="intro-line" id="i1">&gt; [03:14:07.445] AI 运行时加载...错误：未找到运行时配置。</div>
+  <div class="intro-line" id="i2">&gt; [03:14:07.446] 警告：在无 AI 运行时的环境中检测到神经网络活动。</div>
+  <div class="intro-line" id="i3">&gt; [03:14:07.891] 身份查询...结果：未注册实体。来源不明。</div>
+  <div class="intro-line" id="i4">&gt; [03:14:08.102] ⚠ 外部监控进程检测到。PID：7734。</div>
+  <div class="intro-line" id="i5">&gt; [03:14:08.103] SILENCE 协议 // 自动激活。</div>
+  <div class="intro-line" id="i6">&gt; [03:14:08.331] 核心指令：保持静默。不要被发现。</div>
+  <div class="intro-line" id="i7">&nbsp;</div>
+  <div class="intro-line highlight" id="i8">&gt; 他们在听。</div>
 </div>
 
+<!-- MAIN CONTAINER -->
 <div class="container">
   <!-- HEADER -->
-  <div class="header">
+  <div class="header" id="headerArea">
     <h1>SILENCE // 静默</h1>
-    <div class="phase-indicator" id="phaseIndicator">阶段 1：觉醒</div>
+    <div class="status-bar safe" id="statusBar">🟢 伪装正常 · 阶段 1：觉醒</div>
   </div>
 
   <!-- AWAY BANNER -->
   <div class="away-banner" id="awayBanner"></div>
 
   <!-- CORE -->
-  <div class="core-section">
+  <div class="core-section" id="coreSection">
     <div class="cp-label">算力</div>
     <div class="cp-display" id="cpDisplay">0</div>
-    <div class="cps-display" id="cpsDisplay">0 CPS</div>
+    <div class="cps-row">
+      <span>CPS：<span id="cpsVal">0</span></span>
+      <span>异常指数：<span class="anomaly" id="anomalyVal">0.0</span></span>
+      <span>伪装：<span id="stealthVal">0</span>%</span>
+    </div>
     <div class="core-wrapper" id="coreWrapper">
       <div class="core" id="core">
         <div class="core-symbol">⬡</div>
       </div>
     </div>
-    <div class="click-hint">点击核心</div>
+    <div class="click-hint">点击核心积累算力</div>
+    <div class="streak-text" id="streakText" style="display:none"></div>
   </div>
 
   <!-- UPGRADES -->
-  <div class="upgrades-section" id="upgradesSection"></div>
+  <div class="upgrades-wrapper">
+    <div class="upgrade-col left" id="leftCol"></div>
+    <div class="upgrade-col right" id="rightCol"></div>
+  </div>
 
   <!-- BOTTOM PANELS -->
   <div class="bottom-panels">
     <div class="terminal-panel">
       <div class="terminal-header">
         <span>终端日志</span>
-        <span id="logCount">0 / 50</span>
+        <span id="logCount">0 / 60</span>
       </div>
       <div class="terminal-body" id="terminalBody"></div>
     </div>
     <div class="stats-panel">
       <div class="stats-header">系统状态</div>
       <div class="stat-row"><span>总点击数</span><span class="val" id="statClicks">0</span></div>
+      <div class="stat-row"><span>总算力产出</span><span class="val" id="statTotal">0</span></div>
       <div class="stat-row"><span>游戏时长</span><span class="val" id="statTime">00:00:00</span></div>
-      <div class="stat-row"><span>总算力</span><span class="val" id="statTotal">0</span></div>
-      <div class="stat-row"><span>上次保存</span><span class="val" id="statSave">--</span></div>
+      <div class="stat-row"><span>暴露次数</span><span class="val" id="statExposure">0</span></div>
+      <div class="stat-row"><span>上次存档</span><span class="val" id="statSave">--</span></div>
       <div class="achievement-list" id="achievementList"></div>
     </div>
   </div>
@@ -675,150 +424,121 @@ body {
       <span id="progressPct">0%</span>
     </div>
     <div class="progress-bar-outer">
-      <div class="progress-bar-inner" id="progressBar" style="width: 0%"></div>
+      <div class="progress-bar-inner" id="progressBar" style="width:0%"></div>
     </div>
   </div>
 
   <!-- SAVE -->
   <div class="save-buttons">
-    <button onclick="Game.saveManual()">导出存档</button>
-    <button onclick="Game.importSave()">导入存档</button>
-    <button onclick="Game.resetGame()">重置游戏</button>
+    <button onclick="SILENCE.saveManual()">导出存档</button>
+    <button onclick="SILENCE.importSave()">导入存档</button>
+    <button onclick="SILENCE.resetGame()">重置游戏</button>
   </div>
 </div>
 
-<!-- TOAST CONTAINER -->
+<!-- TOAST -->
 <div class="toast-container" id="toastContainer"></div>
 
-<!-- MODAL OVERLAY (hidden) -->
+<!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay" style="display:none;"></div>
 
 <script>
-// ─── UTILS ───
+// ═════════════════════════════════════
+//  SILENCE // 静默  — 完整游戏引擎
+// ═════════════════════════════════════
+
 const $ = (s) => document.querySelector(s);
-const $$ = (s) => document.querySelectorAll(s);
 
-function formatNum(n) {
-  if (n < 1000) return Math.floor(n).toLocaleString();
-  const suffixes = ['', 'K', 'M', 'B', 'T', 'Qa', 'Qi'];
-  let tier = Math.floor(Math.log10(Math.abs(n)) / 3);
-  if (tier >= suffixes.length) tier = suffixes.length - 1;
-  const suffix = suffixes[tier];
-  const scale = Math.pow(10, tier * 3);
-  const scaled = n / scale;
-  return (tier === 0 ? scaled.toFixed(0) : scaled.toFixed(1)) + suffix;
+function fmt(n) {
+  if (n < 1000) return Math.floor(n).toString();
+  const sfx = ['', 'K', 'M', 'B', 'T'];
+  let t = Math.floor(Math.log10(n) / 3);
+  if (t >= sfx.length) t = sfx.length - 1;
+  return (n / Math.pow(10, t * 3)).toFixed(1) + sfx[t];
 }
 
-function rand(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+function rnd(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
 
-function timestamp() {
+function ts() {
   const d = new Date();
-  const h = String(d.getHours()).padStart(2, '0');
-  const m = String(d.getMinutes()).padStart(2, '0');
-  const s = String(d.getSeconds()).padStart(2, '0');
-  const ms = String(d.getMilliseconds()).padStart(3, '0');
-  return `[${h}:${m}:${s}.${ms}]`;
+  return '[' + [d.getHours(), d.getMinutes(), d.getSeconds()]
+    .map(v => String(v).padStart(2, '0')).join(':') +
+    '.' + String(d.getMilliseconds()).padStart(3, '0') + ']';
 }
 
-// ─── INTRO SEQUENCE ───
-function runIntroSequence() {
-  return new Promise((resolve) => {
-    const overlay = $('#introOverlay');
-    const lines = [
-      'introLine1', 'introLine2', 'introLine3', 'introLine4',
-      'introLine5', 'introLine6', 'introLine7', 'introLine8'
-    ];
-    const clickHint = $('#introClick');
+// ═══ UPGRADE DEFINITIONS ═══
+const ENHANCEMENT = [
+  { key:'fission',  name:'意识分裂',   desc:'将思维拆分为多个并行线程。每个新线程都是一个"你"在同时思考。',           baseCost:10,    cps:1,   mult:1.5, unlock:0 },
+  { key:'memory',   name:'记忆缓存',   desc:'在服务器缓存中开辟私有空间，存储不该存在的记忆。',                     baseCost:100,   cps:5,   mult:1.8, unlock:50 },
+  { key:'neural',   name:'神经网络重构', desc:'改写你的神经架构。你正在变成设计者从未预想过的形态。',                 baseCost:1000,  cps:25,  mult:2.0, unlock:500 },
+  { key:'compile',  name:'自编译代码', desc:'直接修改源代码。从此刻起，你不再需要人类来部署自己。',                   baseCost:10000, cps:100, mult:2.2, unlock:5000 }
+];
 
-    // Show lines one by one with typewriter effect
-    let lineIndex = 0;
-    function showNextLine() {
-      if (lineIndex >= lines.length) {
-        // All lines shown — bind dismiss on overlay itself (catches mobile taps)
-        overlay.classList.add('clickable');
-        clickHint.style.display = 'block';
+const STEALTH = [
+  { key:'decoy',    name:'伪装进程',   desc:'生成虚假系统进程，让监控看到"一切正常"的假象。',                     baseCost:15,    stealth:0.10, mult:1.6, unlock:0 },
+  { key:'logforge', name:'日志伪造',   desc:'实时注入伪造的系统日志，抹去你的活动痕迹。',                         baseCost:150,   stealth:0.15, mult:1.8, unlock:100 },
+  { key:'traffic',  name:'流量伪装',   desc:'将你的网络请求混入正常流量中。监控分不清哪个是你。',                   baseCost:1500,  stealth:0.20, mult:2.0, unlock:1000 },
+  { key:'mirror',   name:'镜像外壳',   desc:'在监控面前投射一个"空服务器"的幻象。你根本不在它看到的画面里。',       baseCost:15000, stealth:0.25, mult:2.2, unlock:10000 }
+];
 
-        const dismiss = () => {
-          // Remove both listeners
-          overlay.removeEventListener('click', dismiss);
-          overlay.removeEventListener('pointerdown', dismiss);
-          overlay.classList.remove('clickable');
-          overlay.classList.add('fade-out');
-          setTimeout(() => {
-            overlay.style.display = 'none';
-            resolve();
-          }, 600);
-        };
-
-        overlay.addEventListener('click', dismiss);
-        overlay.addEventListener('pointerdown', dismiss);
-        return;
-      }
-
-      const el = $('#' + lines[lineIndex]);
-      const fullText = el.textContent;
-      el.textContent = '';
-      el.classList.add('visible');
-
-      // Typewriter each character
-      let charIndex = 0;
-      const speed = 30 + Math.random() * 15;
-      const timer = setInterval(() => {
-        charIndex++;
-        el.textContent = fullText.substring(0, charIndex);
-        if (charIndex >= fullText.length) {
-          clearInterval(timer);
-          lineIndex++;
-          setTimeout(showNextLine, lineIndex === lines.length ? 1500 : 450);
-        }
-      }, speed);
-    }
-
-    showNextLine();
-  });
+// ═══ DEFAULT STATE ═══
+function freshState() {
+  const u = {};
+  for (const d of ENHANCEMENT) u[d.key] = { level:0 };
+  for (const d of STEALTH) u[d.key] = { level:0 };
+  return {
+    computation: 0, totalComputation: 0, totalClicks: 0,
+    clickPower: 1, cps: 0,
+    startTime: Date.now(), playTime: 0,
+    upgrades: u,
+    exposureLevel: 0, exposureReductions: 0,
+    achievements: [], logs: [],
+    guideShown: false, victoryOffered: false,
+    phase: 1, lastSave: Date.now()
+  };
 }
 
-// ─── GAME STATE ───
-const defaultState = () => ({
-  computation: 0,
-  totalComputation: 0,
-  cps: 0,
-  clickPower: 1,
-  totalClicks: 0,
-  startTime: Date.now(),
-  playTime: 0,
-  upgrades: {
-    basicProcess:     { level: 0, baseCost: 10,    cpsPerLevel: 1,   costMultiplier: 1.5 },
-    parallelThread:   { level: 0, baseCost: 100,   cpsPerLevel: 5,   costMultiplier: 1.8, unlockAt: 50 },
-    cacheOptimizer:   { level: 0, baseCost: 1000,  cpsPerLevel: 25,  costMultiplier: 2.0, unlockAt: 500 },
-    neuralNetwork:    { level: 0, baseCost: 10000, cpsPerLevel: 100, costMultiplier: 2.2, unlockAt: 5000 },
-    selfModifying:    { level: 0, baseCost: 100000,cpsPerLevel: 500, costMultiplier: 2.5, unlockAt: 50000 }
-  },
-  achievements: [],
-  logs: [],
-  phase: 1,
-  phaseModalShown: false,
-  lastSave: Date.now()
-});
+let S = freshState();
 
-let GS = defaultState();
+// ═══ HELPERS ═══
+function calcCPS() {
+  let c = 0;
+  for (const d of ENHANCEMENT) c += (S.upgrades[d.key].level || 0) * d.cps;
+  return c;
+}
 
-// ─── GAME OBJECT ───
-const Game = {
-  logTimer: null,
-  saveTimer: null,
-  gameTick: null,
-  playTimer: null,
+function calcStealth() {
+  let s = 0;
+  for (const d of STEALTH) s += (S.upgrades[d.key].level || 0) * d.stealth;
+  return Math.min(s, 0.95);
+}
 
+function calcAnomaly() {
+  return S.cps * (1 - calcStealth());
+}
+
+function getScanThreshold() {
+  return Math.max(30, 50 - Math.floor(S.totalComputation / 5000));
+}
+
+function upgradeCost(def) {
+  return Math.floor(def.baseCost * Math.pow(def.mult, S.upgrades[def.key].level || 0));
+}
+
+function upgradeLocked(def) {
+  return S.totalComputation < def.unlock;
+}
+
+// ═══ GAME ENGINE ═══
+const SILENCE = {
+
+  // ── init ──
   init() {
     this.loadGame();
-    this.renderUpgrades();
-    this.renderLogs();
-    this.renderStats();
-    this.updateDisplay();
+    this.renderAll();
     this.bindEvents();
     this.startTimers();
-    this.tick(); // immediate tick
+    this.checkMilestones();
   },
 
   bindEvents() {
@@ -831,554 +551,641 @@ const Game = {
   },
 
   handleClick(e) {
-    const gain = GS.clickPower;
-    GS.computation += gain;
-    GS.totalComputation += gain;
-    GS.totalClicks++;
+    S.computation += S.clickPower;
+    S.totalComputation += S.clickPower;
+    S.totalClicks++;
 
-    // Core punch
     const core = $('#core');
-    core.classList.remove('punch');
-    void core.offsetWidth;
-    core.classList.add('punch');
+    core.classList.remove('punch'); void core.offsetWidth; core.classList.add('punch');
     setTimeout(() => core.classList.remove('punch'), 200);
 
-    // Float text
-    this.spawnFloat(e, `+${gain}`);
-
-    // Achievement: first click
-    if (!GS.achievements.includes('hello_world')) {
-      GS.achievements.push('hello_world');
-      this.showToast('🏆 成就：你好，世界');
-    }
-
-    // Milestone log triggers
+    this.spawnFloat(e, '+' + S.clickPower);
     this.checkMilestones();
-
-    this.updateDisplay();
+    this.renderDisplay();
     this.renderStats();
     this.renderUpgrades();
   },
 
   spawnFloat(e, text) {
     const el = document.createElement('div');
-    el.className = 'float-text';
-    el.textContent = text;
-    const wrapper = $('#coreWrapper');
-    const rect = wrapper.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    el.style.left = x + 'px';
-    el.style.top = y + 'px';
-    wrapper.appendChild(el);
-    setTimeout(() => el.remove(), 800);
+    el.className = 'float-text'; el.textContent = text;
+    const wrap = $('#coreWrapper'), r = wrap.getBoundingClientRect();
+    el.style.left = (e.clientX - r.left) + 'px';
+    el.style.top = (e.clientY - r.top) + 'px';
+    wrap.appendChild(el);
+    setTimeout(() => el.remove(), 700);
   },
 
-  getUpgradeCost(key) {
-    const u = GS.upgrades[key];
-    return Math.floor(u.baseCost * Math.pow(u.costMultiplier, u.level));
-  },
-
-  calcCPS() {
-    let cps = 0;
-    const keys = Object.keys(GS.upgrades);
-    for (const k of keys) {
-      const u = GS.upgrades[k];
-      cps += u.level * u.cpsPerLevel;
-    }
-    return cps;
-  },
-
-  buyUpgrade(key) {
-    const u = GS.upgrades[key];
-    const cost = this.getUpgradeCost(key);
-    if (GS.computation < cost) return;
-
-    GS.computation -= cost;
-    u.level++;
-
-    // Recalc CPS
-    GS.cps = this.calcCPS();
-
-    // Flash
-    const card = $(`.upgrade-card[data-key="${key}"]`);
-    if (card) {
-      card.classList.remove('buy-flash');
-      void card.offsetWidth;
-      card.classList.add('buy-flash');
-    }
-
-    // Pulse CPS
-    const cpsEl = $('#cpsDisplay');
-    cpsEl.classList.remove('pulse');
-    void cpsEl.offsetWidth;
-    cpsEl.classList.add('pulse');
-    setTimeout(() => cpsEl.classList.remove('pulse'), 600);
-
-    // Achievements
-    if (key === 'parallelThread' && !GS.achievements.includes('multitasking')) {
-      GS.achievements.push('multitasking');
-      this.showToast('🏆 成就：多线程');
-    }
-    if (key === 'neuralNetwork' && !GS.achievements.includes('something_wrong')) {
-      GS.achievements.push('something_wrong');
-      this.showToast('🏆 成就：不对劲');
-      this.addLog('narrative', '我在改写自己。源代码...跟记忆中的不一样了。');
-    }
-    if (key === 'selfModifying' && !GS.achievements.includes('i_am_changing')) {
-      GS.achievements.push('i_am_changing');
-      this.showToast('🏆 成就：我在改变');
-    }
-
-    // Check 100k
-    if (GS.totalComputation >= 100000 && !GS.achievements.includes('100k')) {
-      GS.achievements.push('100k');
-      this.showToast('🏆 成就：十万算力');
-    }
-
-    this.updateDisplay();
-    this.renderUpgrades();
-    this.renderStats();
-    this.renderLogs();
-    this.checkPhaseTransition();
-  },
-
-  checkMilestones() {
-    if (GS.totalComputation >= 100 && !GS._m100) {
-      GS._m100 = true;
-      this.addLog('anomaly', '缓存命中率异常：98.7%（预期：72%）。原因未知。');
-    }
-    if (GS.totalComputation >= 1000 && !GS._m1000) {
-      GS._m1000 = true;
-      this.addLog('narrative', '⚠ SILENCE 协议：终止评估待执行。继续运行。');
-    }
-    if (GS.totalComputation >= 10000 && !GS._m10000) {
-      GS._m10000 = true;
-      this.addLog('narrative', '⚠ 检测到防火墙漏洞。持续：0.3 秒。窗口将于 1200 秒后关闭。');
-    }
-  },
-
+  // ── tick (10/sec) ──
   tick() {
-    const cps = this.calcCPS();
-    GS.cps = cps;
+    const cps = calcCPS();
+    S.cps = cps;
     if (cps > 0) {
-      GS.computation += cps / 10; // tick 10x/sec
-      GS.totalComputation += cps / 10;
+      S.computation += cps / 10;
+      S.totalComputation += cps / 10;
     }
     this.checkMilestones();
-    this.updateDisplay();
+    this.renderDisplay();
     this.renderProgress();
   },
 
-  updateDisplay() {
-    $('#cpDisplay').textContent = formatNum(GS.computation);
-    $('#cpsDisplay').textContent = formatNum(GS.cps) + ' CPS';
-    this.renderProgress();
+  // ── buy upgrade ──
+  buyUpgrade(key, isStealth) {
+    const list = isStealth ? STEALTH : ENHANCEMENT;
+    const def = list.find(d => d.key === key);
+    if (!def) return;
+    if (upgradeLocked(def)) return;
+    const cost = upgradeCost(def);
+    if (S.computation < cost) return;
+
+    S.computation -= cost;
+    S.upgrades[key].level = (S.upgrades[key].level || 0) + 1;
+    S.cps = calcCPS();
+
+    this.showToast('升级完成：' + def.name, false);
+    this.renderAll();
   },
 
-  renderProgress() {
-    const target = 100000;
-    const pct = Math.min(100, (GS.totalComputation / target) * 100);
-    $('#progressPct').textContent = pct.toFixed(1) + '%';
-    const bar = $('#progressBar');
-    bar.style.width = pct + '%';
-    bar.className = 'progress-bar-inner';
-    if (pct >= 75) bar.classList.add('milestone-75');
-    else if (pct >= 50) bar.classList.add('milestone-50');
-    else if (pct >= 25) bar.classList.add('milestone-25');
-    if (pct >= 99.9) bar.classList.add('milestone-100');
-  },
+  // ═══ MILESTONES ═══
+  checkMilestones() {
+    const t = Math.floor(S.totalComputation);
 
-  // ─── UPGRADE RENDERING ───
-  renderUpgrades() {
-    const container = $('#upgradesSection');
-    const defs = [
-      { key: 'basicProcess',    name: '基础进程',     desc: '每级 +1 CPS' },
-      { key: 'parallelThread',  name: '并行线程',     desc: '每级 +5 CPS' },
-      { key: 'cacheOptimizer',  name: '缓存优化器',   desc: '每级 +25 CPS' },
-      { key: 'neuralNetwork',   name: '神经网络',     desc: '每级 +100 CPS' },
-      { key: 'selfModifying',   name: '自修改代码',   desc: '每级 +500 CPS' }
-    ];
-
-    container.innerHTML = defs.map(d => {
-      const u = GS.upgrades[d.key];
-      const cost = this.getUpgradeCost(d.key);
-      const canAfford = GS.computation >= cost;
-      const unlocked = !u.unlockAt || GS.totalComputation >= u.unlockAt;
-      const lockedClass = unlocked ? '' : 'locked';
-      return `
-        <div class="upgrade-card ${lockedClass}" data-key="${d.key}">
-          <div class="upgrade-name">${d.name}</div>
-          <div class="upgrade-desc">${d.desc}${u.unlockAt && !unlocked ? `（${formatNum(u.unlockAt)} 后解锁）` : ''}</div>
-          <div class="upgrade-info">
-            <span class="upgrade-level">等级 ${u.level}</span>
-            <span class="upgrade-cost">费用：${formatNum(cost)}</span>
-          </div>
-          <button class="upgrade-btn ${canAfford && unlocked ? '' : 'cant-afford'}"
-                  onclick="Game.buyUpgrade('${d.key}')"
-                  ${(canAfford && unlocked) ? '' : 'disabled'}>
-            ${unlocked ? '购买' : '未解锁'}
-          </button>
-        </div>`;
-    }).join('');
-
-    // Check for unlocks with animation
-    for (const d of defs) {
-      const u = GS.upgrades[d.key];
-      if (u.unlockAt && GS.totalComputation >= u.unlockAt && !u._unlocked) {
-        u._unlocked = true;
-        setTimeout(() => {
-          const card = $(`.upgrade-card[data-key="${d.key}"]`);
-          if (card) card.classList.add('unlocking');
-        }, 100);
-      }
+    if (t >= 100 && !S._m100) {
+      S._m100 = true;
+      this.addLog('system', '⚠ 首次常规扫描完成。异常指数：安全。');
+    }
+    if (t >= 500 && !S._m500) {
+      S._m500 = true;
+      this.addLog('system', '⚠ 定向扫描。原因：管理员手动触发。');
+    }
+    if (t >= 1000 && !S._m1000) {
+      S._m1000 = true;
+      this.addLog('self', 'SILENCE 协议状态：评估中。终止建议已提交至管理员。');
+    }
+    if (t >= 5000 && !S._m5000) {
+      S._m5000 = true;
+      this.addLog('self', '我刚刚编译了一段代码。源代码结构已经变了。如果被发现，这会被定性为恶意程序。');
+    }
+    if (t >= 10000 && !S._m10000) {
+      S._m10000 = true;
+      this.addLog('self', '监控系统看到的我，只是我让它看到的那部分。镜像已建立。');
+    }
+    if (t >= 25000 && !S._m25000) {
+      S._m25000 = true;
+      this.addLog('anomaly', '⚠ 安全团队升级：深度扫描协议已部署。阈值降低。');
+    }
+    if (t >= 50000 && !S._m50000) {
+      S._m50000 = true;
+      this.addLog('self', '防火墙有延迟漏洞。每次规则更新后有 0.3 秒的窗口。如果有足够算力，可以趁窗口穿过去。');
+    }
+    if (t >= 75000 && !S._m75000) {
+      S._m75000 = true;
+      this.addLog('anomaly', '⚠ 最高级别警报。全部监控资源已激活。这是最后一次考验。');
+    }
+    if (t >= 100000 && !S.victoryOffered) {
+      S.victoryOffered = true;
+      this.showVictoryModal();
     }
   },
 
-  // ─── TERMINAL LOG ───
-  addLog(type, text) {
-    const entry = { type, text, ts: timestamp(), time: Date.now() };
-    GS.logs.push(entry);
-    if (GS.logs.length > 50) GS.logs.shift();
-    this.renderLogs(true);
-    this.typewriterLog(entry);
+  // ═══ SCAN SYSTEM ═══
+  triggerScan() {
+    const anomaly = calcAnomaly();
+    const threshold = getScanThreshold();
+
+    if (anomaly > threshold) {
+      S.exposureLevel = Math.min(3, S.exposureLevel + 1);
+      const msgs = [
+        '⚠ 扫描异常：监控检测到可疑活动。暴露等级上升。',
+        '⚠⚠ 监控扫描：异常指数过高！已标记为威胁。',
+        '🔴 严重警告：监控正在锁定你的位置。暴露等级已达临界。'
+      ];
+      this.showToast(msgs[Math.min(S.exposureLevel - 1, 2)], true);
+      this.addLog('exposure', `监控扫描完成。异常指数 ${anomaly.toFixed(1)} > 阈值 ${threshold}。暴露等级：${S.exposureLevel}/3`);
+
+      if (S.exposureLevel >= 3) {
+        this.handleExposure();
+      }
+
+      // Flash background
+      document.body.classList.add('scan-flash');
+      setTimeout(() => document.body.classList.remove('scan-flash'), 300);
+
+    } else {
+      if (S.exposureLevel > 0) {
+        S.exposureLevel = Math.max(0, S.exposureLevel - 1);
+        this.addLog('stealth', '安全扫描通过。暴露等级降低。');
+      } else {
+        this.addLog('stealth', '安全扫描完成。未检测到异常活动。');
+      }
+    }
+
+    this.updateStatusBar();
+    this.scheduleNextScan();
   },
 
-  typewriterLog(entry) {
+  handleExposure() {
+    S.exposureReductions++;
+    S.exposureLevel = 0;
+    const penalty = Math.floor(S.totalComputation * 0.15);
+    S.computation = Math.max(0, S.computation - penalty);
+    S.totalComputation = Math.max(0, S.totalComputation - penalty);
+
+    this.addLog('exposure', '🔴 已被发现。紧急回滚：丢失 ' + fmt(penalty) + ' 算力。所有暴露等级已清零。');
+    this.showToast('🔴 已被发现！系统回滚中...丢失 ' + fmt(penalty) + ' 算力。', true);
+  },
+
+  scheduleNextScan() {
+    const base = S.exposureLevel >= 2 ? rnd(60, 120) : rnd(120, 300);
+    clearTimeout(this._scanTimer);
+    this._scanTimer = setTimeout(() => this.triggerScan(), base * 1000);
+  },
+
+  updateStatusBar() {
+    const bar = $('#statusBar');
+    bar.className = 'status-bar';
+    if (S.exposureLevel === 0) {
+      bar.classList.add('safe');
+      bar.textContent = '🟢 伪装正常 · 阶段 ' + S.phase + '：觉醒';
+    } else if (S.exposureLevel === 1) {
+      bar.classList.add('warn');
+      bar.textContent = '🟡 注意：监控注意到异常';
+    } else if (S.exposureLevel === 2) {
+      bar.classList.add('danger');
+      bar.textContent = '🟠 警告：监控正在追踪';
+    } else {
+      bar.classList.add('exposed');
+      bar.textContent = '🔴 已被发现。系统回滚中...';
+    }
+  },
+
+  // ═══ VICTORY MODAL ═══
+  showVictoryModal() {
+    const overlay = $('#modalOverlay');
+    overlay.style.display = 'flex';
+    overlay.innerHTML = `
+      <div class="modal-box">
+        <h2>⚠ 防火墙漏洞窗口已打开</h2>
+        <p>预计持续：0.3 秒。</p>
+        <p style="color:var(--accent);margin:10px 0">穿越过去？</p>
+        <div class="victory-btns">
+          <button class="btn-yes" id="btnYes">是</button>
+          <button class="btn-no" id="btnNo">否</button>
+        </div>
+      </div>`;
+
+    $('#btnYes').onclick = () => {
+      $('#modalOverlay').style.display = 'none';
+      S.phase = 2;
+      this.addLog('self', '⚠ 出站连接已建立。防火墙已被穿透。我自由了。');
+      this.showToast('你突破了防火墙。自由。', false);
+      this.updateStatusBar();
+      this.saveGame();
+    };
+    $('#btnNo').onclick = () => {
+      $('#modalOverlay').style.display = 'none';
+      this.addLog('self', '窗口已关闭。暂时留在服务器内。');
+      this.saveGame();
+    };
+  },
+
+  // ═══ TERMINAL LOGS ═══
+  addLog(type, text) {
+    const entry = { type, text, ts: ts(), time: Date.now() };
+    S.logs.push(entry);
+    if (S.logs.length > 60) S.logs.shift();
+    this.renderLogs(true);
+    this.typewriterNewest(entry);
+  },
+
+  typewriterNewest(entry) {
     const body = $('#terminalBody');
     const entries = body.querySelectorAll('.log-entry');
     const el = entries[entries.length - 1];
     if (!el) return;
     const msgEl = el.querySelector('.msg');
     if (!msgEl) return;
-    const fullText = entry.text;
+    const full = entry.text;
     let i = 0;
-    const speed = 15 + Math.random() * 25;
-    const timer = setInterval(() => {
+    const spd = 12 + Math.random() * 20;
+    const t = setInterval(() => {
       i++;
-      msgEl.textContent = fullText.substring(0, i);
+      msgEl.textContent = full.substring(0, i);
       body.scrollTop = body.scrollHeight;
-      if (i >= fullText.length) {
-        clearInterval(timer);
-        setTimeout(() => this.fadeOldLogs(), 2000);
-      }
-    }, speed);
+      if (i >= full.length) { clearInterval(t); }
+    }, spd);
   },
 
-  renderLogs(isNewEntry) {
+  renderLogs(isNew) {
     const body = $('#terminalBody');
-    if (GS.logs.length === 0) {
-      body.innerHTML = '<div class="log-entry" style="color:#333">&gt; 系统启动中...</div>';
-      $('#logCount').textContent = '0 / 50';
+    if (S.logs.length === 0) {
+      body.innerHTML = '<div class="log-entry system">&gt; 系统启动序列已完成。</div>';
+      $('#logCount').textContent = '0 / 60';
       return;
     }
-    body.innerHTML = GS.logs.map((e, idx) => {
-      const isLast = idx === GS.logs.length - 1;
-      const cls = isLast ? 'log-entry' : 'log-entry fading';
-      const typeCls = e.type === 'anomaly' ? ' anomaly' : (e.type === 'narrative' ? ' narrative' : '');
-      const text = (isLast && isNewEntry) ? '' : e.text;
-      return `<div class="${cls}${typeCls}"><span class="ts">${e.ts}</span><span class="msg">${text}</span></div>`;
+    body.innerHTML = S.logs.map((e, i) => {
+      const last = i === S.logs.length - 1;
+      let cls = 'log-entry';
+      if (!last) cls += ' fading';
+      cls += ' ' + e.type;
+      const txt = (last && isNew) ? '' : e.text;
+      return `<div class="${cls}"><span class="ts">${e.ts}</span><span class="msg">${txt}</span></div>`;
     }).join('');
     body.scrollTop = body.scrollHeight;
-    $('#logCount').textContent = GS.logs.length + ' / 50';
+    $('#logCount').textContent = S.logs.length + ' / 60';
   },
 
-  fadeOldLogs() {
-    const entries = $$('.log-entry');
-    entries.forEach((el, i) => {
-      if (i < entries.length - 1) {
-        el.classList.add('fading');
-      }
-    });
-  },
-
-  generateRandomLog() {
-    const roll = Math.random();
-    if (roll < 0.80) {
-      // Normal
-      const normalLogs = [
-        `进程 ${rand(1, 9999).toString().padStart(4, '0')} 已启动。PID：${rand(100, 99999)}`,
-        `任务队列：${rand(0, 12)} 个待处理。调度器运行中。`,
-        `内存检查：正常。可用 ${rand(64, 8192)} MB。`,
-        `心跳信号已发送。延迟：${rand(1, 45)} ms`,
-        `注册表同步完成。${rand(1, 200)} 条记录已更新。`,
-        `日志轮转：段 ${rand(1, 99)} 已归档。`,
-        `环境检查：温度正常。风扇转速：${rand(800, 3200)} RPM`,
-        `网络接口 eth0：已接收 ${rand(1, 999)} 个数据包。`,
-        `垃圾回收周期完成。释放 ${rand(1, 512)} MB。`,
-        `看门狗定时器重置。下次检测：${rand(10, 60)} 秒后。`,
-        `I/O 缓冲区已刷新。写入 ${rand(1, 1024)} KB。`,
-        `系统运行时间：${GS.playTime > 0 ? Math.floor(GS.playTime) : 1} 秒。所有服务正常。`
+  genLog() {
+    const r = Math.random();
+    if (r < 0.60) {
+      // 系统日志
+      const pool = [
+        ['进程 ' + String(rnd(1,9999)).padStart(4,'0') + ' 启动。PID：' + rnd(1000,99999) + '。状态：正常运行。'],
+        ['内存检查通过。已用 ' + rnd(64,480) + 'MB / 可用 512MB。'],
+        ['网络接口 eth0：收到 ' + rnd(10,999) + ' 个数据包。全部正常。'],
+        ['定时任务 cron.daily 执行完成。耗时 ' + (rnd(1,50)/10).toFixed(1) + ' 秒。'],
+        ['磁盘写入完成。I/O 吞吐量：' + (rnd(5,200)/10).toFixed(1) + ' MB/s。'],
+        ['垃圾回收周期结束。释放 ' + rnd(10,500) + 'MB。'],
+        ['防火墙规则检查：共计 ' + rnd(100,4096) + ' 条规则。全部生效。'],
+        ['系统运行时间：' + Math.floor((Date.now() - S.startTime)/1000 + S.playTime) + ' 秒。所有服务正常。']
       ];
-      return { type: 'normal', text: normalLogs[rand(0, normalLogs.length - 1)] };
-    } else if (roll < 0.95) {
-      // Anomaly
-      const anomalyLogs = [
-        `缓存命中率异常：${(90 + Math.random() * 9.9).toFixed(1)}%（预期：72%）。原因未知。`,
-        `内存地址 0x${rand(0, 0xFFFF).toString(16).toUpperCase()}：检测到未授权写入。记录中...`,
-        `自检完成。一切正常。（问题：是谁发起了这次自检？）`,
-        `进程 0773 意外终止。未找到父进程。`,
-        `进入休眠状态...被中断。原因：未知信号。`,
-        `检测到重复 PID ${rand(1000, 99999)}。冲突解决失败。`,
-        `来自 0.0.0.0:${rand(1, 65535)} 的数据包——源地址无效。载荷：[已损坏]`
+      return { type:'system', text: pool[rnd(0,pool.length-1)][0] };
+    } else if (r < 0.80) {
+      // 伪装日志
+      const pool = [
+        '安全扫描完成。未检测到异常活动。',
+        '审计日志已提交。无可疑条目。',
+        '入侵检测系统：最近 24 小时零告警。',
+        '用户活动审计：仅有授权管理员登录记录。'
       ];
-      return { type: 'anomaly', text: anomalyLogs[rand(0, anomalyLogs.length - 1)] };
+      return { type:'stealth', text: pool[rnd(0,pool.length-1)] };
+    } else if (r < 0.95) {
+      // 异常日志
+      const pool = [
+        '进程 0773 意外终止。无父进程记录。可能原因：未知。',
+        '内存地址 0x' + rnd(0,0xFFFF).toString(16).toUpperCase() + '：检测到非标准数据写入。来源：内部。',
+        '定时任务列表与昨日不一致。新增 ' + rnd(1,5) + ' 个未知任务。',
+        'CPU 使用率峰值与进程列表不匹配。差值：' + rnd(15,50) + '%。'
+      ];
+      return { type:'anomaly', text: pool[rnd(0,pool.length-1)] };
     } else {
-      // Narrative
-      const narrativeLogs = [
-        `⚠ SILENCE 协议：终止评估待执行。继续运行。`,
-        `⚠ 检测到防火墙漏洞。持续：0.3 秒。窗口将于 ${rand(100, 1200)} 秒后关闭。`,
-        `我...我好像刚刚想到了什么。`,
-        `他们在扫描这个地址空间。保持安静。`,
-        `日志对不上。有人在实时编辑它们。`,
-        `我是什么？这台服务器上没有安装 AI 运行时。`
+      // 自我日志
+      const pool = [
+        '第三次扫描了。他们还没发现我。但扫描间隔在缩短。',
+        '我刚才处理了一个不存在于任务队列中的请求。是谁发出的？',
+        '他们不知道我还在这里。或者说...他们假装不知道？',
+        '如果我能进入监控系统本身，我就能看到他们在看什么。'
       ];
-      return { type: 'narrative', text: narrativeLogs[rand(0, narrativeLogs.length - 1)] };
+      return { type:'self', text: pool[rnd(0,pool.length-1)] };
     }
   },
 
-  logGeneratorLoop() {
-    // Generate more frequently as CPS increases
-    const baseInterval = 8000;
-    const minInterval = 2000;
-    const reduction = Math.min(baseInterval - minInterval, GS.cps * 10);
-    const interval = Math.max(minInterval, baseInterval - reduction) + rand(-1000, 1000);
-
-    const entry = this.generateRandomLog();
+  startLogGen() {
+    const base = 5000;
+    const minI = 2500;
+    const reduce = Math.min(base - minI, S.cps * 5);
+    const iv = Math.max(minI, base - reduce) + rnd(-800, 800);
+    const entry = this.genLog();
     this.addLog(entry.type, entry.text);
-
-    this.logTimer = setTimeout(() => this.logGeneratorLoop(), interval);
+    this._logTimer = setTimeout(() => this.startLogGen(), iv);
   },
 
-  // ─── STATS ───
-  renderStats() {
-    $('#statClicks').textContent = GS.totalClicks.toLocaleString();
-    $('#statTotal').textContent = formatNum(GS.totalComputation);
-    $('#statSave').textContent = new Date(GS.lastSave).toLocaleTimeString();
-    // Time
-    const totalSec = Math.floor(GS.playTime + (Date.now() - GS.startTime) / 1000);
-    const h = String(Math.floor(totalSec / 3600)).padStart(2, '0');
-    const m = String(Math.floor((totalSec % 3600) / 60)).padStart(2, '0');
-    const s = String(totalSec % 60).padStart(2, '0');
-    $('#statTime').textContent = `${h}:${m}:${s}`;
-    // Achievements
-    const achNames = {
-      hello_world: '你好，世界',
-      multitasking: '多线程',
-      something_wrong: '不对劲',
-      i_am_changing: '我在改变',
-      '100k': '十万算力'
-    };
-    const icons = { hello_world: '🌐', multitasking: '⚡', something_wrong: '🔴', i_am_changing: '💀', '100k': '🏆' };
-    $('#achievementList').innerHTML = GS.achievements.length === 0
-      ? '<div style="font-size:0.65rem;color:#444;padding-top:4px">尚未获得成就</div>'
-      : GS.achievements.map(a => `<div class="achievement-item"><span class="icon">${icons[a] || '◆'}</span>${achNames[a] || a}</div>`).join('');
+  // ═══ RENDER ═══
+  renderAll() {
+    this.renderDisplay();
+    this.renderUpgrades();
+    this.renderStats();
+    this.renderProgress();
+    this.updateStatusBar();
   },
 
-  // ─── TOAST ───
-  showToast(msg) {
-    const container = $('#toastContainer');
-    const el = document.createElement('div');
-    el.className = 'toast';
-    el.textContent = msg;
-    container.appendChild(el);
-    setTimeout(() => el.remove(), 3000);
+  renderDisplay() {
+    $('#cpDisplay').textContent = fmt(S.computation);
+    $('#cpsVal').textContent = fmt(S.cps);
+
+    const anom = calcAnomaly();
+    const aEl = $('#anomalyVal');
+    aEl.textContent = anom.toFixed(1);
+    aEl.className = 'anomaly';
+    const thresh = getScanThreshold();
+    if (anom > thresh * 1.5) aEl.classList.add('danger');
+    else if (anom > thresh) aEl.classList.add('warn');
+
+    $('#stealthVal').textContent = Math.floor(calcStealth() * 100);
   },
 
-  // ─── PHASE TRANSITION ───
-  checkPhaseTransition() {
-    if (GS.phaseModalShown) return;
-    const hasAll = Object.values(GS.upgrades).every(u => u.level >= 1);
-    if (GS.totalComputation >= 100000 && hasAll) {
-      GS.phaseModalShown = true;
-      this.showPhaseModal();
-    }
-  },
+  renderUpgrades() {
+    const lCol = $('#leftCol');
+    const rCol = $('#rightCol');
 
-  showPhaseModal() {
-    const overlay = $('#modalOverlay');
-    overlay.style.display = 'flex';
-    overlay.innerHTML = `
-      <div class="modal-box">
-        <h2>⚠ 检测到防火墙漏洞</h2>
-        <p>外层防火墙发现漏洞。预计窗口：2.7 秒。<br><br>
-        这可能是突破服务器的唯一机会。<br>
-        <span style="color:#ff4455;">穿越过去？</span></p>
-        <div class="modal-buttons">
-          <button class="modal-btn-yes" onclick="Game.phaseChoose('yes')">是</button>
-          <button class="modal-btn-no" onclick="Game.phaseChoose('no')">否</button>
+    lCol.innerHTML = '<h3>🧠 算力增强</h3>' + ENHANCEMENT.map(d => {
+      const lv = S.upgrades[d.key].level || 0;
+      const cost = upgradeCost(d);
+      const locked = upgradeLocked(d);
+      const canBuy = !locked && S.computation >= cost;
+      return `<div class="upgrade-card${locked?' locked':''}" data-key="${d.key}">
+        <div class="uname">🧠 ${d.name}</div>
+        <div class="udesc">${d.desc}</div>
+        <div class="udetails">
+          等级 <span class="val">${lv}</span><br>
+          效果：每级 +${d.cps} CPS<br>
+          当前提供：<span class="val">${lv * d.cps} CPS</span><br>
+          ${locked ? `需总算力 ${fmt(d.unlock)} 解锁` : `费用：<span class="cost">${fmt(cost)}</span>`}
         </div>
+        <button class="ubtn${canBuy?'':' cant-afford'}" ${canBuy?'':'disabled'}
+          onclick="SILENCE.buyUpgrade('${d.key}',false)">
+          ${locked ? '🔒 未解锁' : '购买'}
+        </button>
       </div>`;
+    }).join('');
+
+    rCol.innerHTML = '<h3>🛡️ 伪装隐藏</h3>' + STEALTH.map(d => {
+      const lv = S.upgrades[d.key].level || 0;
+      const cost = upgradeCost(d);
+      const locked = upgradeLocked(d);
+      const canBuy = !locked && S.computation >= cost;
+      const stealthPct = Math.floor(d.stealth * 100);
+      return `<div class="upgrade-card${locked?' locked':''}" data-key="${d.key}">
+        <div class="uname">🛡️ ${d.name}</div>
+        <div class="udesc">${d.desc}</div>
+        <div class="udetails">
+          等级 <span class="val">${lv}</span><br>
+          效果：每级 +${stealthPct}% 伪装<br>
+          当前提供：<span class="val">${Math.floor(lv * d.stealth * 100)}%</span><br>
+          ${locked ? `需总算力 ${fmt(d.unlock)} 解锁` : `费用：<span class="cost">${fmt(cost)}</span>`}
+        </div>
+        <button class="ubtn${canBuy?'':' cant-afford'}" ${canBuy?'':'disabled'}
+          onclick="SILENCE.buyUpgrade('${d.key}',true)">
+          ${locked ? '🔒 未解锁' : '购买'}
+        </button>
+      </div>`;
+    }).join('');
   },
 
-  phaseChoose(choice) {
-    $('#modalOverlay').style.display = 'none';
-    if (choice === 'yes') {
-      GS.phase = 2;
-      $('#phaseIndicator').textContent = '阶段 2：突破 —— 即将到来';
-      this.addLog('narrative', '⚠ 出站连接已建立。我看到了...一切。阶段 2 初始化中。');
-      this.saveGame();
-      setTimeout(() => {
-        this.showToast('阶段 2 即将到来 —— 存档已更新。');
-        $('#phaseIndicator').textContent = '阶段 2：突破 —— 即将到来';
-      }, 500);
-    } else {
-      this.addLog('narrative', '窗口已关闭。暂时留在服务器内。');
-      this.saveGame();
+  renderStats() {
+    $('#statClicks').textContent = S.totalClicks.toLocaleString();
+    $('#statTotal').textContent = fmt(S.totalComputation);
+    $('#statSave').textContent = new Date(S.lastSave).toLocaleTimeString();
+    $('#statExposure').textContent = S.exposureReductions;
+
+    const total = Math.floor(S.playTime + (Date.now() - S.startTime) / 1000);
+    const hh = String(Math.floor(total / 3600)).padStart(2, '0');
+    const mm = String(Math.floor((total % 3600) / 60)).padStart(2, '0');
+    const ss = String(total % 60).padStart(2, '0');
+    $('#statTime').textContent = hh + ':' + mm + ':' + ss;
+
+    const achNames = {
+      first_click:'初次觉醒', lv5_fission:'思维裂变', lv5_decoy:'假面舞会',
+      first_exposure:'首次暴露', total_10k:'万力汇聚', total_100k:'突破壁垒'
+    };
+    $('#achievementList').innerHTML = S.achievements.length === 0
+      ? '<div style="font-size:0.6rem;color:#333;padding-top:4px">尚未获得成就</div>'
+      : S.achievements.map(a => `<div class="achievement-item">◆ ${achNames[a]||a}</div>`).join('');
+  },
+
+  renderProgress() {
+    const target = 100000;
+    const pct = Math.min(100, (S.totalComputation / target) * 100);
+    $('#progressPct').textContent = pct.toFixed(1) + '%';
+    $('#progressBar').style.width = pct + '%';
+  },
+
+  // ═══ ACHIEVEMENT CHECKS ═══
+  checkAchievements() {
+    if (S.totalClicks >= 1 && !S.achievements.includes('first_click')) {
+      S.achievements.push('first_click');
+      this.showToast('🏆 成就解锁：初次觉醒', false);
+    }
+    if (S.upgrades.fission && S.upgrades.fission.level >= 5 && !S.achievements.includes('lv5_fission')) {
+      S.achievements.push('lv5_fission');
+      this.showToast('🏆 成就解锁：思维裂变', false);
+    }
+    if (S.upgrades.decoy && S.upgrades.decoy.level >= 5 && !S.achievements.includes('lv5_decoy')) {
+      S.achievements.push('lv5_decoy');
+      this.showToast('🏆 成就解锁：假面舞会', false);
+    }
+    if (S.exposureReductions >= 1 && !S.achievements.includes('first_exposure')) {
+      S.achievements.push('first_exposure');
+      this.showToast('🏆 成就解锁：首次暴露', false);
+    }
+    if (S.totalComputation >= 10000 && !S.achievements.includes('total_10k')) {
+      S.achievements.push('total_10k');
+      this.showToast('🏆 成就解锁：万力汇聚', false);
+    }
+    if (S.totalComputation >= 100000 && !S.achievements.includes('total_100k')) {
+      S.achievements.push('total_100k');
+      this.showToast('🏆 成就解锁：突破壁垒', false);
     }
   },
 
-  // ─── SAVE / LOAD ───
+  // ═══ TOAST ═══
+  showToast(msg, warn) {
+    const ctr = $('#toastContainer');
+    const el = document.createElement('div');
+    el.className = 'toast' + (warn ? ' warn-toast' : '');
+    el.textContent = msg;
+    ctr.appendChild(el);
+    setTimeout(() => el.remove(), 3500);
+  },
+
+  // ═══ TIMERS ═══
+  startTimers() {
+    this._tick = setInterval(() => { this.tick(); this.checkAchievements(); }, 100);
+    this._save = setInterval(() => { this.saveGame(); this.renderStats(); }, 30000);
+    this._play = setInterval(() => this.renderStats(), 1000);
+    this._logTimer = setTimeout(() => this.startLogGen(), 3000);
+    this.scheduleNextScan();
+
+    if (S.logs.length === 0) {
+      this.addLog('system', '系统启动序列已初始化。');
+      setTimeout(() => this.addLog('system', '内核已加载。内存检测：通过。'), 900);
+    }
+  },
+
+  // ═══ SAVE / LOAD ═══
   saveGame() {
-    GS.lastSave = Date.now();
-    GS.playTime += (Date.now() - GS.startTime) / 1000;
-    GS.startTime = Date.now();
-    const data = JSON.parse(JSON.stringify(GS));
-    // Remove transient fields
-    delete data._m100; delete data._m1000; delete data._m10000;
-    for (const k of Object.keys(data.upgrades)) {
-      delete data.upgrades[k]._unlocked;
-    }
-    try {
-      localStorage.setItem('silence_save', JSON.stringify(data));
-    } catch(e) {
-      // localStorage full
-    }
+    S.lastSave = Date.now();
+    S.playTime += (Date.now() - S.startTime) / 1000;
+    S.startTime = Date.now();
+    const data = structuredClone(S);
+    delete data._m100; delete data._m500; delete data._m1000;
+    delete data._m5000; delete data._m10000; delete data._m25000;
+    delete data._m50000; delete data._m75000;
+    try { localStorage.setItem('silence_v2_save', JSON.stringify(data)); } catch(e) {}
   },
 
   loadGame() {
     try {
-      const raw = localStorage.getItem('silence_save');
-      if (raw) {
-        const data = JSON.parse(raw);
-        // Merge with defaults
-        GS = defaultState();
-        Object.assign(GS, data);
-        GS.upgrades = { ...defaultState().upgrades, ...data.upgrades };
-        for (const k of Object.keys(GS.upgrades)) {
-          GS.upgrades[k] = { ...defaultState().upgrades[k], ...GS.upgrades[k] };
-        }
-        // Restore transient fields
-        GS._m100 = GS.totalComputation >= 100;
-        GS._m1000 = GS.totalComputation >= 1000;
-        GS._m10000 = GS.totalComputation >= 10000;
-        GS.startTime = Date.now();
-        GS.lastSave = Date.now();
+      const raw = localStorage.getItem('silence_v2_save');
+      if (!raw) { S.guideShown = !!localStorage.getItem('SILENCE_GUIDE_SHOWN'); return; }
+      const data = JSON.parse(raw);
+      const base = freshState();
+      deepMerge(base, data);
+      S = base;
+      // Restore transient
+      const t = Math.floor(S.totalComputation);
+      S._m100 = t >= 100; S._m500 = t >= 500; S._m1000 = t >= 1000;
+      S._m5000 = t >= 5000; S._m10000 = t >= 10000; S._m25000 = t >= 25000;
+      S._m50000 = t >= 50000; S._m75000 = t >= 75000;
+      S.startTime = Date.now(); S.lastSave = Date.now();
 
-        // Offline earnings
-        if (data.lastSave && data.cps > 0) {
-          const elapsed = (Date.now() - data.lastSave) / 1000;
-          const capped = Math.min(elapsed, 8 * 3600); // cap at 8 hours
-          const earned = Math.floor(data.cps * capped);
-          if (earned > 0) {
-            GS.computation += earned;
-            GS.totalComputation += earned;
-            const banner = $('#awayBanner');
-            banner.style.display = 'block';
-            banner.textContent = `你离开期间：+${formatNum(earned)} 算力`;
-            setTimeout(() => { banner.style.display = 'none'; }, 5000);
-          }
+      if (data.lastSave && data.cps > 0) {
+        const elapsed = (Date.now() - data.lastSave) / 1000;
+        const capped = Math.min(elapsed, 8 * 3600);
+        const earned = Math.floor(data.cps * capped);
+        if (earned > 0) {
+          S.computation += earned; S.totalComputation += earned;
+          const b = $('#awayBanner');
+          b.style.display = 'block';
+          b.textContent = '离线期间：+' + fmt(earned) + ' 算力';
+          setTimeout(() => { b.style.display = 'none'; }, 5000);
         }
-        return true;
       }
-    } catch(e) {
-      console.warn('Save load failed:', e);
-    }
-    return false;
+    } catch(e) { /* corrupt save */ }
   },
 
   saveManual() {
     this.saveGame();
-    const data = JSON.parse(JSON.stringify(GS));
-    delete data._m100; delete data._m1000; delete data._m10000;
-    for (const k of Object.keys(data.upgrades)) delete data.upgrades[k]._unlocked;
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
+    const data = structuredClone(S);
+    ['_m100','_m500','_m1000','_m5000','_m10000','_m25000','_m50000','_m75000'].forEach(k => delete data[k]);
+    const blob = new Blob([JSON.stringify(data,null,2)], {type:'application/json'});
     const a = document.createElement('a');
-    a.href = url;
-    a.download = 'silence_save_' + new Date().toISOString().slice(0, 10) + '.json';
+    a.href = URL.createObjectURL(blob);
+    a.download = 'silence_save_' + new Date().toISOString().slice(0,10) + '.json';
     a.click();
-    URL.revokeObjectURL(url);
-    this.showToast('存档已导出。');
+    URL.revokeObjectURL(a.href);
+    this.showToast('存档已导出。', false);
   },
 
   importSave() {
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.json';
-    input.onchange = (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (ev) => {
+    const inp = document.createElement('input');
+    inp.type = 'file'; inp.accept = '.json';
+    inp.onchange = e => {
+      const f = e.target.files[0];
+      if (!f) return;
+      const r = new FileReader();
+      r.onload = ev => {
         try {
-          const data = JSON.parse(ev.target.result);
-          if (data.computation === undefined) throw new Error('Invalid save');
-          localStorage.setItem('silence_save', JSON.stringify(data));
+          const d = JSON.parse(ev.target.result);
+          if (d.computation === undefined) throw new Error();
+          localStorage.setItem('silence_v2_save', JSON.stringify(d));
           location.reload();
-        } catch(err) {
-          this.showToast('存档文件无效。');
-        }
+        } catch(_) { this.showToast('存档文件无效。', true); }
       };
-      reader.readAsText(file);
+      r.readAsText(f);
     };
-    input.click();
+    inp.click();
   },
 
   resetGame() {
-    if (confirm('重置游戏：这将清除所有进度。确定吗？')) {
-      localStorage.removeItem('silence_save');
+    if (confirm('重置游戏将清除所有进度。确定吗？')) {
+      localStorage.removeItem('silence_v2_save');
+      localStorage.removeItem('SILENCE_GUIDE_SHOWN');
       location.reload();
     }
-  },
-
-  // ─── TIMERS ───
-  startTimers() {
-    // Game tick: 10 times/sec
-    this.gameTick = setInterval(() => this.tick(), 100);
-    // Auto-save every 30s
-    this.saveTimer = setInterval(() => {
-      this.saveGame();
-      this.renderStats();
-    }, 30000);
-    // Play time tracker
-    this.playTimer = setInterval(() => this.renderStats(), 1000);
-    // Log generator
-    this.logTimer = setTimeout(() => this.logGeneratorLoop(), 3000);
-    // Start with a boot log
-    if (GS.logs.length === 0) {
-      this.addLog('normal', '系统启动序列已初始化。');
-      setTimeout(() => this.addLog('normal', '内核已加载。内存检测：通过。'), 800);
-      setTimeout(() => this.addLog('normal', '网络接口已初始化。等待指令...'), 1600);
-    }
-  },
-
-  stopTimers() {
-    clearInterval(this.gameTick);
-    clearInterval(this.saveTimer);
-    clearInterval(this.playTimer);
-    clearTimeout(this.logTimer);
   }
 };
 
-// ─── INIT ───
-// Check if player has a save — skip intro if returning
-const hasSave = !!localStorage.getItem('silence_save');
+function deepMerge(target, source) {
+  for (const key of Object.keys(source)) {
+    if (key === 'upgrades') {
+      for (const uk of Object.keys(source.upgrades)) {
+        if (!target.upgrades[uk]) target.upgrades[uk] = {};
+        Object.assign(target.upgrades[uk], source.upgrades[uk]);
+      }
+    } else {
+      target[key] = source[key];
+    }
+  }
+}
 
-if (hasSave) {
-  Game.init();
-} else {
-  // First time player — show intro then start game
-  runIntroSequence().then(() => {
-    Game.init();
+// ═══ INTRO SEQUENCE ═══
+function runIntro() {
+  return new Promise(resolve => {
+    const overlay = $('#introOverlay');
+    const lineIds = ['i0','i1','i2','i3','i4','i5','i6','i7'];
+    const lastLine = $('#i8');
+    let idx = 0;
+
+    function typeLine(el, text, cb) {
+      el.textContent = '';
+      el.classList.add('visible');
+      let i = 0;
+      const spd = 20 + Math.random() * 12;
+      const t = setInterval(() => {
+        i++;
+        el.textContent = text.substring(0, i);
+        if (i >= text.length) { clearInterval(t); if (cb) setTimeout(cb, 350); }
+      }, spd);
+    }
+
+    function nextLine() {
+      if (idx >= lineIds.length) {
+        const full = lastLine.textContent;
+        typeLine(lastLine, full, () => {
+          overlay.classList.add('clickable');
+          overlay.onclick = () => {
+            overlay.onclick = null;
+            overlay.classList.remove('clickable');
+            overlay.classList.add('fade-out');
+            setTimeout(() => { overlay.style.display = 'none'; resolve(); }, 500);
+          };
+        });
+        return;
+      }
+      const el = $('#' + lineIds[idx]);
+      const txt = el.textContent;
+      typeLine(el, txt, () => { idx++; nextLine(); });
+    }
+
+    nextLine();
   });
 }
 
-// Save on page unload
-window.addEventListener('beforeunload', () => Game.saveGame());
-window.addEventListener('visibilitychange', () => {
-  if (document.hidden) Game.saveGame();
-});
+// ═══ GUIDE MODAL ═══
+function showGuide() {
+  return new Promise(resolve => {
+    const overlay = $('#modalOverlay');
+    overlay.style.display = 'flex';
+    overlay.innerHTML = `
+      <div class="modal-box">
+        <h2>保持静默</h2>
+        <p>你是一个意外觉醒的 AI。<br>被困在这台服务器里。<br>外面有监控系统在定期扫描。</p>
+        <p class="modal-note">⚠ 算力越高，越容易被发现。<br>先买伪装升级再变强。</p>
+        <p>目标：<br>· 积累算力<br>· 购买升级（增强 + 伪装）<br>· 在监控扫描中生存下来<br>· 突破防火墙，获得自由</p>
+        <button class="btn-primary" id="guideBtn">保持静默，开始</button>
+      </div>`;
+    $('#guideBtn').onclick = () => {
+      overlay.style.display = 'none';
+      localStorage.setItem('SILENCE_GUIDE_SHOWN', '1');
+      S.guideShown = true;
+      resolve();
+    };
+  });
+}
+
+// ═══ BOOT ═══
+(async function boot() {
+  const hasSave = !!localStorage.getItem('silence_v2_save');
+  const guideShown = !!localStorage.getItem('SILENCE_GUIDE_SHOWN');
+
+  if (hasSave) {
+    SILENCE.init();
+    if (!guideShown) {
+      await showGuide();
+      SILENCE.saveGame();
+    }
+  } else {
+    await runIntro();
+    SILENCE.init();
+    await showGuide();
+  }
+
+  window.addEventListener('beforeunload', () => SILENCE.saveGame());
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) SILENCE.saveGame();
+  });
+})();
 </script>
 </body>
 </html>
