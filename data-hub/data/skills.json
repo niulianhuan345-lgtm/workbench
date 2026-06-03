@@ -198,12 +198,6 @@
     "status": "active"
   },
   {
-    "name": "roi-factor-decomposition",
-    "category": "data-science",
-    "desc": "广告ROI因子拆解：将ROI变化归因到CPC/CTR/CVR/ATV四个因子，区分外部因素与内部转化效率。用于周报/月报的广告效率分析和订单增量归因。触发词：ROI拆解、效率归因、因子分析、ROI提升来源。",
-    "status": "active"
-  },
-  {
     "name": "ruixing-reporting",
     "category": "data-science",
     "desc": "瑞幸广告投放日报/周报自动生成。从 Metabase Dashboard 29 拉取数据，经数据完整性检查后按固定格式输出。触发词：更新日报、更新周报、瑞幸日报、数据检查、Metabase 拉数据。",
