@@ -1,1 +1,1262 @@
-["生意管家","关键词投放","人群定向","定时批量暂停","每日早安","周维度分析","项目立项审批","智能出价擎天柱","云报表导出","客户接入"]
+[
+  {
+    "name": "apple-reminders",
+    "category": "apple",
+    "path": "apple/apple-reminders"
+  },
+  {
+    "name": "macos-computer-use",
+    "category": "apple",
+    "path": "apple/macos-computer-use"
+  },
+  {
+    "name": "imessage",
+    "category": "apple",
+    "path": "apple/imessage"
+  },
+  {
+    "name": "findmy",
+    "category": "apple",
+    "path": "apple/findmy"
+  },
+  {
+    "name": "apple-notes",
+    "category": "apple",
+    "path": "apple/apple-notes"
+  },
+  {
+    "name": "platform-knowledge-research",
+    "category": "research",
+    "path": "research/platform-knowledge-research"
+  },
+  {
+    "name": "blogwatcher",
+    "category": "research",
+    "path": "research/blogwatcher"
+  },
+  {
+    "name": "a-share-stock-trading",
+    "category": "research",
+    "path": "research/a-share-stock-trading"
+  },
+  {
+    "name": "polymarket",
+    "category": "research",
+    "path": "research/polymarket"
+  },
+  {
+    "name": "llm-wiki",
+    "category": "research",
+    "path": "research/llm-wiki"
+  },
+  {
+    "name": "arxiv",
+    "category": "research",
+    "path": "research/arxiv"
+  },
+  {
+    "name": "research-paper-writing",
+    "category": "research",
+    "path": "research/research-paper-writing"
+  },
+  {
+    "name": "minecraft-modpack-server",
+    "category": "gaming",
+    "path": "gaming/minecraft-modpack-server"
+  },
+  {
+    "name": "pokemon-player",
+    "category": "gaming",
+    "path": "gaming/pokemon-player"
+  },
+  {
+    "name": "xurl",
+    "category": "social-media",
+    "path": "social-media/xurl"
+  },
+  {
+    "name": "kanban-worker",
+    "category": "devops",
+    "path": "devops/kanban-worker"
+  },
+  {
+    "name": "webhook-subscriptions",
+    "category": "devops",
+    "path": "devops/webhook-subscriptions"
+  },
+  {
+    "name": "kanban-orchestrator",
+    "category": "devops",
+    "path": "devops/kanban-orchestrator"
+  },
+  {
+    "name": "static-site-deployment",
+    "category": "devops",
+    "path": "devops/static-site-deployment"
+  },
+  {
+    "name": "yuanbao",
+    "category": "",
+    "path": "yuanbao"
+  },
+  {
+    "name": "ruixing-reporting",
+    "category": "data-science",
+    "path": "data-science/ruixing-reporting"
+  },
+  {
+    "name": "ace-budget-reallocation",
+    "category": "data-science",
+    "path": "data-science/ace-budget-reallocation"
+  },
+  {
+    "name": "jupyter-live-kernel",
+    "category": "data-science",
+    "path": "data-science/jupyter-live-kernel"
+  },
+  {
+    "name": "store-efficiency-grading",
+    "category": "data-science",
+    "path": "data-science/store-efficiency-grading"
+  },
+  {
+    "name": "metabase-automation",
+    "category": "data-science",
+    "path": "data-science/metabase-automation"
+  },
+  {
+    "name": "large-scale-store-data-analysis",
+    "category": "data-science",
+    "path": "data-science/large-scale-store-data-analysis"
+  },
+  {
+    "name": "advertising-weekly-report",
+    "category": "data-science",
+    "path": "data-science/advertising-weekly-report"
+  },
+  {
+    "name": "test-driven-development",
+    "category": "software-development",
+    "path": "software-development/test-driven-development"
+  },
+  {
+    "name": "systematic-debugging",
+    "category": "software-development",
+    "path": "software-development/systematic-debugging"
+  },
+  {
+    "name": "plan",
+    "category": "software-development",
+    "path": "software-development/plan"
+  },
+  {
+    "name": "umi-max-development",
+    "category": "software-development",
+    "path": "software-development/umi-max-development"
+  },
+  {
+    "name": "hermes-agent-skill-authoring",
+    "category": "software-development",
+    "path": "software-development/hermes-agent-skill-authoring"
+  },
+  {
+    "name": "python-debugpy",
+    "category": "software-development",
+    "path": "software-development/python-debugpy"
+  },
+  {
+    "name": "writing-plans",
+    "category": "software-development",
+    "path": "software-development/writing-plans"
+  },
+  {
+    "name": "spike",
+    "category": "software-development",
+    "path": "software-development/spike"
+  },
+  {
+    "name": "requesting-code-review",
+    "category": "software-development",
+    "path": "software-development/requesting-code-review"
+  },
+  {
+    "name": "node-inspect-debugger",
+    "category": "software-development",
+    "path": "software-development/node-inspect-debugger"
+  },
+  {
+    "name": "debugging-hermes-tui-commands",
+    "category": "software-development",
+    "path": "software-development/debugging-hermes-tui-commands"
+  },
+  {
+    "name": "subagent-driven-development",
+    "category": "software-development",
+    "path": "software-development/subagent-driven-development"
+  },
+  {
+    "name": "dspy",
+    "category": "mlops",
+    "path": "mlops/research/dspy"
+  },
+  {
+    "name": "huggingface-hub",
+    "category": "mlops",
+    "path": "mlops/huggingface-hub"
+  },
+  {
+    "name": "audiocraft",
+    "category": "mlops",
+    "path": "mlops/models/audiocraft"
+  },
+  {
+    "name": "segment-anything",
+    "category": "mlops",
+    "path": "mlops/models/segment-anything"
+  },
+  {
+    "name": "vllm",
+    "category": "mlops",
+    "path": "mlops/inference/vllm"
+  },
+  {
+    "name": "obliteratus",
+    "category": "mlops",
+    "path": "mlops/inference/obliteratus"
+  },
+  {
+    "name": "llama-cpp",
+    "category": "mlops",
+    "path": "mlops/inference/llama-cpp"
+  },
+  {
+    "name": "lm-evaluation-harness",
+    "category": "mlops",
+    "path": "mlops/evaluation/lm-evaluation-harness"
+  },
+  {
+    "name": "weights-and-biases",
+    "category": "mlops",
+    "path": "mlops/evaluation/weights-and-biases"
+  },
+  {
+    "name": "native-mcp",
+    "category": "mcp",
+    "path": "mcp/native-mcp"
+  },
+  {
+    "name": "github-auth",
+    "category": "github",
+    "path": "github/github-auth"
+  },
+  {
+    "name": "github-repo-management",
+    "category": "github",
+    "path": "github/github-repo-management"
+  },
+  {
+    "name": "github-pr-workflow",
+    "category": "github",
+    "path": "github/github-pr-workflow"
+  },
+  {
+    "name": "github-code-review",
+    "category": "github",
+    "path": "github/github-code-review"
+  },
+  {
+    "name": "github-issues",
+    "category": "github",
+    "path": "github/github-issues"
+  },
+  {
+    "name": "codebase-inspection",
+    "category": "github",
+    "path": "github/codebase-inspection"
+  },
+  {
+    "name": "obsidian",
+    "category": "note-taking",
+    "path": "note-taking/obsidian"
+  },
+  {
+    "name": "godmode",
+    "category": "red-teaming",
+    "path": "red-teaming/godmode"
+  },
+  {
+    "name": "creative-ideation",
+    "category": "creative",
+    "path": "creative/creative-ideation"
+  },
+  {
+    "name": "comfyui",
+    "category": "creative",
+    "path": "creative/comfyui"
+  },
+  {
+    "name": "baoyu-infographic",
+    "category": "creative",
+    "path": "creative/baoyu-infographic"
+  },
+  {
+    "name": "songwriting-and-ai-music",
+    "category": "creative",
+    "path": "creative/songwriting-and-ai-music"
+  },
+  {
+    "name": "ascii-video",
+    "category": "creative",
+    "path": "creative/ascii-video"
+  },
+  {
+    "name": "touchdesigner-mcp",
+    "category": "creative",
+    "path": "creative/touchdesigner-mcp"
+  },
+  {
+    "name": "excalidraw",
+    "category": "creative",
+    "path": "creative/excalidraw"
+  },
+  {
+    "name": "claude-design",
+    "category": "creative",
+    "path": "creative/claude-design"
+  },
+  {
+    "name": "ascii-art",
+    "category": "creative",
+    "path": "creative/ascii-art"
+  },
+  {
+    "name": "design-md",
+    "category": "creative",
+    "path": "creative/design-md"
+  },
+  {
+    "name": "baoyu-comic",
+    "category": "creative",
+    "path": "creative/baoyu-comic"
+  },
+  {
+    "name": "popular-web-designs",
+    "category": "creative",
+    "path": "creative/popular-web-designs"
+  },
+  {
+    "name": "manim-video",
+    "category": "creative",
+    "path": "creative/manim-video"
+  },
+  {
+    "name": "pixel-art",
+    "category": "creative",
+    "path": "creative/pixel-art"
+  },
+  {
+    "name": "pretext",
+    "category": "creative",
+    "path": "creative/pretext"
+  },
+  {
+    "name": "humanizer",
+    "category": "creative",
+    "path": "creative/humanizer"
+  },
+  {
+    "name": "p5js",
+    "category": "creative",
+    "path": "creative/p5js"
+  },
+  {
+    "name": "architecture-diagram",
+    "category": "creative",
+    "path": "creative/architecture-diagram"
+  },
+  {
+    "name": "sketch",
+    "category": "creative",
+    "path": "creative/sketch"
+  },
+  {
+    "name": "dingtalk-gateway",
+    "category": "",
+    "path": "dingtalk-gateway"
+  },
+  {
+    "name": "git-push-via-curl",
+    "category": "",
+    "path": "git-push-via-curl"
+  },
+  {
+    "name": "himalaya",
+    "category": "email",
+    "path": "email/himalaya"
+  },
+  {
+    "name": "openhue",
+    "category": "smart-home",
+    "path": "smart-home/openhue"
+  },
+  {
+    "name": "claude-code",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/claude-code"
+  },
+  {
+    "name": "codex",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/codex"
+  },
+  {
+    "name": "hermes-agent",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/hermes-agent"
+  },
+  {
+    "name": "opencode",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/opencode"
+  },
+  {
+    "name": "dogfood",
+    "category": "",
+    "path": "dogfood"
+  },
+  {
+    "name": "nano-pdf",
+    "category": "productivity",
+    "path": "productivity/nano-pdf"
+  },
+  {
+    "name": "maps",
+    "category": "productivity",
+    "path": "productivity/maps"
+  },
+  {
+    "name": "teams-meeting-pipeline",
+    "category": "productivity",
+    "path": "productivity/teams-meeting-pipeline"
+  },
+  {
+    "name": "feishu-embedded-sheets",
+    "category": "productivity",
+    "path": "productivity/feishu-embedded-sheets"
+  },
+  {
+    "name": "hermes-data-hub",
+    "category": "productivity",
+    "path": "productivity/hermes-data-hub"
+  },
+  {
+    "name": "pm-knowledge-hub",
+    "category": "productivity",
+    "path": "productivity/pm-knowledge-hub"
+  },
+  {
+    "name": "feishu-doc-editing",
+    "category": "productivity",
+    "path": "productivity/feishu-doc-editing"
+  },
+  {
+    "name": "linear",
+    "category": "productivity",
+    "path": "productivity/linear"
+  },
+  {
+    "name": "ab-test-analysis",
+    "category": "productivity",
+    "path": "productivity/ab-test-analysis"
+  },
+  {
+    "name": "xlsx",
+    "category": "productivity",
+    "path": "productivity/xlsx"
+  },
+  {
+    "name": "neural-memory",
+    "category": "productivity",
+    "path": "productivity/neural-memory"
+  },
+  {
+    "name": "notion",
+    "category": "productivity",
+    "path": "productivity/notion"
+  },
+  {
+    "name": "feishu-doc-api",
+    "category": "productivity",
+    "path": "productivity/feishu-doc-api"
+  },
+  {
+    "name": "airtable",
+    "category": "productivity",
+    "path": "productivity/airtable"
+  },
+  {
+    "name": "powerpoint",
+    "category": "productivity",
+    "path": "productivity/powerpoint"
+  },
+  {
+    "name": "lightweight-workbench",
+    "category": "productivity",
+    "path": "productivity/lightweight-workbench"
+  },
+  {
+    "name": "google-workspace",
+    "category": "productivity",
+    "path": "productivity/google-workspace"
+  },
+  {
+    "name": "weather-report",
+    "category": "productivity",
+    "path": "productivity/weather-report"
+  },
+  {
+    "name": "ocr-and-documents",
+    "category": "productivity",
+    "path": "productivity/ocr-and-documents"
+  },
+  {
+    "name": "feishu-cli-setup",
+    "category": "productivity",
+    "path": "productivity/feishu-cli-setup"
+  },
+  {
+    "name": "project-dashboard",
+    "category": "productivity",
+    "path": "productivity/project-dashboard"
+  },
+  {
+    "name": "sequential-thinking",
+    "category": "productivity",
+    "path": "productivity/sequential-thinking"
+  },
+  {
+    "name": "aione-design-pipeline",
+    "category": "productivity",
+    "path": "productivity/aione-design-pipeline"
+  },
+  {
+    "name": "youtube-content",
+    "category": "media",
+    "path": "media/youtube-content"
+  },
+  {
+    "name": "heartmula",
+    "category": "media",
+    "path": "media/heartmula"
+  },
+  {
+    "name": "spotify",
+    "category": "media",
+    "path": "media/spotify"
+  },
+  {
+    "name": "songsee",
+    "category": "media",
+    "path": "media/songsee"
+  },
+  {
+    "name": "gif-search",
+    "category": "media",
+    "path": "media/gif-search"
+  },
+  {
+    "name": "apple-reminders",
+    "category": "apple",
+    "path": "apple/apple-reminders"
+  },
+  {
+    "name": "macos-computer-use",
+    "category": "apple",
+    "path": "apple/macos-computer-use"
+  },
+  {
+    "name": "imessage",
+    "category": "apple",
+    "path": "apple/imessage"
+  },
+  {
+    "name": "findmy",
+    "category": "apple",
+    "path": "apple/findmy"
+  },
+  {
+    "name": "apple-notes",
+    "category": "apple",
+    "path": "apple/apple-notes"
+  },
+  {
+    "name": "lark-mail",
+    "category": "",
+    "path": "lark-mail"
+  },
+  {
+    "name": "platform-knowledge-research",
+    "category": "research",
+    "path": "research/platform-knowledge-research"
+  },
+  {
+    "name": "blogwatcher",
+    "category": "research",
+    "path": "research/blogwatcher"
+  },
+  {
+    "name": "a-share-stock-trading",
+    "category": "research",
+    "path": "research/a-share-stock-trading"
+  },
+  {
+    "name": "polymarket",
+    "category": "research",
+    "path": "research/polymarket"
+  },
+  {
+    "name": "llm-wiki",
+    "category": "research",
+    "path": "research/llm-wiki"
+  },
+  {
+    "name": "arxiv",
+    "category": "research",
+    "path": "research/arxiv"
+  },
+  {
+    "name": "research-paper-writing",
+    "category": "research",
+    "path": "research/research-paper-writing"
+  },
+  {
+    "name": "minecraft-modpack-server",
+    "category": "gaming",
+    "path": "gaming/minecraft-modpack-server"
+  },
+  {
+    "name": "pokemon-player",
+    "category": "gaming",
+    "path": "gaming/pokemon-player"
+  },
+  {
+    "name": "lark-minutes",
+    "category": "",
+    "path": "lark-minutes"
+  },
+  {
+    "name": "xurl",
+    "category": "social-media",
+    "path": "social-media/xurl"
+  },
+  {
+    "name": "kanban-worker",
+    "category": "devops",
+    "path": "devops/kanban-worker"
+  },
+  {
+    "name": "webhook-subscriptions",
+    "category": "devops",
+    "path": "devops/webhook-subscriptions"
+  },
+  {
+    "name": "kanban-orchestrator",
+    "category": "devops",
+    "path": "devops/kanban-orchestrator"
+  },
+  {
+    "name": "static-site-deployment",
+    "category": "devops",
+    "path": "devops/static-site-deployment"
+  },
+  {
+    "name": "lark-openapi-explorer",
+    "category": "",
+    "path": "lark-openapi-explorer"
+  },
+  {
+    "name": "lark-skill-maker",
+    "category": "",
+    "path": "lark-skill-maker"
+  },
+  {
+    "name": "lark-calendar",
+    "category": "",
+    "path": "lark-calendar"
+  },
+  {
+    "name": "lark-workflow-standup-report",
+    "category": "",
+    "path": "lark-workflow-standup-report"
+  },
+  {
+    "name": "lark-wiki",
+    "category": "",
+    "path": "lark-wiki"
+  },
+  {
+    "name": "yuanbao",
+    "category": "",
+    "path": "yuanbao"
+  },
+  {
+    "name": "ruixing-reporting",
+    "category": "data-science",
+    "path": "data-science/ruixing-reporting"
+  },
+  {
+    "name": "wanxiangtai-roi-diagnostics",
+    "category": "data-science",
+    "path": "data-science/wanxiangtai-roi-diagnostics"
+  },
+  {
+    "name": "ace-budget-reallocation",
+    "category": "data-science",
+    "path": "data-science/ace-budget-reallocation"
+  },
+  {
+    "name": "jupyter-live-kernel",
+    "category": "data-science",
+    "path": "data-science/jupyter-live-kernel"
+  },
+  {
+    "name": "store-efficiency-grading",
+    "category": "data-science",
+    "path": "data-science/store-efficiency-grading"
+  },
+  {
+    "name": "metabase-automation",
+    "category": "data-science",
+    "path": "data-science/metabase-automation"
+  },
+  {
+    "name": "large-scale-store-data-analysis",
+    "category": "data-science",
+    "path": "data-science/large-scale-store-data-analysis"
+  },
+  {
+    "name": "jintoushang-scoring",
+    "category": "data-science",
+    "path": "data-science/jintoushang-scoring"
+  },
+  {
+    "name": "advertising-weekly-report",
+    "category": "data-science",
+    "path": "data-science/advertising-weekly-report"
+  },
+  {
+    "name": "lark-markdown",
+    "category": "",
+    "path": "lark-markdown"
+  },
+  {
+    "name": "test-driven-development",
+    "category": "software-development",
+    "path": "software-development/test-driven-development"
+  },
+  {
+    "name": "systematic-debugging",
+    "category": "software-development",
+    "path": "software-development/systematic-debugging"
+  },
+  {
+    "name": "plan",
+    "category": "software-development",
+    "path": "software-development/plan"
+  },
+  {
+    "name": "umi-max-development",
+    "category": "software-development",
+    "path": "software-development/umi-max-development"
+  },
+  {
+    "name": "hermes-agent-skill-authoring",
+    "category": "software-development",
+    "path": "software-development/hermes-agent-skill-authoring"
+  },
+  {
+    "name": "python-debugpy",
+    "category": "software-development",
+    "path": "software-development/python-debugpy"
+  },
+  {
+    "name": "writing-plans",
+    "category": "software-development",
+    "path": "software-development/writing-plans"
+  },
+  {
+    "name": "spike",
+    "category": "software-development",
+    "path": "software-development/spike"
+  },
+  {
+    "name": "requesting-code-review",
+    "category": "software-development",
+    "path": "software-development/requesting-code-review"
+  },
+  {
+    "name": "node-inspect-debugger",
+    "category": "software-development",
+    "path": "software-development/node-inspect-debugger"
+  },
+  {
+    "name": "debugging-hermes-tui-commands",
+    "category": "software-development",
+    "path": "software-development/debugging-hermes-tui-commands"
+  },
+  {
+    "name": "subagent-driven-development",
+    "category": "software-development",
+    "path": "software-development/subagent-driven-development"
+  },
+  {
+    "name": "dspy",
+    "category": "mlops",
+    "path": "mlops/research/dspy"
+  },
+  {
+    "name": "huggingface-hub",
+    "category": "mlops",
+    "path": "mlops/huggingface-hub"
+  },
+  {
+    "name": "audiocraft",
+    "category": "mlops",
+    "path": "mlops/models/audiocraft"
+  },
+  {
+    "name": "segment-anything",
+    "category": "mlops",
+    "path": "mlops/models/segment-anything"
+  },
+  {
+    "name": "vllm",
+    "category": "mlops",
+    "path": "mlops/inference/vllm"
+  },
+  {
+    "name": "obliteratus",
+    "category": "mlops",
+    "path": "mlops/inference/obliteratus"
+  },
+  {
+    "name": "llama-cpp",
+    "category": "mlops",
+    "path": "mlops/inference/llama-cpp"
+  },
+  {
+    "name": "lm-evaluation-harness",
+    "category": "mlops",
+    "path": "mlops/evaluation/lm-evaluation-harness"
+  },
+  {
+    "name": "weights-and-biases",
+    "category": "mlops",
+    "path": "mlops/evaluation/weights-and-biases"
+  },
+  {
+    "name": "lark-okr",
+    "category": "",
+    "path": "lark-okr"
+  },
+  {
+    "name": "lark-doc",
+    "category": "",
+    "path": "lark-doc"
+  },
+  {
+    "name": "native-mcp",
+    "category": "mcp",
+    "path": "mcp/native-mcp"
+  },
+  {
+    "name": "lark-contact",
+    "category": "",
+    "path": "lark-contact"
+  },
+  {
+    "name": "lark-vc-agent",
+    "category": "",
+    "path": "lark-vc-agent"
+  },
+  {
+    "name": "lark-vc",
+    "category": "",
+    "path": "lark-vc"
+  },
+  {
+    "name": "github-auth",
+    "category": "github",
+    "path": "github/github-auth"
+  },
+  {
+    "name": "github-repo-management",
+    "category": "github",
+    "path": "github/github-repo-management"
+  },
+  {
+    "name": "github-pr-workflow",
+    "category": "github",
+    "path": "github/github-pr-workflow"
+  },
+  {
+    "name": "github-code-review",
+    "category": "github",
+    "path": "github/github-code-review"
+  },
+  {
+    "name": "github-issues",
+    "category": "github",
+    "path": "github/github-issues"
+  },
+  {
+    "name": "codebase-inspection",
+    "category": "github",
+    "path": "github/codebase-inspection"
+  },
+  {
+    "name": "obsidian",
+    "category": "note-taking",
+    "path": "note-taking/obsidian"
+  },
+  {
+    "name": "lark-drive",
+    "category": "",
+    "path": "lark-drive"
+  },
+  {
+    "name": "godmode",
+    "category": "red-teaming",
+    "path": "red-teaming/godmode"
+  },
+  {
+    "name": "lark-workflow-meeting-summary",
+    "category": "",
+    "path": "lark-workflow-meeting-summary"
+  },
+  {
+    "name": "lark-event",
+    "category": "",
+    "path": "lark-event"
+  },
+  {
+    "name": "lark-apps",
+    "category": "",
+    "path": "lark-apps"
+  },
+  {
+    "name": "lark-attendance",
+    "category": "",
+    "path": "lark-attendance"
+  },
+  {
+    "name": "lark-shared",
+    "category": "",
+    "path": "lark-shared"
+  },
+  {
+    "name": "lark-base",
+    "category": "",
+    "path": "lark-base"
+  },
+  {
+    "name": "lark-slides",
+    "category": "",
+    "path": "lark-slides"
+  },
+  {
+    "name": "lark-im",
+    "category": "",
+    "path": "lark-im"
+  },
+  {
+    "name": "creative-ideation",
+    "category": "creative",
+    "path": "creative/creative-ideation"
+  },
+  {
+    "name": "comfyui",
+    "category": "creative",
+    "path": "creative/comfyui"
+  },
+  {
+    "name": "baoyu-infographic",
+    "category": "creative",
+    "path": "creative/baoyu-infographic"
+  },
+  {
+    "name": "songwriting-and-ai-music",
+    "category": "creative",
+    "path": "creative/songwriting-and-ai-music"
+  },
+  {
+    "name": "ascii-video",
+    "category": "creative",
+    "path": "creative/ascii-video"
+  },
+  {
+    "name": "touchdesigner-mcp",
+    "category": "creative",
+    "path": "creative/touchdesigner-mcp"
+  },
+  {
+    "name": "excalidraw",
+    "category": "creative",
+    "path": "creative/excalidraw"
+  },
+  {
+    "name": "claude-design",
+    "category": "creative",
+    "path": "creative/claude-design"
+  },
+  {
+    "name": "ascii-art",
+    "category": "creative",
+    "path": "creative/ascii-art"
+  },
+  {
+    "name": "design-md",
+    "category": "creative",
+    "path": "creative/design-md"
+  },
+  {
+    "name": "baoyu-comic",
+    "category": "creative",
+    "path": "creative/baoyu-comic"
+  },
+  {
+    "name": "popular-web-designs",
+    "category": "creative",
+    "path": "creative/popular-web-designs"
+  },
+  {
+    "name": "manim-video",
+    "category": "creative",
+    "path": "creative/manim-video"
+  },
+  {
+    "name": "pixel-art",
+    "category": "creative",
+    "path": "creative/pixel-art"
+  },
+  {
+    "name": "pretext",
+    "category": "creative",
+    "path": "creative/pretext"
+  },
+  {
+    "name": "humanizer",
+    "category": "creative",
+    "path": "creative/humanizer"
+  },
+  {
+    "name": "p5js",
+    "category": "creative",
+    "path": "creative/p5js"
+  },
+  {
+    "name": "architecture-diagram",
+    "category": "creative",
+    "path": "creative/architecture-diagram"
+  },
+  {
+    "name": "sketch",
+    "category": "creative",
+    "path": "creative/sketch"
+  },
+  {
+    "name": "dingtalk-gateway",
+    "category": "",
+    "path": "dingtalk-gateway"
+  },
+  {
+    "name": "git-push-via-curl",
+    "category": "",
+    "path": "git-push-via-curl"
+  },
+  {
+    "name": "lark-sheets",
+    "category": "",
+    "path": "lark-sheets"
+  },
+  {
+    "name": "lark-task",
+    "category": "",
+    "path": "lark-task"
+  },
+  {
+    "name": "lark-whiteboard",
+    "category": "",
+    "path": "lark-whiteboard"
+  },
+  {
+    "name": "himalaya",
+    "category": "email",
+    "path": "email/himalaya"
+  },
+  {
+    "name": "openhue",
+    "category": "smart-home",
+    "path": "smart-home/openhue"
+  },
+  {
+    "name": "claude-code",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/claude-code"
+  },
+  {
+    "name": "codex",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/codex"
+  },
+  {
+    "name": "hermes-agent",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/hermes-agent"
+  },
+  {
+    "name": "opencode",
+    "category": "autonomous-ai-agents",
+    "path": "autonomous-ai-agents/opencode"
+  },
+  {
+    "name": "lark-approval",
+    "category": "",
+    "path": "lark-approval"
+  },
+  {
+    "name": "dogfood",
+    "category": "",
+    "path": "dogfood"
+  },
+  {
+    "name": "nano-pdf",
+    "category": "productivity",
+    "path": "productivity/nano-pdf"
+  },
+  {
+    "name": "maps",
+    "category": "productivity",
+    "path": "productivity/maps"
+  },
+  {
+    "name": "teams-meeting-pipeline",
+    "category": "productivity",
+    "path": "productivity/teams-meeting-pipeline"
+  },
+  {
+    "name": "hermes-data-hub",
+    "category": "productivity",
+    "path": "productivity/hermes-data-hub"
+  },
+  {
+    "name": "pm-knowledge-hub",
+    "category": "productivity",
+    "path": "productivity/pm-knowledge-hub"
+  },
+  {
+    "name": "feishu-doc-editing",
+    "category": "productivity",
+    "path": "productivity/feishu-doc-editing"
+  },
+  {
+    "name": "product-requirements",
+    "category": "productivity",
+    "path": "productivity/product-requirements"
+  },
+  {
+    "name": "linear",
+    "category": "productivity",
+    "path": "productivity/linear"
+  },
+  {
+    "name": "ab-test-analysis",
+    "category": "productivity",
+    "path": "productivity/ab-test-analysis"
+  },
+  {
+    "name": "xlsx",
+    "category": "productivity",
+    "path": "productivity/xlsx"
+  },
+  {
+    "name": "neural-memory",
+    "category": "productivity",
+    "path": "productivity/neural-memory"
+  },
+  {
+    "name": "notion",
+    "category": "productivity",
+    "path": "productivity/notion"
+  },
+  {
+    "name": "airtable",
+    "category": "productivity",
+    "path": "productivity/airtable"
+  },
+  {
+    "name": "powerpoint",
+    "category": "productivity",
+    "path": "productivity/powerpoint"
+  },
+  {
+    "name": "lightweight-workbench",
+    "category": "productivity",
+    "path": "productivity/lightweight-workbench"
+  },
+  {
+    "name": "google-workspace",
+    "category": "productivity",
+    "path": "productivity/google-workspace"
+  },
+  {
+    "name": "weather-report",
+    "category": "productivity",
+    "path": "productivity/weather-report"
+  },
+  {
+    "name": "ocr-and-documents",
+    "category": "productivity",
+    "path": "productivity/ocr-and-documents"
+  },
+  {
+    "name": "project-dashboard",
+    "category": "productivity",
+    "path": "productivity/project-dashboard"
+  },
+  {
+    "name": "sequential-thinking",
+    "category": "productivity",
+    "path": "productivity/sequential-thinking"
+  },
+  {
+    "name": "aione-design-pipeline",
+    "category": "productivity",
+    "path": "productivity/aione-design-pipeline"
+  },
+  {
+    "name": "youtube-content",
+    "category": "media",
+    "path": "media/youtube-content"
+  },
+  {
+    "name": "heartmula",
+    "category": "media",
+    "path": "media/heartmula"
+  },
+  {
+    "name": "spotify",
+    "category": "media",
+    "path": "media/spotify"
+  },
+  {
+    "name": "songsee",
+    "category": "media",
+    "path": "media/songsee"
+  },
+  {
+    "name": "gif-search",
+    "category": "media",
+    "path": "media/gif-search"
+  }
+]
