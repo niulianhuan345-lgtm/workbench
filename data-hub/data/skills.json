@@ -378,6 +378,12 @@
     "status": "active"
   },
   {
+    "name": "feishu-embedded-sheets",
+    "category": "productivity",
+    "desc": "飞书文档表格插入偏好：必须用嵌入电子表格不用markdown内联表格。",
+    "status": "active"
+  },
+  {
     "name": "google-workspace",
     "category": "productivity",
     "desc": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
