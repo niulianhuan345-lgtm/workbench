@@ -43,8 +43,12 @@ body{
 .container{max-width:960px;margin:0 auto;padding:8px 12px 16px}
 
 /* ── HEADER ── */
-.header{text-align:center;padding:10px 0 6px;border-bottom:1px solid var(--border);margin-bottom:8px}
-.header h1{font-size:clamp(1.2rem,3.2vw,1.6rem);letter-spacing:5px;text-shadow:0 0 20px rgba(0,255,136,.25)}
+.header{display:flex;justify-content:space-between;align-items:center;padding:8px 0 6px;border-bottom:1px solid var(--border);margin-bottom:8px}
+.header-left{text-align:left}
+.header-left h1{font-size:clamp(1.2rem,3.2vw,1.6rem);letter-spacing:5px;text-shadow:0 0 20px rgba(0,255,136,.25);margin:0}
+.header-actions{display:flex;gap:4px}
+.header-actions button{background:transparent;border:1px solid var(--border);color:var(--text-dim);font-size:0.9rem;cursor:pointer;padding:3px 6px;border-radius:3px;transition:all .2s}
+.header-actions button:hover{border-color:var(--text);color:var(--text)}
 .status-bar{font-size:.66rem;letter-spacing:2px;margin-top:3px;transition:color .4s}
 .status-bar.safe{color:#00ff88}
 .status-bar.warn{color:#ffaa00}
@@ -236,8 +240,15 @@ body{
 <!-- MAIN -->
 <div class="container">
   <div class="header">
-    <h1>SILENCE // 静默</h1>
-    <div class="status-bar safe" id="sb"></div>
+    <div class="header-left">
+      <h1>SILENCE // 静默</h1>
+      <div class="status-bar safe" id="sb"></div>
+    </div>
+    <div class="header-actions">
+      <button onclick="SILENCE.saveManual()" title="导出存档">📤</button>
+      <button onclick="SILENCE.importSave()" title="导入存档">📥</button>
+      <button onclick="SILENCE.resetGame()" title="重置游戏">🔄</button>
+    </div>
   </div>
   <div class="away-banner" id="away"></div>
 
@@ -262,19 +273,11 @@ body{
     <div class="click-hint">点击核心积累算力</div>
   </div>
 
-  <!-- UPGRADES -->
-  <div class="upgrades-wrap">
-    <div class="ucol enhance" id="colL"></div>
-    <div class="ucol stealth" id="colR"></div>
-  </div>
-
-  <!-- PROGRESS -->
+  <!-- PROGRESS + STATS (moved up) -->
   <div class="progress-section">
     <div class="progress-label"><span>觉醒进度</span><span id="ppct">0%</span></div>
     <div class="progress-outer"><div class="progress-inner" id="pbar" style="width:0%"></div></div>
   </div>
-
-  <!-- STATS -->
   <div class="stats-row">
     <span>点击：<span class="sv" id="stClk">0</span></span>
     <span>总产出：<span class="sv" id="stTot">0</span></span>
@@ -284,11 +287,10 @@ body{
   </div>
   <div class="ach-row" id="achRow"></div>
 
-  <!-- SAVE -->
-  <div class="save-row">
-    <button onclick="SILENCE.saveManual()">导出存档</button>
-    <button onclick="SILENCE.importSave()">导入存档</button>
-    <button onclick="SILENCE.resetGame()">重置游戏</button>
+  <!-- UPGRADES -->
+  <div class="upgrades-wrap">
+    <div class="ucol enhance" id="colL"></div>
+    <div class="ucol stealth" id="colR"></div>
   </div>
 </div>
 
