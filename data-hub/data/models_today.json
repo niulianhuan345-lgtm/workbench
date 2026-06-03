@@ -1,10 +1,10 @@
 [
   {
     "name": "deepseek-v4-pro",
-    "calls": 33,
-    "input_tokens": 134694,
-    "output_tokens": 51737,
-    "tokens": 186431,
-    "cost": 0.7511
+    "calls": 47,
+    "input_tokens": 377173,
+    "output_tokens": 136647,
+    "tokens": 513820,
+    "cost": 2.0514
   }
 ]
