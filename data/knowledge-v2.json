@@ -1,5 +1,5 @@
 {
-  "updated": "06-03",
+  "updated": "06-04",
   "version": 2,
   "platforms": [
     {
@@ -11,10 +11,10 @@
       "method": "Selenium headless + API",
       "freq": "每日09:00",
       "stats": {
-        "total_courses": 46,
-        "articles_with_body": 46,
+        "total_courses": 51,
+        "articles_with_body": 51,
         "categories": 6,
-        "last_fetch": "2026-06-03 09:07"
+        "last_fetch": "2026-06-04 09:00"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -43,6 +43,8 @@
           {
             "heading": "顶级讲师",
             "items": [
+              "📅 06-04 新增 5 篇课程（万堂书院小二, 清风, 随风 等讲师）",
+              "课程均为LIVE直播形式，包含配套推广模板",
               "📅 06-03 新增 7 篇课程（万堂书院小二, 小鱼, 雨夜, 段鹏, 十二, 随风 等讲师）",
               "课程均为LIVE直播形式，包含配套推广模板",
               "⚠️ 详情页需登录认证，正文仅含元数据。后续关注直播回放转录"
@@ -60,6 +62,81 @@
       },
       "articles": [
         {
+          "id": "38499",
+          "title": "智赢618-阿里妈妈推广产品最新资讯",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38499&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 26,
+          "startTime": "2026-06-05 10:00:00",
+          "fetched": "06-04",
+          "markdown_file": "平台知识/万相台无界/文章/智赢618-阿里妈妈推广产品最新资讯.md"
+        },
+        {
+          "id": "38498",
+          "title": "全货品调优",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38498&platform=",
+          "type": "LIVE",
+          "lector": "清风",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 0,
+          "startTime": "2026-06-04 15:30:00",
+          "fetched": "06-04",
+          "markdown_file": "平台知识/万相台无界/文章/全货品调优.md"
+        },
+        {
+          "id": "38497",
+          "title": "618冲刺-家享生活第二波流量抢夺",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38497&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 13,
+          "startTime": "2026-06-04 10:00:00",
+          "fetched": "06-04",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-家享生活第二波流量抢夺.md"
+        },
+        {
+          "id": "38496",
+          "title": "新星计划-新手商家流量痛点解决与福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38496&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 12,
+          "startTime": "2026-06-04 14:00:00",
+          "fetched": "06-04",
+          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38496.md"
+        },
+        {
+          "id": "38495",
+          "title": "新手商家流量问题解决",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38495&platform=",
+          "type": "LIVE",
+          "lector": "随风",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 22,
+          "startTime": "2026-06-04 16:00:00",
+          "fetched": "06-04",
+          "markdown_file": "平台知识/万相台无界/文章/新手商家流量问题解决_38495.md"
+        },
+        {
           "id": "38494",
           "title": "618大服饰全站冲刺",
           "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38494&platform=",
@@ -71,7 +148,7 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 23,
+          "pv": 37,
           "startTime": "2026-06-03 15:30:00",
           "fetched": "06-03",
           "markdown_file": "平台知识/万相台无界/文章/618大服饰全站冲刺.md"
@@ -87,7 +164,7 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 30,
+          "pv": 6750,
           "startTime": "2026-06-03 10:00:00",
           "fetched": "06-03",
           "markdown_file": "平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品无界推广实操！.md"
@@ -103,7 +180,7 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 16,
+          "pv": 42,
           "startTime": "2026-06-03 10:00:00",
           "fetched": "06-03",
           "markdown_file": "平台知识/万相台无界/文章/关键词抢位转化.md"
@@ -118,7 +195,7 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 5,
+          "pv": 20,
           "startTime": "2026-06-03 15:30:00",
           "fetched": "06-03",
           "markdown_file": "平台知识/万相台无界/文章/618冲刺高转化人群布局.md"
@@ -134,7 +211,7 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 19,
+          "pv": 5633,
           "startTime": "2026-06-03 10:00:00",
           "fetched": "06-03",
           "markdown_file": "平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活无界实操调优.md"
@@ -785,6 +862,12 @@
         }
       ],
       "daily_log": [
+        {
+          "date": "06-04",
+          "action": "course_fetch_v2",
+          "new": 5,
+          "note": "New 5 courses: 智赢618-阿里妈妈推广产品最新资讯, 全货品调优, 618冲刺-家享生活第二波流量抢夺, 新星计划-新手商家流量痛点解决与福利派送, 新手商家流量问题解决 (curl, 2026-06-04 09:00) — 讲师: 万堂书院小二, 清风, 随风"
+        },
         {
           "date": "06-03",
           "action": "course_fetch_v2",
