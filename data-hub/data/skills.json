@@ -378,6 +378,12 @@
     "status": "active"
   },
   {
+    "name": "feishu-table-preference",
+    "category": "productivity",
+    "desc": "飞书文档表格插入铁律：所有数据表必须用嵌入电子表格(sheet)，禁止原生table或markdown表格。含完整6步创建+样式流程。",
+    "status": "active"
+  },
+  {
     "name": "google-workspace",
     "category": "productivity",
     "desc": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
