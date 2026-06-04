@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04 15:22:25",
+  "updated": "2026-06-04 15:26:13",
   "indices": [
     {
       "name": "上证指数",
@@ -633,16 +633,6 @@
       "severity": "high"
     },
     {
-      "code": "300750",
-      "name": "宁德时代",
-      "price": 408.2,
-      "change_pct": -4.27,
-      "reasons": [
-        "换手率700.0%"
-      ],
-      "severity": "medium"
-    },
-    {
       "code": "600011",
       "name": "华能国际",
       "price": 8.75,
@@ -709,6 +699,16 @@
       "change_pct": -2.18,
       "reasons": [
         "换手率159900.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "000002",
+      "name": "万 科Ａ",
+      "price": 3.21,
+      "change_pct": -2.13,
+      "reasons": [
+        "换手率262141.0%"
       ],
       "severity": "medium"
     }
