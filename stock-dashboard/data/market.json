@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05 15:25:56",
+  "updated": "2026-06-05 15:30:19",
   "indices": [
     {
       "name": "上证指数",
@@ -628,7 +628,8 @@
       "change_pct": -7.81,
       "reasons": [
         "暴跌8%",
-        "振幅11%"
+        "振幅11%",
+        "换手率801.0%"
       ],
       "severity": "high"
     },
@@ -650,7 +651,7 @@
       "change_pct": -5.55,
       "reasons": [
         "暴跌6%",
-        "换手率703.0%"
+        "换手率4798.0%"
       ],
       "severity": "medium"
     },
@@ -661,7 +662,7 @@
       "change_pct": 4.51,
       "reasons": [
         "振幅13%",
-        "换手率5200.0%"
+        "换手率518454.0%"
       ],
       "severity": "high"
     },
@@ -671,7 +672,8 @@
       "price": 1299.2,
       "change_pct": -4.39,
       "reasons": [
-        "振幅9%"
+        "振幅9%",
+        "换手率105.0%"
       ],
       "severity": "medium"
     },
@@ -682,6 +684,16 @@
       "change_pct": -4.11,
       "reasons": [
         "换手率180800.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "688041",
+      "name": "海光信息",
+      "price": 274.06,
+      "change_pct": -4.1,
+      "reasons": [
+        "换手率2977.0%"
       ],
       "severity": "medium"
     },
@@ -705,16 +717,6 @@
         "换手率1340875.0%"
       ],
       "severity": "high"
-    },
-    {
-      "code": "603501",
-      "name": "豪威集团",
-      "price": 95.39,
-      "change_pct": -3.51,
-      "reasons": [
-        "换手率52500.0%"
-      ],
-      "severity": "medium"
     }
   ]
 }
