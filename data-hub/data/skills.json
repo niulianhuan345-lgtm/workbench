@@ -404,7 +404,7 @@
   {
     "name": "hermes-data-hub",
     "category": "productivity",
-    "desc": "Hermes 数据中心 — mobile-first 看板，展示门店打标、AB测试、报告、系统状态。部署在 GitHub Pages。触发：加数据模块、更新看板、查门店数据。",
+    "desc": "Hermes 数据中心 — mobile-first 看板，展示门店打标、AB测试、报告、系统状态。部署在 GitHub Pages。触发：加数据模块、更新看板、查门店数据、运行 hermes_data_extract、部署 hermes-data、数据刷新 cron、hermes-data 目录操作。",
     "status": "active"
   },
   {
