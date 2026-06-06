@@ -1,5 +1,5 @@
 {
-  "updated": "06-05",
+  "updated": "06-06",
   "version": 2,
   "platforms": [
     {
@@ -11,10 +11,10 @@
       "method": "Selenium headless + API",
       "freq": "每日09:00",
       "stats": {
-        "total_courses": 56,
-        "articles_with_body": 56,
+        "total_courses": 64,
+        "articles_with_body": 64,
         "categories": 6,
-        "last_fetch": "2026-06-05"
+        "last_fetch": "2026-06-06"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -43,7 +43,7 @@
           {
             "heading": "顶级讲师",
             "items": [
-              "📅 06-05 新增 5 篇课程（老关, 蛋蛋, 十二, 随风, 东子 等讲师）",
+              "📅 06-06 新增 8 篇课程（万堂书院小二, 文聘, 星辰, 清晰, 随风, 雨夜 等讲师）",
               "课程均为LIVE直播形式，包含配套推广模板",
               "📅 06-03 新增 7 篇课程（万堂书院小二, 小鱼, 雨夜, 段鹏, 十二, 随风 等讲师）",
               "课程均为LIVE直播形式，包含配套推广模板",
@@ -61,6 +61,133 @@
         ]
       },
       "articles": [
+        {
+          "id": "38503",
+          "title": "大促后流量维稳和平销期衔接",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38503&platform=",
+          "type": "LIVE",
+          "lector": "星辰",
+          "tags": [
+            "618",
+            "其他场景",
+            "家居家装",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 6,
+          "startTime": "2026-06-22 15:30:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/大促后流量维稳和平销期衔接.md"
+        },
+        {
+          "id": "38504",
+          "title": "全站推广放量和全店货盘带动",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38504&platform=",
+          "type": "LIVE",
+          "lector": "星辰",
+          "tags": [
+            "家居家装",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 12,
+          "startTime": "2026-06-30 13:00:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/全站推广放量和全店货盘带动.md"
+        },
+        {
+          "id": "38506",
+          "title": "618冲刺-食品/健康/宠企/玩美生活推广痛点答疑",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38506&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "食品健康",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 22,
+          "startTime": "2026-06-08 10:00:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活推广痛点答疑.md"
+        },
+        {
+          "id": "38509",
+          "title": "随风老师店铺答疑诊断",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38509&platform=",
+          "type": "LIVE",
+          "lector": "随风",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 34,
+          "startTime": "2026-06-06 10:00:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/随风老师店铺答疑诊断.md"
+        },
+        {
+          "id": "38510",
+          "title": "618调优答疑",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38510&platform=",
+          "type": "LIVE",
+          "lector": "雨夜",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 4,
+          "startTime": "2026-06-08 15:30:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/618调优答疑.md"
+        },
+        {
+          "id": "38515",
+          "title": "新手商家流量问题解决",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38515&platform=",
+          "type": "LIVE",
+          "lector": "清晰",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 9,
+          "startTime": "2026-06-08 14:00:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/新手商家流量问题解决.md"
+        },
+        {
+          "id": "38517",
+          "title": "新手商家必须计划",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38517&platform=",
+          "type": "LIVE",
+          "lector": "随风",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 31,
+          "startTime": "2026-06-12 14:00:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/新手商家必须计划.md"
+        },
+        {
+          "id": "38521",
+          "title": "实时数据把控计划快速调优",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38521&platform=",
+          "type": "LIVE",
+          "lector": "文聘",
+          "tags": [
+            "618",
+            "万相台无界版",
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 19,
+          "startTime": "2026-06-11 13:00:00",
+          "fetched": "06-06",
+          "markdown_file": "平台知识/万相台无界/文章/实时数据把控计划快速调优.md"
+        },
         {
           "id": "38508",
           "title": "大服饰行业人群流转布局",
@@ -940,6 +1067,12 @@
         }
       ],
       "daily_log": [
+        {
+          "date": "06-06",
+          "action": "course_fetch_v2",
+          "new": 8,
+          "note": "New 8 courses: 实时数据把控计划快速调优, 新手商家必须计划, 新手商家流量问题解决, 618调优答疑, 随风老师店铺答疑诊断, 618冲刺-食品/健康/宠企/玩美生活推广痛点答疑, 全站推广放量和全店货盘带动, 大促后流量维稳和平销期衔接 (Selenium+Chrome, 2026-06-06) — 讲师: 万堂书院小二, 文聘, 星辰, 清晰, 随风, 雨夜"
+        },
         {
           "date": "06-05",
           "action": "course_fetch_v2",
