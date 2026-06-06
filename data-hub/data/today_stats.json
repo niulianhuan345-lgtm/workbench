@@ -1,19 +1,9 @@
 {
-<<<<<<< HEAD
-  "sessions": 269,
-  "tokens": 32412261,
-  "input_tokens": 1597316,
-  "output_tokens": 474465,
-  "cache_read_tokens": 30340480,
+  "sessions": 292,
+  "tokens": 34246107,
+  "input_tokens": 1676845,
+  "output_tokens": 498094,
+  "cache_read_tokens": 32071168,
   "reasoning_tokens": 0,
-  "cost": 8.8276
-=======
-  "sessions": 247,
-  "tokens": 31115426,
-  "input_tokens": 1528971,
-  "output_tokens": 453783,
-  "cache_read_tokens": 29132672,
-  "reasoning_tokens": 0,
-  "cost": 8.4499
->>>>>>> 29e3b2da333f88d73387cddfe3258b0414483cea
+  "cost": 9.2729
 }
