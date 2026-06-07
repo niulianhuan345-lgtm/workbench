@@ -1,11 +1,7 @@
 {
   "agent": "running",
   "uptime": "00:00",
-<<<<<<< Updated upstream
-  "started": "6/8 04:30",
-=======
-  "started": "6/8 03:31",
->>>>>>> Stashed changes
+  "started": "6/8 05:01",
   "dingtalk": "已连接",
   "cron": [
     {
