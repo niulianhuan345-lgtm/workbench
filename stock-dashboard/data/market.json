@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08 15:05:04",
+  "updated": "2026-06-08 15:10:29",
   "indices": [
     {
       "name": "上证指数",
@@ -637,8 +637,7 @@
       "price": 42.64,
       "change_pct": -6.51,
       "reasons": [
-        "暴跌7%",
-        "换手率1100.0%"
+        "暴跌7%"
       ],
       "severity": "medium"
     },
@@ -696,12 +695,12 @@
       "severity": "medium"
     },
     {
-      "code": "300059",
-      "name": "东方财富",
-      "price": 17.72,
-      "change_pct": -4.32,
+      "code": "688981",
+      "name": "中芯国际",
+      "price": 121.92,
+      "change_pct": -4.3,
       "reasons": [
-        "换手率22400.0%"
+        "换手率4659.0%"
       ],
       "severity": "medium"
     },
