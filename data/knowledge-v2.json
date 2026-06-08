@@ -1,5 +1,5 @@
 {
-  "updated": "06-07",
+  "updated": "06-08",
   "version": 2,
   "platforms": [
     {
@@ -14,7 +14,7 @@
         "total_courses": 64,
         "articles_with_body": 64,
         "categories": 6,
-        "last_fetch": "2026-06-07"
+        "last_fetch": "2026-06-08"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -74,9 +74,10 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 7,
+          "pv": 11,
           "startTime": "2026-06-22 15:30:00",
           "fetched": "06-06",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/大促后流量维稳和平销期衔接.md"
         },
         {
@@ -90,9 +91,10 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 19,
+          "pv": 24,
           "startTime": "2026-06-30 13:00:00",
           "fetched": "06-06",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/全站推广放量和全店货盘带动.md"
         },
         {
@@ -106,9 +108,10 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 77,
+          "pv": 128,
           "startTime": "2026-06-08 10:00:00",
           "fetched": "06-06",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活推广痛点答疑.md"
         },
         {
@@ -121,9 +124,10 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 779,
+          "pv": 834,
           "startTime": "2026-06-06 10:00:00",
           "fetched": "06-06",
+          "status": "END",
           "markdown_file": "平台知识/万相台无界/文章/随风老师店铺答疑诊断.md"
         },
         {
@@ -139,6 +143,7 @@
           "pv": 6,
           "startTime": "2026-06-08 15:30:00",
           "fetched": "06-06",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/618调优答疑.md"
         },
         {
@@ -151,7 +156,7 @@
             "新手商家",
             "官方精品"
           ],
-          "pv": 16,
+          "pv": 25,
           "startTime": "2026-06-08 14:00:00",
           "fetched": "06-06",
           "markdown_file": "平台知识/万相台无界/文章/新手商家流量问题解决.md"
@@ -166,9 +171,10 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 75,
+          "pv": 114,
           "startTime": "2026-06-12 14:00:00",
           "fetched": "06-06",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/新手商家必须计划.md"
         },
         {
@@ -183,9 +189,10 @@
             "新手商家",
             "官方精品"
           ],
-          "pv": 49,
+          "pv": 65,
           "startTime": "2026-06-11 13:00:00",
           "fetched": "06-06",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/实时数据把控计划快速调优.md"
         },
         {
@@ -202,6 +209,7 @@
           "pv": 23,
           "startTime": "2026-06-08 15:30:00",
           "fetched": "06-05",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/大服饰行业人群流转布局.md"
         },
         {
@@ -215,9 +223,10 @@
             "成长进阶",
             "官方精品"
           ],
-          "pv": 44,
+          "pv": 51,
           "startTime": "2026-06-08 13:00:00",
           "fetched": "06-05",
+          "status": "ACTIVING",
           "markdown_file": "平台知识/万相台无界/文章/全域拉新布局.md"
         },
         {
@@ -1067,6 +1076,12 @@
         }
       ],
       "daily_log": [
+        {
+          "date": "06-08",
+          "action": "course_fetch_v2",
+          "new": 0,
+          "note": "No new courses. PV refreshed for 8 courses; status tracked: 38509→END, others→ACTIVING (curl, 2026-06-08)"
+        },
         {
           "date": "06-07",
           "action": "course_fetch_v2",
