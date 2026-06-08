@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08 15:10:29",
+  "updated": "2026-06-08 15:13:56",
   "indices": [
     {
       "name": "上证指数",
@@ -670,7 +670,7 @@
       "change_pct": -5.24,
       "reasons": [
         "暴跌5%",
-        "换手率9664.0%"
+        "换手率700.0%"
       ],
       "severity": "medium"
     },
@@ -695,22 +695,22 @@
       "severity": "medium"
     },
     {
+      "code": "300059",
+      "name": "东方财富",
+      "price": 17.72,
+      "change_pct": -4.32,
+      "reasons": [
+        "换手率2500.0%"
+      ],
+      "severity": "medium"
+    },
+    {
       "code": "688981",
       "name": "中芯国际",
       "price": 121.92,
       "change_pct": -4.3,
       "reasons": [
-        "换手率4659.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "002475",
-      "name": "立讯精密",
-      "price": 66.14,
-      "change_pct": -3.82,
-      "reasons": [
-        "换手率10776.0%"
+        "换手率4559.0%"
       ],
       "severity": "medium"
     }
