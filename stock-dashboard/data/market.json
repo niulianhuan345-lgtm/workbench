@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08 15:13:56",
+  "updated": "2026-06-08 15:18:18",
   "indices": [
     {
       "name": "上证指数",
@@ -669,8 +669,7 @@
       "price": 259.7,
       "change_pct": -5.24,
       "reasons": [
-        "暴跌5%",
-        "换手率700.0%"
+        "暴跌5%"
       ],
       "severity": "medium"
     },
@@ -700,7 +699,7 @@
       "price": 17.72,
       "change_pct": -4.32,
       "reasons": [
-        "换手率2500.0%"
+        "换手率45500.0%"
       ],
       "severity": "medium"
     },
@@ -710,7 +709,7 @@
       "price": 121.92,
       "change_pct": -4.3,
       "reasons": [
-        "换手率4559.0%"
+        "换手率3559.0%"
       ],
       "severity": "medium"
     }
