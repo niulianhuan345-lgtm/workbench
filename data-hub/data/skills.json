@@ -174,12 +174,6 @@
     "status": "active"
   },
   {
-    "name": "advertising-weekly-report",
-    "category": "data-science",
-    "desc": "广告投放周报/月报生成。从 Metabase 拉取数据→按固定格式写核心周总结→生成 PPT。触发词：周报、月报、更新周报、周总结、周维度分析、广告周报。",
-    "status": "active"
-  },
-  {
     "name": "jupyter-live-kernel",
     "category": "data-science",
     "desc": "Iterative Python via live Jupyter kernel (hamelnb).",
@@ -354,18 +348,6 @@
     "status": "active"
   },
   {
-    "name": "feishu-cli-setup",
-    "category": "productivity",
-    "desc": "Install and configure the Feishu CLI (lark-cli) for Hermes Agent — npm install, skill registration, credential binding, and user authorization.",
-    "status": "active"
-  },
-  {
-    "name": "feishu-doc-api",
-    "category": "productivity",
-    "desc": "通过飞书 Open API 创建/读写云文档。触发词：飞书文档、创建飞书文档、写入飞书、feishu doc、lark doc。",
-    "status": "active"
-  },
-  {
     "name": "feishu-doc-editing",
     "category": "productivity",
     "desc": "飞书文档 API 编辑操作指南。当需要读取/编辑飞书在线文档时使用。涵盖 block 树结构、嵌套关系、表格处理、安全操作原则。",
@@ -375,18 +357,6 @@
     "name": "feishu-embedded-sheets",
     "category": "productivity",
     "desc": "飞书文档表格插入偏好：必须用嵌入电子表格不用markdown内联表格。",
-    "status": "active"
-  },
-  {
-    "name": "feishu-report-callout",
-    "category": "productivity",
-    "desc": "Structure analytical callouts (数据总结/画像特征/效率分析) in Feishu reports. Apply when optimizing or writing data-driven callout summaries in 月报/周报/复盘 documents. Covers the '结论作标题→数据支撑→方向收尾' pattern and the data-integrity rule of always reading from source embedded spreadsheets before updating numbers.",
-    "status": "active"
-  },
-  {
-    "name": "feishu-sheets-pitfalls",
-    "category": "productivity",
-    "desc": "飞书电子表格 CLI (lark-cli sheets) 常见命令陷阱和正确用法。当使用 +merge-cells、+update-dimension、+set-style、+delete-dimension 或嵌入电子表格时加载。",
     "status": "active"
   },
   {
