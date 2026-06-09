@@ -1,5 +1,5 @@
 {
-  "updated": "06-08",
+  "updated": "06-09",
   "version": 2,
   "platforms": [
     {
@@ -11,10 +11,10 @@
       "method": "Selenium headless + API",
       "freq": "每日09:00",
       "stats": {
-        "total_courses": 64,
-        "articles_with_body": 64,
+        "total_courses": 74,
+        "articles_with_body": 74,
         "categories": 6,
-        "last_fetch": "2026-06-08"
+        "last_fetch": "2026-06-09"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -61,6 +61,170 @@
         ]
       },
       "articles": [
+        {
+          "id": "38528",
+          "title": "人群转化",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38528&platform=",
+          "type": "LIVE",
+          "lector": "吉聪",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 1,
+          "startTime": "2026-06-09 15:30:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/人群转化.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38529",
+          "title": "货品接力",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38529&platform=",
+          "type": "LIVE",
+          "lector": "清风",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 0,
+          "startTime": "2026-06-09 13:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/货品接力.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38530",
+          "title": "新手商家流量问题解决与福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38530&platform=",
+          "type": "LIVE",
+          "lector": "十二",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 1,
+          "startTime": "2026-06-09 16:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/新手商家流量问题解决与福利派送.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38531",
+          "title": "新星计划-新手商家流量痛点解决与福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38531&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 1,
+          "startTime": "2026-06-09 14:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38531.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38532",
+          "title": "新星计划-新手商家流量痛点解决与福利派送",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38532&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 6,
+          "startTime": "2026-06-11 14:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38532.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38533",
+          "title": "618冲刺-大快消如何实现大促中场发力",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38533&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "618",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 25,
+          "startTime": "2026-06-09 10:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-大快消如何实现大促中场发力.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38534",
+          "title": "中场破局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38534&platform=",
+          "type": "LIVE",
+          "lector": "南瓜",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 9,
+          "startTime": "2026-06-09 10:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/中场破局.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38535",
+          "title": "大服饰行业爆品拉新布局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38535&platform=",
+          "type": "LIVE",
+          "lector": "老关",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 24,
+          "startTime": "2026-06-10 15:30:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/大服饰行业爆品拉新布局.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38536",
+          "title": "新品破圈布局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38536&platform=",
+          "type": "LIVE",
+          "lector": "蛋蛋",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 21,
+          "startTime": "2026-06-10 10:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/新品破圈布局.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38537",
+          "title": "618冲刺-家享生活爆品持续放量",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38537&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 31,
+          "startTime": "2026-06-09 10:00:00",
+          "fetched": "06-09",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-家享生活爆品持续放量.md",
+          "status": "ACTIVING"
+        },
         {
           "id": "38503",
           "title": "大促后流量维稳和平销期衔接",
@@ -1076,6 +1240,12 @@
         }
       ],
       "daily_log": [
+        {
+          "date": "06-09",
+          "action": "course_fetch_v3",
+          "new": 10,
+          "note": "New 10 courses: 人群转化, 货品接力, 新手商家流量问题解决与福利派送, 新星计划-新手商家流量痛点解决与福利派送, 新星计划-新手商家流量痛点解决与福利派送, 618冲刺-大快消如何实现大促中场发力, 中场破局, 大服饰行业爆品拉新布局, 新品破圈布局, 618冲刺-家享生活爆品持续放量 (API direct, 2026-06-09) — 讲师: 万堂书院小二, 十二, 南瓜, 吉聪, 清风, 老关, 蛋蛋"
+        },
         {
           "date": "06-08",
           "action": "course_fetch_v2",
