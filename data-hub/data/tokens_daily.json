@@ -55,20 +55,8 @@
   },
   {
     "day": "2026-06-10",
-<<<<<<< HEAD
-    "tokens": 19013108,
-    "cost": 5.8331,
-    "sessions": 75
-=======
-<<<<<<< HEAD
-    "tokens": 19013108,
-    "cost": 5.8331,
-    "sessions": 75
-=======
-    "tokens": 16668391,
-    "cost": 5.3032,
-    "sessions": 57
->>>>>>> b5e3d8359357d0f0ffaa3f48c1a1d7c766003e90
->>>>>>> 54d0c28e0e216e6b93d0b6aa0df6975fa2ca1742
+    "tokens": 21351423,
+    "cost": 6.6339,
+    "sessions": 97
   }
 ]
