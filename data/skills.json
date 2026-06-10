@@ -170,7 +170,13 @@
   {
     "name": "ace-budget-reallocation",
     "category": "data-science",
-    "desc": "ACE增量模型v3：A维度两步打分——先定性(A₁同向率 0-3分)再定量(A₂弹性 0-3分)，×E(商圈排名)×C(CPA)。过滤漏斗A₁→A₂→E→C，输出SABCD五级。弹性=Δ外卖/Δ广告，比Pearson r更直观。触发词：ACE模型、ACE增量模型、预算腾挪、增量最大化、弹性系数、同向率、Δ外卖/Δ广告。",
+    "desc": "ACE增量模型：三维（Accuracy确定性×Cost成本×Expansion空间=商圈排名）筛选门店，过滤漏斗A→E→C，输出SABCD五级+TGI特征+停投代价+腾挪方案+AB验证框架。触发词：ACE模型、ACE增量模型、预算腾挪、增量最大化、相关性×CPA、订单排名、排名上升空间。",
+    "status": "active"
+  },
+  {
+    "name": "advertising-weekly-report",
+    "category": "data-science",
+    "desc": "广告投放周报/月报生成。从 Metabase 拉取数据→按固定格式写核心周总结→生成 PPT。触发词：周报、月报、更新周报、周总结、周维度分析、广告周报。",
     "status": "active"
   },
   {
@@ -189,18 +195,6 @@
     "name": "metabase-automation",
     "category": "data-science",
     "desc": "Metabase 看板数据自动拉取与日报/周报生成。触发词：Metabase、看板数据、日报更新、周报自动生成、数据检查、Card查询。",
-    "status": "active"
-  },
-  {
-    "name": "onebp-mcp-data-fetching",
-    "category": "data-science",
-    "desc": "万相台无界 MCP 取数：账户/场景/计划/关键词/创意/人群分析。纯 JSON 接口选择、zlib 压缩规避、月报两段求和、字段来源。",
-    "status": "active"
-  },
-  {
-    "name": "onebp-to-feishu",
-    "category": "data-science",
-    "desc": "从 onebp 万相台无界 API 拉取广告数据并写入飞书嵌入表格。触发词：更新飞书表格、拉库、投放数据到飞书、账户趋势。",
     "status": "active"
   },
   {
@@ -231,6 +225,12 @@
     "name": "static-site-deployment",
     "category": "devops",
     "desc": "Deploy static HTML/JSON sites for the user — local server, GitHub Pages, Vercel, Surge. When the user needs a page accessible from outside their Mac, or wants to share a dashboard/report via URL.",
+    "status": "active"
+  },
+  {
+    "name": "static-site-github-pages",
+    "category": "devops",
+    "desc": "部署单页应用到 GitHub Pages — 数据内嵌、自动同步、永久链接。触发条件：用户需要稳定的公开链接分享 HTML 页面、工作台、仪表盘。",
     "status": "active"
   },
   {
@@ -279,6 +279,12 @@
     "name": "github-issues",
     "category": "github",
     "desc": "Create, triage, label, assign GitHub issues via gh or REST.",
+    "status": "active"
+  },
+  {
+    "name": "github-pages-deploy",
+    "category": "github",
+    "desc": "Deploy static sites to GitHub Pages via the workbench repo — build, copy, push.",
     "status": "active"
   },
   {
@@ -344,7 +350,7 @@
   {
     "name": "ab-test-analysis",
     "category": "productivity",
-    "desc": "广告投放 AB 测试数据分析与方案设计。当用户要求分析 AB 测试数据（Excel/CSV）、对比测试组 vs 对照组的投放效率、计算费比/ROI/蚕食率/弹性系数、按时段拆解投放效果时使用。也涵盖 AB 测试方案设计（城市选择、门店分组、预算转移方案生成）、增量评估、pass-through 分析、广告订单与大盘订单的相关性。触发词：AB测试、测试组、对照组、投放效率、费比、蚕食、大盘订单、广告订单、弹性系数、弹性、同向率、AB测试方案、避开某城市、替换城市、增量、pass-through。",
+    "desc": "广告投放 AB 测试数据分析与方案设计。当用户要求分析 AB 测试数据（Excel/CSV）、对比测试组 vs 对照组的投放效率、计算费比/ ROI/ 蚕食率、按时段拆解投放效果时使用。也涵盖 AB 测试方案设计（城市选择、门店分组、预算转移方案生成）、增量评估、pass-through 分析、广告订单与大盘订单的相关性。触发词：AB测试、测试组、对照组、投放效率、费比、蚕食、大盘订单、广告订单、AB测试方案、避开某城市、替换城市、增量、pass-through。",
     "status": "active"
   },
   {
@@ -360,33 +366,9 @@
     "status": "active"
   },
   {
-    "name": "feishu-doc-editing",
-    "category": "productivity",
-    "desc": "飞书文档 API 编辑操作指南。当需要读取/编辑飞书在线文档时使用。涵盖 block 树结构、嵌套关系、表格处理、安全操作原则。",
-    "status": "active"
-  },
-  {
-    "name": "feishu-embedded-sheets",
-    "category": "productivity",
-    "desc": "飞书文档表格插入偏好：必须用嵌入电子表格不用markdown内联表格。",
-    "status": "active"
-  },
-  {
-    "name": "feishu-table-preference",
-    "category": "productivity",
-    "desc": "飞书文档表格插入铁律：所有数据表必须用嵌入电子表格(sheet)，禁止原生table或markdown表格。含完整6步创建+样式流程。",
-    "status": "active"
-  },
-  {
     "name": "google-workspace",
     "category": "productivity",
     "desc": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
-    "status": "active"
-  },
-  {
-    "name": "hermes-data-hub",
-    "category": "productivity",
-    "desc": "Hermes 数据中心 — mobile-first 看板，展示门店打标、AB测试、报告、系统状态。部署在 GitHub Pages。触发：加数据模块、更新看板、查门店数据、运行 hermes_data_extract、部署 hermes-data、数据刷新 cron、hermes-data 目录操作。",
     "status": "active"
   },
   {
@@ -405,12 +387,6 @@
     "name": "maps",
     "category": "productivity",
     "desc": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
-    "status": "active"
-  },
-  {
-    "name": "mcp-ad-data-access",
-    "category": "productivity",
-    "desc": ">",
     "status": "active"
   },
   {
@@ -450,6 +426,12 @@
     "status": "active"
   },
   {
+    "name": "product-requirements",
+    "category": "productivity",
+    "desc": "Design and write product requirement documents (PRD/需求文档). Use when the user asks to design a new product feature, write a requirement document, draft user stories, plan a product feature, or iterate on existing product requirements. Covers AIONE AI agent advertising platform conventions and general PRD authoring.",
+    "status": "active"
+  },
+  {
     "name": "project-dashboard",
     "category": "productivity",
     "desc": "为用户牛连欢的个人项目生成项目看板 HTML 页面。左树形导航 + 右卡片内容、每项链接实际文件、进度可视化、变更记录时间线。触发：用户说\"建个看板\"\"生成项目看板\"\"帮我做个 XX 项目看板\"。",
@@ -474,6 +456,12 @@
     "status": "active"
   },
   {
+    "name": "workbench-dashboard",
+    "category": "productivity",
+    "desc": "Manage the AIONE 总控台 workbench — 5-tab dashboard (概览/任务/项目/系统/知识) for task management, project tracking, system monitoring, and knowledge learning. Two co-existing versions: vanilla HTML at 总控台/index.html and Ant Design React at 总控台-antd/. Trigger when user mentions 总控台, 工作台, 知识学习, or wants to update dashboard features.",
+    "status": "active"
+  },
+  {
     "name": "xlsx",
     "category": "productivity",
     "desc": "Excel/CSV 数据处理全能工具。当用户需要读取 Excel/CSV 文件、数据清洗、公式计算、图表生成、格式转换、批量处理时使用。触发词：Excel、xlsx、csv、表格、数据清洗、图表、公式、透视表、批量处理、数据导出、单元格、工作表、打开表格。",
@@ -483,12 +471,6 @@
     "name": "godmode",
     "category": "red-teaming",
     "desc": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
-    "status": "active"
-  },
-  {
-    "name": "a-share-stock-trading",
-    "category": "research",
-    "desc": "A股系统化投资知识体系：覆盖宏观经济→大盘指数→板块趋势→龙头股→技术分析买卖点→实时看盘能力。触发词：A股、炒股、股票、大盘、板块、龙头、看盘、K线、均线、MACD、买入点、卖出点、上证、深证、创业板、科创板。",
     "status": "active"
   },
   {
