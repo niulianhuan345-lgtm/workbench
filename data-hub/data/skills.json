@@ -192,6 +192,12 @@
     "status": "active"
   },
   {
+    "name": "onebp-mcp-data-fetching",
+    "category": "data-science",
+    "desc": "万相台无界 MCP 取数：账户/场景/计划/关键词/创意/人群分析。纯 JSON 接口选择、zlib 压缩规避、月报两段求和、字段来源。",
+    "status": "active"
+  },
+  {
     "name": "ruixing-reporting",
     "category": "data-science",
     "desc": "瑞幸广告投放日报/周报自动生成。从 Metabase Dashboard 29 拉取数据，经数据完整性检查后按固定格式输出。触发词：更新日报、更新周报、瑞幸日报、数据检查、Metabase 拉数据。",
