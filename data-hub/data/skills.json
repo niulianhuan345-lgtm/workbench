@@ -198,6 +198,12 @@
     "status": "active"
   },
   {
+    "name": "onebp-to-feishu",
+    "category": "data-science",
+    "desc": "从 onebp 万相台无界 API 拉取广告数据并写入飞书嵌入表格。触发词：更新飞书表格、拉库、投放数据到飞书、账户趋势。",
+    "status": "active"
+  },
+  {
     "name": "ruixing-reporting",
     "category": "data-science",
     "desc": "瑞幸广告投放日报/周报自动生成。从 Metabase Dashboard 29 拉取数据，经数据完整性检查后按固定格式输出。触发词：更新日报、更新周报、瑞幸日报、数据检查、Metabase 拉数据。",
