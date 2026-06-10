@@ -1,5 +1,5 @@
 {
-  "updated": "06-09",
+  "updated": "06-10",
   "version": 2,
   "platforms": [
     {
@@ -11,10 +11,10 @@
       "method": "Selenium headless + API",
       "freq": "每日09:00",
       "stats": {
-        "total_courses": 74,
-        "articles_with_body": 74,
+        "total_courses": 84,
+        "articles_with_body": 84,
         "categories": 6,
-        "last_fetch": "2026-06-09"
+        "last_fetch": "2026-06-10"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -1237,9 +1237,186 @@
           "startTime": "2026-06-03 14:00:00",
           "fetched": "2026-06-02 09:06",
           "markdown_file": "平台知识/万相台无界/文章/新商成长-中小商家如何做好日销.md"
+        },
+        {
+          "id": "38540",
+          "title": "关键词长尾词挖掘低成本获客",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38540&platform=",
+          "type": "LIVE",
+          "lector": "土豆",
+          "tags": [
+            "万相台无界版",
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 4,
+          "startTime": "2026-06-25 13:00:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/关键词长尾词挖掘低成本获客.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38541",
+          "title": "新品测款爆品孵化路径",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38541&platform=",
+          "type": "LIVE",
+          "lector": "土豆",
+          "tags": [
+            "万相台无界版",
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 3,
+          "startTime": "2026-06-30 10:00:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/新品测款爆品孵化路径.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38542",
+          "title": "618冲刺潜力品提效",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38542&platform=",
+          "type": "LIVE",
+          "lector": "随风",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 6,
+          "startTime": "2026-06-10 15:30:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺潜力品提效.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38543",
+          "title": "一分钟了解店铺快投！",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38543&platform=",
+          "type": "VIDEO",
+          "lector": "万堂书院小二",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 22,
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/一分钟了解店铺快投.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38544",
+          "title": "一分钟了解店铺直达！",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38544&platform=",
+          "type": "VIDEO",
+          "lector": "万堂书院小二",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 18,
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/一分钟了解店铺直达.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38545",
+          "title": "618冲刺-食品/健康/宠企/玩美生活全站流量提效",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38545&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "食品健康",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 10,
+          "startTime": "2026-06-10 10:00:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活全站流量提效.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38546",
+          "title": "618冲刺-618爆品提效",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38546&platform=",
+          "type": "LIVE",
+          "lector": "米线",
+          "tags": [
+            "618",
+            "爆品营销",
+            "人群拉新",
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 15,
+          "startTime": "2026-06-10 10:00:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-618爆品提效.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38547",
+          "title": "618新品提效",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38547&platform=",
+          "type": "LIVE",
+          "lector": "十二",
+          "tags": [
+            "万相台无界版",
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 10,
+          "startTime": "2026-06-10 15:30:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/618新品提效.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38548",
+          "title": "618冲刺服饰潜力品布局",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38548&platform=",
+          "type": "LIVE",
+          "lector": "小鱼",
+          "tags": [
+            "618",
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 0,
+          "startTime": "2026-06-10 13:00:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺服饰潜力品布局.md",
+          "status": "ACTIVING"
+        },
+        {
+          "id": "38549",
+          "title": "618冲刺-服饰/运动户外/珠宝饰品人群流转布局！",
+          "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38549&platform=",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 29,
+          "startTime": "2026-06-10 10:00:00",
+          "fetched": "06-10",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品人群流转布局.md",
+          "status": "ACTIVING"
         }
       ],
       "daily_log": [
+        {
+          "date": "06-10",
+          "action": "course_fetch_v4",
+          "new": 10,
+          "note": "New 10 courses: 关键词长尾词挖掘低成本获客, 新品测款爆品孵化路径, 618冲刺潜力品提效, 一分钟了解店铺快投！, 一分钟了解店铺直达！, 618冲刺-食品/健康/宠企/玩美生活全站流量提效, 618冲刺-618爆品提效, 618新品提效, 618冲刺服饰潜力品布局, 618冲刺-服饰/运动户外/珠宝饰品人群流转布局！ (curl API, 2026-06-10) — 讲师: 万堂书院小二, 土豆, 随风, 米线, 十二, 小鱼"
+        },
         {
           "date": "06-09",
           "action": "course_fetch_v3",
