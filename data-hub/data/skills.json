@@ -396,6 +396,12 @@
     "status": "active"
   },
   {
+    "name": "mcp-ad-data-access",
+    "category": "productivity",
+    "desc": ">",
+    "status": "active"
+  },
+  {
     "name": "nano-pdf",
     "category": "productivity",
     "desc": "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).",
