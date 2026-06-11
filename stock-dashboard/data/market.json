@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11 15:16:27",
+  "updated": "2026-06-11 15:20:53",
   "indices": [
     {
       "name": "上证指数",
@@ -671,12 +671,22 @@
       "severity": "medium"
     },
     {
+      "code": "300308",
+      "name": "中际旭创",
+      "price": 1124.0,
+      "change_pct": -2.01,
+      "reasons": [
+        "换手率300.0%"
+      ],
+      "severity": "medium"
+    },
+    {
       "code": "688041",
       "name": "海光信息",
       "price": 289.84,
       "change_pct": 1.77,
       "reasons": [
-        "换手率2251.0%"
+        "换手率3551.0%"
       ],
       "severity": "medium"
     },
@@ -697,16 +707,6 @@
       "change_pct": 1.73,
       "reasons": [
         "换手率100.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "601127",
-      "name": "赛力斯",
-      "price": 67.71,
-      "change_pct": -1.7,
-      "reasons": [
-        "换手率21188.0%"
       ],
       "severity": "medium"
     }
