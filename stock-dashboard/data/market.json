@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11 15:20:53",
+  "updated": "2026-06-11 15:24:30",
   "indices": [
     {
       "name": "上证指数",
@@ -651,6 +651,16 @@
       "severity": "medium"
     },
     {
+      "code": "300059",
+      "name": "东方财富",
+      "price": 17.36,
+      "change_pct": -2.36,
+      "reasons": [
+        "换手率3500.0%"
+      ],
+      "severity": "medium"
+    },
+    {
       "code": "300760",
       "name": "迈瑞医疗",
       "price": 146.88,
@@ -676,7 +686,7 @@
       "price": 1124.0,
       "change_pct": -2.01,
       "reasons": [
-        "换手率300.0%"
+        "换手率700.0%"
       ],
       "severity": "medium"
     },
@@ -697,16 +707,6 @@
       "change_pct": -1.74,
       "reasons": [
         "换手率122300.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "000333",
-      "name": "美的集团",
-      "price": 85.35,
-      "change_pct": 1.73,
-      "reasons": [
-        "换手率100.0%"
       ],
       "severity": "medium"
     }
