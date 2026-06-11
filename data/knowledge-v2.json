@@ -1,5 +1,5 @@
 {
-  "updated": "05-28",
+  "updated": "06-11",
   "version": 2,
   "platforms": [
     {
@@ -12,9 +12,9 @@
       "freq": "每日09:00",
       "stats": {
         "total_courses": 160,
-        "articles_with_body": 19,
+        "articles_with_body": 29,
         "categories": 6,
-        "last_fetch": "2026-05-28 09:17"
+        "last_fetch": "2026-06-11 09:13"
       },
       "knowledge_summary": {
         "title": "万堂书院课程体系",
@@ -43,7 +43,7 @@
           {
             "heading": "顶级讲师",
             "items": [
-              "05-28 New 9 courses (段鹏, 南瓜, 万堂书院小二, 吉聪, 蛋蛋, 东子, 老关, 万堂书院小二, 蛋蛋)",
+              "06-11 New 10 courses (南瓜, 段鹏, 万堂书院小二, 万堂书院小二, 吉聪, 万堂书院小二, 小鱼, 十二), ...",
               "LIVE courses only, detail pages require login, body is metadata only."
             ]
           },
@@ -51,6 +51,7 @@
             "heading": "已学课程正文",
             "items": [
               "什么是淘宝客推广（67111浏览/4.5分）— CPS按成交付费原理",
+              "📅 06-11 新增10篇课程（销量冲刺、高效拉新、618冲刺-家享生活GMV实时追量实战、618冲刺-大快消冲刺抢量专场、人群破圈 等10篇）",
               "📅 05-27 新增10篇618+日常运营直播课程（雨夜/米线/蛋蛋/随风/小鱼 等讲师）",
               "⚠️ 课程均为LIVE直播形式，详情页需登录认证，正文仅含元数据。后续关注直播回放转录"
             ]
@@ -58,6 +59,167 @@
         ]
       },
       "articles": [
+        {
+          "id": "38571",
+          "title": "销量冲刺",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38571",
+          "type": "LIVE",
+          "lector": "南瓜",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 12,
+          "startTime": "2026-06-11 15:30:00",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/销量冲刺_38571.md"
+        },
+        {
+          "id": "38570",
+          "title": "高效拉新",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38570",
+          "type": "LIVE",
+          "lector": "段鹏",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 11,
+          "startTime": "2026-06-11 10:00:00",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/高效拉新_38570.md"
+        },
+        {
+          "id": "38561",
+          "title": "618冲刺-家享生活GMV实时追量实战",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38561",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 43,
+          "startTime": "2026-06-11 10:00:00",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-家享生活GMV实时追量实战_38561.md"
+        },
+        {
+          "id": "38559",
+          "title": "618冲刺-大快消冲刺抢量专场",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38559",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "618",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 16,
+          "startTime": "2026-06-11 10:00:00",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-大快消冲刺抢量专场_38559.md"
+        },
+        {
+          "id": "38558",
+          "title": "人群破圈",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38558",
+          "type": "LIVE",
+          "lector": "吉聪",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 14,
+          "startTime": "2026-06-11 13:00:00",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/人群破圈_38558.md"
+        },
+        {
+          "id": "38549",
+          "title": "618冲刺-服饰/运动户外/珠宝饰品人群流转布局！",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38549",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 5727,
+          "startTime": "2026-06-10 09:54:00",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38549.md"
+        },
+        {
+          "id": "38548",
+          "title": "618冲刺服饰潜力品布局",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38548",
+          "type": "LIVE",
+          "lector": "小鱼",
+          "tags": [
+            "618",
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 7,
+          "startTime": "2026-06-10 12:52:08",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺服饰潜力品布局_38548.md"
+        },
+        {
+          "id": "38547",
+          "title": "618新品提效",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38547",
+          "type": "LIVE",
+          "lector": "十二",
+          "tags": [
+            "万相台无界版",
+            "新手商家",
+            "官方精品"
+          ],
+          "pv": 35,
+          "startTime": "2026-06-10 13:15:43",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/618新品提效_38547.md"
+        },
+        {
+          "id": "38546",
+          "title": "618冲刺-618爆品提效",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38546",
+          "type": "LIVE",
+          "lector": "米线",
+          "tags": [
+            "618",
+            "爆品营销",
+            "人群拉新",
+            "万相台无界版",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 35,
+          "startTime": "2026-06-10 09:50:14",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-618爆品提效_38546.md"
+        },
+        {
+          "id": "38545",
+          "title": "618冲刺-食品/健康/宠企/玩美生活全站流量提效",
+          "url": "https://shuyuan.taobao.com/course/detail?id=38545",
+          "type": "LIVE",
+          "lector": "万堂书院小二",
+          "tags": [
+            "食品健康",
+            "成长进阶",
+            "官方精品"
+          ],
+          "pv": 7021,
+          "startTime": "2026-06-10 09:50:32",
+          "fetched": "2026-06-11 09:13",
+          "markdown_file": "平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活全站流量提效_38545.md"
+        },
         {
           "id": "38431",
           "title": "快速打爆",
@@ -360,6 +522,12 @@
         }
       ],
       "daily_log": [
+        {
+          "date": "06-11",
+          "action": "course_fetch_v2",
+          "new": 10,
+          "note": "新增 10 篇课程 (09:13)"
+        },
         {
           "date": "05-28",
           "action": "course_fetch_v2",
