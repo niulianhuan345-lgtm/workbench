@@ -1,692 +1,991 @@
 {
-  "updated": "06-11",
-  "version": 2,
-  "platforms": [
+  "version": "2.0",
+  "platform": "万堂书院",
+  "base_url": "https://shuyuan.taobao.com",
+  "last_updated": "2026-06-12 09:09:23",
+  "total_articles": 99,
+  "articles": [
     {
-      "id": "tmall",
-      "name": "天猫/阿里妈妈",
-      "icon": "🐱",
-      "source_label": "万堂书院",
-      "source_url": "https://shuyuan.taobao.com",
-      "method": "Selenium headless + API",
-      "freq": "每日09:00",
-      "stats": {
-        "total_courses": 160,
-        "articles_with_body": 29,
-        "categories": 6,
-        "last_fetch": "2026-06-11 09:13"
-      },
-      "knowledge_summary": {
-        "title": "万堂书院课程体系",
-        "sections": [
-          {
-            "heading": "课程分类（6大类）",
-            "items": [
-              "商家阶段：新手商家、成长进阶",
-              "营销产品：万相台无界版、百灵、达摩盘、创意中心等",
-              "经营场景：新品/爆品/内容营销、人群拉新/运营",
-              "节点热点：618、双11、双12、38节",
-              "行业属性：服饰/美妆/母婴/食品/数码/家居/运动",
-              "内容来源：官方精品、讲师自研"
-            ]
-          },
-          {
-            "heading": "当前热点（618专题）",
-            "items": [
-              "618抢先购-大快消行业流量布局与ROI优化",
-              "618抢先购-服饰运动户外开门红放量技巧",
-              "智赢618-阿里妈妈推广产品最新资讯",
-              "全站推广官方实操必修课（43节）",
-              "秒懂万相台无界投放底层逻辑（13节）"
-            ]
-          },
-          {
-            "heading": "顶级讲师",
-            "items": [
-              "06-11 New 10 courses (南瓜, 段鹏, 万堂书院小二, 万堂书院小二, 吉聪, 万堂书院小二, 小鱼, 十二), ...",
-              "LIVE courses only, detail pages require login, body is metadata only."
-            ]
-          },
-          {
-            "heading": "已学课程正文",
-            "items": [
-              "什么是淘宝客推广（67111浏览/4.5分）— CPS按成交付费原理",
-              "📅 06-11 新增10篇课程（销量冲刺、高效拉新、618冲刺-家享生活GMV实时追量实战、618冲刺-大快消冲刺抢量专场、人群破圈 等10篇）",
-              "📅 05-27 新增10篇618+日常运营直播课程（雨夜/米线/蛋蛋/随风/小鱼 等讲师）",
-              "⚠️ 课程均为LIVE直播形式，详情页需登录认证，正文仅含元数据。后续关注直播回放转录"
-            ]
-          }
-        ]
-      },
-      "articles": [
-        {
-          "id": "38571",
-          "title": "销量冲刺",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38571",
-          "type": "LIVE",
-          "lector": "南瓜",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 12,
-          "startTime": "2026-06-11 15:30:00",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/销量冲刺_38571.md"
-        },
-        {
-          "id": "38570",
-          "title": "高效拉新",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38570",
-          "type": "LIVE",
-          "lector": "段鹏",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 11,
-          "startTime": "2026-06-11 10:00:00",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/高效拉新_38570.md"
-        },
-        {
-          "id": "38561",
-          "title": "618冲刺-家享生活GMV实时追量实战",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38561",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 43,
-          "startTime": "2026-06-11 10:00:00",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/618冲刺-家享生活GMV实时追量实战_38561.md"
-        },
-        {
-          "id": "38559",
-          "title": "618冲刺-大快消冲刺抢量专场",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38559",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "618",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 16,
-          "startTime": "2026-06-11 10:00:00",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/618冲刺-大快消冲刺抢量专场_38559.md"
-        },
-        {
-          "id": "38558",
-          "title": "人群破圈",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38558",
-          "type": "LIVE",
-          "lector": "吉聪",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 14,
-          "startTime": "2026-06-11 13:00:00",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/人群破圈_38558.md"
-        },
-        {
-          "id": "38549",
-          "title": "618冲刺-服饰/运动户外/珠宝饰品人群流转布局！",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38549",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 5727,
-          "startTime": "2026-06-10 09:54:00",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38549.md"
-        },
-        {
-          "id": "38548",
-          "title": "618冲刺服饰潜力品布局",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38548",
-          "type": "LIVE",
-          "lector": "小鱼",
-          "tags": [
-            "618",
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 7,
-          "startTime": "2026-06-10 12:52:08",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/618冲刺服饰潜力品布局_38548.md"
-        },
-        {
-          "id": "38547",
-          "title": "618新品提效",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38547",
-          "type": "LIVE",
-          "lector": "十二",
-          "tags": [
-            "万相台无界版",
-            "新手商家",
-            "官方精品"
-          ],
-          "pv": 35,
-          "startTime": "2026-06-10 13:15:43",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/618新品提效_38547.md"
-        },
-        {
-          "id": "38546",
-          "title": "618冲刺-618爆品提效",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38546",
-          "type": "LIVE",
-          "lector": "米线",
-          "tags": [
-            "618",
-            "爆品营销",
-            "人群拉新",
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 35,
-          "startTime": "2026-06-10 09:50:14",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/618冲刺-618爆品提效_38546.md"
-        },
-        {
-          "id": "38545",
-          "title": "618冲刺-食品/健康/宠企/玩美生活全站流量提效",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38545",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "食品健康",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 7021,
-          "startTime": "2026-06-10 09:50:32",
-          "fetched": "2026-06-11 09:13",
-          "markdown_file": "平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活全站流量提效_38545.md"
-        },
-        {
-          "id": "38431",
-          "title": "快速打爆",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38431",
-          "type": "LIVE",
-          "lector": "段鹏",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 21,
-          "startTime": "2026-05-28 10:00:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/快速打爆.md"
-        },
-        {
-          "id": "38430",
-          "title": "计划调优",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38430",
-          "type": "LIVE",
-          "lector": "南瓜",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 7,
-          "startTime": "2026-05-28 15:30:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/计划调优.md"
-        },
-        {
-          "id": "38429",
-          "title": "618抢先购-大快消行业618大促实战与爆款冲刺",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38429",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "618",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 27,
-          "startTime": "2026-05-28 10:00:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/618抢先购-大快消行业618大促实战与爆款冲刺.md"
-        },
-        {
-          "id": "38428",
-          "title": "大促实战",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38428",
-          "type": "LIVE",
-          "lector": "吉聪",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 11,
-          "startTime": "2026-05-28 13:00:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/大促实战.md"
-        },
-        {
-          "id": "38427",
-          "title": "流量痛点布局",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38427",
-          "type": "LIVE",
-          "lector": "蛋蛋",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 15,
-          "startTime": "2026-05-29 10:00:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/流量痛点布局.md"
-        },
-        {
-          "id": "38426",
-          "title": "618抢先购大服饰行业转化痛点布局",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38426",
-          "type": "LIVE",
-          "lector": "东子",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 10,
-          "startTime": "2026-05-29 13:00:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/618抢先购大服饰行业转化痛点布局.md"
-        },
-        {
-          "id": "38423",
-          "title": "服饰行业爆发节奏痛点布局",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38423",
-          "type": "LIVE",
-          "lector": "老关",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 10,
-          "startTime": "2026-05-29 15:30:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/服饰行业爆发节奏痛点布局.md"
-        },
-        {
-          "id": "38422",
-          "title": "新星计划-新手商家流量痛点解决与福利派送",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38422",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "新手商家",
-            "官方精品"
-          ],
-          "pv": 17,
-          "startTime": "2026-05-28 14:00:00",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送.md"
-        },
-        {
-          "id": "38421",
-          "title": "影响推广效果的零部件",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38421",
-          "type": "LIVE",
-          "lector": "蛋蛋",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 3623,
-          "startTime": "2026-05-27 13:59:13",
-          "fetched": "2026-05-28 09:17",
-          "markdown_file": "平台知识/万相台无界/文章/影响推广效果的零部件.md"
-        },
-        {
-          "id": "38408",
-          "title": "转化提效",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38408",
-          "type": "LIVE",
-          "lector": "清风",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 36,
-          "startTime": "2026-05-26 12:50:40",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/转化提效.md"
-        },
-        {
-          "id": "38411",
-          "title": "ROI优化",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38411",
-          "type": "LIVE",
-          "lector": "许文强",
-          "tags": [
-            "618",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 27,
-          "startTime": "2026-05-26 15:31:30",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/ROI优化.md"
-        },
-        {
-          "id": "38412",
-          "title": "618大服饰货品冲刺",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38412",
-          "type": "LIVE",
-          "lector": "小鱼",
-          "tags": [
-            "618",
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 13,
-          "startTime": "2026-05-27 15:30:00",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/618大服饰货品冲刺.md"
-        },
-        {
-          "id": "38413",
-          "title": "618抢先购-服饰/运动户外/珠宝饰品开门红放量技巧！",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38413",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "万相台无界版",
-            "新手商家",
-            "官方精品"
-          ],
-          "pv": 34,
-          "startTime": "2026-05-27 10:00:00",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/618抢先购-服饰_运动户外_珠宝饰品开门红放量技巧！.md"
-        },
-        {
-          "id": "38414",
-          "title": "618抢先购高毛利品破峰",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38414",
-          "type": "LIVE",
-          "lector": "随风",
-          "tags": [
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 5,
-          "startTime": "2026-05-27 13:00:00",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/618抢先购高毛利品破峰.md"
-        },
-        {
-          "id": "38415",
-          "title": "新星计划-新手商家流量痛点解决与福利派送",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38415",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "新手商家",
-            "官方精品"
-          ],
-          "pv": 2093,
-          "startTime": "2026-05-26 13:58:10",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送.md"
-        },
-        {
-          "id": "38416",
-          "title": "618抢先购-食品/健康/宠企/玩美生活开门红破峰专场",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38416",
-          "type": "LIVE",
-          "lector": "万堂书院小二",
-          "tags": [
-            "食品健康",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 52,
-          "startTime": "2026-05-27 10:00:00",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/618抢先购-食品_健康_宠企_玩美生活开门红破峰专场.md"
-        },
-        {
-          "id": "38417",
-          "title": "新手商家流量问题解决",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38417",
-          "type": "LIVE",
-          "lector": "蛋蛋",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 38,
-          "startTime": "2026-05-26 13:59:17",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/新手商家流量问题解决.md"
-        },
-        {
-          "id": "38419",
-          "title": "618抢先购-低毛利产品破峰",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38419",
-          "type": "LIVE",
-          "lector": "米线",
-          "tags": [
-            "618",
-            "新品营销",
-            "爆品营销",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 15,
-          "startTime": "2026-05-27 15:30:00",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/618抢先购-低毛利产品破峰.md"
-        },
-        {
-          "id": "38420",
-          "title": "全店销量破峰",
-          "url": "https://shuyuan.taobao.com/course/detail?id=38420",
-          "type": "LIVE",
-          "lector": "雨夜",
-          "tags": [
-            "万相台无界版",
-            "成长进阶",
-            "官方精品"
-          ],
-          "pv": 31,
-          "startTime": "2026-05-27 10:00:00",
-          "fetched": "2026-05-27 09:15",
-          "markdown_file": "平台知识/万相台无界/文章/全店销量破峰.md"
-        }
-      ],
-      "daily_log": [
-        {
-          "date": "06-11",
-          "action": "course_fetch_v2",
-          "new": 10,
-          "note": "新增 10 篇课程 (09:13)"
-        },
-        {
-          "date": "05-28",
-          "action": "course_fetch_v2",
-          "new": 9,
-          "note": "New 9 courses (09:17)"
-        },
-        {
-          "date": "05-27",
-          "action": "课程抓取(v2)",
-          "new": 10,
-          "note": "新增 10 篇课程 (09:15)"
-        },
-        {
-          "date": "05-26",
-          "action": "接入万堂书院API",
-          "new": 1,
-          "note": "Selenium方案验证通过，分页扫描300+课程"
-        }
-      ]
+      "filename": "南瓜老师连麦诊断_38456.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/南瓜老师连麦诊断_38456.md",
+      "id": 38456,
+      "name": "南瓜老师连麦诊断"
     },
     {
-      "id": "jd",
-      "name": "京东/京准通",
-      "icon": "🐕",
-      "source_label": "京东帮助中心",
-      "source_url": "https://helpcenter.jd.com",
-      "method": "搜索API已接入（knowledge-search.jd.com）",
-      "freq": "待配置",
-      "stats": {
-        "total_courses": 0,
-        "articles_with_body": 0,
-        "last_fetch": null
-      },
-      "knowledge_summary": {
-        "title": "京准通投放知识",
-        "sections": [
-          {
-            "heading": "已接入数据源",
-            "items": [
-              "knowledge-search.jd.com 搜索API已调通",
-              "kt=3(学习中心)「京准通」286条、「广告投放」880条",
-              "⚠️ 搜索API返回筛选器数据，文章详情待解析"
-            ]
-          },
-          {
-            "heading": "产品矩阵（来自训练数据）",
-            "items": [
-              "京东快车/购物触点/京东海投/京东展位",
-              "京挑客CPS/DMP数坊/全站营销"
-            ]
-          }
-        ]
-      },
-      "articles": [],
-      "daily_log": [
-        {
-          "date": "05-26",
-          "action": "搜索API接入",
-          "new": 0,
-          "note": "POST方法成功，文章内容提取开发中"
-        }
-      ]
+      "filename": "南瓜老师连麦诊断_38457.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/南瓜老师连麦诊断_38457.md",
+      "id": 38457,
+      "name": "南瓜老师连麦诊断"
     },
     {
-      "id": "xhs",
-      "name": "小红书/聚光",
-      "icon": "📕",
-      "source_label": "聚光平台",
-      "source_url": "https://ad.xiaohongshu.com",
-      "method": "curl hash监控（待升级Selenium）",
-      "freq": "每日",
-      "stats": {
-        "total_courses": 0,
-        "articles_with_body": 0,
-        "last_fetch": "待迁移"
-      },
-      "knowledge_summary": {
-        "title": "聚光平台投放知识",
-        "sections": [
-          {
-            "heading": "5大营销目标",
-            "items": [
-              "产品种草/商品销量/客资收集/直播推广/抢占赛道"
-            ]
-          },
-          {
-            "heading": "平台版本",
-            "items": [
-              "当前 5.2.540，40+异步模块",
-              "蒲公英 v1.17.0"
-            ]
-          }
-        ]
-      },
-      "articles": [],
-      "daily_log": []
+      "filename": "清风老师连麦诊断_38466.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/清风老师连麦诊断_38466.md",
+      "id": 38466,
+      "name": "清风老师连麦诊断"
     },
     {
-      "id": "vip",
-      "name": "唯品会",
-      "icon": "🛍️",
-      "source_label": "唯品会VOP",
-      "source_url": "https://vop.vip.com",
-      "method": "curl监控（待升级Selenium）",
-      "freq": "每日",
-      "stats": {
-        "total_courses": 0,
-        "articles_with_body": 0,
-        "last_fetch": "待迁移"
-      },
-      "knowledge_summary": {
-        "title": "唯品会营销投放知识",
-        "sections": [
-          {
-            "heading": "产品矩阵",
-            "items": [
-              "唯享客CPS联盟/品牌专区/特卖活动/内容广告/VOP开放平台"
-            ]
-          }
-        ]
-      },
-      "articles": [],
-      "daily_log": []
+      "filename": "清风老师连麦诊断_38467.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/清风老师连麦诊断_38467.md",
+      "id": 38467,
+      "name": "清风老师连麦诊断"
+    },
+    {
+      "filename": "新星计划-新手商家流量痛点解决与福利派送_38486.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38486.md",
+      "id": 38486,
+      "name": "新星计划-新手商家流量痛点解决与福利派送",
+      "lector": "万堂书院小二",
+      "course_type": "",
+      "status": "",
+      "category": "产品介绍",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "新手商家流量问题解决_38495.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新手商家流量问题解决_38495.md",
+      "id": 38495,
+      "name": "新手商家流量问题解决",
+      "lector": "随风",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-04 09:00"
+    },
+    {
+      "filename": "新星计划-新手商家流量痛点解决与福利派送_38496.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38496.md",
+      "id": 38496,
+      "name": "新星计划-新手商家流量痛点解决与福利派送",
+      "lector": "万堂书院小二",
+      "course_type": "",
+      "status": "",
+      "category": "产品介绍",
+      "fetched_at": "2026-06-04 09:00"
+    },
+    {
+      "filename": "新星计划-新手商家流量痛点解决与福利派送_38531.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38531.md",
+      "id": 38531,
+      "name": "新星计划-新手商家流量痛点解决与福利派送"
+    },
+    {
+      "filename": "新星计划-新手商家流量痛点解决与福利派送_38532.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送_38532.md",
+      "id": 38532,
+      "name": "新星计划-新手商家流量痛点解决与福利派送"
+    },
+    {
+      "filename": "618冲刺-食品_健康_宠企_玩美生活全站流量提效_38545.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活全站流量提效_38545.md",
+      "id": 38545,
+      "name": "618冲刺-食品_健康_宠企_玩美生活全站流量提效",
+      "lector": "万堂书院小二",
+      "tags": "食品健康, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-09 09:58:49",
+      "start_time": "2026-06-10 09:50:32",
+      "end_time": "2026-06-10 18:03:13",
+      "pv_count": 7021,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38545&platform="
+    },
+    {
+      "filename": "618冲刺-618爆品提效_38546.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-618爆品提效_38546.md",
+      "id": 38546,
+      "name": "618冲刺-618爆品提效",
+      "lector": "米线",
+      "tags": "618, 爆品营销, 人群拉新, 万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-09 10:03:18",
+      "start_time": "2026-06-10 09:50:14",
+      "end_time": "2026-06-10 12:35:59",
+      "pv_count": 35,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38546&platform="
+    },
+    {
+      "filename": "618新品提效_38547.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618新品提效_38547.md",
+      "id": 38547,
+      "name": "618新品提效",
+      "lector": "十二",
+      "tags": "万相台无界版, 新手商家, 官方精品",
+      "gmt_create": "2026-06-09 10:39:10",
+      "start_time": "2026-06-10 13:15:43",
+      "end_time": "2026-06-10 15:33:29",
+      "pv_count": 35,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38547&platform="
+    },
+    {
+      "filename": "618冲刺服饰潜力品布局_38548.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺服饰潜力品布局_38548.md",
+      "id": 38548,
+      "name": "618冲刺服饰潜力品布局",
+      "lector": "小鱼",
+      "tags": "618, 万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-09 16:12:33",
+      "start_time": "2026-06-10 12:52:08",
+      "end_time": "2026-06-10 15:33:21",
+      "pv_count": 7,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38548&platform="
+    },
+    {
+      "filename": "618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38549.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38549.md",
+      "id": 38549,
+      "name": "618冲刺-服饰_运动户外_珠宝饰品人群流转布局！",
+      "lector": "万堂书院小二",
+      "tags": "万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-09 17:14:43",
+      "start_time": "2026-06-10 09:54:00",
+      "end_time": "2026-06-10 18:02:54",
+      "pv_count": 5727,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38549&platform="
+    },
+    {
+      "filename": "人群破圈_38558.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/人群破圈_38558.md",
+      "id": 38558,
+      "name": "人群破圈",
+      "lector": "吉聪",
+      "tags": "万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-09 19:34:34",
+      "start_time": "2026-06-11 13:00:00",
+      "end_time": "2026-06-11 15:30:00",
+      "pv_count": 14,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38558&platform="
+    },
+    {
+      "filename": "618冲刺-大快消冲刺抢量专场_38559.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-大快消冲刺抢量专场_38559.md",
+      "id": 38559,
+      "name": "618冲刺-大快消冲刺抢量专场",
+      "lector": "万堂书院小二",
+      "tags": "618, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-10 09:43:42",
+      "start_time": "2026-06-11 10:00:00",
+      "end_time": "2026-06-11 18:00:00",
+      "pv_count": 16,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38559&platform="
+    },
+    {
+      "filename": "618冲刺-家享生活GMV实时追量实战_38561.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-家享生活GMV实时追量实战_38561.md",
+      "id": 38561,
+      "name": "618冲刺-家享生活GMV实时追量实战",
+      "lector": "万堂书院小二",
+      "tags": "成长进阶, 官方精品",
+      "gmt_create": "2026-06-10 10:02:22",
+      "start_time": "2026-06-11 10:00:00",
+      "end_time": "2026-06-11 18:00:00",
+      "pv_count": 43,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38561&platform="
+    },
+    {
+      "filename": "高效拉新_38570.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/高效拉新_38570.md",
+      "id": 38570,
+      "name": "高效拉新",
+      "lector": "段鹏",
+      "tags": "成长进阶, 官方精品",
+      "gmt_create": "2026-06-10 14:22:01",
+      "start_time": "2026-06-11 10:00:00",
+      "end_time": "2026-06-11 12:30:00",
+      "pv_count": 11,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38570&platform="
+    },
+    {
+      "filename": "销量冲刺_38571.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/销量冲刺_38571.md",
+      "id": 38571,
+      "name": "销量冲刺",
+      "lector": "南瓜",
+      "tags": "成长进阶, 官方精品",
+      "gmt_create": "2026-06-10 14:26:17",
+      "start_time": "2026-06-11 15:30:00",
+      "end_time": "2026-06-11 18:00:00",
+      "pv_count": 12,
+      "fetched_at": "2026-06-11 09:13",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38571&platform="
+    },
+    {
+      "filename": "米线老师在线诊断_38574.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/米线老师在线诊断_38574.md",
+      "id": 38574,
+      "name": "米线老师在线诊断",
+      "lector": "米线",
+      "tags": "618, 新品营销, 爆品营销, 万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-11 10:28:45",
+      "start_time": "2026-06-12 20:30:00",
+      "end_time": "2026-06-12 22:00:00",
+      "pv_count": 5,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38574"
+    },
+    {
+      "filename": "十二老师连麦诊断-店铺推广调优_38575.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/十二老师连麦诊断-店铺推广调优_38575.md",
+      "id": 38575,
+      "name": "十二老师连麦诊断-店铺推广调优",
+      "lector": "十二",
+      "tags": "万相台无界版, 新手商家, 官方精品",
+      "gmt_create": "2026-06-11 10:40:49",
+      "start_time": "2026-06-14 13:00:00",
+      "end_time": "2026-06-14 15:00:00",
+      "pv_count": 2,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38575"
+    },
+    {
+      "filename": "十二老师连麦诊断-店铺推广调优_38576.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/十二老师连麦诊断-店铺推广调优_38576.md",
+      "id": 38576,
+      "name": "十二老师连麦诊断-店铺推广调优",
+      "lector": "十二",
+      "tags": "万相台无界版, 新手商家, 官方精品",
+      "gmt_create": "2026-06-11 10:43:25",
+      "start_time": "2026-06-26 19:00:00",
+      "end_time": "2026-06-26 21:00:00",
+      "pv_count": 7,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38576"
+    },
+    {
+      "filename": "618爆品提roi_38577.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618爆品提roi_38577.md",
+      "id": 38577,
+      "name": "618爆品提roi",
+      "lector": "蛋蛋",
+      "tags": "万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-11 12:14:16",
+      "start_time": "2026-06-15 15:30:00",
+      "end_time": "2026-06-15 18:00:00",
+      "pv_count": 13,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38577"
+    },
+    {
+      "filename": "618冲刺爆款拉新_38578.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺爆款拉新_38578.md",
+      "id": 38578,
+      "name": "618冲刺爆款拉新",
+      "lector": "随风",
+      "tags": "成长进阶, 官方精品",
+      "gmt_create": "2026-06-11 14:30:31",
+      "start_time": "2026-06-15 10:00:00",
+      "end_time": "2026-06-15 12:30:00",
+      "pv_count": 8,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38578"
+    },
+    {
+      "filename": "618冲刺大服饰行业尖品抢占布局_38579.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺大服饰行业尖品抢占布局_38579.md",
+      "id": 38579,
+      "name": "618冲刺大服饰行业尖品抢占布局",
+      "lector": "东子",
+      "tags": "成长进阶, 官方精品",
+      "gmt_create": "2026-06-11 15:49:52",
+      "start_time": "2026-06-15 10:00:00",
+      "end_time": "2026-06-15 12:30:00",
+      "pv_count": 15,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38579"
+    },
+    {
+      "filename": "618冲刺服饰长尾品激活布局_38581.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺服饰长尾品激活布局_38581.md",
+      "id": 38581,
+      "name": "618冲刺服饰长尾品激活布局",
+      "lector": "小鱼",
+      "tags": "618, 万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-11 16:34:28",
+      "start_time": "2026-06-12 15:30:00",
+      "end_time": "2026-06-12 18:00:00",
+      "pv_count": 17,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38581"
+    },
+    {
+      "filename": "长尾品激活布局_38583.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/长尾品激活布局_38583.md",
+      "id": 38583,
+      "name": "长尾品激活布局",
+      "lector": "蛋蛋",
+      "tags": "万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-11 18:22:08",
+      "start_time": "2026-06-12 13:00:00",
+      "end_time": "2026-06-12 15:30:00",
+      "pv_count": 23,
+      "fetched_at": "2026-06-12 09:09",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38583"
+    },
+    {
+      "filename": "618冲刺-618拉新破圈.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-618拉新破圈.md",
+      "id": null,
+      "name": "618冲刺-618拉新破圈"
+    },
+    {
+      "filename": "618冲刺-618爆品提效.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-618爆品提效.md",
+      "id": null,
+      "name": "618冲刺-618爆品提效"
+    },
+    {
+      "filename": "618冲刺-大快消如何实现大促中场发力.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-大快消如何实现大促中场发力.md",
+      "id": null,
+      "name": "618冲刺-大快消如何实现大促中场发力"
+    },
+    {
+      "filename": "618冲刺-家享生活万相台无界实操进阶.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-家享生活万相台无界实操进阶.md",
+      "id": null,
+      "name": "618冲刺-家享生活万相台无界实操进阶",
+      "lector": "万堂书院小二",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "618冲刺-家享生活爆品持续放量.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-家享生活爆品持续放量.md",
+      "id": null,
+      "name": "618冲刺-家享生活爆品持续放量"
+    },
+    {
+      "filename": "618冲刺-家享生活第二波流量抢夺.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-家享生活第二波流量抢夺.md",
+      "id": null,
+      "name": "618冲刺-家享生活第二波流量抢夺",
+      "lector": "万堂书院小二",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-04 09:00"
+    },
+    {
+      "filename": "618冲刺-服饰_运动户外_珠宝饰品人群流转布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品人群流转布局.md",
+      "id": null,
+      "name": "618冲刺-服饰_运动户外_珠宝饰品人群流转布局"
+    },
+    {
+      "filename": "618冲刺-服饰_运动户外_珠宝饰品无界推广实操！.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品无界推广实操！.md",
+      "id": null,
+      "name": "618冲刺-服饰_运动户外_珠宝饰品无界推广实操！",
+      "lector": "万堂书院小二",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-03 09:07"
+    },
+    {
+      "filename": "618冲刺-食品_健康_宠企_玩美生活全站流量提效.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活全站流量提效.md",
+      "id": null,
+      "name": "618冲刺-食品_健康_宠企_玩美生活全站流量提效"
+    },
+    {
+      "filename": "618冲刺-食品_健康_宠企_玩美生活推广痛点答疑.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活推广痛点答疑.md",
+      "id": null,
+      "name": "618冲刺-食品_健康_宠企_玩美生活推广痛点答疑"
+    },
+    {
+      "filename": "618冲刺-食品_健康_宠企_玩美生活无界实操调优.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活无界实操调优.md",
+      "id": null,
+      "name": "618冲刺-食品_健康_宠企_玩美生活无界实操调优",
+      "lector": "万堂书院小二",
+      "course_type": "",
+      "status": "",
+      "category": "产品介绍",
+      "fetched_at": "2026-06-03 09:07"
+    },
+    {
+      "filename": "618冲刺大服饰行业人群冲刺布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺大服饰行业人群冲刺布局.md",
+      "id": null,
+      "name": "618冲刺大服饰行业人群冲刺布局",
+      "lector": "东子",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "618冲刺大服饰行业货品成交布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺大服饰行业货品成交布局.md",
+      "id": null,
+      "name": "618冲刺大服饰行业货品成交布局",
+      "lector": "东子",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-05"
+    },
+    {
+      "filename": "618冲刺推广调优答疑.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺推广调优答疑.md",
+      "id": null,
+      "name": "618冲刺推广调优答疑",
+      "lector": "随风",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-05"
+    },
+    {
+      "filename": "618冲刺服饰潜力品布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺服饰潜力品布局.md",
+      "id": null,
+      "name": "618冲刺服饰潜力品布局"
+    },
+    {
+      "filename": "618冲刺潜力品提效.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺潜力品提效.md",
+      "id": null,
+      "name": "618冲刺潜力品提效"
+    },
+    {
+      "filename": "618冲刺高转化人群布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺高转化人群布局.md",
+      "id": null,
+      "name": "618冲刺高转化人群布局",
+      "lector": "随风",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-03 09:07"
+    },
+    {
+      "filename": "618大服饰全站冲刺.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618大服饰全站冲刺.md",
+      "id": null,
+      "name": "618大服饰全站冲刺",
+      "lector": "小鱼",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-03 09:07"
+    },
+    {
+      "filename": "618大服饰货品冲刺.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618大服饰货品冲刺.md",
+      "id": null,
+      "name": "618大服饰货品冲刺",
+      "course_type": "",
+      "lector": "小鱼",
+      "tags": "618, 万相台无界版, 成长进阶, 官方精品"
+    },
+    {
+      "filename": "618抢先购-低毛利产品破峰.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618抢先购-低毛利产品破峰.md",
+      "id": null,
+      "name": "618抢先购-低毛利产品破峰",
+      "course_type": "",
+      "lector": "米线",
+      "tags": "618, 新品营销, 爆品营销, 成长进阶, 官方精品"
+    },
+    {
+      "filename": "618抢先购-大快消行业618大促实战与爆款冲刺.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618抢先购-大快消行业618大促实战与爆款冲刺.md",
+      "id": null,
+      "name": "618抢先购-大快消行业618大促实战与爆款冲刺"
+    },
+    {
+      "filename": "618抢先购-服饰_运动户外_珠宝饰品开门红放量技巧！.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618抢先购-服饰_运动户外_珠宝饰品开门红放量技巧！.md",
+      "id": null,
+      "name": "618抢先购-服饰_运动户外_珠宝饰品开门红放量技巧！",
+      "course_type": "",
+      "lector": "万堂书院小二",
+      "tags": "万相台无界版, 新手商家, 官方精品"
+    },
+    {
+      "filename": "618抢先购-食品_健康_宠企_玩美生活开门红破峰专场.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618抢先购-食品_健康_宠企_玩美生活开门红破峰专场.md",
+      "id": null,
+      "name": "618抢先购-食品_健康_宠企_玩美生活开门红破峰专场",
+      "course_type": "",
+      "lector": "万堂书院小二",
+      "tags": "食品健康, 成长进阶, 官方精品"
+    },
+    {
+      "filename": "618抢先购大服饰行业新品上架布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618抢先购大服饰行业新品上架布局.md",
+      "id": null,
+      "name": "618抢先购大服饰行业新品上架布局"
+    },
+    {
+      "filename": "618抢先购大服饰行业转化痛点布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618抢先购大服饰行业转化痛点布局.md",
+      "id": null,
+      "name": "618抢先购大服饰行业转化痛点布局"
+    },
+    {
+      "filename": "618抢先购高毛利品破峰.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618抢先购高毛利品破峰.md",
+      "id": null,
+      "name": "618抢先购高毛利品破峰",
+      "course_type": "",
+      "lector": "随风",
+      "tags": "成长进阶, 官方精品"
+    },
+    {
+      "filename": "618推广调优答疑.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618推广调优答疑.md",
+      "id": null,
+      "name": "618推广调优答疑",
+      "lector": "十二",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-05"
+    },
+    {
+      "filename": "618新品提效.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618新品提效.md",
+      "id": null,
+      "name": "618新品提效"
+    },
+    {
+      "filename": "618调优答疑.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618调优答疑.md",
+      "id": null,
+      "name": "618调优答疑"
+    },
+    {
+      "filename": "ROI优化.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/ROI优化.md",
+      "id": null,
+      "name": "ROI优化",
+      "course_type": "",
+      "lector": "许文强",
+      "tags": "618, 成长进阶, 官方精品"
+    },
+    {
+      "filename": "一分钟了解店铺快投.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/一分钟了解店铺快投.md",
+      "id": null,
+      "name": "一分钟了解店铺快投"
+    },
+    {
+      "filename": "一分钟了解店铺直达.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/一分钟了解店铺直达.md",
+      "id": null,
+      "name": "一分钟了解店铺直达"
+    },
+    {
+      "filename": "中场破局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/中场破局.md",
+      "id": null,
+      "name": "中场破局"
+    },
+    {
+      "filename": "人群转化.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/人群转化.md",
+      "id": null,
+      "name": "人群转化"
+    },
+    {
+      "filename": "什么是淘宝客推广.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/什么是淘宝客推广.md",
+      "id": null,
+      "name": "什么是淘宝客推广"
+    },
+    {
+      "filename": "全域拉新布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/全域拉新布局.md",
+      "id": null,
+      "name": "全域拉新布局",
+      "lector": "蛋蛋",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-05"
+    },
+    {
+      "filename": "全店销量破峰.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/全店销量破峰.md",
+      "id": null,
+      "name": "全店销量破峰",
+      "course_type": "",
+      "lector": "雨夜",
+      "tags": "万相台无界版, 成长进阶, 官方精品"
+    },
+    {
+      "filename": "全站推广放量和全店货盘带动.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/全站推广放量和全店货盘带动.md",
+      "id": null,
+      "name": "全站推广放量和全店货盘带动"
+    },
+    {
+      "filename": "全货品调优.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/全货品调优.md",
+      "id": null,
+      "name": "全货品调优",
+      "lector": "清风",
+      "course_type": "",
+      "status": "",
+      "category": "618大促",
+      "fetched_at": "2026-06-04 09:00"
+    },
+    {
+      "filename": "关键词冲刺布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/关键词冲刺布局.md",
+      "id": null,
+      "name": "关键词冲刺布局",
+      "lector": "蛋蛋",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "关键词抢位转化.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/关键词抢位转化.md",
+      "id": null,
+      "name": "关键词抢位转化",
+      "lector": "雨夜",
+      "course_type": "",
+      "status": "",
+      "category": "其他",
+      "fetched_at": "2026-06-03 09:07"
+    },
+    {
+      "filename": "关键词长尾词挖掘低成本获客.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/关键词长尾词挖掘低成本获客.md",
+      "id": null,
+      "name": "关键词长尾词挖掘低成本获客"
+    },
+    {
+      "filename": "大促后流量维稳和平销期衔接.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/大促后流量维稳和平销期衔接.md",
+      "id": null,
+      "name": "大促后流量维稳和平销期衔接"
+    },
+    {
+      "filename": "大促实战.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/大促实战.md",
+      "id": null,
+      "name": "大促实战"
+    },
+    {
+      "filename": "大服饰行业人群流转布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/大服饰行业人群流转布局.md",
+      "id": null,
+      "name": "大服饰行业人群流转布局",
+      "lector": "老关",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-05"
+    },
+    {
+      "filename": "大服饰行业爆品拉新布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/大服饰行业爆品拉新布局.md",
+      "id": null,
+      "name": "大服饰行业爆品拉新布局"
+    },
+    {
+      "filename": "实时数据把控计划快速调优.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/实时数据把控计划快速调优.md",
+      "id": null,
+      "name": "实时数据把控计划快速调优"
+    },
+    {
+      "filename": "影响推广效果的零部件.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/影响推广效果的零部件.md",
+      "id": null,
+      "name": "影响推广效果的零部件"
+    },
+    {
+      "filename": "快速打爆.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/快速打爆.md",
+      "id": null,
+      "name": "快速打爆"
+    },
+    {
+      "filename": "新品_潜力品调优.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新品_潜力品调优.md",
+      "id": null,
+      "name": "新品_潜力品调优",
+      "lector": "南瓜",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "新品测款爆品孵化路径.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新品测款爆品孵化路径.md",
+      "id": null,
+      "name": "新品测款爆品孵化路径"
+    },
+    {
+      "filename": "新品破圈布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新品破圈布局.md",
+      "id": null,
+      "name": "新品破圈布局"
+    },
+    {
+      "filename": "新商成长-中小商家如何做好日销.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新商成长-中小商家如何做好日销.md",
+      "id": null,
+      "name": "新商成长-中小商家如何做好日销",
+      "lector": "米线",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "新手商家必须计划.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新手商家必须计划.md",
+      "id": null,
+      "name": "新手商家必须计划"
+    },
+    {
+      "filename": "新手商家流量问题解决.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新手商家流量问题解决.md",
+      "id": null,
+      "name": "新手商家流量问题解决"
+    },
+    {
+      "filename": "新手商家流量问题解决与福利派送.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新手商家流量问题解决与福利派送.md",
+      "id": null,
+      "name": "新手商家流量问题解决与福利派送"
+    },
+    {
+      "filename": "新手商家福利派送.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新手商家福利派送.md",
+      "id": null,
+      "name": "新手商家福利派送",
+      "lector": "蛋蛋",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "新星计划-新手商家流量痛点解决与福利派送.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新星计划-新手商家流量痛点解决与福利派送.md",
+      "id": null,
+      "name": "新星计划-新手商家流量痛点解决与福利派送"
+    },
+    {
+      "filename": "新星计划-新手商家福利派送.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/新星计划-新手商家福利派送.md",
+      "id": null,
+      "name": "新星计划-新手商家福利派送"
+    },
+    {
+      "filename": "智赢618-阿里妈妈推广产品最新资讯.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/智赢618-阿里妈妈推广产品最新资讯.md",
+      "id": null,
+      "name": "智赢618-阿里妈妈推广产品最新资讯",
+      "lector": "万堂书院小二",
+      "course_type": "",
+      "status": "",
+      "category": "产品介绍",
+      "fetched_at": "2026-06-04 09:00"
+    },
+    {
+      "filename": "服饰行业爆发节奏痛点布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/服饰行业爆发节奏痛点布局.md",
+      "id": null,
+      "name": "服饰行业爆发节奏痛点布局"
+    },
+    {
+      "filename": "流量痛点布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/流量痛点布局.md",
+      "id": null,
+      "name": "流量痛点布局"
+    },
+    {
+      "filename": "潜力品冲量布局.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/潜力品冲量布局.md",
+      "id": null,
+      "name": "潜力品冲量布局"
+    },
+    {
+      "filename": "爆单策略.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/爆单策略.md",
+      "id": null,
+      "name": "爆单策略",
+      "lector": "段鹏",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-03 09:07"
+    },
+    {
+      "filename": "爆品调优.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/爆品调优.md",
+      "id": null,
+      "name": "爆品调优",
+      "lector": "吉聪",
+      "course_type": "",
+      "status": "",
+      "category": "其他",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "爆款选品.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/爆款选品.md",
+      "id": null,
+      "name": "爆款选品",
+      "lector": "南瓜",
+      "course_type": "",
+      "status": "",
+      "category": "技巧提升",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "计划调优.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/计划调优.md",
+      "id": null,
+      "name": "计划调优"
+    },
+    {
+      "filename": "货品全站推协同提效.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/货品全站推协同提效.md",
+      "id": null,
+      "name": "货品全站推协同提效",
+      "lector": "十二",
+      "course_type": "",
+      "status": "",
+      "category": "入门实操",
+      "fetched_at": "2026-06-03 09:07"
+    },
+    {
+      "filename": "货品接力.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/货品接力.md",
+      "id": null,
+      "name": "货品接力"
+    },
+    {
+      "filename": "转化提效.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/转化提效.md",
+      "id": null,
+      "name": "转化提效",
+      "course_type": "",
+      "lector": "清风",
+      "tags": "成长进阶, 官方精品"
+    },
+    {
+      "filename": "销量冲刺.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/销量冲刺.md",
+      "id": null,
+      "name": "销量冲刺",
+      "lector": "吉聪",
+      "course_type": "",
+      "status": "",
+      "category": "其他",
+      "fetched_at": "2026-06-02 09:06"
+    },
+    {
+      "filename": "随风老师店铺答疑诊断.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/随风老师店铺答疑诊断.md",
+      "id": null,
+      "name": "随风老师店铺答疑诊断"
     }
   ],
-  "internal": [
+  "daily_log": [
     {
-      "id": "aione",
-      "name": "AIONE产品设计",
-      "icon": "🎯",
-      "knowledge_summary": {
-        "title": "AIONE四阶段",
-        "sections": [
-          {
-            "heading": "进度",
-            "items": [
-              "阶段一✅ 6/6 | 阶段二🚧 6/7 | 阶段三🚧 5/6 | 阶段四🚧 6/6",
-              "总23/25需求文档完成"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "analysis",
-      "name": "分析框架",
-      "icon": "📐",
-      "knowledge_summary": {
-        "title": "投放分析方法",
-        "sections": [
-          {
-            "heading": "核心方法",
-            "items": [
-              "AB测试：费比/ROI/蚕食率",
-              "门店分级v3：6维加权评分"
-            ]
-          }
-        ]
-      }
+      "date": "2026-06-12",
+      "action": "fetch_new_courses",
+      "summary": "从万堂书院获取最新课程列表，发现 8 个新增课程",
+      "new_course_ids": [
+        38574,
+        38575,
+        38576,
+        38577,
+        38578,
+        38579,
+        38581,
+        38583
+      ],
+      "new_courses": [
+        {
+          "id": 38574,
+          "name": "米线老师在线诊断",
+          "lector": "米线",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38574",
+          "start_time": "2026-06-12 20:30:00",
+          "end_time": "2026-06-12 22:00:00"
+        },
+        {
+          "id": 38575,
+          "name": "十二老师连麦诊断-店铺推广调优",
+          "lector": "十二",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38575",
+          "start_time": "2026-06-14 13:00:00",
+          "end_time": "2026-06-14 15:00:00"
+        },
+        {
+          "id": 38576,
+          "name": "十二老师连麦诊断-店铺推广调优",
+          "lector": "十二",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38576",
+          "start_time": "2026-06-26 19:00:00",
+          "end_time": "2026-06-26 21:00:00"
+        },
+        {
+          "id": 38577,
+          "name": "618爆品提roi",
+          "lector": "蛋蛋",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38577",
+          "start_time": "2026-06-15 15:30:00",
+          "end_time": "2026-06-15 18:00:00"
+        },
+        {
+          "id": 38578,
+          "name": "618冲刺爆款拉新",
+          "lector": "随风",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38578",
+          "start_time": "2026-06-15 10:00:00",
+          "end_time": "2026-06-15 12:30:00"
+        },
+        {
+          "id": 38579,
+          "name": "618冲刺大服饰行业尖品抢占布局",
+          "lector": "东子",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38579",
+          "start_time": "2026-06-15 10:00:00",
+          "end_time": "2026-06-15 12:30:00"
+        },
+        {
+          "id": 38581,
+          "name": "618冲刺服饰长尾品激活布局",
+          "lector": "小鱼",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38581",
+          "start_time": "2026-06-12 15:30:00",
+          "end_time": "2026-06-12 18:00:00"
+        },
+        {
+          "id": 38583,
+          "name": "长尾品激活布局",
+          "lector": "蛋蛋",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38583",
+          "start_time": "2026-06-12 13:00:00",
+          "end_time": "2026-06-12 15:30:00"
+        }
+      ],
+      "total_articles_after": 99,
+      "fetched_at": "2026-06-12 09:09:23"
     }
   ]
 }
