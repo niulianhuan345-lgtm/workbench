@@ -2,8 +2,8 @@
   "version": "2.0",
   "platform": "万堂书院",
   "base_url": "https://shuyuan.taobao.com",
-  "last_updated": "2026-06-12 09:09:23",
-  "total_articles": 99,
+  "last_updated": "2026-06-13 09:09:21",
+  "total_articles": 103,
   "articles": [
     {
       "filename": "南瓜老师连麦诊断_38456.md",
@@ -901,9 +901,136 @@
       "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/随风老师店铺答疑诊断.md",
       "id": null,
       "name": "随风老师店铺答疑诊断"
+    },
+    {
+      "filename": "618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38580.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38580.md",
+      "id": 38580,
+      "name": "618冲刺-服饰/运动户外/珠宝饰品人群流转布局！",
+      "lector": "万堂书院小二",
+      "tags": "万相台无界版, 新手商家, 官方精品",
+      "gmt_create": "2026-06-11 16:02:18",
+      "start_time": "2026-06-12 09:49:49",
+      "end_time": "2026-06-12 18:06:43",
+      "pv_count": 6228,
+      "fetched_at": "2026-06-13 09:09:21",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38580"
+    },
+    {
+      "filename": "618冲刺-食品_健康_宠企_玩美生活爆品破峰_38582.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活爆品破峰_38582.md",
+      "id": 38582,
+      "name": "618冲刺-食品/健康/宠企/玩美生活爆品破峰",
+      "lector": "万堂书院小二",
+      "tags": "食品健康, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-11 17:58:34",
+      "start_time": "2026-06-15 10:00:00",
+      "end_time": "2026-06-15 18:00:00",
+      "pv_count": 31,
+      "fetched_at": "2026-06-13 09:09:21",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38582"
+    },
+    {
+      "filename": "618爆品复购_38585.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618爆品复购_38585.md",
+      "id": 38585,
+      "name": "618爆品复购",
+      "lector": "十二",
+      "tags": "万相台无界版, 新手商家, 官方精品",
+      "gmt_create": "2026-06-12 11:58:01",
+      "start_time": "2026-06-15 13:00:00",
+      "end_time": "2026-06-15 15:30:00",
+      "pv_count": 7,
+      "fetched_at": "2026-06-13 09:09:21",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38585"
+    },
+    {
+      "filename": "618冲刺大服饰行业流量抢夺布局_38586.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺大服饰行业流量抢夺布局_38586.md",
+      "id": 38586,
+      "name": "618冲刺大服饰行业流量抢夺布局",
+      "lector": "东子",
+      "tags": "成长进阶, 官方精品",
+      "gmt_create": "2026-06-12 14:57:43",
+      "start_time": "2026-06-15 10:00:00",
+      "end_time": "2026-06-15 12:30:00",
+      "pv_count": 16,
+      "fetched_at": "2026-06-13 09:09:21",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38586"
     }
   ],
   "daily_log": [
+    {
+      "date": "2026-06-13",
+      "action": "fetch_new_courses",
+      "summary": "从万堂书院获取最新课程列表，发现 4 个新增课程",
+      "new_course_ids": [
+        38580,
+        38582,
+        38585,
+        38586
+      ],
+      "new_courses": [
+        {
+          "filename": "618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38580.md",
+          "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-服饰_运动户外_珠宝饰品人群流转布局！_38580.md",
+          "id": 38580,
+          "name": "618冲刺-服饰/运动户外/珠宝饰品人群流转布局！",
+          "lector": "万堂书院小二",
+          "tags": "万相台无界版, 新手商家, 官方精品",
+          "gmt_create": "2026-06-11 16:02:18",
+          "start_time": "2026-06-12 09:49:49",
+          "end_time": "2026-06-12 18:06:43",
+          "pv_count": 6228,
+          "fetched_at": "2026-06-13 09:09:21",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38580"
+        },
+        {
+          "filename": "618冲刺-食品_健康_宠企_玩美生活爆品破峰_38582.md",
+          "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺-食品_健康_宠企_玩美生活爆品破峰_38582.md",
+          "id": 38582,
+          "name": "618冲刺-食品/健康/宠企/玩美生活爆品破峰",
+          "lector": "万堂书院小二",
+          "tags": "食品健康, 成长进阶, 官方精品",
+          "gmt_create": "2026-06-11 17:58:34",
+          "start_time": "2026-06-15 10:00:00",
+          "end_time": "2026-06-15 18:00:00",
+          "pv_count": 31,
+          "fetched_at": "2026-06-13 09:09:21",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38582"
+        },
+        {
+          "filename": "618爆品复购_38585.md",
+          "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618爆品复购_38585.md",
+          "id": 38585,
+          "name": "618爆品复购",
+          "lector": "十二",
+          "tags": "万相台无界版, 新手商家, 官方精品",
+          "gmt_create": "2026-06-12 11:58:01",
+          "start_time": "2026-06-15 13:00:00",
+          "end_time": "2026-06-15 15:30:00",
+          "pv_count": 7,
+          "fetched_at": "2026-06-13 09:09:21",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38585"
+        },
+        {
+          "filename": "618冲刺大服饰行业流量抢夺布局_38586.md",
+          "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/618冲刺大服饰行业流量抢夺布局_38586.md",
+          "id": 38586,
+          "name": "618冲刺大服饰行业流量抢夺布局",
+          "lector": "东子",
+          "tags": "成长进阶, 官方精品",
+          "gmt_create": "2026-06-12 14:57:43",
+          "start_time": "2026-06-15 10:00:00",
+          "end_time": "2026-06-15 12:30:00",
+          "pv_count": 16,
+          "fetched_at": "2026-06-13 09:09:21",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38586"
+        }
+      ],
+      "total_articles_after": 103,
+      "fetched_at": "2026-06-13 09:09:21"
+    },
     {
       "date": "2026-06-12",
       "action": "fetch_new_courses",
