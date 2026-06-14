@@ -2,8 +2,8 @@
   "version": "2.0",
   "platform": "万堂书院",
   "base_url": "https://shuyuan.taobao.com",
-  "last_updated": "2026-06-13 09:09:21",
-  "total_articles": 103,
+  "last_updated": "2026-06-14 09:06",
+  "total_articles": 104,
   "articles": [
     {
       "filename": "南瓜老师连麦诊断_38456.md",
@@ -957,9 +957,49 @@
       "pv_count": 16,
       "fetched_at": "2026-06-13 09:09:21",
       "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?courseSource=onlyCourse&id=38586"
+    },
+    {
+      "filename": "吉聪老师连麦诊断_38589.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/吉聪老师连麦诊断_38589.md",
+      "id": 38589,
+      "name": "吉聪老师连麦诊断",
+      "lector": "吉聪",
+      "tags": "万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-13 12:16:51",
+      "start_time": "2026-06-13 15:01:10",
+      "end_time": "2026-06-13 15:00:00",
+      "pv_count": 311,
+      "fetched_at": "2026-06-14 09:06",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38589&platform="
     }
   ],
   "daily_log": [
+    {
+      "date": "2026-06-14",
+      "action": "fetch_new_courses",
+      "summary": "从万堂书院获取最新课程列表，发现 1 个新增课程",
+      "new_course_ids": [
+        38589
+      ],
+      "new_courses": [
+        {
+          "filename": "吉聪老师连麦诊断_38589.md",
+          "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/吉聪老师连麦诊断_38589.md",
+          "id": 38589,
+          "name": "吉聪老师连麦诊断",
+          "lector": "吉聪",
+          "tags": "万相台无界版, 成长进阶, 官方精品",
+          "gmt_create": "2026-06-13 12:16:51",
+          "start_time": "2026-06-13 15:01:10",
+          "end_time": "2026-06-13 15:00:00",
+          "pv_count": 311,
+          "fetched_at": "2026-06-14 09:06",
+          "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38589&platform="
+        }
+      ],
+      "total_articles_after": 104,
+      "fetched_at": "2026-06-14 09:06"
+    },
     {
       "date": "2026-06-13",
       "action": "fetch_new_courses",
