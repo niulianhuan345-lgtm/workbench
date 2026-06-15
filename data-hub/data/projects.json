@@ -3841,6 +3841,17 @@
         "type": "folder",
         "children": [
           {
+            "name": "店铺投放日报",
+            "type": "folder",
+            "children": [
+              {
+                "name": "SKILL.md",
+                "type": "doc",
+                "size": "13KB"
+              }
+            ]
+          },
+          {
             "name": "日报skill生成器",
             "type": "folder",
             "children": [
