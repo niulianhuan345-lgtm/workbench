@@ -1,13 +1,13 @@
 [
   {
     "name": "deepseek-v4-pro",
-    "calls": 437,
-    "input_tokens": 4116013,
-    "output_tokens": 923055,
-    "cache_read_tokens": 129488384,
+    "calls": 454,
+    "input_tokens": 4203934,
+    "output_tokens": 953106,
+    "cache_read_tokens": 131484672,
     "reasoning_tokens": 0,
-    "tokens": 134527452,
-    "cost": 22.2062
+    "tokens": 136641712,
+    "cost": 22.7255
   },
   {
     "name": "gpt-5.5",
