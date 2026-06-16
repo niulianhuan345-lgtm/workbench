@@ -3845,9 +3845,25 @@
             "type": "folder",
             "children": [
               {
+                "name": "references",
+                "type": "folder",
+                "children": [
+                  {
+                    "name": "MCP工具清单.md",
+                    "type": "doc",
+                    "size": "666KB"
+                  },
+                  {
+                    "name": "MCP工具清单.xlsx",
+                    "type": "code",
+                    "size": "17KB"
+                  }
+                ]
+              },
+              {
                 "name": "SKILL.md",
                 "type": "doc",
-                "size": "9KB"
+                "size": "26KB"
               }
             ]
           },
