@@ -1,2 +1,2 @@
 :HL["/workbench/smart-diagnosis/_next/static/chunks/0-zyrq6-7-blq.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"okaEp7ZWRR65fWvTiHiYP"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"o29J6vHhGP59yExbQ3y7I"}
