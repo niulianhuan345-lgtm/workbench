@@ -543,6 +543,116 @@
   .mono    { font-variant-numeric: tabular-nums; }
   .right   { text-align: right; }
 
+  /* ══════════════ 异常检测 ══════════════ */
+  .anomaly-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .anomaly-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: 22px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow .2s, transform .2s;
+  }
+
+  .anomaly-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+
+  .anomaly-card.warning {
+    border-left: 3px solid var(--red);
+    background: linear-gradient(135deg, #fff 0%, #fef2f2 100%);
+  }
+
+  .anomaly-card.normal {
+    border-left: 3px solid var(--green);
+    background: linear-gradient(135deg, #fff 0%, #ecfdf5 100%);
+  }
+
+  .anomaly-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .anomaly-store-name {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
+
+  .anomaly-status {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 100px;
+    letter-spacing: 0.4px;
+  }
+
+  .anomaly-status.danger  { background: #fef2f2; color: #dc2626; }
+  .anomaly-status.caution { background: #fffbeb; color: #d97706; }
+  .anomaly-status.ok      { background: #ecfdf5; color: #059669; }
+
+  .anomaly-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .anomaly-metric-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .anomaly-metric-label {
+    font-size: 12px;
+    color: var(--t3);
+    font-weight: 500;
+  }
+
+  .anomaly-metric-val {
+    font-size: 14px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .anomaly-metric-val.down { color: var(--red); }
+  .anomaly-metric-val.up   { color: var(--green); }
+  .anomaly-metric-val.neutral { color: var(--t1); }
+
+  .anomaly-arrow {
+    font-size: 11px;
+    margin-left: 4px;
+  }
+
+  .anomaly-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 10px 0;
+  }
+
+  .anomaly-msg {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .anomaly-msg .alert-icon {
+    font-size: 14px;
+  }
+
   /* ══════════════ Footer ══════════════ */
   .footer-bar {
     margin-top: 40px;
@@ -580,7 +690,7 @@
 
   <div class="sidebar-section">
     <div class="sidebar-label">监控</div>
-    <div class="sidebar-item active">
+    <div class="sidebar-item">
       <span class="si-icon">◉</span> 大盘总览
       <span class="sidebar-badge">4</span>
     </div>
@@ -601,6 +711,10 @@
     </div>
     <div class="sidebar-item">
       <span class="si-icon">◎</span> 诊断详情
+    </div>
+    <div class="sidebar-item active">
+      <span class="si-icon">⚠</span> 异常检测
+      <span class="sidebar-badge">1</span>
     </div>
   </div>
 
@@ -829,6 +943,123 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  </section>
+
+  <!-- ═══ 异常检测 ═══ -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-dot" style="background:var(--red);"></span>
+      <span class="section-title">店铺数据异常检测</span>
+      <span class="section-count">ROI 下降预警</span>
+    </div>
+
+    <div class="anomaly-grid">
+
+      <!-- 凡奢时光 -->
+      <div class="anomaly-card warning">
+        <div class="anomaly-card-header">
+          <span class="anomaly-store-name">凡奢时光家居</span>
+          <span class="anomaly-status danger">⚠ 预警</span>
+        </div>
+        <div class="anomaly-metrics">
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">近 7 日 ROI</span>
+            <span class="anomaly-metric-val down">2.35 <span class="anomaly-arrow">↓</span></span>
+          </div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">前 7 日 ROI</span>
+            <span class="anomaly-metric-val neutral">3.82</span>
+          </div>
+          <div class="anomaly-divider"></div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">ROI 变动</span>
+            <span class="anomaly-metric-val down">-38.5%</span>
+          </div>
+          <div class="anomaly-msg">
+            <span class="alert-icon">🔴</span> ROI 连续 5 日下滑，低于阈值 3.0
+          </div>
+        </div>
+      </div>
+
+      <!-- 欣雅图 -->
+      <div class="anomaly-card normal">
+        <div class="anomaly-card-header">
+          <span class="anomaly-store-name">欣雅图旗舰店</span>
+          <span class="anomaly-status ok">✓ 正常</span>
+        </div>
+        <div class="anomaly-metrics">
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">近 7 日 ROI</span>
+            <span class="anomaly-metric-val up">4.12 <span class="anomaly-arrow">↑</span></span>
+          </div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">前 7 日 ROI</span>
+            <span class="anomaly-metric-val neutral">3.89</span>
+          </div>
+          <div class="anomaly-divider"></div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">ROI 变动</span>
+            <span class="anomaly-metric-val up">+5.9%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- QCC -->
+      <div class="anomaly-card normal">
+        <div class="anomaly-card-header">
+          <span class="anomaly-store-name">QCC 旗舰店</span>
+          <span class="anomaly-status ok">✓ 正常</span>
+        </div>
+        <div class="anomaly-metrics">
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">近 7 日 ROI</span>
+            <span class="anomaly-metric-val neutral">2.78</span>
+          </div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">前 7 日 ROI</span>
+            <span class="anomaly-metric-val neutral">2.74</span>
+          </div>
+          <div class="anomaly-divider"></div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">ROI 变动</span>
+            <span class="anomaly-metric-val up">+1.5%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 满堂红 -->
+      <div class="anomaly-card normal">
+        <div class="anomaly-card-header">
+          <span class="anomaly-store-name">满堂红旗舰店</span>
+          <span class="anomaly-status caution">● 关注</span>
+        </div>
+        <div class="anomaly-metrics">
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">近 7 日 ROI</span>
+            <span class="anomaly-metric-val down">3.12 <span class="anomaly-arrow">↓</span></span>
+          </div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">前 7 日 ROI</span>
+            <span class="anomaly-metric-val neutral">3.65</span>
+          </div>
+          <div class="anomaly-divider"></div>
+          <div class="anomaly-metric-row">
+            <span class="anomaly-metric-label">ROI 变动</span>
+            <span class="anomaly-metric-val down">-14.5%</span>
+          </div>
+          <div class="anomaly-msg">
+            <span class="alert-icon">🟡</span> ROI 小幅下滑，持续关注
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 16px; display: flex; gap: 16px; font-size: 12px; color: var(--t3);">
+      <span>🔴 预警：ROI 环比跌幅 &gt; 30% 且低于阈值</span>
+      <span>🟡 关注：ROI 环比跌幅 10%~30%</span>
+      <span>🟢 正常：ROI 稳定或上涨</span>
     </div>
   </section>
 
