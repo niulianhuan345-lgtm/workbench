@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-19T23:29:28",
+  "updated": "2026-06-20T00:03:11",
   "cron_jobs": [
     {
       "id": "ed0bebc655dc",
       "name": "每日平台知识自动学习",
       "status": "active",
       "schedule": "0 18 * * *",
-      "next_relative": "18小时后",
-      "last_relative": "4小时前",
+      "next_relative": "17小时后",
+      "last_relative": "5小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -30,8 +30,8 @@
       "name": "天猫平台知识学习",
       "status": "active",
       "schedule": "0 9 * * *",
-      "next_relative": "9小时后",
-      "last_relative": "13小时前",
+      "next_relative": "8小时后",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -42,8 +42,8 @@
       "name": "京东平台知识学习",
       "status": "active",
       "schedule": "10 9 * * *",
-      "next_relative": "10小时后",
-      "last_relative": "13小时前",
+      "next_relative": "9小时后",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -54,8 +54,8 @@
       "name": "小红书平台知识学习",
       "status": "active",
       "schedule": "20 9 * * *",
-      "next_relative": "10小时后",
-      "last_relative": "13小时前",
+      "next_relative": "9小时后",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -66,8 +66,8 @@
       "name": "唯品会平台知识学习",
       "status": "active",
       "schedule": "30 9 * * *",
-      "next_relative": "10小时后",
-      "last_relative": "13小时前",
+      "next_relative": "9小时后",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -78,8 +78,8 @@
       "name": "每日骑行天气提醒",
       "status": "active",
       "schedule": "0 7 * * *",
-      "next_relative": "7小时后",
-      "last_relative": "15小时前",
+      "next_relative": "6小时后",
+      "last_relative": "16小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -115,7 +115,7 @@
       "status": "active",
       "schedule": "20 9 * * 1-5",
       "next_relative": "2天后",
-      "last_relative": "13小时前",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -123,18 +123,6 @@
     }
   ],
   "tokens": [
-    {
-      "date": "2026-06-05",
-      "model": "deepseek-v4-pro",
-      "sessions": 1,
-      "input_tokens": 59926,
-      "output_tokens": 16329,
-      "cache_read_tokens": 1111296,
-      "reasoning_tokens": 0,
-      "tokens": 1187551,
-      "cost": 0.3212,
-      "task": "deepseek-v4-pro · 1次"
-    },
     {
       "date": "2026-06-06",
       "model": "deepseek-v4-pro",
@@ -182,6 +170,18 @@
       "tokens": 56237854,
       "cost": 5.7258,
       "task": "deepseek-v4-pro · 4次"
+    },
+    {
+      "date": "2026-06-10",
+      "model": "deepseek-v4-pro",
+      "sessions": 15,
+      "input_tokens": 2195615,
+      "output_tokens": 298849,
+      "cache_read_tokens": 59614720,
+      "reasoning_tokens": 0,
+      "tokens": 62109184,
+      "cost": 10.3762,
+      "task": "deepseek-v4-pro · 15次"
     }
   ]
 }
