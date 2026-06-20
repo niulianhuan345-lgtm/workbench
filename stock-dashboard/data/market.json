@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "updated": "2026-06-20 08:22:51",
-=======
-  "updated": "2026-06-20 07:54:31",
->>>>>>> 8b9fdc2cf (fix: resolve merge conflict in market.json 07:55)
+  "updated": "2026-06-20 08:26:24",
   "indices": [
     {
       "name": "上证指数",
