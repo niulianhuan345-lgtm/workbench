@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-20T23:43:37",
+  "updated": "2026-06-21T00:15:24",
   "cron_jobs": [
     {
       "id": "ed0bebc655dc",
       "name": "每日平台知识自动学习",
       "status": "active",
       "schedule": "0 18 * * *",
-      "next_relative": "18小时后",
+      "next_relative": "17小时后",
       "last_relative": "5小时前",
       "last_status": "ok",
       "last_error": "",
@@ -30,7 +30,7 @@
       "name": "天猫平台知识学习",
       "status": "active",
       "schedule": "0 9 * * *",
-      "next_relative": "9小时后",
+      "next_relative": "8小时后",
       "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
@@ -67,7 +67,7 @@
       "status": "active",
       "schedule": "30 9 * * *",
       "next_relative": "9小时后",
-      "last_relative": "13小时前",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -78,7 +78,7 @@
       "name": "每日骑行天气提醒",
       "status": "active",
       "schedule": "0 7 * * *",
-      "next_relative": "7小时后",
+      "next_relative": "6小时后",
       "last_relative": "16小时前",
       "last_status": "ok",
       "last_error": "",
@@ -91,7 +91,7 @@
       "status": "active",
       "schedule": "*/30 * * * *",
       "next_relative": "29分钟后",
-      "last_relative": "25分钟前",
+      "last_relative": "27分钟前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -123,18 +123,6 @@
     }
   ],
   "tokens": [
-    {
-      "date": "2026-06-06",
-      "model": "deepseek-v4-pro",
-      "sessions": 1,
-      "input_tokens": 65230,
-      "output_tokens": 11180,
-      "cache_read_tokens": 1402496,
-      "reasoning_tokens": 0,
-      "tokens": 1478906,
-      "cost": 0.3131,
-      "task": "deepseek-v4-pro · 1次"
-    },
     {
       "date": "2026-06-07",
       "model": "deepseek-v4-pro",
@@ -182,6 +170,18 @@
       "tokens": 62109184,
       "cost": 10.3762,
       "task": "deepseek-v4-pro · 15次"
+    },
+    {
+      "date": "2026-06-11",
+      "model": "deepseek-v4-pro",
+      "sessions": 7,
+      "input_tokens": 1899589,
+      "output_tokens": 443458,
+      "cache_read_tokens": 130931072,
+      "reasoning_tokens": 0,
+      "tokens": 133274119,
+      "cost": 12.229,
+      "task": "deepseek-v4-pro · 7次"
     }
   ]
 }
