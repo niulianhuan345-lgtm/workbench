@@ -204,6 +204,12 @@
     "status": "active"
   },
   {
+    "name": "hermes-gateway-ops",
+    "category": "devops",
+    "desc": "Hermes Gateway 运维：多网关故障诊断、平台连接修复、API Server 配置、系统负载排查。触发词：Gateway 挂了、飞书/钉钉不回消息、机器人没反应、API Server 开启、多 Profile 管理。",
+    "status": "active"
+  },
+  {
     "name": "hermes-gateway-troubleshooting",
     "category": "devops",
     "desc": "Diagnose and fix Hermes Gateway connectivity issues — Feishu/DingTalk bots not responding, platform connection failures, dependency problems, and system resource starvation. Use when user reports bots can't communicate, gateway is silent, or platforms fail to connect.",
