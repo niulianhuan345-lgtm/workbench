@@ -536,7 +536,7 @@
   {
     "name": "hermes-agent-skill-authoring",
     "category": "software-development",
-    "desc": "Author in-repo SKILL.md: frontmatter, validator, structure.",
+    "desc": "Author in-repo SKILL.md: frontmatter, validator, structure, and writing-quality principles.",
     "status": "active"
   },
   {
@@ -548,7 +548,7 @@
   {
     "name": "plan",
     "category": "software-development",
-    "desc": "Plan mode: write markdown plan to .hermes/plans/, no exec.",
+    "desc": "Plan mode: write an actionable markdown plan to .hermes/plans/, no execution. Bite-sized tasks, exact paths, complete code.",
     "status": "active"
   },
   {
@@ -561,6 +561,12 @@
     "name": "requesting-code-review",
     "category": "software-development",
     "desc": "Pre-commit review: security scan, quality gates, auto-fix.",
+    "status": "active"
+  },
+  {
+    "name": "simplify-code",
+    "category": "software-development",
+    "desc": "Parallel 3-agent cleanup of recent code changes.",
     "status": "active"
   },
   {
