@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-22T23:40:20",
+  "updated": "2026-06-23T00:11:28",
   "cron_jobs": [
     {
       "id": "ed0bebc655dc",
       "name": "每日平台知识自动学习",
       "status": "active",
       "schedule": "0 18 * * *",
-      "next_relative": "18小时后",
+      "next_relative": "17小时后",
       "last_relative": "5小时前",
       "last_status": "ok",
       "last_error": "",
@@ -30,7 +30,7 @@
       "name": "天猫平台知识学习",
       "status": "active",
       "schedule": "0 9 * * *",
-      "next_relative": "9小时后",
+      "next_relative": "8小时后",
       "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
@@ -43,7 +43,7 @@
       "status": "active",
       "schedule": "10 9 * * *",
       "next_relative": "9小时后",
-      "last_relative": "13小时前",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -55,7 +55,7 @@
       "status": "active",
       "schedule": "20 9 * * *",
       "next_relative": "9小时后",
-      "last_relative": "13小时前",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -67,7 +67,7 @@
       "status": "active",
       "schedule": "30 9 * * *",
       "next_relative": "9小时后",
-      "last_relative": "13小时前",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -78,7 +78,7 @@
       "name": "每日骑行天气提醒",
       "status": "active",
       "schedule": "0 7 * * *",
-      "next_relative": "7小时后",
+      "next_relative": "6小时后",
       "last_relative": "16小时前",
       "last_status": "ok",
       "last_error": "",
@@ -91,7 +91,7 @@
       "status": "active",
       "schedule": "*/30 * * * *",
       "next_relative": "29分钟后",
-      "last_relative": "27分钟前",
+      "last_relative": "26分钟前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -115,7 +115,7 @@
       "status": "active",
       "schedule": "20 9 * * 1-5",
       "next_relative": "9小时后",
-      "last_relative": "13小时前",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -123,18 +123,6 @@
     }
   ],
   "tokens": [
-    {
-      "date": "2026-06-08",
-      "model": "deepseek-v4-pro",
-      "sessions": 4,
-      "input_tokens": 564422,
-      "output_tokens": 127511,
-      "cache_read_tokens": 25702784,
-      "reasoning_tokens": 0,
-      "tokens": 26394717,
-      "cost": 3.2598,
-      "task": "deepseek-v4-pro · 4次"
-    },
     {
       "date": "2026-06-09",
       "model": "deepseek-v4-pro",
@@ -182,6 +170,18 @@
       "tokens": 0,
       "cost": 0.0,
       "task": "unknown · 1次"
+    },
+    {
+      "date": "2026-06-12",
+      "model": "deepseek-v4-pro",
+      "sessions": 5,
+      "input_tokens": 941121,
+      "output_tokens": 190540,
+      "cache_read_tokens": 52478848,
+      "reasoning_tokens": 0,
+      "tokens": 53610509,
+      "cost": 5.5491,
+      "task": "deepseek-v4-pro · 5次"
     }
   ]
 }
