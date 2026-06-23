@@ -180,6 +180,12 @@
     "status": "active"
   },
   {
+    "name": "ad-regression-validation",
+    "category": "data-science",
+    "desc": "广告投放回归验证：用历史数据训练OLS回归，用加投期实际数据验证增量预测准确性。触发词：回归验证、增量分析、每元订单、beta兑现、OLS回归、广告增量预测、加投效果评估。",
+    "status": "active"
+  },
+  {
     "name": "jupyter-live-kernel",
     "category": "data-science",
     "desc": "Iterative Python via live Jupyter kernel (hamelnb).",
