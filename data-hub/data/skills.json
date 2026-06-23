@@ -204,6 +204,12 @@
     "status": "active"
   },
   {
+    "name": "regression-investment-validation",
+    "category": "data-science",
+    "desc": "广告投放回归分析 + 加投验证。触发词：回归分析、增量验证、每元增量、OLS回归、加投效果、beta验证、投放效率验证。适用场景：门店级/门店×时段级 OLS 回归建模后用后续加投数据验证预测效果。",
+    "status": "active"
+  },
+  {
     "name": "ruixing-reporting",
     "category": "data-science",
     "desc": "瑞幸广告投放日报/周报自动生成。从 Metabase Dashboard 29 拉取数据，经数据完整性检查后按固定格式输出。触发词：更新日报、更新周报、瑞幸日报、数据检查、Metabase 拉数据、小时报。",
