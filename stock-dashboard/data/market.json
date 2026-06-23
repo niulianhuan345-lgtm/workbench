@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 15:19:53",
+  "updated": "2026-06-23 15:23:51",
   "indices": [
     {
       "name": "上证指数",
@@ -616,7 +616,7 @@
       "change_pct": -5.23,
       "reasons": [
         "暴跌5%",
-        "换手率300.0%"
+        "换手率1200.0%"
       ],
       "severity": "medium"
     },
@@ -646,7 +646,7 @@
       "price": 392.51,
       "change_pct": -4.03,
       "reasons": [
-        "换手率1900.0%"
+        "换手率2000.0%"
       ],
       "severity": "medium"
     },
@@ -691,22 +691,22 @@
       "severity": "medium"
     },
     {
-      "code": "688041",
-      "name": "XD海光信",
-      "price": 317.0,
-      "change_pct": -3.1,
-      "reasons": [
-        "换手率1700.0%"
-      ],
-      "severity": "medium"
-    },
-    {
       "code": "601225",
       "name": "陕西煤业",
       "price": 22.58,
       "change_pct": -3.09,
       "reasons": [
         "换手率109307.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "688256",
+      "name": "寒武纪",
+      "price": 1413.0,
+      "change_pct": -3.02,
+      "reasons": [
+        "换手率583.0%"
       ],
       "severity": "medium"
     }
