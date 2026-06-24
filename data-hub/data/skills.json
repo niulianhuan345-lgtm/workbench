@@ -176,7 +176,7 @@
   {
     "name": "ad-incrementality-regression",
     "category": "data-science",
-    "desc": "广告增量回归分析：逐门店/逐时段 OLS 回归 + 交叉验证。触发词：回归分析、增量系数、广告花费效率、OLS回归、加投验证、增量排名、beta系数。",
+    "desc": "广告增量回归分析：逐门店/逐时段 OLS 回归、固定效应 FE、城市级 FE β、三层漏斗预算分配（FE大区→FE城市→OLS门店）、交叉验证。区分 OLS（低估/高估）和 FE（无偏）的适用场景。触发词：回归分析、增量系数、广告花费效率、OLS回归、固定效应、FE、加投验证、增量排名、beta系数、三层分配、门店得分、预算分配、城市FE、√R²。",
     "status": "active"
   },
   {
