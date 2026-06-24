@@ -1,17 +1,7 @@
 {
-  "updated": "2026-06-25T07:13:16",
+  "updated": "2026-06-25T07:46:41",
   "file": "门店腾挪分级结果_v3_0526_1552.xlsx",
-  "summary": {
-    "grade_distribution": {
-      "B": 1700,
-      "C": 1415,
-      "A": 1128,
-      "D": 848,
-      "S": 576,
-      "数据不足": 76
-    },
-    "total_stores": 5743,
-    "费比": 87.3
-  },
-  "top_stores": []
+  "summary": {},
+  "top_stores": [],
+  "error": "`Import openpyxl` failed.  Use pip or conda to install the openpyxl package."
 }
