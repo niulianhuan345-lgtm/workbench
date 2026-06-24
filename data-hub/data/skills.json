@@ -318,6 +318,12 @@
     "status": "active"
   },
   {
+    "name": "lark-cross-tenant",
+    "category": "lark-apps",
+    "desc": "飞书跨租户身份选择：当 Hermes bot 在一个企业群聊中，但 lark-cli 的 user 身份在另一个企业时，如何正确选择身份访问群聊中的文档/资源。触发词：群聊文档打不开、跨租户、131005、232010、认养一头牛、bot vs user 权限。",
+    "status": "active"
+  },
+  {
     "name": "native-mcp",
     "category": "mcp",
     "desc": "MCP client: connect servers, register tools (stdio/HTTP).",
