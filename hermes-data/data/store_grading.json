@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-24T10:49:46",
+  "updated": "2026-06-24T11:21:47",
   "file": "门店腾挪分级结果_v3_0526_1552.xlsx",
   "summary": {},
   "top_stores": [],
-  "error": "No module named 'pandas'"
+  "error": "`Import openpyxl` failed.  Use pip or conda to install the openpyxl package."
 }
