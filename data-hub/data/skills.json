@@ -552,6 +552,12 @@
     "status": "active"
   },
   {
+    "name": "sports-betting",
+    "category": "research",
+    "desc": "体育竞彩/足彩知识：竞彩足球玩法规则、赔率盘口、世界杯投注。触发词：足彩、竞彩、世界杯、赔率、盘口、让球、串关、SP值、胜平负。",
+    "status": "active"
+  },
+  {
     "name": "openhue",
     "category": "smart-home",
     "desc": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
