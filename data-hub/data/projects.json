@@ -3837,6 +3837,52 @@
         ]
       },
       {
+        "name": "POC海信需求",
+        "type": "folder",
+        "children": [
+          {
+            "name": "AIONE_POC_完整设计方案.md",
+            "type": "doc",
+            "size": "25KB"
+          },
+          {
+            "name": "AIONE_POC_完整设计方案_v2.md",
+            "type": "doc",
+            "size": "37KB"
+          },
+          {
+            "name": "AIONE_POC_实现方案.md",
+            "type": "doc",
+            "size": "20KB"
+          },
+          {
+            "name": "AIONE_分析逻辑设计_Q1-4-6-8.md",
+            "type": "doc",
+            "size": "34KB"
+          },
+          {
+            "name": "AIONE_异常检测知识库.md",
+            "type": "doc",
+            "size": "14KB"
+          },
+          {
+            "name": "AIONE_通用问数引擎设计方案.md",
+            "type": "doc",
+            "size": "12KB"
+          },
+          {
+            "name": "CHANGELOG.md",
+            "type": "doc",
+            "size": "4KB"
+          },
+          {
+            "name": "Q1_设计方案.md",
+            "type": "doc",
+            "size": "2KB"
+          }
+        ]
+      },
+      {
         "name": "skills",
         "type": "folder",
         "children": [
