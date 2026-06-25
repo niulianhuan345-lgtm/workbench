@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-25 15:00:06",
+  "updated": "2026-06-25 15:04:06",
   "indices": [
     {
       "name": "上证指数",
-      "current": 4123.24,
-      "change": 12.42,
-      "change_pct": 0.3,
+      "current": 4120.28,
+      "change": 9.47,
+      "change_pct": 0.23,
       "open": 4103.48,
       "high": 4133.1,
       "low": 4093.01,
-      "amount": 16067.9
+      "amount": 16190.0
     },
     {
       "name": "深证成指",
@@ -33,13 +33,13 @@
     },
     {
       "name": "科创50",
-      "current": 2067.75,
-      "change": 78.32,
-      "change_pct": 3.94,
+      "current": 2066.33,
+      "change": 76.91,
+      "change_pct": 3.87,
       "open": 2004.77,
       "high": 2076.88,
       "low": 2000.8,
-      "amount": 2191.3
+      "amount": 2205.0
     }
   ],
   "leaders": [
