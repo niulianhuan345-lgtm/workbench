@@ -2,9 +2,93 @@
   "version": "2.0",
   "platform": "万堂书院",
   "base_url": "https://shuyuan.taobao.com",
-  "last_updated": "2026-06-25 09:47",
-  "total_articles": 163,
+  "last_updated": "2026-06-26 09:38",
+  "total_articles": 169,
   "articles": [
+    {
+      "filename": "暑期正当时-夏日爆品布局_38682.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/暑期正当时-夏日爆品布局_38682.md",
+      "id": 38682,
+      "name": "暑期正当时-夏日爆品布局",
+      "lector": "米线",
+      "tags": "其他大促, 人群拉新, 爆品营销, 万相台无界版, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-25 10:48:15",
+      "start_time": "2026-06-26 10:00:00",
+      "end_time": "2026-06-26 12:30:00",
+      "pv_count": 14,
+      "fetched_at": "2026-06-26 09:38",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38682&platform="
+    },
+    {
+      "filename": "夏日全站推广实操_38681.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/夏日全站推广实操_38681.md",
+      "id": 38681,
+      "name": "夏日全站推广实操",
+      "lector": "十二",
+      "tags": "万相台无界版, 新手商家, 官方精品",
+      "gmt_create": "2026-06-25 10:41:40",
+      "start_time": "2026-06-29 13:00:00",
+      "end_time": "2026-06-29 15:30:00",
+      "pv_count": 15,
+      "fetched_at": "2026-06-26 09:38",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38681&platform="
+    },
+    {
+      "filename": "夏日新品布局_38680.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/夏日新品布局_38680.md",
+      "id": 38680,
+      "name": "夏日新品布局",
+      "lector": "十二",
+      "tags": "万相台无界版, 新手商家, 官方精品",
+      "gmt_create": "2026-06-25 10:41:27",
+      "start_time": "2026-06-26 15:30:00",
+      "end_time": "2026-06-26 18:00:00",
+      "pv_count": 12,
+      "fetched_at": "2026-06-26 09:38",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38680&platform="
+    },
+    {
+      "filename": "食品_健康_宠企_数字生活-暑期分货盘策略_38678.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/食品_健康_宠企_数字生活-暑期分货盘策略_38678.md",
+      "id": 38678,
+      "name": "食品/健康/宠企/数字生活-暑期分货盘策略",
+      "lector": "万堂书院小二",
+      "tags": "食品健康, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-25 09:56:27",
+      "start_time": "2026-06-26 10:00:00",
+      "end_time": "2026-06-26 18:00:00",
+      "pv_count": 34,
+      "fetched_at": "2026-06-26 09:38",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38678&platform="
+    },
+    {
+      "filename": "夏日关键词实操_38677.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/夏日关键词实操_38677.md",
+      "id": 38677,
+      "name": "夏日关键词实操",
+      "lector": "随风",
+      "tags": "服饰配饰, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-25 09:51:47",
+      "start_time": "2026-06-29 10:00:00",
+      "end_time": "2026-06-29 12:30:00",
+      "pv_count": 9,
+      "fetched_at": "2026-06-26 09:38",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38677&platform="
+    },
+    {
+      "filename": "夏日潜力品布局_38676.md",
+      "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/夏日潜力品布局_38676.md",
+      "id": 38676,
+      "name": "夏日潜力品布局",
+      "lector": "随风",
+      "tags": "服饰配饰, 成长进阶, 官方精品",
+      "gmt_create": "2026-06-25 09:48:54",
+      "start_time": "2026-06-26 13:00:00",
+      "end_time": "2026-06-26 15:30:00",
+      "pv_count": 10,
+      "fetched_at": "2026-06-26 09:38",
+      "course_url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38676&platform="
+    },
     {
       "filename": "平销期流量低谷破局策略_38668.md",
       "filepath": "/Users/apple/cursor123/平台知识/万相台无界/文章/平销期流量低谷破局策略_38668.md",
@@ -1855,6 +1939,28 @@
     }
   ],
   "daily_log": [
+    {
+      "date": "2026-06-26",
+      "time": "2026-06-26 09:38",
+      "action": "fetch_new_courses",
+      "new_count": 6,
+      "new_ids": [
+        38682,
+        38681,
+        38680,
+        38678,
+        38677,
+        38676
+      ],
+      "new_names": [
+        "暑期正当时-夏日爆品布局",
+        "夏日全站推广实操",
+        "夏日新品布局",
+        "食品/健康/宠企/数字生活-暑期分货盘策略",
+        "夏日关键词实操",
+        "夏日潜力品布局"
+      ]
+    },
     {
       "date": "2026-06-25",
       "action": "fetch_new_courses",
