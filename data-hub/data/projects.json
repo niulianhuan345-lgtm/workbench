@@ -3944,6 +3944,33 @@
                 "size": "6KB"
               }
             ]
+          },
+          {
+            "name": "通用分析引擎",
+            "type": "folder",
+            "children": [
+              {
+                "name": "references",
+                "type": "folder",
+                "children": [
+                  {
+                    "name": "dimensions.yaml",
+                    "type": "code",
+                    "size": "6KB"
+                  }
+                ]
+              },
+              {
+                "name": "README.md",
+                "type": "doc",
+                "size": "1KB"
+              },
+              {
+                "name": "SKILL.md",
+                "type": "doc",
+                "size": "4KB"
+              }
+            ]
           }
         ]
       },
