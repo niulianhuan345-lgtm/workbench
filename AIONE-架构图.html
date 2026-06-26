@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIONE 系统架构图</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+    .container { max-width: 1300px; margin: 0 auto; }
+    .header { margin-bottom: 2rem; }
+    .header-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+    .pulse-dot { width: 12px; height: 12px; background: #22d3ee; border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; }
+    .subtitle { color: #94a3b8; font-size: 0.875rem; margin-left: 1.75rem; }
+    .section-title { font-size: 1.1rem; font-weight: 600; color: #e2e8f0; margin: 2rem 0 1rem; padding-left: 0.5rem; border-left: 3px solid #fbbf24; }
+    .diagram-container {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 1rem;
+      border: 1px solid #1e293b;
+      padding: 1.5rem;
+      overflow-x: auto;
+      margin-bottom: 2rem;
+    }
+    svg { width: 100%; min-width: 1000px; display: block; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .card {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0.75rem;
+      border: 1px solid #1e293b;
+      padding: 1.25rem;
+    }
+    .card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .card-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.rose { background: #fb7185; }
+    h3 { font-size: 0.875rem; font-weight: 600; }
+    ul { list-style: none; font-size: 0.75rem; color: #94a3b8; line-height: 1.8; }
+    li::before { content: "• "; color: #64748b; }
+    .planned-section {
+      background: rgba(15, 23, 42, 0.3);
+      border-radius: 1rem;
+      border: 1px dashed #334155;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+    .planned-section h2 {
+      font-size: 1rem;
+      color: #fbbf24;
+      margin-bottom: 1rem;
+    }
+    .planned-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .planned-item {
+      background: rgba(30, 41, 59, 0.4);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      border-left: 3px solid #fbbf24;
+    }
+    .planned-item h4 { font-size: 0.8rem; color: #e2e8f0; margin-bottom: 0.5rem; }
+    .planned-item p { font-size: 0.7rem; color: #94a3b8; line-height: 1.6; }
+    .tag { 
+      display: inline-block; 
+      font-size: 0.6rem; 
+      padding: 2px 6px; 
+      border-radius: 4px; 
+      margin-right: 4px; 
+      font-weight: 600;
+    }
+    .tag.done { background: rgba(52, 211, 153, 0.2); color: #34d399; }
+    .tag.wip { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+    .tag.todo { background: rgba(148, 163, 184, 0.2); color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>AIONE · 系统架构（当前实现）</h1>
+      </div>
+      <div class="subtitle">AI-Native 电商广告投放管理平台 · 基于阿里妈妈万相台无界 · 2026-06-26</div>
+    </div>
+
+    <!-- Architecture Diagram -->
+    <div class="diagram-container">
+      <svg viewBox="0 0 1100 860" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+          </pattern>
+          <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+          </marker>
+          <marker id="arrow-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee"/>
+          </marker>
+          <marker id="arrow-emerald" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+          </marker>
+        </defs>
+
+        <!-- Background grid -->
+        <rect width="1100" height="860" fill="url(#grid)"/>
+
+        <!-- ===== USER LAYER ===== -->
+        <rect x="30" y="20" width="1040" height="80" rx="8" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="6,3" opacity="0.4"/>
+        <text x="50" y="40" fill="#22d3ee" font-size="9" opacity="0.6">USER LAYER</text>
+
+        <!-- User: 钉钉 -->
+        <rect x="80" y="40" width="80" height="40" rx="6" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5"/>
+        <rect x="80" y="40" width="80" height="40" rx="6" fill="rgba(8, 51, 68, 0.4)"/>
+        <text x="120" y="60" fill="#0ea5e9" font-size="11" font-weight="600" text-anchor="middle">钉钉</text>
+        <text x="120" y="72" fill="#64748b" font-size="7" text-anchor="middle">需求入口</text>
+
+        <!-- User: 飞书 -->
+        <rect x="200" y="40" width="80" height="40" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+        <rect x="200" y="40" width="80" height="40" rx="6" fill="rgba(8, 51, 68, 0.4)"/>
+        <text x="240" y="60" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle">飞书</text>
+        <text x="240" y="72" fill="#64748b" font-size="7" text-anchor="middle">群聊交互</text>
+
+        <!-- Arrows from users to Hermes -->
+        <line x1="160" y1="80" x2="160" y2="130" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+        <line x1="240" y1="80" x2="240" y2="130" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+
+        <!-- ===== AGENT LAYER ===== -->
+        <rect x="30" y="120" width="1040" height="90" rx="8" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="6,3" opacity="0.4"/>
+        <text x="50" y="140" fill="#34d399" font-size="9" opacity="0.6">AGENT LAYER</text>
+
+        <!-- Hermes Agent -->
+        <rect x="80" y="140" width="180" height="50" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+        <rect x="80" y="140" width="180" height="50" rx="6" fill="rgba(8, 51, 68, 0.4)"/>
+        <text x="170" y="160" fill="#22d3ee" font-size="11" font-weight="600" text-anchor="middle">Hermes Agent</text>
+        <text x="170" y="175" fill="#94a3b8" font-size="8" text-anchor="middle">主对话引擎 · DeepSeek V4</text>
+
+        <!-- Claude Code -->
+        <rect x="310" y="140" width="150" height="50" rx="6" fill="#0f172a" stroke="#f97316" stroke-width="1.5"/>
+        <rect x="310" y="140" width="150" height="50" rx="6" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="385" y="160" fill="#f97316" font-size="11" font-weight="600" text-anchor="middle">Claude Code</text>
+        <text x="385" y="175" fill="#94a3b8" font-size="8" text-anchor="middle">深度开发 · 原型生成</text>
+
+        <!-- Cron Jobs -->
+        <rect x="510" y="140" width="150" height="50" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+        <rect x="510" y="140" width="150" height="50" rx="6" fill="rgba(76, 29, 149, 0.4)"/>
+        <text x="585" y="160" fill="#a78bfa" font-size="11" font-weight="600" text-anchor="middle">Cron 定时任务</text>
+        <text x="585" y="175" fill="#94a3b8" font-size="8" text-anchor="middle">每日知识学习 · 报表</text>
+
+        <!-- Arrow Hermes → MCP -->
+        <line x1="170" y1="190" x2="170" y2="240" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+
+        <!-- ===== MCP TOOLS LAYER ===== -->
+        <rect x="30" y="230" width="1040" height="80" rx="8" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="6,3" opacity="0.4"/>
+        <text x="50" y="250" fill="#a78bfa" font-size="9" opacity="0.6">MCP TOOLS LAYER</text>
+
+        <rect x="80" y="250" width="180" height="40" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+        <rect x="80" y="250" width="180" height="40" rx="6" fill="rgba(76, 29, 149, 0.4)"/>
+        <text x="170" y="268" fill="#a78bfa" font-size="10" font-weight="600" text-anchor="middle">mentionmcp</text>
+        <text x="170" y="282" fill="#64748b" font-size="7" text-anchor="middle">列表查询 · 写操作</text>
+
+        <rect x="300" y="250" width="180" height="40" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+        <rect x="300" y="250" width="180" height="40" rx="6" fill="rgba(76, 29, 149, 0.4)"/>
+        <text x="390" y="268" fill="#a78bfa" font-size="10" font-weight="600" text-anchor="middle">complexmcp</text>
+        <text x="390" y="282" fill="#64748b" font-size="7" text-anchor="middle">深度分析 · 诊断</text>
+
+        <rect x="520" y="250" width="180" height="40" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+        <rect x="520" y="250" width="180" height="40" rx="6" fill="rgba(76, 29, 149, 0.4)"/>
+        <text x="610" y="268" fill="#a78bfa" font-size="10" font-weight="600" text-anchor="middle">jupitermcp</text>
+        <text x="610" y="282" fill="#64748b" font-size="7" text-anchor="middle">京东查询</text>
+
+        <rect x="740" y="250" width="180" height="40" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+        <rect x="740" y="250" width="180" height="40" rx="6" fill="rgba(76, 29, 149, 0.4)"/>
+        <text x="830" y="268" fill="#a78bfa" font-size="10" font-weight="600" text-anchor="middle">simplemcp</text>
+        <text x="830" y="282" fill="#64748b" font-size="7" text-anchor="middle">基础报表 · 只读</text>
+
+        <!-- ===== DATA SOURCES ===== -->
+        <rect x="30" y="340" width="1040" height="70" rx="8" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="6,3" opacity="0.4"/>
+        <text x="50" y="360" fill="#fbbf24" font-size="9" opacity="0.6">DATA SOURCES</text>
+
+        <rect x="80" y="355" width="280" height="40" rx="6" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5"/>
+        <rect x="80" y="355" width="280" height="40" rx="6" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="220" y="373" fill="#fbbf24" font-size="10" font-weight="600" text-anchor="middle">万相台无界（天猫）</text>
+        <text x="220" y="387" fill="#64748b" font-size="7" text-anchor="middle">凡奢时光 · 欣雅图</text>
+
+        <rect x="420" y="355" width="250" height="40" rx="6" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5"/>
+        <rect x="420" y="355" width="250" height="40" rx="6" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="545" y="373" fill="#fbbf24" font-size="10" font-weight="600" text-anchor="middle">京准通（京东）</text>
+        <text x="545" y="387" fill="#64748b" font-size="7" text-anchor="middle">QCC · 满堂红</text>
+
+        <!-- MCP → Data arrows -->
+        <line x1="170" y1="290" x2="220" y2="355" stroke="#fbbf24" stroke-width="1" marker-end="url(#arrow)"/>
+        <line x1="545" y1="290" x2="545" y2="355" stroke="#fbbf24" stroke-width="1" marker-end="url(#arrow)"/>
+
+        <!-- ===== FUNCTION MODULES (IMPLEMENTED) ===== -->
+        <rect x="30" y="435" width="1040" height="390" rx="8" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="6,3" opacity="0.4"/>
+        <text x="50" y="455" fill="#34d399" font-size="9" opacity="0.6">IMPLEMENTED MODULES ✓</text>
+
+        <!-- Phase 1: 分析 6 Skill -->
+        <rect x="80" y="460" width="370" height="155" rx="8" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
+        <text x="95" y="478" fill="#34d399" font-size="8">阶段一 · 能分析的助理</text>
+
+        <rect x="95" y="488" width="105" height="36" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="1"/>
+        <rect x="95" y="488" width="105" height="36" rx="4" fill="rgba(8, 51, 68, 0.3)"/>
+        <text x="147" y="504" fill="#22d3ee" font-size="8" font-weight="600" text-anchor="middle">1.1 全景诊断</text>
+        <text x="147" y="518" fill="#64748b" font-size="6" text-anchor="middle">PlacementDiagnosis</text>
+
+        <rect x="210" y="488" width="105" height="36" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="1"/>
+        <rect x="210" y="488" width="105" height="36" rx="4" fill="rgba(8, 51, 68, 0.3)"/>
+        <text x="262" y="504" fill="#22d3ee" font-size="8" font-weight="600" text-anchor="middle">1.2 关键词</text>
+        <text x="262" y="518" fill="#64748b" font-size="6" text-anchor="middle">KeywordAnalysis</text>
+
+        <rect x="325" y="488" width="105" height="36" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="1"/>
+        <rect x="325" y="488" width="105" height="36" rx="4" fill="rgba(8, 51, 68, 0.3)"/>
+        <text x="377" y="504" fill="#22d3ee" font-size="8" font-weight="600" text-anchor="middle">1.3 场景对比</text>
+        <text x="377" y="518" fill="#64748b" font-size="6" text-anchor="middle">SceneAnalysis</text>
+
+        <rect x="95" y="532" width="105" height="36" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="1"/>
+        <rect x="95" y="532" width="105" height="36" rx="4" fill="rgba(8, 51, 68, 0.3)"/>
+        <text x="147" y="548" fill="#22d3ee" font-size="8" font-weight="600" text-anchor="middle">1.4 计划排名</text>
+        <text x="147" y="562" fill="#64748b" font-size="6" text-anchor="middle">PlanAnalysis</text>
+
+        <rect x="210" y="532" width="105" height="36" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="1"/>
+        <rect x="210" y="532" width="105" height="36" rx="4" fill="rgba(8, 51, 68, 0.3)"/>
+        <text x="262" y="548" fill="#22d3ee" font-size="8" font-weight="600" text-anchor="middle">1.5 人群</text>
+        <text x="262" y="562" fill="#64748b" font-size="6" text-anchor="middle">CrowdAnalysis</text>
+
+        <rect x="325" y="532" width="105" height="36" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="1"/>
+        <rect x="325" y="532" width="105" height="36" rx="4" fill="rgba(8, 51, 68, 0.3)"/>
+        <text x="377" y="548" fill="#22d3ee" font-size="8" font-weight="600" text-anchor="middle">1.6 创意</text>
+        <text x="377" y="562" fill="#64748b" font-size="6" text-anchor="middle">CreativeAnalysis</text>
+
+        <text x="265" y="600" fill="#34d399" font-size="7" text-anchor="middle">6  Skill · 覆盖 6 维度投放数据分析</text>
+
+        <!-- 甘菱 -->
+        <rect x="490" y="460" width="270" height="155" rx="8" fill="none" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
+        <text x="505" y="478" fill="#f97316" font-size="8">甘菱项目 · 投放管理</text>
+
+        <rect x="505" y="488" width="115" height="30" rx="4" fill="#0f172a" stroke="#f97316" stroke-width="1"/>
+        <rect x="505" y="488" width="115" height="30" rx="4" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="562" y="507" fill="#f97316" font-size="8" font-weight="600" text-anchor="middle">门店效率打标</text>
+
+        <rect x="630" y="488" width="115" height="30" rx="4" fill="#0f172a" stroke="#f97316" stroke-width="1"/>
+        <rect x="630" y="488" width="115" height="30" rx="4" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="687" y="507" fill="#f97316" font-size="8" font-weight="600" text-anchor="middle">周/月报</text>
+
+        <rect x="505" y="526" width="115" height="30" rx="4" fill="#0f172a" stroke="#f97316" stroke-width="1"/>
+        <rect x="505" y="526" width="115" height="30" rx="4" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="562" y="545" fill="#f97316" font-size="8" font-weight="600" text-anchor="middle">预算拆解</text>
+
+        <rect x="630" y="526" width="115" height="30" rx="4" fill="#0f172a" stroke="#f97316" stroke-width="1"/>
+        <rect x="630" y="526" width="115" height="30" rx="4" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="687" y="545" fill="#f97316" font-size="8" font-weight="600" text-anchor="middle">AB 测试</text>
+
+        <rect x="505" y="564" width="240" height="30" rx="4" fill="#0f172a" stroke="#f97316" stroke-width="1"/>
+        <rect x="505" y="564" width="240" height="30" rx="4" fill="rgba(120, 53, 15, 0.3)"/>
+        <text x="625" y="583" fill="#f97316" font-size="8" font-weight="600" text-anchor="middle">门店效率看板 (品牌 vs TP)</text>
+
+        <!-- 日报 -->
+        <rect x="80" y="635" width="320" height="85" rx="8" fill="none" stroke="#e879f9" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
+        <text x="95" y="653" fill="#e879f9" font-size="8">日报自动化</text>
+
+        <rect x="95" y="662" width="140" height="30" rx="4" fill="#0f172a" stroke="#e879f9" stroke-width="1"/>
+        <rect x="95" y="662" width="140" height="30" rx="4" fill="rgba(147, 51, 234, 0.3)"/>
+        <text x="165" y="681" fill="#e879f9" font-size="8" font-weight="600" text-anchor="middle">店铺投放日报</text>
+
+        <rect x="245" y="662" width="140" height="30" rx="4" fill="#0f172a" stroke="#e879f9" stroke-width="1"/>
+        <rect x="245" y="662" width="140" height="30" rx="4" fill="rgba(147, 51, 234, 0.3)"/>
+        <text x="315" y="681" fill="#e879f9" font-size="8" font-weight="600" text-anchor="middle">日报 Skill 生成器</text>
+
+        <!-- 知识学习 -->
+        <rect x="450" y="635" width="310" height="85" rx="8" fill="none" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
+        <text x="465" y="653" fill="#fb923c" font-size="8">平台知识学习</text>
+
+        <rect x="465" y="662" width="280" height="30" rx="4" fill="#0f172a" stroke="#fb923c" stroke-width="1"/>
+        <rect x="465" y="662" width="280" height="30" rx="4" fill="rgba(251, 146, 60, 0.3)"/>
+        <text x="605" y="681" fill="#fb923c" font-size="8" font-weight="600" text-anchor="middle">Cron · 万堂书院/京东/饿了么 每日抓取</text>
+
+        <!-- 异常检测 -->
+        <rect x="810" y="460" width="240" height="85" rx="8" fill="none" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
+        <text x="825" y="478" fill="#fb7185" font-size="8">异常检测知识库</text>
+
+        <rect x="825" y="488" width="210" height="45" rx="4" fill="#0f172a" stroke="#fb7185" stroke-width="1"/>
+        <rect x="825" y="488" width="210" height="45" rx="4" fill="rgba(136, 19, 55, 0.4)"/>
+        <text x="930" y="506" fill="#fb7185" font-size="8" font-weight="600" text-anchor="middle">花费 · ROI · CPC · CVR</text>
+        <text x="930" y="522" fill="#64748b" font-size="7" text-anchor="middle">CTR · 转化 · 展现 · 点击 · 加购</text>
+
+        <!-- POC -->
+        <rect x="810" y="560" width="240" height="70" rx="8" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
+        <text x="825" y="578" fill="#2dd4bf" font-size="8">POC 11题 (部分可用)</text>
+        <text x="835" y="598" fill="#2dd4bf" font-size="9">🟢 Q5 · Q10 立刻可用</text>
+        <text x="835" y="614" fill="#fbbf24" font-size="9">🟡 Q1 · Q7 · Q9 核心可用</text>
+        <text x="835" y="630" fill="#94a3b8" font-size="9">— Q2/3/4/6/8/11 需开发</text>
+      </svg>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-header"><div class="card-dot cyan"></div><h3>已实现：14 Skill</h3></div>
+        <ul>
+          <li>阶段一 6 分析Skill（全景/关键词/场景/计划/人群/创意）</li>
+          <li>甘菱 5 项（打标/报表/拆解/AB测试/看板）</li>
+          <li>日报 3 Skill（日报/生成器/苏菲618）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-dot emerald"></div><h3>已实现：基础设施</h3></div>
+        <ul>
+          <li>MCP 4台 Server（mention/complex/jupiter/simple）</li>
+          <li>平台知识 cron 每日自动学习</li>
+          <li>异常检测知识库 9 类规则</li>
+          <li>POC Q5/Q10 立刻可用</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-dot amber"></div><h3>数据覆盖</h3></div>
+        <ul>
+          <li>天猫：凡奢时光 + 欣雅图（品牌）</li>
+          <li>天猫：QCC + 满堂红（TP）</li>
+          <li>京东：京准通查询已接入</li>
+          <li>平台知识：万堂书院/京东/饿了么/巨量引擎</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Planned Features -->
+    <div class="section-title">📋 规划中</div>
+    <div class="planned-section">
+      <h2>待实现能力 · 按阶段划分</h2>
+      <div class="planned-grid">
+        <div class="planned-item">
+          <h4><span class="tag done">P0</span> 智能层 8 引擎</h4>
+          <p>意图识别 · 上下文记忆 · 跨维度联想 · 结论合成 · 行动推荐 · 主动监控 · 学习进化 · 对话格式化。设计已完成，实现待落地。</p>
+        </div>
+        <div class="planned-item">
+          <h4><span class="tag wip">P1</span> 通用问数引擎</h4>
+          <p>五层流水线（意图解析→参数映射→数据获取→分析计算→输出渲染）。POC 11 题中 Q2/3/4/6/8/11 需依托此引擎开发。</p>
+        </div>
+        <div class="planned-item">
+          <h4><span class="tag todo">阶段二</span> 能主动的助理（6 项）</h4>
+          <p>每日早安 · 异常实时预警 · 操作效果追踪 · 关键词批量优化 · 预算重分配 · 投放策略推荐</p>
+        </div>
+        <div class="planned-item">
+          <h4><span class="tag todo">阶段三</span> 有记忆的助理（6 项）</h4>
+          <p>用户偏好记忆 · 投放策略记忆 · 操作记忆链 · 竞品变化感知 · 行业趋势跟踪 · 个性化建议</p>
+        </div>
+        <div class="planned-item">
+          <h4><span class="tag todo">阶段四</span> 能进化的助理（6 项）</h4>
+          <p>大促智能管理 · 跨账户优化 · 策略模拟 · 自动实验设计 · 效果预测 · 最佳实践推荐</p>
+        </div>
+        <div class="planned-item">
+          <h4><span class="tag todo">P2</span> 操作执行层（8 项）</h4>
+          <p>计划创建向导 · 关键词操作 · 出价调控 · 人群策略 · 策略模版跟投 · 全站推广操控 · 批量操作 · 大促管理。<br/>推荐模式(纯Skill)先行，API就绪后自动升级为执行模式。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
