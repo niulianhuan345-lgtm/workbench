@@ -4460,6 +4460,28 @@
             ]
           },
           {
+            "name": "1.7-计划深度诊断",
+            "type": "folder",
+            "children": [
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "8KB"
+              }
+            ]
+          },
+          {
+            "name": "通用分析引擎",
+            "type": "folder",
+            "children": [
+              {
+                "name": "设计方案.md",
+                "type": "doc",
+                "size": "10KB"
+              }
+            ]
+          },
+          {
             "name": "AIONE阶段一-测试用例.md",
             "type": "doc",
             "size": "12KB"
