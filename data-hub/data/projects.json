@@ -3956,7 +3956,7 @@
                   {
                     "name": "dimensions.yaml",
                     "type": "code",
-                    "size": "3KB"
+                    "size": "5KB"
                   }
                 ]
               },
@@ -3978,7 +3978,7 @@
               {
                 "name": "SKILL.md",
                 "type": "doc",
-                "size": "3KB"
+                "size": "6KB"
               }
             ]
           }
@@ -4515,6 +4515,11 @@
                 "name": "设计方案.md",
                 "type": "doc",
                 "size": "10KB"
+              },
+              {
+                "name": "需求文档.md",
+                "type": "doc",
+                "size": "3KB"
               }
             ]
           },
@@ -4981,6 +4986,11 @@
         "name": "自动化投放产品系统功能及服务说明.md",
         "type": "doc",
         "size": "7KB"
+      },
+      {
+        "name": "通用分析引擎-需求文档.md",
+        "type": "doc",
+        "size": "5KB"
       }
     ],
     "description": "AIONE智能投放助理，5阶段进化路线：分析→主动→记忆→进化→执行。当前已完成前2阶段交付，第3阶段开发中。",
