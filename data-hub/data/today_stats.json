@@ -1,9 +1,9 @@
 {
-  "sessions": 406,
-  "tokens": 63298337,
-  "input_tokens": 1893475,
-  "output_tokens": 483134,
-  "cache_read_tokens": 60921728,
+  "sessions": 430,
+  "tokens": 68133460,
+  "input_tokens": 2023703,
+  "output_tokens": 508861,
+  "cache_read_tokens": 65600896,
   "reasoning_tokens": 0,
-  "cost": 10.6065
+  "cost": 11.2877
 }
