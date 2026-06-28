@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-28T23:45:02",
+  "updated": "2026-06-29T00:17:13",
   "cron_jobs": [
     {
       "id": "ed0bebc655dc",
       "name": "每日平台知识自动学习",
       "status": "active",
       "schedule": "0 18 * * *",
-      "next_relative": "18小时后",
+      "next_relative": "17小时后",
       "last_relative": "5小时前",
       "last_status": "ok",
       "last_error": "",
@@ -30,7 +30,7 @@
       "name": "天猫平台知识学习",
       "status": "active",
       "schedule": "0 9 * * *",
-      "next_relative": "9小时后",
+      "next_relative": "8小时后",
       "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
@@ -67,7 +67,7 @@
       "status": "active",
       "schedule": "30 9 * * *",
       "next_relative": "9小时后",
-      "last_relative": "13小时前",
+      "last_relative": "14小时前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -78,7 +78,7 @@
       "name": "每日骑行天气提醒",
       "status": "active",
       "schedule": "0 7 * * *",
-      "next_relative": "7小时后",
+      "next_relative": "6小时后",
       "last_relative": "16小时前",
       "last_status": "ok",
       "last_error": "",
@@ -90,8 +90,8 @@
       "name": "工作台页面自动刷新",
       "status": "active",
       "schedule": "*/30 * * * *",
-      "next_relative": "28分钟后",
-      "last_relative": "27分钟前",
+      "next_relative": "29分钟后",
+      "last_relative": "25分钟前",
       "last_status": "ok",
       "last_error": "",
       "script": "",
@@ -102,7 +102,7 @@
       "name": "Git 自动备份 (cursor123)",
       "status": "active",
       "schedule": "*/30 * * * *",
-      "next_relative": "28分钟后",
+      "next_relative": "29分钟后",
       "last_relative": "刚刚",
       "last_status": "ok",
       "last_error": "",
@@ -123,18 +123,6 @@
     }
   ],
   "tokens": [
-    {
-      "date": "2026-06-14",
-      "model": "deepseek-v4-pro",
-      "sessions": 3,
-      "input_tokens": 290365,
-      "output_tokens": 19184,
-      "cache_read_tokens": 2891136,
-      "reasoning_tokens": 0,
-      "tokens": 3200685,
-      "cost": 1.1127,
-      "task": "deepseek-v4-pro · 3次"
-    },
     {
       "date": "2026-06-15",
       "model": "deepseek-v4-pro",
@@ -182,6 +170,18 @@
       "tokens": 25477604,
       "cost": 4.0706,
       "task": "deepseek-v4-pro · 6次"
+    },
+    {
+      "date": "2026-06-19",
+      "model": "deepseek-v4-pro",
+      "sessions": 1,
+      "input_tokens": 49081,
+      "output_tokens": 10822,
+      "cache_read_tokens": 1065728,
+      "reasoning_tokens": 0,
+      "tokens": 1125631,
+      "cost": 0.2511,
+      "task": "deepseek-v4-pro · 1次"
     }
   ]
 }
