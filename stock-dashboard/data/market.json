@@ -1,45 +1,45 @@
 {
-  "updated": "2026-06-29 13:29:39",
+  "updated": "2026-06-29 13:33:40",
   "indices": [
     {
       "name": "上证指数",
-      "current": 4040.09,
-      "change": 12.83,
-      "change_pct": 0.32,
+      "current": 4040.8,
+      "change": 13.54,
+      "change_pct": 0.34,
       "open": 4026.69,
       "high": 4044.13,
       "low": 3992.55,
-      "amount": 12872.1
+      "amount": 13027.9
     },
     {
       "name": "深证成指",
-      "current": 15624.24,
-      "change": -157.98,
-      "change_pct": -1.0,
+      "current": 15618.68,
+      "change": -163.54,
+      "change_pct": -1.04,
       "open": 15781.79,
       "high": 15938.23,
       "low": 15487.92,
-      "amount": 14423.1
+      "amount": 14589.6
     },
     {
       "name": "创业板指",
-      "current": 4155.36,
-      "change": -38.85,
-      "change_pct": -0.93,
+      "current": 4152.77,
+      "change": -41.44,
+      "change_pct": -0.99,
       "open": 4200.67,
       "high": 4265.46,
       "low": 4103.63,
-      "amount": 7078.5
+      "amount": 7164.8
     },
     {
       "name": "科创50",
-      "current": 2080.87,
-      "change": 48.59,
-      "change_pct": 2.39,
+      "current": 2084.41,
+      "change": 52.13,
+      "change_pct": 2.56,
       "open": 2039.67,
       "high": 2116.83,
       "low": 2013.51,
-      "amount": 1740.5
+      "amount": 1762.3
     }
   ],
   "leaders": [
@@ -49,20 +49,20 @@
         {
           "code": "600519",
           "name": "贵州茅台",
-          "price": 1196.3,
-          "change_pct": 2.37
+          "price": 1196.11,
+          "change_pct": 2.35
         },
         {
           "code": "000858",
           "name": "五 粮 液",
-          "price": 73.9,
-          "change_pct": 1.0
+          "price": 73.82,
+          "change_pct": 0.89
         },
         {
           "code": "000568",
           "name": "泸州老窖",
-          "price": 76.34,
-          "change_pct": 1.52
+          "price": 76.31,
+          "change_pct": 1.48
         }
       ]
     },
@@ -72,8 +72,8 @@
         {
           "code": "600036",
           "name": "招商银行",
-          "price": 36.4,
-          "change_pct": 1.11
+          "price": 36.35,
+          "change_pct": 0.97
         },
         {
           "code": "601398",
@@ -84,8 +84,8 @@
         {
           "code": "601166",
           "name": "兴业银行",
-          "price": 16.86,
-          "change_pct": 0.54
+          "price": 16.84,
+          "change_pct": 0.42
         }
       ]
     },
@@ -95,20 +95,20 @@
         {
           "code": "600030",
           "name": "中信证券",
-          "price": 28.21,
-          "change_pct": 1.69
+          "price": 28.16,
+          "change_pct": 1.51
         },
         {
           "code": "300059",
           "name": "东方财富",
-          "price": 19.99,
-          "change_pct": -0.4
+          "price": 19.94,
+          "change_pct": -0.65
         },
         {
           "code": "601688",
           "name": "华泰证券",
-          "price": 20.68,
-          "change_pct": 1.32
+          "price": 20.65,
+          "change_pct": 1.18
         }
       ]
     },
@@ -118,14 +118,14 @@
         {
           "code": "600900",
           "name": "长江电力",
-          "price": 26.71,
-          "change_pct": 0.23
+          "price": 26.73,
+          "change_pct": 0.3
         },
         {
           "code": "600011",
           "name": "华能国际",
-          "price": 7.42,
-          "change_pct": 1.5
+          "price": 7.43,
+          "change_pct": 1.64
         },
         {
           "code": "600795",
@@ -141,20 +141,20 @@
         {
           "code": "300750",
           "name": "宁德时代",
-          "price": 390.0,
-          "change_pct": 2.36
+          "price": 388.8,
+          "change_pct": 2.05
         },
         {
           "code": "002594",
           "name": "比亚迪",
-          "price": 79.54,
-          "change_pct": 1.71
+          "price": 79.52,
+          "change_pct": 1.69
         },
         {
           "code": "601012",
           "name": "隆基绿能",
-          "price": 12.73,
-          "change_pct": 0.47
+          "price": 12.77,
+          "change_pct": 0.79
         }
       ]
     },
@@ -164,20 +164,20 @@
         {
           "code": "688981",
           "name": "中芯国际",
-          "price": 147.24,
-          "change_pct": -1.02
+          "price": 147.44,
+          "change_pct": -0.89
         },
         {
           "code": "002371",
           "name": "北方华创",
-          "price": 825.99,
-          "change_pct": 1.55
+          "price": 828.78,
+          "change_pct": 1.89
         },
         {
           "code": "603501",
           "name": "豪威集团",
-          "price": 87.82,
-          "change_pct": 1.27
+          "price": 88.4,
+          "change_pct": 1.94
         }
       ]
     },
@@ -187,20 +187,20 @@
         {
           "code": "603019",
           "name": "中科曙光",
-          "price": 96.42,
-          "change_pct": -2.37
+          "price": 96.66,
+          "change_pct": -2.13
         },
         {
           "code": "688256",
           "name": "寒武纪",
-          "price": 1456.58,
-          "change_pct": -0.1
+          "price": 1469.6,
+          "change_pct": 0.8
         },
         {
           "code": "688041",
           "name": "海光信息",
-          "price": 350.75,
-          "change_pct": 1.7
+          "price": 351.89,
+          "change_pct": 2.03
         }
       ]
     },
@@ -210,20 +210,20 @@
         {
           "code": "600276",
           "name": "恒瑞医药",
-          "price": 52.63,
-          "change_pct": 8.14
+          "price": 52.69,
+          "change_pct": 8.26
         },
         {
           "code": "603259",
           "name": "药明康德",
-          "price": 124.89,
-          "change_pct": 5.68
+          "price": 124.79,
+          "change_pct": 5.59
         },
         {
           "code": "300760",
           "name": "迈瑞医疗",
-          "price": 137.11,
-          "change_pct": 2.34
+          "price": 137.01,
+          "change_pct": 2.26
         }
       ]
     },
@@ -233,20 +233,20 @@
         {
           "code": "002475",
           "name": "立讯精密",
-          "price": 64.49,
-          "change_pct": -5.16
+          "price": 64.45,
+          "change_pct": -5.22
         },
         {
           "code": "002241",
           "name": "歌尔股份",
-          "price": 21.34,
-          "change_pct": -4.43
+          "price": 21.37,
+          "change_pct": -4.3
         },
         {
           "code": "300433",
           "name": "蓝思科技",
-          "price": 51.63,
-          "change_pct": -7.12
+          "price": 51.44,
+          "change_pct": -7.47
         }
       ]
     },
@@ -256,14 +256,14 @@
         {
           "code": "000002",
           "name": "万 科Ａ",
-          "price": 3.04,
-          "change_pct": 1.0
+          "price": 3.05,
+          "change_pct": 1.33
         },
         {
           "code": "600048",
           "name": "保利发展",
-          "price": 4.74,
-          "change_pct": -0.21
+          "price": 4.73,
+          "change_pct": -0.42
         },
         {
           "code": "001979",
@@ -279,20 +279,20 @@
         {
           "code": "601088",
           "name": "中国神华",
-          "price": 39.88,
-          "change_pct": 0.78
+          "price": 39.9,
+          "change_pct": 0.83
         },
         {
           "code": "601225",
           "name": "陕西煤业",
-          "price": 20.81,
-          "change_pct": 0.53
+          "price": 20.83,
+          "change_pct": 0.63
         },
         {
           "code": "600188",
           "name": "兖矿能源",
-          "price": 18.26,
-          "change_pct": 1.56
+          "price": 18.23,
+          "change_pct": 1.39
         }
       ]
     },
@@ -302,14 +302,14 @@
         {
           "code": "000333",
           "name": "美的集团",
-          "price": 76.86,
-          "change_pct": 2.71
+          "price": 77.01,
+          "change_pct": 2.91
         },
         {
           "code": "000651",
           "name": "格力电器",
-          "price": 37.85,
-          "change_pct": 2.24
+          "price": 37.8,
+          "change_pct": 2.11
         },
         {
           "code": "600690",
@@ -325,20 +325,20 @@
         {
           "code": "002594",
           "name": "比亚迪",
-          "price": 79.54,
-          "change_pct": 1.71
+          "price": 79.52,
+          "change_pct": 1.69
         },
         {
           "code": "601127",
           "name": "赛力斯",
-          "price": 60.79,
-          "change_pct": 1.66
+          "price": 60.86,
+          "change_pct": 1.77
         },
         {
           "code": "601633",
           "name": "长城汽车",
-          "price": 15.39,
-          "change_pct": 1.92
+          "price": 15.41,
+          "change_pct": 2.05
         }
       ]
     },
@@ -348,20 +348,20 @@
         {
           "code": "600760",
           "name": "中航沈飞",
-          "price": 40.23,
-          "change_pct": -0.89
+          "price": 40.16,
+          "change_pct": -1.06
         },
         {
           "code": "600893",
           "name": "航发动力",
-          "price": 37.38,
-          "change_pct": 0.19
+          "price": 37.31,
+          "change_pct": 0.0
         },
         {
           "code": "600150",
           "name": "中国船舶",
-          "price": 33.28,
-          "change_pct": -0.36
+          "price": 33.31,
+          "change_pct": -0.27
         }
       ]
     },
@@ -371,20 +371,20 @@
         {
           "code": "000063",
           "name": "中兴通讯",
-          "price": 35.4,
-          "change_pct": -0.76
+          "price": 35.38,
+          "change_pct": -0.81
         },
         {
           "code": "600941",
           "name": "中国移动",
-          "price": 87.43,
-          "change_pct": 0.7
+          "price": 87.52,
+          "change_pct": 0.81
         },
         {
           "code": "300308",
           "name": "中际旭创",
-          "price": 1184.99,
-          "change_pct": -5.49
+          "price": 1188.0,
+          "change_pct": -5.25
         }
       ]
     }
@@ -398,34 +398,34 @@
         {
           "code": "300308",
           "name": "中际旭创",
-          "price": 1184.99,
-          "change_pct": -5.49,
+          "price": 1188.0,
+          "change_pct": -5.25,
           "amplitude": 7.55,
-          "amount": 330.81
+          "amount": 335.88
         },
         {
           "code": "300502",
           "name": "新易盛",
-          "price": 542.46,
-          "change_pct": -4.16,
+          "price": 541.32,
+          "change_pct": -4.36,
           "amplitude": 9.15,
-          "amount": 210.8
+          "amount": 214.17
         },
         {
           "code": "300394",
           "name": "天孚通信",
-          "price": 296.6,
-          "change_pct": -6.73,
+          "price": 294.8,
+          "change_pct": -7.3,
           "amplitude": 7.9,
-          "amount": 122.39
+          "amount": 123.42
         },
         {
           "code": "600522",
           "name": "中天科技",
-          "price": 58.1,
-          "change_pct": -5.2,
+          "price": 57.77,
+          "change_pct": -5.74,
           "amplitude": 9.58,
-          "amount": 153.5
+          "amount": 154.76
         }
       ]
     },
@@ -437,49 +437,49 @@
         {
           "code": "601138",
           "name": "工业富联",
-          "price": 68.69,
-          "change_pct": -2.18,
+          "price": 68.62,
+          "change_pct": -2.28,
           "amplitude": 7.06,
-          "amount": 109.88
+          "amount": 110.7
         },
         {
           "code": "603019",
           "name": "中科曙光",
-          "price": 96.42,
-          "change_pct": -2.37,
+          "price": 96.66,
+          "change_pct": -2.13,
           "amplitude": 6.89,
-          "amount": 79.7
+          "amount": 80.24
         },
         {
           "code": "000977",
           "name": "浪潮信息",
-          "price": 65.45,
-          "change_pct": 2.44,
+          "price": 65.59,
+          "change_pct": 2.66,
           "amplitude": 7.09,
-          "amount": 45.21
+          "amount": 45.37
         }
       ]
     },
     {
       "sector": "AI芯片",
-      "up": 0,
-      "down": 2,
+      "up": 1,
+      "down": 1,
       "stocks": [
         {
           "code": "300474",
           "name": "景嘉微",
-          "price": 52.86,
-          "change_pct": -0.21,
+          "price": 53.31,
+          "change_pct": 0.64,
           "amplitude": 6.7,
-          "amount": 4.77
+          "amount": 4.95
         },
         {
           "code": "002049",
           "name": "紫光国微",
-          "price": 83.8,
-          "change_pct": -0.21,
+          "price": 83.94,
+          "change_pct": -0.05,
           "amplitude": 7.22,
-          "amount": 28.83
+          "amount": 29.25
         }
       ]
     },
@@ -491,18 +491,18 @@
         {
           "code": "002463",
           "name": "沪电股份",
-          "price": 138.8,
-          "change_pct": -5.76,
+          "price": 138.45,
+          "change_pct": -6.0,
           "amplitude": 9.57,
-          "amount": 91.3
+          "amount": 92.1
         },
         {
           "code": "300476",
           "name": "胜宏科技",
-          "price": 311.14,
-          "change_pct": -2.63,
+          "price": 311.0,
+          "change_pct": -2.68,
           "amplitude": 6.57,
-          "amount": 81.64
+          "amount": 82.48
         }
       ]
     },
@@ -514,18 +514,18 @@
         {
           "code": "002837",
           "name": "英维克",
-          "price": 76.38,
-          "change_pct": -7.5,
+          "price": 76.29,
+          "change_pct": -7.61,
           "amplitude": 9.23,
-          "amount": 42.69
+          "amount": 43.03
         },
         {
           "code": "300499",
           "name": "高澜股份",
-          "price": 36.8,
-          "change_pct": -8.37,
+          "price": 36.97,
+          "change_pct": -7.94,
           "amplitude": 10.88,
-          "amount": 11.06
+          "amount": 11.17
         }
       ]
     },
@@ -537,18 +537,18 @@
         {
           "code": "603986",
           "name": "兆易创新",
-          "price": 800.0,
-          "change_pct": 3.9,
+          "price": 798.91,
+          "change_pct": 3.75,
           "amplitude": 9.09,
-          "amount": 322.5
+          "amount": 324.37
         },
         {
           "code": "301308",
           "name": "江波龙",
-          "price": 699.48,
-          "change_pct": 2.93,
+          "price": 697.7,
+          "change_pct": 2.66,
           "amplitude": 8.02,
-          "amount": 117.09
+          "amount": 117.71
         }
       ]
     },
@@ -560,50 +560,50 @@
         {
           "code": "300058",
           "name": "蓝色光标",
-          "price": 13.11,
-          "change_pct": -2.24,
+          "price": 13.12,
+          "change_pct": -2.16,
           "amplitude": 6.94,
-          "amount": 22.86
+          "amount": 23.17
         },
         {
           "code": "300624",
           "name": "万兴科技",
-          "price": 50.67,
-          "change_pct": -0.67,
-          "amplitude": 6.35,
-          "amount": 3.72
+          "price": 50.66,
+          "change_pct": -0.69,
+          "amplitude": 6.45,
+          "amount": 3.79
         },
         {
           "code": "002230",
           "name": "科大讯飞",
-          "price": 39.47,
-          "change_pct": 0.89,
+          "price": 39.42,
+          "change_pct": 0.77,
           "amplitude": 2.66,
-          "amount": 11.64
+          "amount": 11.76
         },
         {
           "code": "300418",
           "name": "昆仑万维",
-          "price": 39.47,
-          "change_pct": 1.86,
+          "price": 39.52,
+          "change_pct": 1.99,
           "amplitude": 7.64,
-          "amount": 21.81
+          "amount": 22.03
         },
         {
           "code": "300033",
           "name": "同花顺",
-          "price": 238.95,
-          "change_pct": -1.26,
+          "price": 238.13,
+          "change_pct": -1.6,
           "amplitude": 5.42,
-          "amount": 42.65
+          "amount": 43.16
         },
         {
           "code": "002555",
           "name": "三七互娱",
-          "price": 18.84,
-          "change_pct": 2.34,
+          "price": 18.86,
+          "change_pct": 2.44,
           "amplitude": 6.14,
-          "amount": 8.71
+          "amount": 8.76
         }
       ]
     }
@@ -612,68 +612,68 @@
     {
       "code": "600276",
       "name": "恒瑞医药",
-      "price": 52.63,
-      "change_pct": 8.14,
+      "price": 52.69,
+      "change_pct": 8.26,
       "reasons": [
         "暴涨8%",
         "振幅10%",
-        "换手率1300.0%"
+        "换手率100.0%"
       ],
       "severity": "high"
     },
     {
       "code": "300433",
       "name": "蓝思科技",
-      "price": 51.63,
-      "change_pct": -7.12,
+      "price": 51.44,
+      "change_pct": -7.47,
       "reasons": [
         "暴跌7%",
         "振幅12%",
-        "换手率700.0%"
+        "换手率800.0%"
       ],
       "severity": "high"
     },
     {
       "code": "603259",
       "name": "药明康德",
-      "price": 124.89,
-      "change_pct": 5.68,
+      "price": 124.79,
+      "change_pct": 5.59,
       "reasons": [
         "暴涨6%",
         "振幅8%",
-        "换手率2200.0%"
+        "换手率2300.0%"
       ],
       "severity": "medium"
     },
     {
       "code": "300308",
       "name": "中际旭创",
-      "price": 1184.99,
-      "change_pct": -5.49,
+      "price": 1188.0,
+      "change_pct": -5.25,
       "reasons": [
         "暴跌5%",
-        "换手率5800.0%"
+        "换手率500.0%"
       ],
       "severity": "medium"
     },
     {
       "code": "002475",
       "name": "立讯精密",
-      "price": 64.5,
-      "change_pct": -5.15,
+      "price": 64.45,
+      "change_pct": -5.22,
       "reasons": [
         "暴跌5%",
-        "换手率10800.0%"
+        "换手率4500.0%"
       ],
       "severity": "medium"
     },
     {
       "code": "002241",
       "name": "歌尔股份",
-      "price": 21.35,
-      "change_pct": -4.39,
+      "price": 21.37,
+      "change_pct": -4.3,
       "reasons": [
-        "换手率13800.0%"
+        "换手率23700.0%"
       ],
       "severity": "medium"
     },
@@ -683,37 +683,37 @@
       "price": 20.42,
       "change_pct": 3.55,
       "reasons": [
-        "换手率5500.0%"
+        "换手率48115.0%"
       ],
       "severity": "medium"
     },
     {
       "code": "000333",
       "name": "美的集团",
-      "price": 76.86,
-      "change_pct": 2.71,
+      "price": 77.01,
+      "change_pct": 2.91,
       "reasons": [
-        "换手率9600.0%"
+        "换手率4800.0%"
       ],
       "severity": "medium"
     },
     {
       "code": "600519",
       "name": "贵州茅台",
-      "price": 1196.3,
-      "change_pct": 2.37,
+      "price": 1196.11,
+      "change_pct": 2.35,
       "reasons": [
-        "换手率200.0%"
+        "换手率1600.0%"
       ],
       "severity": "medium"
     },
     {
-      "code": "603019",
-      "name": "中科曙光",
-      "price": 96.42,
-      "change_pct": -2.37,
+      "code": "300760",
+      "name": "迈瑞医疗",
+      "price": 137.01,
+      "change_pct": 2.26,
       "reasons": [
-        "换手率2600.0%"
+        "换手率8700.0%"
       ],
       "severity": "medium"
     }
