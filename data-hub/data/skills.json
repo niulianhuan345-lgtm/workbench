@@ -212,7 +212,7 @@
   {
     "name": "ruixing-reporting",
     "category": "data-science",
-    "desc": "瑞幸广告投放日报/周报自动生成。从 Metabase Dashboard 29 拉取数据，经数据完整性检查后按固定格式输出。触发词：更新日报、更新周报、瑞幸日报、数据检查、Metabase 拉数据、小时报。",
+    "desc": "瑞幸广告投放日报/周报自动生成。日报从 Metabase 自动取数；周报从飞书嵌入表格读取（用户刷新数据源），按提示词文档格式生成分析 callout。触发词：更新日报、更新周报、瑞幸日报、数据检查。",
     "status": "active"
   },
   {
