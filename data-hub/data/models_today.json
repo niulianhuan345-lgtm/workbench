@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "name": "deepseek-v4-pro",
+    "calls": 5,
+    "input_tokens": 331,
+    "output_tokens": 660,
+    "cache_read_tokens": 69504,
+    "reasoning_tokens": 0,
+    "tokens": 70495,
+    "cost": 0.007
+  }
+]
