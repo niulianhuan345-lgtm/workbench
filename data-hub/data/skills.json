@@ -390,6 +390,12 @@
     "status": "active"
   },
   {
+    "name": "document-conversion",
+    "category": "productivity",
+    "desc": "Convert documents between formats: Markdown to PDF with Chinese support, Markdown to HTML, HTML to PDF. Use when the user needs a PDF/HTML export or wants to convert a file format. Trigger words: 导出PDF, 转成PDF, 生成PDF, 导出HTML, 转格式, markdown转pdf.",
+    "status": "active"
+  },
+  {
     "name": "feishu-doc-editing",
     "category": "productivity",
     "desc": "飞书文档 API 编辑操作指南。当需要读取/编辑飞书在线文档时使用。涵盖 block 树结构、嵌套关系、表格处理、安全操作原则。",
