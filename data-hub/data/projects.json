@@ -3956,7 +3956,17 @@
                   {
                     "name": "dimensions.yaml",
                     "type": "code",
-                    "size": "5KB"
+                    "size": "4KB"
+                  },
+                  {
+                    "name": "mcp-tools.md",
+                    "type": "doc",
+                    "size": "3KB"
+                  },
+                  {
+                    "name": "test-cases.md",
+                    "type": "doc",
+                    "size": "3KB"
                   }
                 ]
               },
@@ -3978,7 +3988,7 @@
               {
                 "name": "SKILL.md",
                 "type": "doc",
-                "size": "13KB"
+                "size": "9KB"
               }
             ]
           }
