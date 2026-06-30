@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30 15:37:53",
+  "updated": "2026-06-30 15:13:50",
   "indices": [
     {
       "name": "上证指数",
@@ -641,7 +641,7 @@
       "reasons": [
         "暴涨8%",
         "振幅9%",
-        "换手率1542.0%"
+        "换手率200.0%"
       ],
       "severity": "high"
     },
@@ -663,8 +663,7 @@
       "price": 158.82,
       "change_pct": 5.18,
       "reasons": [
-        "暴涨5%",
-        "换手率24344.0%"
+        "暴涨5%"
       ],
       "severity": "medium"
     },
@@ -680,22 +679,12 @@
       "severity": "medium"
     },
     {
-      "code": "688041",
-      "name": "海光信息",
-      "price": 370.3,
-      "change_pct": 4.36,
-      "reasons": [
-        "换手率96.0%"
-      ],
-      "severity": "medium"
-    },
-    {
       "code": "300308",
       "name": "中际旭创",
       "price": 1270.0,
       "change_pct": 4.1,
       "reasons": [
-        "换手率500.0%"
+        "换手率200.0%"
       ],
       "severity": "medium"
     },
@@ -705,8 +694,7 @@
       "price": 53.66,
       "change_pct": 3.53,
       "reasons": [
-        "振幅10%",
-        "换手率173439.0%"
+        "振幅10%"
       ],
       "severity": "medium"
     },
@@ -717,6 +705,16 @@
       "change_pct": -3.53,
       "reasons": [
         "换手率40475.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "601225",
+      "name": "陕西煤业",
+      "price": 20.35,
+      "change_pct": -3.1,
+      "reasons": [
+        "换手率30200.0%"
       ],
       "severity": "medium"
     }
