@@ -5910,63 +5910,28 @@
     "phases": "擎天柱日历预算:in_progress→Andy人群数据:done→人群批量屏蔽:pending→虚拟组出价修改:done→定时批量暂停:pending",
     "files": [
       {
-        "name": "定时批量暂停",
+        "name": "项目代码",
         "type": "folder",
         "children": [
           {
-            "name": "完整设计方案.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/完整设计方案.md"
-          },
+            "name": "onebp-main-main (UMI Max)",
+            "type": "code",
+            "size": "大项目",
+            "url": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "name": "说明书",
+        "type": "folder",
+        "children": [
           {
-            "name": "技术设计文档.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/技术设计文档.md"
-          },
-          {
-            "name": "改动说明_全场景.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/改动说明_全场景.md"
-          },
-          {
-            "name": "改动说明_单次定时.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/改动说明_单次定时.md"
-          },
-          {
-            "name": "改动说明_给前端.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/改动说明_给前端.md"
-          },
-          {
-            "name": "需求文档.md",
-            "type": "md",
-            "path": "需求文件/AutoOneBP/定时批量暂停/需求文档.md"
-          },
-          {
-            "name": "在线预览.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/在线预览.html"
-          },
-          {
-            "name": "批量修改定时投放.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/批量修改定时投放.html"
-          },
-          {
-            "name": "真实组件预览_Drawer.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/真实组件预览_Drawer.html"
-          },
-          {
-            "name": "真实组件预览_菜单.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/真实组件预览_菜单.html"
-          },
-          {
-            "name": "页面设计.html",
-            "type": "html",
-            "path": "需求文件/AutoOneBP/定时批量暂停/页面设计.html"
+            "name": "AutoOneBP-说明书.docx",
+            "type": "doc",
+            "size": "8.5MB",
+            "url": "",
+            "content": ""
           }
         ]
       }
