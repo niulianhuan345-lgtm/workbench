@@ -1,7 +1,6 @@
 {
-  "updated": "2026-07-02T17:48:37",
-  "file": "门店腾挪分级结果_v3_0526_1552.xlsx",
+  "updated": "2026-07-02T18:19:41",
+  "file": "",
   "summary": {},
-  "top_stores": [],
-  "error": "`Import openpyxl` failed.  Use pip or conda to install the openpyxl package."
+  "top_stores": []
 }
