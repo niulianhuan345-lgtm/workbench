@@ -1,7 +1,7 @@
 {
   "agent": "running",
   "uptime": "00:00",
-  "started": "5/28 10:00",
+  "started": "7/3 09:31",
   "dingtalk": "已连接",
   "cron": [
     {
@@ -27,8 +27,7 @@
     {
       "name": "总控台扫描",
       "schedule": "*/30 * * * *",
-      "status": "running",
-      "last_run": "2026-06-10T17:34:27"
+      "status": "running"
     }
   ],
   "platKB": [
@@ -41,6 +40,5 @@
     "淘宝闪购",
     "外卖行业",
     "咖啡行业"
-  ],
-  "updated": "2026-06-30T18:00:12"
+  ]
 }
