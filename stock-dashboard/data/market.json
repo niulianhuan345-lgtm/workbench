@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03 15:07:55",
+  "updated": "2026-07-03 15:11:55",
   "indices": [
     {
       "name": "上证指数",
@@ -660,7 +660,7 @@
       "price": 52.42,
       "change_pct": 3.41,
       "reasons": [
-        "换手率3300.0%"
+        "换手率5300.0%"
       ],
       "severity": "medium"
     },
@@ -686,16 +686,6 @@
       "severity": "medium"
     },
     {
-      "code": "688981",
-      "name": "中芯国际",
-      "price": 140.31,
-      "change_pct": -2.63,
-      "reasons": [
-        "换手率3645.0%"
-      ],
-      "severity": "medium"
-    },
-    {
       "code": "601633",
       "name": "长城汽车",
       "price": 15.37,
@@ -712,6 +702,16 @@
       "change_pct": 2.42,
       "reasons": [
         "换手率3100.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "price": 124.12,
+      "change_pct": 2.32,
+      "reasons": [
+        "换手率1300.0%"
       ],
       "severity": "medium"
     }
