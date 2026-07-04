@@ -1,11 +1,11 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-03 09:22:14",
+  "updated_at": "2026-07-04 09:03:34",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-03 09:22:14",
-      "total_articles": 21,
+      "last_check": "2026-07-04 09:03:34",
+      "total_articles": 25,
       "status": "ok"
     }
   },
@@ -198,6 +198,42 @@
       "platform": "万相台无界",
       "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38723&platform=",
       "added_at": "2026-07-03 09:22:14"
+    },
+    {
+      "id": 38725,
+      "title": "新手新店如何获取流量",
+      "file": "新手新店如何获取流量_38725.md",
+      "source": "万堂书院",
+      "platform": "万相台无界",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38725&platform=",
+      "added_at": "2026-07-04 09:02:41"
+    },
+    {
+      "id": 38732,
+      "title": "食品/健康/宠企/数字生活-淡季推广能力速通进阶",
+      "file": "食品_健康_宠企_数字生活-淡季推广能力速通进阶_38732.md",
+      "source": "万堂书院",
+      "platform": "万相台无界",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38732&platform=",
+      "added_at": "2026-07-04 09:02:59"
+    },
+    {
+      "id": 38733,
+      "title": "淡季推广布局进阶",
+      "file": "淡季推广布局进阶_38733.md",
+      "source": "万堂书院",
+      "platform": "万相台无界",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38733&platform=",
+      "added_at": "2026-07-04 09:03:17"
+    },
+    {
+      "id": 38734,
+      "title": "新星计划-新手商家福利派送",
+      "file": "新星计划-新手商家福利派送_38734.md",
+      "source": "万堂书院",
+      "platform": "万相台无界",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38734&platform=",
+      "added_at": "2026-07-04 09:03:33"
     }
   ],
   "daily_log": [
@@ -250,6 +286,25 @@
         "大快消行业-平销期全店推广布局"
       ],
       "total_articles": 21
+    },
+    {
+      "date": "2026-07-04",
+      "action": "sync",
+      "source": "万堂书院",
+      "new_count": 4,
+      "new_ids": [
+        38725,
+        38732,
+        38733,
+        38734
+      ],
+      "new_titles": [
+        "新手新店如何获取流量",
+        "食品/健康/宠企/数字生活-淡季推广能力速通进阶",
+        "淡季推广布局进阶",
+        "新星计划-新手商家福利派送"
+      ],
+      "total_articles": 25
     }
   ]
 }
