@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 15:08:38",
+  "updated": "2026-07-06 15:12:35",
   "indices": [
     {
       "name": "上证指数",
@@ -617,7 +617,7 @@
       "reasons": [
         "暴涨7%",
         "振幅9%",
-        "换手率6800.0%"
+        "换手率7000.0%"
       ],
       "severity": "high"
     },
@@ -629,7 +629,7 @@
       "reasons": [
         "暴涨6%",
         "振幅9%",
-        "换手率10800.0%"
+        "换手率14300.0%"
       ],
       "severity": "medium"
     },
@@ -640,7 +640,7 @@
       "change_pct": -5.18,
       "reasons": [
         "暴跌5%",
-        "换手率1800.0%"
+        "换手率3800.0%"
       ],
       "severity": "medium"
     },
@@ -650,17 +650,7 @@
       "price": 56.77,
       "change_pct": 4.26,
       "reasons": [
-        "换手率27800.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "688041",
-      "name": "海光信息",
-      "price": 339.0,
-      "change_pct": 4.18,
-      "reasons": [
-        "换手率980.0%"
+        "换手率40500.0%"
       ],
       "severity": "medium"
     },
@@ -670,7 +660,7 @@
       "price": 59.98,
       "change_pct": -3.01,
       "reasons": [
-        "换手率900.0%"
+        "换手率3600.0%"
       ],
       "severity": "medium"
     },
@@ -680,7 +670,7 @@
       "price": 41.91,
       "change_pct": 2.97,
       "reasons": [
-        "换手率4000.0%"
+        "换手率24900.0%"
       ],
       "severity": "medium"
     },
@@ -690,7 +680,7 @@
       "price": 21.47,
       "change_pct": -2.63,
       "reasons": [
-        "换手率42800.0%"
+        "换手率65700.0%"
       ],
       "severity": "medium"
     },
@@ -701,17 +691,27 @@
       "change_pct": 2.62,
       "reasons": [
         "振幅9%",
-        "换手率9608.0%"
+        "换手率7319.0%"
       ],
       "severity": "medium"
     },
     {
-      "code": "000333",
-      "name": "美的集团",
-      "price": 80.0,
-      "change_pct": 2.62,
+      "code": "601633",
+      "name": "长城汽车",
+      "price": 15.77,
+      "change_pct": 2.6,
       "reasons": [
-        "换手率19000.0%"
+        "换手率5200.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "002475",
+      "name": "立讯精密",
+      "price": 62.88,
+      "change_pct": -2.42,
+      "reasons": [
+        "换手率27700.0%"
       ],
       "severity": "medium"
     }
