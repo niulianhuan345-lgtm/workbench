@@ -1,11 +1,11 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-04 09:03:34",
+  "updated_at": "2026-07-06 09:48:00",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-04 09:03:34",
-      "total_articles": 25,
+      "last_check": "2026-07-06 09:48:00",
+      "total_articles": 28,
       "status": "ok"
     }
   },
@@ -234,6 +234,33 @@
       "platform": "万相台无界",
       "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38734&platform=",
       "added_at": "2026-07-04 09:03:33"
+    },
+    {
+      "id": 38728,
+      "title": "夏日穿搭季-服饰盛夏爆品增长打法布局！",
+      "file": "夏日穿搭季-服饰盛夏爆品增长打法布局！_38728.md",
+      "source": "万堂书院",
+      "platform": "万相台无界",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38728&platform=",
+      "added_at": "2026-07-06 09:48:00"
+    },
+    {
+      "id": 38735,
+      "title": "新店专属曝光派发手把手教学",
+      "file": "新店专属曝光派发手把手教学_38735.md",
+      "source": "万堂书院",
+      "platform": "万相台无界",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38735&platform=",
+      "added_at": "2026-07-06 09:48:00"
+    },
+    {
+      "id": 38736,
+      "title": "服饰盛夏应趋势锁定布局",
+      "file": "服饰盛夏应趋势锁定布局_38736.md",
+      "source": "万堂书院",
+      "platform": "万相台无界",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38736&platform=",
+      "added_at": "2026-07-06 09:48:00"
     }
   ],
   "daily_log": [
@@ -305,6 +332,23 @@
         "新星计划-新手商家福利派送"
       ],
       "total_articles": 25
+    },
+    {
+      "date": "2026-07-06",
+      "action": "sync",
+      "source": "万堂书院",
+      "new_count": 3,
+      "new_ids": [
+        38728,
+        38735,
+        38736
+      ],
+      "new_titles": [
+        "夏日穿搭季-服饰盛夏爆品增长打法布局！",
+        "新店专属曝光派发手把手教学",
+        "服饰盛夏应趋势锁定布局"
+      ],
+      "total_articles": 28
     }
   ]
 }
