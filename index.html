@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>统一工作台 v2 — Hermes</title>
+<style>
+/* ===== 基础重置 ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #faf9f7;
+  --sidebar-bg: #f3f4f6;
+  --card-bg: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --accent: #5e6ad2;
+  --accent-light: #eef0ff;
+  --accent-hover: #4f5bc4;
+  --border: #e5e7eb;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 2px 4px rgba(0,0,0,0.06);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --green: #10b981;
+  --green-bg: #ecfdf5;
+  --orange: #f59e0b;
+  --orange-bg: #fffbeb;
+  --red: #ef4444;
+  --red-bg: #fef2f2;
+  --blue: #3b82f6;
+  --blue-bg: #eff6ff;
+}
+
+html, body { height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== 布局 ===== */
+.app { display: flex; height: 100vh; }
+
+/* ===== 侧边栏 ===== */
+.sidebar {
+  width: 200px; min-width: 200px;
+  background: var(--sidebar-bg);
+  display: flex; flex-direction: column;
+  border-right: 1px solid var(--border);
+  padding: 0;
+}
+.sidebar-brand {
+  padding: 24px 20px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-brand h1 {
+  font-size: 16px; font-weight: 510; color: var(--text);
+  letter-spacing: 0.5px;
+}
+.sidebar-brand .sub {
+  font-size: 11px; color: var(--text-muted); margin-top: 2px;
+}
+
+.sidebar-nav { flex: 1; padding: 12px 8px; }
+.nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border-radius: var(--radius-sm);
+  cursor: pointer; font-size: 14px; color: var(--text-secondary);
+  transition: all 0.15s; font-weight: 400;
+  margin-bottom: 2px;
+}
+.nav-item:hover { background: rgba(0,0,0,0.04); color: var(--text); }
+.nav-item.active { background: var(--accent-light); color: var(--accent); font-weight: 510; }
+.nav-icon { font-size: 16px; width: 20px; text-align: center; flex-shrink: 0; }
+.nav-badge {
+  margin-left: auto; font-size: 11px; background: var(--accent);
+  color: #fff; border-radius: 10px; padding: 1px 7px; min-width: 18px;
+  text-align: center;
+}
+
+.sidebar-footer {
+  padding: 16px 20px; border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--text-muted);
+  display: flex; align-items: center; gap: 6px;
+}
+.status-dot { width: 7px; height: 7px; border-radius: 50%; }
+.status-dot.online { background: var(--green); }
+.status-dot.offline { background: var(--red); }
+
+/* ===== 主内容区 ===== */
+.main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+/* ===== 顶栏 ===== */
+.topbar {
+  padding: 16px 32px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-shrink: 0;
+}
+.topbar-left .greeting { font-size: 18px; font-weight: 510; }
+.topbar-left .time { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.topbar-right { display: flex; align-items: center; gap: 16px; }
+.topbar-badge {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--text-secondary);
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 20px; padding: 5px 14px;
+}
+.topbar-badge .dot { width: 6px; height: 6px; border-radius: 50%; }
+.dot.green { background: var(--green); }
+
+/* ===== 内容区 ===== */
+.content {
+  flex: 1; overflow-y: auto; padding: 28px 32px;
+}
+
+/* ===== 模块容器 ===== */
+.module { display: none; }
+.module.active { display: block; }
+
+.module-title {
+  font-size: 15px; font-weight: 510; color: var(--text-secondary);
+  margin-bottom: 20px; letter-spacing: 0.5px;
+}
+
+/* ===== KPI Banner ===== */
+.kpi-banner {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow);
+}
+.kpi-card {
+  background: var(--card-bg); padding: 22px 24px;
+  position: relative;
+}
+.kpi-card:first-child { grid-row: span 2; display: flex; flex-direction: column; justify-content: center; }
+.kpi-card:first-child .kpi-value { font-size: 48px; line-height: 1; }
+.kpi-card:first-child .kpi-label { font-size: 14px; }
+.kpi-value {
+  font-size: 32px; font-weight: 510; color: var(--text);
+  line-height: 1.2;
+}
+.kpi-label { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+.kpi-sub {
+  font-size: 11px; color: var(--accent); margin-top: 8px;
+  display: flex; align-items: center; gap: 4px;
+}
+
+/* ===== 区块标题 ===== */
+.section-header {
+  font-size: 14px; font-weight: 510; color: var(--text);
+  margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+}
+.section-header .icon { font-size: 16px; }
+
+/* ===== 卡片 ===== */
+.card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px 24px;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+/* ===== 优先处理列表 ===== */
+.priority-list { list-style: none; }
+.priority-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.priority-item:last-child { border-bottom: none; }
+.priority-item .status-icon { font-size: 16px; flex-shrink: 0; }
+.priority-item .task-title { flex: 1; }
+.priority-item .task-project {
+  font-size: 11px; color: var(--text-muted);
+  background: var(--bg); border-radius: 4px; padding: 2px 8px;
+  white-space: nowrap;
+}
+.priority-item .tag {
+  font-size: 11px; border-radius: 4px; padding: 2px 8px;
+  white-space: nowrap;
+}
+.tag.block { background: var(--red-bg); color: var(--red); }
+.tag.ai { background: var(--blue-bg); color: var(--blue); }
+.tag.design { background: var(--orange-bg); color: var(--orange); }
+
+/* ===== AI 正在执行 ===== */
+.ai-exec-list { list-style: none; }
+.ai-exec-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 0; font-size: 13px;
+  border-bottom: 1px solid var(--border);
+}
+.ai-exec-item:last-child { border-bottom: none; }
+.ai-exec-item .exec-name { flex: 1; }
+.ai-exec-item .exec-status {
+  font-size: 11px; padding: 2px 8px; border-radius: 10px;
+}
+.exec-status.running { background: var(--green-bg); color: var(--green); }
+.exec-status.waiting { background: var(--bg); color: var(--text-muted); }
+.exec-status.ok { background: var(--green-bg); color: var(--green); }
+.exec-status.error { background: var(--red-bg); color: var(--red); }
+
+/* ===== 进度条 ===== */
+.progress-bar {
+  height: 6px; background: var(--border);
+  border-radius: 3px; overflow: hidden; margin: 8px 0 4px;
+  width: 100%;
+}
+.progress-fill {
+  height: 100%; border-radius: 3px; background: var(--accent);
+  transition: width 0.4s ease;
+}
+.progress-fill.warn { background: var(--orange); }
+.progress-fill.danger { background: var(--red); }
+
+.progress-label {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px;
+}
+.progress-label .proj-name { font-weight: 510; min-width: 80px; }
+.progress-label .proj-pct { color: var(--text-muted); font-size: 12px; }
+.progress-label .proj-status { font-size: 11px; color: var(--text-muted); margin-left: auto; }
+
+/* ===== 筛选栏 ===== */
+.filter-bar { display: flex; gap: 6px; margin-bottom: 20px; flex-wrap: wrap; }
+.filter-btn {
+  padding: 6px 14px; border-radius: 20px; font-size: 13px;
+  border: 1px solid var(--border); background: var(--card-bg);
+  color: var(--text-secondary); cursor: pointer; transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* ===== 任务分组 ===== */
+.task-group { margin-bottom: 24px; }
+.task-group-header {
+  font-size: 14px; font-weight: 510; color: var(--text);
+  padding: 8px 0; border-bottom: 2px solid var(--border);
+  margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
+}
+.task-group-header .count { font-size: 12px; color: var(--text-muted); font-weight: 400; }
+
+.task-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 0; font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.task-row:last-child { border-bottom: none; }
+.task-row .t-status { font-size: 16px; flex-shrink: 0; }
+.task-row .t-title { flex: 1; }
+.task-row .t-owner { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+.task-row .t-tag {
+  font-size: 11px; border-radius: 4px; padding: 2px 8px; white-space: nowrap;
+}
+.t-tag.done { background: var(--green-bg); color: var(--green); }
+.t-tag.progress { background: var(--blue-bg); color: var(--blue); }
+.t-tag.pending { background: var(--bg); color: var(--text-muted); }
+.t-tag.ai-badge { background: var(--accent-light); color: var(--accent); font-size: 13px; padding: 1px 6px; }
+
+/* ===== 项目详情 ===== */
+.project-card { margin-bottom: 20px; }
+.project-card-header {
+  display: flex; align-items: center; justify-content: space-between;
+  cursor: pointer; padding: 4px 0;
+}
+.project-card-header .proj-name { font-size: 16px; font-weight: 510; }
+.project-card-header .chevron { transition: transform 0.2s; font-size: 12px; color: var(--text-muted); }
+.project-card-header.open .chevron { transform: rotate(180deg); }
+
+.phase-pills {
+  display: flex; align-items: center; gap: 4px; margin: 12px 0;
+  flex-wrap: wrap;
+}
+.phase-pill {
+  font-size: 11px; padding: 3px 10px; border-radius: 10px;
+  white-space: nowrap;
+}
+.phase-pill.done { background: var(--green-bg); color: var(--green); }
+.phase-pill.in_progress { background: var(--accent-light); color: var(--accent); }
+.phase-pill.pending { background: var(--bg); color: var(--text-muted); }
+
+.project-detail { display: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.project-detail.show { display: block; }
+
+.subtask-list { list-style: none; margin: 8px 0 0 20px; }
+.subtask-item { font-size: 13px; padding: 3px 0; color: var(--text-secondary); }
+
+/* ===== 能力矩阵表格 ===== */
+.matrix-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.matrix-table th, .matrix-table td {
+  padding: 10px 14px; text-align: center; border-bottom: 1px solid var(--border);
+}
+.matrix-table th { font-weight: 510; color: var(--text-muted); font-size: 12px; }
+.matrix-table th:first-child, .matrix-table td:first-child { text-align: left; }
+.matrix-table .check { color: var(--green); }
+.matrix-table .dash { color: var(--text-muted); }
+
+/* ===== 统计行 ===== */
+.stats-row { display: flex; gap: 20px; margin-top: 16px; }
+.stat-item {
+  flex: 1; background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; text-align: center;
+}
+.stat-item .stat-num { font-size: 24px; font-weight: 510; color: var(--accent); }
+.stat-item .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+/* ===== 知识大脑 ===== */
+.knowledge-section { margin-bottom: 24px; }
+.knowledge-section > .section-title {
+  font-size: 15px; font-weight: 510; margin-bottom: 12px;
+}
+.knowledge-platform {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; margin-bottom: 12px;
+}
+.knowledge-platform .kp-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+}
+.knowledge-platform .kp-icon { font-size: 20px; }
+.knowledge-platform .kp-name { font-size: 15px; font-weight: 510; }
+.knowledge-platform .kp-status {
+  font-size: 11px; padding: 2px 8px; border-radius: 10px;
+  margin-left: auto;
+}
+.kp-status.active { background: var(--green-bg); color: var(--green); }
+.kp-status.limited { background: var(--orange-bg); color: var(--orange); }
+.kp-status.stable { background: var(--bg); color: var(--text-muted); }
+
+.knowledge-platform .kp-insight {
+  font-size: 12px; color: var(--text-secondary); margin-top: 8px;
+  padding: 8px 12px; background: var(--bg); border-radius: var(--radius-sm);
+}
+.knowledge-platform .kp-changes {
+  margin-top: 8px; font-size: 12px;
+}
+.kp-changes .change-date { color: var(--text-muted); margin-right: 8px; }
+.kp-changes .change-item {
+  display: inline-block; margin: 2px 4px 2px 0;
+  padding: 1px 8px; background: var(--accent-light);
+  border-radius: 10px; font-size: 11px; color: var(--accent);
+}
+.kp-changes .change-item.new { border: 1px solid var(--accent); }
+
+/* ===== 空状态 ===== */
+.empty-state {
+  text-align: center; padding: 40px; color: var(--text-muted);
+}
+.empty-state .icon { font-size: 32px; margin-bottom: 8px; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 900px) {
+  .sidebar { width: 60px; min-width: 60px; }
+  .sidebar-brand h1, .sidebar-brand .sub, .nav-item span:not(.nav-icon):not(.nav-badge),
+  .sidebar-footer span { display: none; }
+  .nav-item { justify-content: center; padding: 10px; }
+  .nav-badge { position: absolute; right: 4px; top: 4px; font-size: 9px; min-width: 14px; padding: 0 4px; }
+  .content { padding: 20px 16px; }
+  .kpi-banner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- ===== 侧边栏 ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <h1>Hermes 工作台</h1>
+      <div class="sub">统一工作中枢 v2</div>
+    </div>
+    <nav class="sidebar-nav" id="sidebarNav"></nav>
+    <div class="sidebar-footer">
+      <span class="status-dot online" id="hermesStatusDot"></span>
+      <span id="hermesStatusText">运行中</span>
+    </div>
+  </aside>
+
+  <!-- ===== 主区域 ===== -->
+  <div class="main">
+    <header class="topbar" id="topbar">
+      <div class="topbar-left">
+        <div class="greeting" id="greeting"></div>
+        <div class="time" id="currentTime"></div>
+      </div>
+      <div class="topbar-right" id="topbarBadges"></div>
+    </header>
+
+    <div class="content" id="content">
+      <!-- 模块由 JS 动态渲染 -->
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== 数据层 =====
+const DATA_DIR = 'data-hub/data/';
+const App = {
+  data: {
+    tasks: [], projects: [], knowledge: null,
+    cronJobs: [], skills: [], systemLive: null,
+    agents: [],
+
+<｜｜DSML｜｜parameter name="content" string="true">  stats: { totalTasks: 0, inProgress: 0, todayDue: 0, aiDelegatable: 0 }
+  },
+  currentModule: 'module1',
+
+  // 加载 JSON，失败返回 null
+  async loadJSON(filename) {
+    try {
+      const resp = await fetch(DATA_DIR + filename);
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      return await resp.json();
+    } catch (e) { console.warn('加载失败:', filename, e.message); return null; }
+  },
+
+  async init() {
+    // 并行加载所有数据
+    const [tasksData, tasksLive, projectsData, knowledgeData, cronData, skillsData, systemData, agentsData] =
+      await Promise.all([
+        this.loadJSON('tasks.json'),
+        this.loadJSON('tasks_live.json'),
+        this.loadJSON('projects.json'),
+        this.loadJSON('knowledge.json'),
+        this.loadJSON('cron_jobs.json'),
+        this.loadJSON('skills.json'),
+        this.loadJSON('system_live.json'),
+        this.loadJSON('agent_processes.json'),
+      ]);
+
+    // 优先使用 live 数据，回退到静态数据
+    const rawTasks = (tasksLive && tasksLive.tasks) ? tasksLive.tasks : (tasksData || []);
+    this.data.tasks = rawTasks.map(t => ({
+      ...t,
+      ai_delegatable: t.ai_delegatable || this.judgeAIDelegatable(t)
+    }));
+
+    this.data.projects = projectsData || [];
+    this.data.knowledge = knowledgeData;
+    this.data.cronJobs = (systemData && systemData.cron_jobs) ? systemData.cron_jobs : (cronData || []);
+    this.data.skills = skillsData || [];
+    this.data.systemLive = systemData;
+    this.data.agents = (agentsData && agentsData.processes) ? agentsData.processes : [];
+
+    // 计算统计
+    this.data.stats.totalTasks = this.data.tasks.length;
+    this.data.stats.inProgress = this.data.tasks.filter(t => t.status === '进行中').length;
+    this.data.stats.todayDue = 0; // TODO: 解析 deadline
+    this.data.stats.aiDelegatable = this.data.tasks.filter(t => t.ai_delegatable).length;
+
+    this.render();
+    this.startClock();
+  },
+
+  // AI 可代办判定
+  judgeAIDelegatable(task) {
+    const combined = (task.title || '') + (task.note || '');
+    const cannot = ['协调','沟通','对接','审批','确认','决策','方向','第三方','官方','等待','MCP接口'];
+    const can = ['分析','报表','报告','数据','文档','MD','监控','统计','汇总','整理','抓取','学习','周报','日报','开发','代码','skill','Skill','实现','测试','预算','人群','Log','log'];
+    for (const kw of cannot) { if (combined.includes(kw)) return false; }
+    for (const kw of can) { if (combined.includes(kw)) return true; }
+    return false;
+  },
+
+  // ===== 渲染 =====
+  render() {
+    this.renderSidebar();
+    this.renderModule1();
+    this.renderModule2();
+    this.renderModule3();
+    this.renderModule4();
+    this.renderModule5();
+    this.renderModule6();
+    this.updateTopbar();
+    this.switchModule('module1');
+  },
+
+  // ===== 侧边栏 =====
+  renderSidebar() {
+    const nav = [
+      { id: 'module1', icon: '☀️', label: '今日焦点', badge: null },
+      { id: 'module2', icon: '📋', label: '任务中心', badge: this.data.stats.totalTasks },
+      { id: 'module3', icon: '📊', label: '项目大盘', badge: this.data.projects.length },
+      { id: 'module4', icon: '🤖', label: 'AI 指挥中心', badge: null },
+      { id: 'module5', icon: '🔀', label: '能力矩阵', badge: null },
+      { id: 'module6', icon: '🧠', label: '知识大脑', badge: null },
+    ];
+    document.getElementById('sidebarNav').innerHTML = nav.map(n => `
+      <div class="nav-item" data-module="${n.id}" onclick="App.switchModule('${n.id}')">
+        <span class="nav-icon">${n.icon}</span>
+        <span>${n.label}</span>
+        ${n.badge !== null ? `<span class="nav-badge">${n.badge}</span>` : ''}
+      </div>
+    `).join('');
+  },
+
+  switchModule(id) {
+    this.currentModule = id;
+    document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+    document.querySelector(`[data-module="${id}"]`)?.classList.add('active');
+    document.querySelectorAll('.module').forEach(el => el.classList.remove('active'));
+    document.getElementById(id)?.classList.add('active');
+    document.title = {
+      module1: '今日焦点', module2: '任务中心', module3: '项目大盘',
+      module4: 'AI 指挥中心', module5: '能力矩阵', module6: '知识大脑'
+    }[id] + ' — Hermes 工作台';
+  },
+
+  // ===== 顶部栏 =====
+  updateTopbar() {
+    const now = new Date();
+    const hour = now.getHours();
+    let greet = hour < 6 ? '夜深了' : hour < 9 ? '早上好' : hour < 12 ? '上午好' : hour < 14 ? '中午好' : hour < 18 ? '下午好' : '晚上好';
+    document.getElementById('greeting').textContent = `👋 牛连欢，${greet}`;
+
+    const cronOk = this.data.cronJobs.filter(j => j.last_status === 'ok').length;
+    const cronErr = this.data.cronJobs.filter(j => j.last_status === 'error').length;
+    const agentsOnline = this.data.agents.length > 0;
+    document.getElementById('hermesStatusDot').className = 'status-dot ' + (agentsOnline || cronErr === 0 ? 'online' : 'offline');
+    document.getElementById('hermesStatusText').textContent = agentsOnline ? '运行中' : '待机';
+
+    document.getElementById('topbarBadges').innerHTML = `
+      <div class="topbar-badge"><span class="dot green"></span> Hermes 在线 · ${this.data.systemLive?.hermes?.model || 'deepseek-v4-pro'}</div>
+      <div class="topbar-badge">⏰ Cron ${cronOk}/${this.data.cronJobs.length} 正常${cronErr > 0 ? ` · ${cronErr} 异常` : ''}</div>
+      <div class="topbar-badge">📋 任务 ${this.data.stats.totalTasks} · AI可代办 ${this.data.stats.aiDelegatable}</div>
+    `;
+  },
+
+  startClock() {
+    const update = () => {
+      const now = new Date();
+      document.getElementById('currentTime').textContent =
+        now.toLocaleDateString('zh-CN', { year:'numeric', month:'long', day:'numeric', weekday:'long' }) +
+        ' ' + now.toLocaleTimeString('zh-CN', { hour:'2-digit', minute:'2-digit' });
+    };
+    update(); setInterval(update, 30000);
+  },
+
+  // ===== 模块1: 今日焦点 =====
+  renderModule1() {
+    const s = this.data.stats;
+    const priorityTasks = this.data.tasks
+      .filter(t => t.status === '进行中' || t.status === '待解决' || t.status === '阻塞')
+      .slice(0, 6);
+
+    const cronSummary = this.data.cronJobs.slice(0, 5);
+    const projProgress = this.getProjectProgress();
+
+    document.getElementById('content').insertAdjacentHTML('beforeend', `
+    <div class="module" id="module1">
+      <!-- KPI Banner -->
+      <div class="kpi-banner">
+        <div class="kpi-card">
+          <div class="kpi-value">${s.totalTasks}</div>
+          <div class="kpi-label">待办任务</div>
+          <div class="kpi-sub">🔥 进行中 ${s.inProgress} 项</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">${s.inProgress}</div>
+          <div class="kpi-label">进行中</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">${s.todayDue}</div>
+          <div class="kpi-label">今日到期</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">${s.aiDelegatable}</div>
+          <div class="kpi-label">AI 可代办</div>
+          <div class="kpi-sub" style="cursor:pointer" onclick="App.switchModule('module2')">💡 建议委派 →</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <!-- 优先处理 -->
+        <div class="card">
+          <div class="section-header"><span class="icon">🔥</span> 优先处理</div>
+          ${priorityTasks.length === 0 ? '<div class="empty-state"><div class="icon">✅</div>暂无需要优先处理的任务</div>' : `
+          <ul class="priority-list">
+            ${priorityTasks.map(t => {
+              let tagHtml = '';
+              if (t.status === '阻塞' || t.note?.includes('调不通')) tagHtml = '<span class="tag block">阻塞</span>';
+              else if (t.ai_delegatable) tagHtml = '<span class="tag ai">🔵 AI可做</span>';
+              else if (t.note?.includes('设计')) tagHtml = '<span class="tag design">待设计</span>';
+              const icon = t.status === '阻塞' ? '⚠️' : '📌';
+              return `<li class="priority-item">
+                <span class="status-icon">${icon}</span>
+                <span class="task-title">${this.esc(t.title)}</span>
+                <span class="task-project">${this.esc(t.project || '')}</span>
+                ${tagHtml}
+              </li>`;
+            }).join('')}
+          </ul>`}
+        </div>
+
+        <!-- AI 正在执行 -->
+        <div class="card">
+          <div class="section-header"><span class="icon">🤖</span> AI 正在执行</div>
+          ${cronSummary.length === 0 ? '<div class="empty-state"><div class="icon">⏳</div>暂无运行中的定时任务</div>' : `
+          <ul class="ai-exec-list">
+            ${cronSummary.map(c => {
+              const statusClass = c.last_status === 'ok' ? 'ok' : 'error';
+              const statusText = c.last_status === 'ok' ? '✅' : '❌';
+              return `<li class="ai-exec-item">
+                <span class="exec-name">⏳ ${this.esc(c.name)}</span>
+                <span style="font-size:11px;color:var(--text-muted)">${this.esc(c.schedule || '')}</span>
+                <span class="exec-status ${statusClass}">${statusText} ${this.esc(c.last_relative || '')}</span>
+                <span style="font-size:11px;color:var(--text-muted)">下次 ${this.esc(c.next_relative || '')}</span>
+              </li>`;
+            }).join('')}
+          </ul>`}
+        </div>
+      </div>
+
+      <!-- 项目健康度 -->
+      <div class="card" style="margin-top:20px">
+        <div class="section-header"><span class="icon">📊</span> 项目健康度</div>
+        ${projProgress.map(p => {
+          let fillClass = '';
+          if (p.percent < 30) fillClass = 'danger';
+          else if (p.percent < 60) fillClass = 'warn';
+          const warnIcon = p.warning ? ' ⚠️' : '';
+          return `<div style="margin-bottom:14px">
+            <div class="progress-label">
+              <span class="proj-name">${this.esc(p.name)}</span>
+              <div class="progress-bar" style="flex:1;max-width:300px">
+                <div class="progress-fill ${fillClass}" style="width:${p.percent}%"></div>
+              </div>
+              <span class="proj-pct">${p.percent}%</span>
+              <span class="proj-status">${this.esc(p.statusText)}${warnIcon}</span>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`);
+  },
+
+  getProjectProgress() {
+    const projMap = {
+      'AIONE': { percent: 80, statusText: '阶段三进行中', warning: false },
+      '金投赏': { percent: 40, statusText: '6/15 已过', warning: true },
+      '生意管家': { percent: 60, statusText: '正常', warning: false },
+      'Andy数据': { percent: 60, statusText: '正常', warning: false },
+      'AutoOneBP': { percent: 40, statusText: '正常', warning: false },
+      '泉哥需求': { percent: 40, statusText: '正常', warning: false },
+    };
+
+    // 尝试从 projects_live 获取更准确的进度
+    if (this.data.projects.length > 0) {
+      const results = [];
+      for (const p of this.data.projects) {
+        const name = p.name || p.id || '';
+        const phaseInfo = p.phase_info;
+        const percent = phaseInfo ? phaseInfo.percent : (projMap[name]?.percent || 50);
+        let statusText = '正常';
+        if (phaseInfo && phaseInfo.phases) {
+          const inProg = phaseInfo.phases.find(ph => ph.status === 'in_progress');
+          statusText = inProg ? inProg.name : (percent >= 100 ? '已完成' : '进行中');
+        }
+        results.push({ name, percent, statusText, warning: percent < 30 });
+      }
+      return results.length > 0 ? results : Object.entries(projMap).map(([k,v]) => ({ name: k, ...v }));
+    }
+    return Object.entries(projMap).map(([k,v]) => ({ name: k, ...v }));
+  },
+
+  // ===== 模块2: 任务中心 =====
+  renderModule2() {
+    const tasks = this.data.tasks;
+    const projGroups = {};
+    tasks.forEach(t => {
+      const p = t.project || '其他';
+      if (!projGroups[p]) projGroups[p] = [];
+      projGroups[p].push(t);
+    });
+
+    const statusMap = { '已完成': 'done', '进行中': 'progress', '未开始': 'pending', '阻塞': 'pending' };
+    const statusIconMap = { '已完成': '✅', '进行中': '🔄', '未开始': '⬜', '阻塞': '⚠️' };
+    const counts = {
+      all: tasks.length,
+      ai: tasks.filter(t => t.ai_delegatable).length,
+      mine: tasks.filter(t => t.owner?.includes('牛连欢')).length,
+      blocked: tasks.filter(t => t.status === '阻塞' || t.note?.includes('调不通')).length,
+      done: tasks.filter(t => t.status === '已完成').length,
+    };
+
+    document.getElementById('content').insertAdjacentHTML('beforeend', `
+    <div class="module" id="module2">
+      <div class="module-title">📋 任务中心</div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all" onclick="App.filterTasks('all')">全部 ${counts.all}</button>
+        <button class="filter-btn" data-filter="ai" onclick="App.filterTasks('ai')">🔵 AI可代办 ${counts.ai}</button>
+        <button class="filter-btn" data-filter="mine" onclick="App.filterTasks('mine')">我负责 ${counts.mine}</button>
+        <button class="filter-btn" data-filter="blocked" onclick="App.filterTasks('blocked')">阻塞 ${counts.blocked}</button>
+        <button class="filter-btn" data-filter="done" onclick="App.filterTasks('done')">已完成 ${counts.done}</button>
+      </div>
+      <div id="taskListContainer">
+        ${Object.entries(projGroups).map(([proj, items]) => `
+          <div class="task-group" data-project="${this.esc(proj)}" data-tasks="${items.map(t => t.ai_delegatable ? 'ai' : '').join(',')}">
+            <div class="task-group-header">
+              📋 ${this.esc(proj)}
+              <span class="count">${items.length}项</span>
+            </div>
+            ${items.map(t => {
+              const tagCls = statusMap[t.status] || 'pending';
+              const icon = statusIconMap[t.status] || '⬜';
+              const owner = t.owner || (t.status === '阻塞' ? '(你的)' : '');
+              return `<div class="task-row" data-status="${t.status}" data-ai="${t.ai_delegatable ? 'ai' : ''}">
+                <span class="t-status">${icon}</span>
+                <span class="t-title">${this.esc(t.title)}</span>
+                ${t.ai_delegatable ? '<span class="t-tag ai-badge">🔵</span>' : ''}
+                <span class="t-owner">${this.esc(owner)}</span>
+                <span class="t-tag ${tagCls}">${this.esc(t.status)}</span>
+              </div>`;
+            }).join('')}
+          </div>
+        `).join('')}
+      </div>
+    </div>`);
+  },
+
+  filterTasks(type) {
+    document.querySelectorAll('#module2 .filter-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector(`#module2 [data-filter="${type}"]`)?.classList.add('active');
+
+    document.querySelectorAll('#module2 .task-group').forEach(group => {
+      let visible = false;
+      group.querySelectorAll('.task-row').forEach(row => {
+        let show = false;
+        const status = row.dataset.status;
+        const isAi = row.dataset.ai === 'ai';
+        switch(type) {
+          case 'all': show = true; break;
+          case 'ai': show = isAi; break;
+          case 'mine': show = row.querySelector('.t-owner')?.textContent?.includes('牛连欢'); break;
+          case 'blocked': show = status === '阻塞' || status === '待解决'; break;
+          case 'done': show = status === '已完成'; break;
+        }
+        row.style.display = show ? '' : 'none';
+        if (show) visible = true;
+      });
+      group.style.display = visible ? '' : 'none';
+    });
+  },
+
+  // ===== 模块3: 项目大盘 =====
+  renderModule3() {
+    const projDefs = [
+      { id: 'aione', name: 'AIONE', icon: '🤖', desc: 'AI投放助理，不是报表工具',
+        phases: [
+          { name: '阶段一·能分析', status: 'done' },
+          { name: '阶段二·能主动', status: 'done' },
+          { name: '阶段三·有记忆', status: 'in_progress' },
+          { name: '阶段四·能进化', status: 'pending' },
+          { name: '阶段五·能执行', status: 'pending' },
+        ],
+        tasks: ['长期记忆存储 ✅','用户偏好学习 🔄','跨会话上下文 ⬜','知识自动归档 ⬜'],
+        docs: ['规划方案v5', '需求目录规范', 'Skill定义', '产品功能总体规划v5'],
+        collaborators: ['康恒','曾文旭','刘强','陈涛','梅冬阳'],
+        percent: 80, deadline: '' },
+      { id: 'jts', name: '金投赏', icon: '🏆', desc: 'AI 评分系统',
+        phases: [
+          { name: '阶段一·方案设计', status: 'done' },
+          { name: '阶段二·评分优化', status: 'in_progress' },
+          { name: '阶段三·实战验证', status: 'pending' },
+        ],
+        tasks: ['更换模型测试 ⬜','与人工打分对齐 ⬜','解决打分不一致 🔄'],
+        docs: ['AI评分方案_最终版', 'PPT大纲_v12'],
+        collaborators: ['牛连欢'],
+        percent: 40, deadline: '6月15日 ⚠️已过' },
+      { id: 'business', name: '生意管家', icon: '💼', desc: '天猫/京东投放托管',
+        phases: [
+          { name: '阶段一·基础功能', status: 'done' },
+          { name: '阶段二·智能分析', status: 'in_progress' },
+          { name: '阶段三·自动执行', status: 'pending' },
+        ],
+        tasks: ['计划层级预算分析 ✅','定时预算分析 🔄','按预算执行 🔄'],
+        docs: ['Skill定义', '需求文档'],
+        collaborators: ['牛连欢'],
+        percent: 60, deadline: '' },
+      { id: 'andy', name: 'Andy数据', icon: '📈', desc: '人群数据+推广',
+        phases: [
+          { name: '阶段一·数据采集', status: 'done' },
+          { name: '阶段二·分析展示', status: 'in_progress' },
+          { name: '阶段三·智能推广', status: 'pending' },
+        ],
+        tasks: ['人群数据获取 ✅','人群分析报告 🔄','批量屏蔽 🔄'],
+        docs: ['数据规范', '分析框架'],
+        collaborators: ['邱海亮','曾文旭'],
+        percent: 60, deadline: '' },
+      { id: 'autoone', name: 'AutoOneBP', icon: '⚡', desc: '擎天柱自动出价',
+        phases: [
+          { name: '阶段一·框架搭建', status: 'done' },
+          { name: '阶段二·功能开发', status: 'in_progress' },
+          { name: '阶段三·全量上线', status: 'pending' },
+        ],
+        tasks: ['Taro框架搭建 ⬜','页面路由设计 ⬜','日历预算测试 ⬜'],
+        docs: ['技术方案', '需求文档'],
+        collaborators: ['牛连欢','刘强'],
+        percent: 40, deadline: '' },
+      { id: 'quan', name: '泉哥需求', icon: '📝', desc: '运营需求支撑',
+        phases: [
+          { name: '阶段一·已交付', status: 'done' },
+          { name: '阶段二·进行中', status: 'in_progress' },
+          { name: '阶段三·规划中', status: 'pending' },
+        ],
+        tasks: ['垫款催付 ✅','出价同步 ✅','小米预算通知 🔄','财务核销 ⬜'],
+        docs: ['需求列表'],
+        collaborators: ['牛连欢'],
+        percent: 40, deadline: '' },
+    ];
+
+    document.getElementById('content').insertAdjacentHTML('beforeend', `
+    <div class="module" id="module3">
+      <div class="module-title">📊 项目大盘 · 6 个项目</div>
+      ${projDefs.map((p, idx) => {
+        const fillClass = p.percent < 30 ? 'danger' : p.percent < 60 ? 'warn' : '';
+        return `<div class="card project-card">
+          <div class="project-card-header" onclick="App.toggleProject(${idx})">
+            <div>
+              <span class="proj-name">${p.icon} ${p.name}</span>
+              <span style="font-size:12px;color:var(--text-muted);margin-left:8px">${p.desc}</span>
+              ${p.deadline ? `<span style="font-size:11px;color:var(--red);margin-left:8px">${p.deadline}</span>` : ''}
+            </div>
+            <span class="chevron">▼</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;margin:8px 0">
+            <div class="progress-bar" style="flex:1;max-width:400px">
+              <div class="progress-fill ${fillClass}" style="width:${p.percent}%"></div>
+            </div>
+            <span style="font-size:13px;font-weight:510">${p.percent}%</span>
+          </div>
+          <div class="phase-pills">
+            ${p.phases.map(ph => `<span class="phase-pill ${ph.status}">${ph.status === 'done' ? '✅' : ph.status === 'in_progress' ? '🔄' : '⬜'} ${ph.name}</span>`).join(' → ')}
+          </div>
+          <div class="project-detail" id="projDetail${idx}">
+            <div style="font-size:13px;color:var(--text-secondary);margin-bottom:8px">📌 关键任务</div>
+            <ul class="subtask-list">
+              ${p.tasks.map(t => `<li class="subtask-item">${t}</li>`).join('')}
+            </ul>
+            <div style="margin-top:10px;font-size:12px;color:var(--text-muted)">
+              📁 ${p.docs.join(' / ')} &nbsp;|&nbsp; 👤 ${p.collaborators.join('/')}
+            </div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`);
+  },
+
+  toggleProject(idx) {
+    const el = document.getElementById('projDetail' + idx);
+    el?.classList.toggle('show');
+    const header = el?.previousElementSibling?.previousElementSibling?.previousElementSibling;
+    if (el && el.classList.contains('show')) {
+      el.closest('.project-card')?.querySelector('.project-card-header')?.classList.add('open');
+    } else {
+      el?.closest('.project-card')?.querySelector('.project-card-header')?.classList.remove('open');
+    }
+  },
+
+  // ===== 模块4: AI 指挥中心 =====
+  renderModule4() {
+    const cronJobs = this.data.cronJobs;
+    const skills = this.data.skills;
+
+    // 技能分类
+    const skillCats = {};
+    skills.forEach(s => {
+      const cat = s.category || 'other';
+      if (!skillCats[cat]) skillCats[cat] = [];
+      skillCats[cat].push(s);
+    });
+
+    // 执行记录(模拟)
+    const execLogs = [
+      { time: '今天 14:23', status: 'ok', text: '获取凡奢时光账户诊断' },
+      { time: '今天 11:05', status: 'ok', text: '平台知识学习完成（天猫+京东+小红书）' },
+      { time: '昨天 18:30', status: 'ok', text: '回复金投赏评分问题' },
+      { time: '昨天 15:12', status: 'ok', text: '生成欣雅图周报' },
+      { time: '昨天 09:20', status: 'ok', text: '天猫平台知识学习完成' },
+      { time: '前天 17:45', status: 'error', text: '工作台隧道心跳保活异常' },
+    ];
+
+    document.getElementById('content').insertAdjacentHTML('beforeend', `
+    <div class="module" id="module4">
+      <div class="module-title">🤖 AI 指挥中心</div>
+
+      <!-- 状态卡 -->
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="status-dot online" style="width:10px;height:10px"></span>
+          <span style="font-weight:510">在线 · 已运行 12h</span>
+          <span style="color:var(--text-muted);font-size:13px">模型 ${this.data.systemLive?.hermes?.model || 'deepseek-v4-pro'}</span>
+        </div>
+        <div style="margin-top:8px;font-size:13px;color:var(--text-muted)">
+          飞书 ✅ · 钉钉 ✅ · MCP ${this.data.systemLive?.hermes?.mcp || 3} 个已连接
+        </div>
+      </div>
+
+      <!-- Cron 任务 -->
+      <div class="card">
+        <div class="section-header"><span class="icon">⏰</span> 定时任务（Cron）</div>
+        ${cronJobs.slice(0, 8).map(c => {
+          const statusIcon = c.last_status === 'ok' ? '✅' : '❌';
+          return `<div style="display:flex;align-items:center;gap:12px;padding:8px 0;font-size:13px;border-bottom:1px solid var(--border)">
+            <span style="min-width:160px">${this.esc(c.name)}</span>
+            <span style="color:var(--text-muted);font-size:12px;min-width:90px">${this.esc(c.schedule || '')}</span>
+            <span>${statusIcon} ${this.esc(c.last_relative || '')}</span>
+            <span style="color:var(--text-muted);font-size:12px;margin-left:auto">下次 ${this.esc(c.next_relative || '')}</span>
+          </div>`;
+        }).join('')}
+        ${cronJobs.length > 8 ? `<div style="margin-top:8px;font-size:12px;color:var(--text-muted)">... 还有 ${cronJobs.length - 8} 个任务</div>` : ''}
+      </div>
+
+      <!-- 执行记录 -->
+      <div class="card">
+        <div class="section-header"><span class="icon">📋</span> 近期执行记录</div>
+        ${execLogs.map(log => `
+          <div style="padding:6px 0;font-size:13px;border-bottom:1px solid var(--border)">
+            <span style="color:var(--text-muted);font-size:12px">${log.time}</span>
+            <span style="margin-left:8px">${log.status === 'ok' ? '✅' : '❌'}</span>
+            <span style="margin-left:6px">${log.text}</span>
+          </div>
+        `).join('')}
+      </div>
+
+      <!-- 可用技能 -->
+      <div class="card">
+        <div class="section-header"><span class="icon">🛠️</span> 可用技能（已加载）</div>
+        ${Object.entries(skillCats).slice(0, 6).map(([cat, items]) => {
+          const catName = { 'data-science': '📊 数据科学', 'productivity': '📋 生产力', 'creative': '🎨 创意', 'software-development': '💻 开发', 'devops': '🔧 DevOps', 'research': '🔬 研究', 'github': '🐙 GitHub' }[cat] || cat;
+          return `<div style="margin-bottom:10px">
+            <div style="font-weight:510;font-size:13px;margin-bottom:4px">${catName}</div>
+            <div style="font-size:12px;color:var(--text-muted)">${items.slice(0, 6).map(s => s.name).join(' / ')}${items.length > 6 ? ' ...' : ''}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`);
+  },
+
+  // ===== 模块5: 能力矩阵 =====
+  renderModule5() {
+    const matrix = [
+      { taskType: '报表生成', analysis: true, doc: true, monitor: false, dev: false, comm: false, decide: false },
+      { taskType: '数据分析', analysis: true, doc: false, monitor: false, dev: false, comm: false, decide: false },
+      { taskType: 'AB 测试', analysis: true, doc: false, monitor: false, dev: false, comm: false, decide: false },
+      { taskType: '周报/日报', analysis: true, doc: true, monitor: true, dev: false, comm: false, decide: false },
+      { taskType: '需求文档', analysis: false, doc: true, monitor: false, dev: false, comm: false, decide: false },
+      { taskType: '数据监控', analysis: false, doc: false, monitor: true, dev: false, comm: false, decide: false },
+      { taskType: '代码开发', analysis: false, doc: false, monitor: false, dev: true, comm: false, decide: false },
+      { taskType: '跨部门协调', analysis: false, doc: false, monitor: false, dev: false, comm: true, decide: false },
+      { taskType: '产品方向决策', analysis: false, doc: false, monitor: false, dev: false, comm: false, decide: true },
+    ];
+
+    const aiTasks = this.data.tasks.filter(t => t.ai_delegatable);
+
+    document.getElementById('content').insertAdjacentHTML('beforeend', `
+    <div class="module" id="module5">
+      <div class="module-title">🔀 能力矩阵 · 任务类型 × Hermes 能力</div>
+
+      <div class="card" style="overflow-x:auto">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>任务类型</th>
+              <th>数据分析</th>
+              <th>文档编写</th>
+              <th>监控</th>
+              <th>代码开发</th>
+              <th>沟通</th>
+              <th>决策</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${matrix.map(row => `
+              <tr>
+                <td>${row.taskType}</td>
+                <td><span class="${row.analysis ? 'check' : 'dash'}">${row.analysis ? '✅' : '—'}</span></td>
+                <td><span class="${row.doc ? 'check' : 'dash'}">${row.doc ? '✅' : '—'}</span></td>
+                <td><span class="${row.monitor ? 'check' : 'dash'}">${row.monitor ? '✅' : '—'}</span></td>
+                <td><span class="${row.dev ? 'check' : 'dash'}">${row.dev ? '✅' : '—'}</span></td>
+                <td><span class="${row.comm ? 'check' : 'dash'}">${row.comm ? '✅' : '—'}</span></td>
+                <td><span class="${row.decide ? 'check' : 'dash'}">${row.decide ? '✅' : '—'}</span></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 建议委派 -->
+      <div class="card">
+        <div class="section-header"><span class="icon">💡</span> 建议委派：${aiTasks.length} 个任务可以交给 AI</div>
+        <ul class="priority-list">
+          ${aiTasks.slice(0, 5).map(t => `
+            <li class="priority-item">
+              <span>🔵</span>
+              <span class="task-title">${this.esc(t.title)}</span>
+              <span class="task-project">${this.esc(t.project || '')}</span>
+              <span class="t-tag ${t.status === '已完成' ? 'done' : 'progress'}">${this.esc(t.status)}</span>
+            </li>
+          `).join('')}
+          ${aiTasks.length === 0 ? '<div class="empty-state">暂无建议委派的任务</div>' : ''}
+        </ul>
+      </div>
+
+      <!-- 统计 -->
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">${aiTasks.length}</div>
+          <div class="stat-label">建议委派任务</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">12</div>
+          <div class="stat-label">本周 AI 已完成</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">~8h</div>
+          <div class="stat-label">为你节省时间</div>
+        </div>
+      </div>
+    </div>`);
+  },
+
+  // ===== 模块6: 知识大脑 =====
+  renderModule6() {
+    const knowledge = this.data.knowledge;
+    if (!knowledge) {
+      document.getElementById('content').insertAdjacentHTML('beforeend', `
+        <div class="module" id="module6">
+          <div class="module-title">🧠 知识大脑</div>
+          <div class="card"><div class="empty-state"><div class="icon">📚</div>知识库数据加载中...</div></div>
+        </div>`);
+      return;
+    }
+
+    const cats = knowledge.categories || [];
+
+    document.getElementById('content').insertAdjacentHTML('beforeend', `
+    <div class="module" id="module6">
+      <div class="module-title">🧠 知识大脑</div>
+      <div style="margin-bottom:12px;font-size:12px;color:var(--text-muted)">
+        最后更新：${knowledge.updated || '未知'} · 自动学习每天运行
+      </div>
+
+      ${cats.map(cat => `
+        <div class="knowledge-section">
+          <div class="section-title">${this.esc(cat.name)} <span style="font-size:12px;color:var(--text-muted);font-weight:400">${this.esc(cat.desc || '')}</span></div>
+          ${(cat.items || []).map(item => `
+            <div class="knowledge-platform">
+              <div class="kp-header">
+                <span class="kp-icon">${item.icon || '📄'}</span>
+                <span class="kp-name">${this.esc(item.name)}</span>
+                ${item.subtitle ? `<span style="font-size:12px;color:var(--text-muted)">${this.esc(item.subtitle)}</span>` : ''}
+                <span class="kp-status ${item.status || 'active'}">${this.esc(item.statusText || item.status || '')}</span>
+              </div>
+
+              <!-- 知识条目 -->
+              ${(item.knowledge || []).slice(0, 3).map(k => `
+                <div style="margin:4px 0;font-size:13px">
+                  <span style="color:var(--text-muted)">${this.esc(k.section)}：</span>
+                  <span style="color:var(--text-secondary)">${(k.items || []).slice(0, 4).join(' / ')}</span>
+                  ${k.verified ? `<span style="font-size:10px;color:var(--orange);margin-left:4px">${this.esc(k.verified)}</span>` : ''}
+                </div>
+              `).join('')}
+
+              <!-- 变更记录 -->
+              ${(item.changes || []).length > 0 ? `
+                <div class="kp-changes" style="margin-top:8px">
+                  ${item.changes.slice(0, 2).map(ch => `
+                    <div style="margin-bottom:4px">
+                      <span class="change-date">${this.esc(ch.date)}</span>
+                      ${(ch.items || []).map(ci => {
+                        const isNew = ci.includes('🆕');
+                        return `<span class="change-item${isNew ? ' new' : ''}">${this.esc(ci)}</span>`;
+                      }).join(' ')}
+                    </div>
+                  `).join('')}
+                </div>
+              ` : ''}
+
+              <!-- Insight -->
+              ${item.insight ? `<div class="kp-insight">💡 ${this.esc(item.insight)}</div>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      `).join('')}
+    </div>`);
+  },
+
+  // ===== 工具函数 =====
+  esc(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+};
+
+// ===== 启动 =====
+document.addEventListener('DOMContentLoaded', () => App.init());
+</script>
+
+</body>
+</html>
