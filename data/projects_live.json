@@ -1,0 +1,3037 @@
+{
+  "generated_at": "2026-07-06T18:47:43.909726",
+  "projects": [
+    {
+      "id": "aione",
+      "name": "AIONE",
+      "files": [],
+      "total_files": 0,
+      "phases": "阶段一-能分析的助理:done→阶段二-能主动的助理:done→阶段三-有记忆的助理:in_progress→阶段四-能进化的助理:pending→阶段五-能执行的助理:pending",
+      "phase_info": {
+        "current": 2,
+        "total": 5,
+        "percent": 50,
+        "phases": [
+          {
+            "name": "阶段一-能分析的助理",
+            "status": "done"
+          },
+          {
+            "name": "阶段二-能主动的助理",
+            "status": "done"
+          },
+          {
+            "name": "阶段三-有记忆的助理",
+            "status": "in_progress"
+          },
+          {
+            "name": "阶段四-能进化的助理",
+            "status": "pending"
+          },
+          {
+            "name": "阶段五-能执行的助理",
+            "status": "pending"
+          }
+        ]
+      },
+      "milestones": [],
+      "docs": [],
+      "collaborators": [],
+      "status": "active",
+      "deadline_warning": false
+    },
+    {
+      "id": "jts",
+      "name": "金投赏",
+      "files": [
+        {
+          "name": "金投赏项目",
+          "type": "folder",
+          "children": [
+            {
+              "name": "deck-v4",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "projects",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "jintoushang_pptx_ppt169_20260621",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "test_cases",
+              "type": "folder",
+              "children": []
+            },
+            {
+              "name": "tests",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "test_06",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31226",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_07",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31226",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_08",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31226",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_09",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31235",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31239",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31240",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31241",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_10",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31226",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_100_6_12",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "41917",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41922",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41937",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_100_6_18",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "39031",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39042",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39078",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39366",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39367",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39406",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_11",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31226",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_12",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31226",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_19",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_21",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_24",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31226",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_27",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "31222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "31225",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "test_484_full",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "38789",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38795",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38808",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38818",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38834",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38851",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38856",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38866",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38876",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38889",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38890",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38891",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38894",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38899",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38902",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38907",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38908",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38910",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38916",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38919",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38923",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38931",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38940",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38941",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38945",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38947",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38955",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38957",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38967",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38975",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38980",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38991",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38997",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "38999",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39016",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39019",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39024",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39025",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39026",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39027",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39031",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39038",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39042",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39044",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39047",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39048",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39049",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39066",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39068",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39070",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39073",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39077",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39078",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39093",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39097",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39104",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39105",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39110",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39137",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39140",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39144",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39148",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39151",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39155",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39157",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39159",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39162",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39166",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39169",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39174",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39175",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39176",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39181",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39205",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39207",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39217",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39224",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39231",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39237",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39242",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39244",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39250",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39256",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39280",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39281",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39286",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39287",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39291",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39298",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39299",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39300",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39303",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39308",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39315",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39317",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39319",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39321",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39322",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39324",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39325",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39328",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39331",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39357",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39362",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39364",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39366",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39367",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39368",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39385",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39387",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39394",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39397",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39398",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39405",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39406",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39418",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39425",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39432",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39435",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39443",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39444",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39463",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39475",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39494",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39496",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39501",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39520",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39521",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39523",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39524",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39528",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39530",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39536",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39537",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39540",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39542",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39550",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39555",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39557",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39590",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39593",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39612",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39622",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39641",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39655",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39662",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39676",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39734",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39738",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39741",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39742",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39744",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39754",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39756",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39769",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39770",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39774",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39779",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39781",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39783",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39785",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39827",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39829",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39836",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39840",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39885",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39886",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39887",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39888",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39910",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39911",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39912",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39913",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39914",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39921",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39926",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39928",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39937",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39939",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39954",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "39961",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40013",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40014",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40017",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40022",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40025",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40032",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40040",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40053",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40060",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40062",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40077",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40088",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40110",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40111",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40118",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40119",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40122",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40124",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40136",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40143",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40198",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40224",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40243",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40244",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40252",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40255",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40256",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40263",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40287",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40291",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40294",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40297",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40306",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40307",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40309",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40314",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40318",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40324",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40326",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40328",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40333",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40337",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40338",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40341",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40342",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40343",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40349",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40353",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40358",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40359",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40361",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40362",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40368",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40377",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40383",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40419",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40439",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40441",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40448",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40457",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40478",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40482",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40494",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40516",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40517",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40518",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40522",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40525",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40562",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40586",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40594",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40605",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40607",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40617",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40631",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40635",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40640",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40644",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40659",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40660",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40662",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40664",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40670",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40675",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40685",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40689",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40692",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40693",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40699",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40703",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40713",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40716",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40717",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40721",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40722",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40728",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40736",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40737",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40738",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40741",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40745",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40749",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40755",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40761",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40763",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40766",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40771",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40772",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40780",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40799",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40804",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40820",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40822",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40825",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40835",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40836",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40839",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40843",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40863",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40872",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40879",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40918",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40924",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40927",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40938",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40948",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40955",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40959",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40972",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40978",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "40997",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41016",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41017",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41018",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41025",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41037",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41041",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41043",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41053",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41065",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41075",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41082",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41090",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41094",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41099",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41104",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41111",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41117",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41129",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41141",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41179",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41188",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41199",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41203",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41213",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41216",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41221",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41222",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41225",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41242",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41244",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41250",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41254",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41264",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41265",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41282",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41284",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41287",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41291",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41299",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41304",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41306",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41313",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41319",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41325",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41332",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41353",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41354",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41367",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41371",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41381",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41402",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41416",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41420",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41425",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41426",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41432",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41434",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41437",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41452",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41463",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41469",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41471",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41482",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41487",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41494",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41500",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41502",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41507",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41512",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41518",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41542",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41546",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41548",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41549",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41552",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41555",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41558",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41564",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41571",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41573",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41574",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41577",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41589",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41596",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41600",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41611",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41613",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41616",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41619",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41631",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41632",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41633",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41634",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41639",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41641",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41646",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41653",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41654",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41656",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41659",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41666",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41667",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41682",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41683",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41694",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41696",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41704",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41710",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41721",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41722",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41724",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41727",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41737",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41739",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41740",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41744",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41746",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41750",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41753",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41756",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41757",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41776",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41780",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41786",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41792",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41800",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41808",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41816",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41823",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41825",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41827",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41834",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41835",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41847",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41854",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41859",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41862",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41877",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41885",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41887",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41889",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41893",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41896",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41897",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41899",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41902",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41917",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41927",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41930",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41945",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41947",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41948",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41950",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41954",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41959",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41962",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41965",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41973",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41988",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41990",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41997",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "41999",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "42000",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "42008",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "42015",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "42017",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "42019",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "42039",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
+                      "name": "_downloads",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "金投赏AI评分系统_PPT大纲_v12.md",
+              "type": "file",
+              "size": "8KB"
+            }
+          ]
+        },
+        {
+          "name": "金投赏AI评分方案_最终版.md",
+          "type": "file",
+          "size": "6KB"
+        }
+      ],
+      "total_files": 2,
+      "phases": "",
+      "phase_info": {
+        "current": 0,
+        "total": 5,
+        "percent": 0,
+        "phases": []
+      },
+      "milestones": [],
+      "docs": [],
+      "collaborators": [],
+      "status": "active",
+      "deadline_warning": false
+    },
+    {
+      "id": "business",
+      "name": "生意管家",
+      "files": [
+        {
+          "name": "平台知识",
+          "type": "folder",
+          "children": [
+            {
+              "name": "万相台无界",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "文章",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "夏日穿搭季-服饰盛夏爆品增长打法布局！_38728.md",
+                      "type": "file",
+                      "size": "903B"
+                    },
+                    {
+                      "name": "新店专属曝光派发手把手教学_38735.md",
+                      "type": "file",
+                      "size": "770B"
+                    },
+                    {
+                      "name": "新手新店如何获取流量_38725.md",
+                      "type": "file",
+                      "size": "1KB"
+                    },
+                    {
+                      "name": "新星计划-新手商家福利派送_38734.md",
+                      "type": "file",
+                      "size": "979B"
+                    },
+                    {
+                      "name": "服饰盛夏应趋势锁定布局_38736.md",
+                      "type": "file",
+                      "size": "1KB"
+                    },
+                    {
+                      "name": "淡季推广布局进阶_38733.md",
+                      "type": "file",
+                      "size": "878B"
+                    },
+                    {
+                      "name": "食品_健康_宠企_数字生活-淡季推广能力速通进阶_38732.md",
+                      "type": "file",
+                      "size": "869B"
+                    }
+                  ]
+                },
+                {
+                  "name": "知识库.md",
+                  "type": "file",
+                  "size": "12KB"
+                },
+                {
+                  "name": "通用知识库.md",
+                  "type": "file",
+                  "size": "19KB"
+                }
+              ]
+            },
+            {
+              "name": "京东",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "知识库.md",
+                  "type": "file",
+                  "size": "7KB"
+                }
+              ]
+            },
+            {
+              "name": "唯品会",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "知识库.md",
+                  "type": "file",
+                  "size": "4KB"
+                }
+              ]
+            },
+            {
+              "name": "天猫",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "知识库.md",
+                  "type": "file",
+                  "size": "13KB"
+                }
+              ]
+            },
+            {
+              "name": "小红书",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "知识库.md",
+                  "type": "file",
+                  "size": "13KB"
+                }
+              ]
+            },
+            {
+              "name": "淘宝闪购",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "知识库.md",
+                  "type": "file",
+                  "size": "6KB"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "total_files": 14,
+      "phases": "",
+      "phase_info": {
+        "current": 0,
+        "total": 5,
+        "percent": 0,
+        "phases": []
+      },
+      "milestones": [],
+      "docs": [],
+      "collaborators": [],
+      "status": "active",
+      "deadline_warning": false
+    },
+    {
+      "id": "andy",
+      "name": "Andy数据",
+      "files": [
+        {
+          "name": "店铺诊断项目",
+          "type": "folder",
+          "children": [
+            {
+              "name": "smart-diagnosis",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "out",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "_next",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "src",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "app",
+                      "type": "folder",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "total_files": 0,
+      "phases": "全品类人群:done→类目人群:done→商品人群:done→人群分析报告:in_progress→批量屏蔽:pending",
+      "phase_info": {
+        "current": 3,
+        "total": 5,
+        "percent": 70,
+        "phases": [
+          {
+            "name": "全品类人群",
+            "status": "done"
+          },
+          {
+            "name": "类目人群",
+            "status": "done"
+          },
+          {
+            "name": "商品人群",
+            "status": "done"
+          },
+          {
+            "name": "人群分析报告",
+            "status": "in_progress"
+          },
+          {
+            "name": "批量屏蔽",
+            "status": "pending"
+          }
+        ]
+      },
+      "milestones": [],
+      "docs": [],
+      "collaborators": [],
+      "status": "active",
+      "deadline_warning": false
+    },
+    {
+      "id": "autoone",
+      "name": "AutoOneBP",
+      "files": [],
+      "total_files": 0,
+      "phases": "",
+      "phase_info": {
+        "current": 0,
+        "total": 5,
+        "percent": 0,
+        "phases": []
+      },
+      "milestones": [],
+      "docs": [],
+      "collaborators": [],
+      "status": "active",
+      "deadline_warning": false
+    },
+    {
+      "id": "quan",
+      "name": "泉哥需求",
+      "files": [],
+      "total_files": 0,
+      "phases": "",
+      "phase_info": {
+        "current": 0,
+        "total": 5,
+        "percent": 0,
+        "phases": []
+      },
+      "milestones": [],
+      "docs": [],
+      "collaborators": [],
+      "status": "active",
+      "deadline_warning": false
+    }
+  ],
+  "summary": {
+    "total_projects": 6,
+    "avg_progress": 20
+  }
+}
