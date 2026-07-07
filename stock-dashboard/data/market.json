@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07 15:16:20",
+  "updated": "2026-07-07 15:20:20",
   "indices": [
     {
       "name": "上证指数",
@@ -615,7 +615,17 @@
       "price": 20.29,
       "change_pct": -4.2,
       "reasons": [
-        "换手率92900.0%"
+        "换手率112900.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "001979",
+      "name": "招商蛇口",
+      "price": 6.45,
+      "change_pct": -4.02,
+      "reasons": [
+        "换手率1000.0%"
       ],
       "severity": "medium"
     },
@@ -625,7 +635,7 @@
       "price": 37.17,
       "change_pct": -3.95,
       "reasons": [
-        "换手率11700.0%"
+        "换手率10200.0%"
       ],
       "severity": "medium"
     },
@@ -635,7 +645,7 @@
       "price": 4.58,
       "change_pct": -3.78,
       "reasons": [
-        "换手率193200.0%"
+        "换手率190700.0%"
       ],
       "severity": "medium"
     },
@@ -645,7 +655,7 @@
       "price": 18.19,
       "change_pct": -3.24,
       "reasons": [
-        "换手率180600.0%"
+        "换手率183100.0%"
       ],
       "severity": "medium"
     },
@@ -655,7 +665,7 @@
       "price": 20.64,
       "change_pct": -3.14,
       "reasons": [
-        "换手率26700.0%"
+        "换手率25800.0%"
       ],
       "severity": "medium"
     },
@@ -665,7 +675,7 @@
       "price": 6.8,
       "change_pct": -3.0,
       "reasons": [
-        "换手率44000.0%"
+        "换手率50700.0%"
       ],
       "severity": "medium"
     },
@@ -675,7 +685,7 @@
       "price": 71.72,
       "change_pct": -2.77,
       "reasons": [
-        "换手率17700.0%"
+        "换手率26500.0%"
       ],
       "severity": "medium"
     },
@@ -685,7 +695,7 @@
       "price": 76.2,
       "change_pct": -2.59,
       "reasons": [
-        "换手率500.0%"
+        "换手率400.0%"
       ],
       "severity": "medium"
     },
@@ -695,17 +705,7 @@
       "price": 55.36,
       "change_pct": -2.48,
       "reasons": [
-        "换手率7300.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "300308",
-      "name": "中际旭创",
-      "price": 1121.9,
-      "change_pct": 2.09,
-      "reasons": [
-        "换手率9200.0%"
+        "换手率12200.0%"
       ],
       "severity": "medium"
     }
