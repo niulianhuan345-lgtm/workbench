@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07 15:00:48",
+  "updated": "2026-07-07 15:08:19",
   "indices": [
     {
       "name": "上证指数",
@@ -615,17 +615,7 @@
       "price": 20.29,
       "change_pct": -4.2,
       "reasons": [
-        "换手率323033.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "001979",
-      "name": "招商蛇口",
-      "price": 6.45,
-      "change_pct": -4.02,
-      "reasons": [
-        "换手率33700.0%"
+        "换手率22500.0%"
       ],
       "severity": "medium"
     },
@@ -635,17 +625,7 @@
       "price": 37.17,
       "change_pct": -3.95,
       "reasons": [
-        "换手率17809.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "603259",
-      "name": "药明康德",
-      "price": 118.3,
-      "change_pct": -3.8,
-      "reasons": [
-        "换手率216.0%"
+        "换手率2700.0%"
       ],
       "severity": "medium"
     },
@@ -655,17 +635,7 @@
       "price": 4.58,
       "change_pct": -3.78,
       "reasons": [
-        "换手率1600500.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "600188",
-      "name": "兖矿能源",
-      "price": 18.19,
-      "change_pct": -3.24,
-      "reasons": [
-        "换手率4746.0%"
+        "换手率139600.0%"
       ],
       "severity": "medium"
     },
@@ -675,7 +645,7 @@
       "price": 20.64,
       "change_pct": -3.14,
       "reasons": [
-        "换手率19421.0%"
+        "换手率16900.0%"
       ],
       "severity": "medium"
     },
@@ -685,7 +655,7 @@
       "price": 6.8,
       "change_pct": -3.0,
       "reasons": [
-        "换手率288048.0%"
+        "换手率15500.0%"
       ],
       "severity": "medium"
     },
@@ -695,17 +665,47 @@
       "price": 71.72,
       "change_pct": -2.77,
       "reasons": [
-        "换手率14300.0%"
+        "换手率5500.0%"
       ],
       "severity": "medium"
     },
     {
-      "code": "600030",
-      "name": "中信证券",
-      "price": 28.45,
-      "change_pct": -2.67,
+      "code": "000002",
+      "name": "万 科Ａ",
+      "price": 2.99,
+      "change_pct": -2.61,
       "reasons": [
-        "换手率80300.0%"
+        "换手率4100.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "000568",
+      "name": "泸州老窖",
+      "price": 76.2,
+      "change_pct": -2.59,
+      "reasons": [
+        "换手率200.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "600276",
+      "name": "恒瑞医药",
+      "price": 55.36,
+      "change_pct": -2.48,
+      "reasons": [
+        "换手率11800.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "price": 1121.9,
+      "change_pct": 2.09,
+      "reasons": [
+        "换手率7700.0%"
       ],
       "severity": "medium"
     }
