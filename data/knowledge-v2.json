@@ -1,354 +1,273 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-06 09:48:00",
+  "updated_at": "2026-07-07 09:27:20",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-06 09:48:00",
-      "total_articles": 28,
+      "last_check": "2026-07-07 09:23:50",
+      "total_articles": 17,
       "status": "ok"
     }
   },
   "articles": [
     {
-      "id": 38717,
-      "title": "全店货品布局",
-      "file": "全店货品布局_38717.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38717&platform=",
-      "added_at": "2026-07-02 09:31:28"
+      "id": 38757,
+      "title": "夏日正当时淡季拉新破圈",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "随风",
+      "publish_time": "2026-07-06 18:23:10",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38757&platform=",
+      "status": "ACTIVING",
+      "description": "夏日正当时淡季拉新破圈",
+      "file": "夏日正当时淡季拉新破圈_38757.md",
+      "fetched_at": "2026-07-07 09:23:30"
     },
     {
-      "id": 38709,
-      "title": "夏季跨品提效布局",
-      "file": "夏季跨品提效布局_38709.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38709&platform=",
-      "added_at": "2026-07-02 09:31:28"
+      "id": 38755,
+      "title": "爆品ROI提升",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "段鹏",
+      "publish_time": "2026-07-06 17:47:12",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38755&platform=",
+      "status": "ACTIVING",
+      "description": "爆品ROI提升策略，搜索依赖强关键词，推荐依赖强人群，中小商家全站推",
+      "file": "爆品ROI提升_38755.md",
+      "fetched_at": "2026-07-07 09:23:33"
     },
     {
-      "id": 38727,
-      "title": "家享生活场景内容技巧",
-      "file": "家享生活场景内容技巧_38727.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38727&platform=",
-      "added_at": "2026-07-02 09:31:28"
+      "id": 38754,
+      "title": "全渠道引流",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "段鹏",
+      "publish_time": "2026-07-06 17:47:01",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38754&platform=",
+      "status": "ACTIVING",
+      "description": "搜索推荐内容站外全渠道引流策略与撬动关系梳理",
+      "file": "全渠道引流_38754.md",
+      "fetched_at": "2026-07-07 09:23:35"
     },
     {
-      "id": 38712,
-      "title": "家享生活爆品放量技巧",
-      "file": "家享生活爆品放量技巧_38712.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38712&platform=",
-      "added_at": "2026-07-02 09:31:28"
+      "id": 38753,
+      "title": "动态计划调优与新建",
+      "category": "其他",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "清风",
+      "publish_time": "2026-07-06 18:22:59",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38753&platform=",
+      "status": "ACTIVING",
+      "description": "动态计划调优与新建",
+      "file": "动态计划调优与新建_38753.md",
+      "fetched_at": "2026-07-07 09:23:37"
     },
     {
-      "id": 38711,
-      "title": "家享生活趋势选品技巧",
-      "file": "家享生活趋势选品技巧_38711.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38711&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38720,
-      "title": "市场趋势与上新规划",
-      "file": "市场趋势与上新规划_38720.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38720&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38721,
-      "title": "平销期-家享生活爆品打造技巧！",
-      "file": "平销期-家享生活爆品打造技巧！_38721.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38721&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38726,
-      "title": "应季选爆布局",
-      "file": "应季选爆布局_38726.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38726&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38719,
-      "title": "推广预算布局",
-      "file": "推广预算布局_38719.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38719&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38710,
-      "title": "新商成长打造高转化产品内功",
-      "file": "新商成长打造高转化产品内功_38710.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38710&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38722,
-      "title": "新手商家专属福利发放与使用教学！！",
-      "file": "新手商家专属福利发放与使用教学！！_38722.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38722&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38713,
-      "title": "新手商家福利派送",
-      "file": "新手商家福利派送_38713.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38713&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38707,
-      "title": "服饰_运动户外_珠宝饰品-夏季产品推广布局！",
-      "file": "服饰_运动户外_珠宝饰品-夏季产品推广布局！_38707.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38707&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38724,
-      "title": "服饰盛夏流量突围布局",
-      "file": "服饰盛夏流量突围布局_38724.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38724&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38708,
-      "title": "服饰盛夏穿搭种草布局",
-      "file": "服饰盛夏穿搭种草布局_38708.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38708&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38718,
-      "title": "潜力品打爆与放量",
-      "file": "潜力品打爆与放量_38718.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38718&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38716,
-      "title": "爆品维持与放量",
-      "file": "爆品维持与放量_38716.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38716&platform=",
-      "added_at": "2026-07-02 09:31:28"
-    },
-    {
-      "id": 38731,
-      "title": "大快消行业如何借势暑期实现平销增长",
-      "file": "大快消行业如何借势暑期实现平销增长_38731.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38731&platform=",
-      "added_at": "2026-07-03 09:22:14"
-    },
-    {
-      "id": 38730,
-      "title": "淡季数据分析进阶",
-      "file": "淡季数据分析进阶_38730.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38730&platform=",
-      "added_at": "2026-07-03 09:22:14"
-    },
-    {
-      "id": 38729,
-      "title": "淡季货品规划进阶",
-      "file": "淡季货品规划进阶_38729.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38729&platform=",
-      "added_at": "2026-07-03 09:22:14"
-    },
-    {
-      "id": 38723,
-      "title": "大快消行业-平销期全店推广布局",
-      "file": "大快消行业-平销期全店推广布局_38723.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38723&platform=",
-      "added_at": "2026-07-03 09:22:14"
-    },
-    {
-      "id": 38725,
-      "title": "新手新店如何获取流量",
-      "file": "新手新店如何获取流量_38725.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38725&platform=",
-      "added_at": "2026-07-04 09:02:41"
-    },
-    {
-      "id": 38732,
-      "title": "食品/健康/宠企/数字生活-淡季推广能力速通进阶",
-      "file": "食品_健康_宠企_数字生活-淡季推广能力速通进阶_38732.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38732&platform=",
-      "added_at": "2026-07-04 09:02:59"
-    },
-    {
-      "id": 38733,
-      "title": "淡季推广布局进阶",
-      "file": "淡季推广布局进阶_38733.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38733&platform=",
-      "added_at": "2026-07-04 09:03:17"
-    },
-    {
-      "id": 38734,
-      "title": "新星计划-新手商家福利派送",
-      "file": "新星计划-新手商家福利派送_38734.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38734&platform=",
-      "added_at": "2026-07-04 09:03:33"
-    },
-    {
-      "id": 38728,
-      "title": "夏日穿搭季-服饰盛夏爆品增长打法布局！",
-      "file": "夏日穿搭季-服饰盛夏爆品增长打法布局！_38728.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38728&platform=",
-      "added_at": "2026-07-06 09:48:00"
-    },
-    {
-      "id": 38735,
+      "id": 38752,
       "title": "新店专属曝光派发手把手教学",
-      "file": "新店专属曝光派发手把手教学_38735.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
-      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38735&platform=",
-      "added_at": "2026-07-06 09:48:00"
+      "category": "其他",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "雨夜",
+      "publish_time": "2026-07-06 16:54:03",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38752&platform=",
+      "status": "ACTIVING",
+      "description": "新店专属曝光派发手把手教学",
+      "file": "新店专属曝光派发手把手教学_38752.md",
+      "fetched_at": "2026-07-07 09:23:39"
+    },
+    {
+      "id": 38751,
+      "title": "淡季竞争抢量",
+      "category": "其他",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "雨夜",
+      "publish_time": "2026-07-06 16:52:23",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38751&platform=",
+      "status": "ACTIVING",
+      "description": "淡季竞争抢量",
+      "file": "淡季竞争抢量_38751.md",
+      "fetched_at": "2026-07-07 09:23:41"
+    },
+    {
+      "id": 38750,
+      "title": "食品/健康/宠企/数字生活-淡季推广无界实战与答疑",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-06 18:43:59",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38750&platform=",
+      "status": "ACTIVING",
+      "description": "讲师实战带练+高频答疑，助你用淡季打牢基础，赢在下一场大促起跑线！",
+      "file": "食品_健康_宠企_数字生活-淡季推广无界实战与答疑_38750.md",
+      "fetched_at": "2026-07-07 09:23:43"
+    },
+    {
+      "id": 38749,
+      "title": "淡季高效促转",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "十二",
+      "publish_time": "2026-07-06 16:36:21",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38749&platform=",
+      "status": "ACTIVING",
+      "description": "全店货品推广效率提升，实现全店销售额增长突破",
+      "file": "淡季高效促转_38749.md",
+      "fetched_at": "2026-07-07 09:23:46"
+    },
+    {
+      "id": 38748,
+      "title": "大快消行业-平销期引流与推广工具组合拳",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-06 18:44:06",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38748&platform=",
+      "status": "ACTIVING",
+      "description": "掌握平销期“引流+工具+货盘”三位一体打法，让店铺在淡季持续蓄水、稳步提效！",
+      "file": "大快消行业-平销期引流与推广工具组合拳_38748.md",
+      "fetched_at": "2026-07-07 09:23:48"
+    },
+    {
+      "id": 38747,
+      "title": "大快消行业-平销期ROI提升与计划调优",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-06 18:43:54",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38747&platform=",
+      "status": "ACTIVING",
+      "description": "聚焦平销期三大核心动作，用精细化运营实现“低投入、高回报”的可持续增长！",
+      "file": "大快消行业-平销期ROI提升与计划调优_38747.md",
+      "fetched_at": "2026-07-07 09:23:50"
     },
     {
       "id": 38736,
       "title": "服饰盛夏应趋势锁定布局",
-      "file": "服饰盛夏应趋势锁定布局_38736.md",
-      "source": "万堂书院",
-      "platform": "万相台无界",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "",
+      "publish_time": "2026-07-04",
       "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38736&platform=",
-      "added_at": "2026-07-06 09:48:00"
+      "status": "ACTIVING",
+      "description": "",
+      "file": "服饰盛夏应趋势锁定布局_38736.md",
+      "fetched_at": "2026-07-07 09:23:50"
+    },
+    {
+      "id": 38735,
+      "title": "新店专属曝光派发手把手教学",
+      "category": "",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "",
+      "publish_time": "",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38735&platform=",
+      "status": "ACTIVING",
+      "description": "",
+      "file": "新店专属曝光派发手把手教学_38735.md",
+      "fetched_at": "2026-07-07 09:23:50"
+    },
+    {
+      "id": 38734,
+      "title": "新星计划-新手商家福利派送",
+      "category": "其他",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "",
+      "publish_time": "2026-07-04",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38734&platform=",
+      "status": "ACTIVING",
+      "description": "",
+      "file": "新星计划-新手商家福利派送_38734.md",
+      "fetched_at": "2026-07-07 09:23:50"
+    },
+    {
+      "id": 38733,
+      "title": "淡季推广布局进阶",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-03 14:24:52",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38733&platform=",
+      "status": "ACTIVING",
+      "description": "淡季推广布局进阶",
+      "file": "淡季推广布局进阶_38733.md",
+      "fetched_at": "2026-07-07 09:23:50"
+    },
+    {
+      "id": 38732,
+      "title": "食品/健康/宠企/数字生活-淡季推广能力速通进阶",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-03 11:47:24",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38732&platform=",
+      "status": "ACTIVING",
+      "description": "三大核心能力同步提升，把淡季变成你的实战练兵场，为下一场大促蓄满弹药！",
+      "file": "食品_健康_宠企_数字生活-淡季推广能力速通进阶_38732.md",
+      "fetched_at": "2026-07-07 09:23:50"
+    },
+    {
+      "id": 38728,
+      "title": "夏日穿搭季-服饰盛夏爆品增长打法布局！",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "",
+      "publish_time": "",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38728&platform=",
+      "status": "ACTIVING",
+      "description": "",
+      "file": "夏日穿搭季-服饰盛夏爆品增长打法布局！_38728.md",
+      "fetched_at": "2026-07-07 09:23:50"
+    },
+    {
+      "id": 38725,
+      "title": "新手新店如何获取流量",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "",
+      "publish_time": "",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38725&platform=",
+      "status": "ACTIVING",
+      "description": "",
+      "file": "新手新店如何获取流量_38725.md",
+      "fetched_at": "2026-07-07 09:23:50"
     }
   ],
   "daily_log": [
     {
-      "date": "2026-07-02",
-      "action": "sync",
-      "source": "万堂书院",
+      "date": "2026-07-07",
+      "action": "fetch_new_courses",
       "new_count": 10,
       "new_ids": [
-        38716,
-        38717,
-        38718,
-        38719,
-        38720,
-        38721,
-        38722,
-        38724,
-        38726,
-        38727
+        38757,
+        38755,
+        38754,
+        38753,
+        38752,
+        38751,
+        38750,
+        38749,
+        38748,
+        38747
       ],
-      "new_titles": [
-        "爆品维持与放量",
-        "全店货品布局",
-        "潜力品打爆与放量",
-        "推广预算布局",
-        "市场趋势与上新规划",
-        "平销期-家享生活爆品打造技巧！",
-        "新手商家专属福利发放与使用教学！！",
-        "服饰盛夏流量突围布局",
-        "应季选爆布局",
-        "家享生活场景内容技巧"
-      ],
-      "total_articles": 21
-    },
-    {
-      "date": "2026-07-03",
-      "action": "sync",
-      "source": "万堂书院",
-      "new_count": 4,
-      "new_ids": [
-        38731,
-        38730,
-        38729,
-        38723
-      ],
-      "new_titles": [
-        "大快消行业如何借势暑期实现平销增长",
-        "淡季数据分析进阶",
-        "淡季货品规划进阶",
-        "大快消行业-平销期全店推广布局"
-      ],
-      "total_articles": 21
-    },
-    {
-      "date": "2026-07-04",
-      "action": "sync",
-      "source": "万堂书院",
-      "new_count": 4,
-      "new_ids": [
-        38725,
-        38732,
-        38733,
-        38734
-      ],
-      "new_titles": [
-        "新手新店如何获取流量",
-        "食品/健康/宠企/数字生活-淡季推广能力速通进阶",
-        "淡季推广布局进阶",
-        "新星计划-新手商家福利派送"
-      ],
-      "total_articles": 25
-    },
-    {
-      "date": "2026-07-06",
-      "action": "sync",
-      "source": "万堂书院",
-      "new_count": 3,
-      "new_ids": [
-        38728,
-        38735,
-        38736
-      ],
-      "new_titles": [
-        "夏日穿搭季-服饰盛夏爆品增长打法布局！",
-        "新店专属曝光派发手把手教学",
-        "服饰盛夏应趋势锁定布局"
-      ],
-      "total_articles": 28
+      "total_articles": 17,
+      "timestamp": "2026-07-07 09:23:50"
     }
   ]
 }
