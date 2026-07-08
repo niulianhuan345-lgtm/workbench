@@ -1,15 +1,71 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-07 09:27:20",
+  "updated_at": "2026-07-08 09:26:20",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-07 09:23:50",
-      "total_articles": 17,
+      "last_check": "2026-07-08 09:26:20",
+      "total_articles": 21,
       "status": "ok"
     }
   },
   "articles": [
+    {
+      "id": 38758,
+      "title": "《新商专属》限时福利发放与手把手教学",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-07 11:10:22",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38758&platform=",
+      "status": "LIVING",
+      "description": "新手商户起量难？没保证？不敢花钱？  \r\n官方赠送使用额度，用好再投入，更有老师手把手进行手实操教学！  \r\n点击领取福利+免费曝光，更有讲师专项答疑！",
+      "file": "《新商专属》限时福利发放与手把手教学_38758.md",
+      "fetched_at": "2026-07-08 09:26:20"
+    },
+    {
+      "id": 38759,
+      "title": "新店专属曝光派发手把手教学",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "蛋蛋",
+      "publish_time": "2026-07-07 09:55:55",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38759&platform=",
+      "status": "END",
+      "description": "新店专属 曝光派发 手把手教学",
+      "file": "新店专属曝光派发手把手教学_38759.md",
+      "fetched_at": "2026-07-08 09:26:20"
+    },
+    {
+      "id": 38760,
+      "title": "夏日穿搭季-服饰趋势爆品布局！",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-07 15:07:00",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38760&platform=",
+      "status": "ACTIVING",
+      "description": "夏日穿搭季-服饰趋势爆品布局！",
+      "file": "夏日穿搭季-服饰趋势爆品布局！_38760.md",
+      "fetched_at": "2026-07-08 09:26:20"
+    },
+    {
+      "id": 38761,
+      "title": "盛夏拉新布局",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "蛋蛋",
+      "publish_time": "2026-07-07 10:03:05",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38761&platform=",
+      "status": "ACTIVING",
+      "description": "盛夏拉新布局",
+      "file": "盛夏拉新布局_38761.md",
+      "fetched_at": "2026-07-08 09:26:20"
+    },
     {
       "id": 38757,
       "title": "夏日正当时淡季拉新破圈",
@@ -268,6 +324,19 @@
       ],
       "total_articles": 17,
       "timestamp": "2026-07-07 09:23:50"
+    },
+    {
+      "date": "2026-07-08",
+      "action": "fetch_new_courses",
+      "new_count": 4,
+      "new_ids": [
+        38761,
+        38760,
+        38759,
+        38758
+      ],
+      "total_articles": 21,
+      "timestamp": "2026-07-08 09:26:20"
     }
   ]
 }
