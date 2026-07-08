@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08 15:20:05",
+  "updated": "2026-07-08 15:24:07",
   "indices": [
     {
       "name": "上证指数",
@@ -626,7 +626,7 @@
       "price": 98.15,
       "change_pct": 4.97,
       "reasons": [
-        "换手率73100.0%"
+        "换手率93500.0%"
       ],
       "severity": "medium"
     },
@@ -636,7 +636,7 @@
       "price": 35.45,
       "change_pct": -4.63,
       "reasons": [
-        "换手率12700.0%"
+        "换手率13900.0%"
       ],
       "severity": "medium"
     },
@@ -647,17 +647,7 @@
       "change_pct": 4.59,
       "reasons": [
         "振幅10%",
-        "换手率40755.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "601012",
-      "name": "隆基绿能",
-      "price": 11.74,
-      "change_pct": -3.85,
-      "reasons": [
-        "换手率33760.0%"
+        "换手率39004.0%"
       ],
       "severity": "medium"
     },
@@ -667,17 +657,7 @@
       "price": 35.98,
       "change_pct": -3.62,
       "reasons": [
-        "换手率7300.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "002241",
-      "name": "歌尔股份",
-      "price": 20.41,
-      "change_pct": -3.18,
-      "reasons": [
-        "换手率54500.0%"
+        "换手率17000.0%"
       ],
       "severity": "medium"
     },
@@ -687,7 +667,7 @@
       "price": 361.0,
       "change_pct": -3.08,
       "reasons": [
-        "换手率8400.0%"
+        "换手率9500.0%"
       ],
       "severity": "medium"
     },
@@ -697,7 +677,7 @@
       "price": 36.87,
       "change_pct": 3.02,
       "reasons": [
-        "换手率62700.0%"
+        "换手率58700.0%"
       ],
       "severity": "medium"
     },
@@ -707,7 +687,27 @@
       "price": 20.03,
       "change_pct": -2.96,
       "reasons": [
-        "换手率17500.0%"
+        "换手率18900.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "688256",
+      "name": "寒武纪",
+      "price": 1413.55,
+      "change_pct": 1.84,
+      "reasons": [
+        "换手率5544.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "002594",
+      "name": "比亚迪",
+      "price": 87.8,
+      "change_pct": 1.79,
+      "reasons": [
+        "换手率11700.0%"
       ],
       "severity": "medium"
     }
