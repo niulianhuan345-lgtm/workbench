@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08 15:28:07",
+  "updated": "2026-07-08 15:32:25",
   "indices": [
     {
       "name": "上证指数",
@@ -616,7 +616,8 @@
       "change_pct": -11.19,
       "reasons": [
         "暴跌11%",
-        "振幅12%"
+        "振幅12%",
+        "换手率29721.0%"
       ],
       "severity": "high"
     },
@@ -626,7 +627,7 @@
       "price": 98.15,
       "change_pct": 4.97,
       "reasons": [
-        "换手率103900.0%"
+        "换手率52000.0%"
       ],
       "severity": "medium"
     },
@@ -636,7 +637,7 @@
       "price": 35.45,
       "change_pct": -4.63,
       "reasons": [
-        "换手率12600.0%"
+        "换手率12100.0%"
       ],
       "severity": "medium"
     },
@@ -647,7 +648,17 @@
       "change_pct": 4.59,
       "reasons": [
         "振幅10%",
-        "换手率39148.0%"
+        "换手率275156.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "601012",
+      "name": "隆基绿能",
+      "price": 11.74,
+      "change_pct": -3.85,
+      "reasons": [
+        "换手率465700.0%"
       ],
       "severity": "medium"
     },
@@ -657,7 +668,17 @@
       "price": 35.98,
       "change_pct": -3.62,
       "reasons": [
-        "换手率21800.0%"
+        "换手率26726.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "002241",
+      "name": "歌尔股份",
+      "price": 20.41,
+      "change_pct": -3.18,
+      "reasons": [
+        "换手率379400.0%"
       ],
       "severity": "medium"
     },
@@ -667,7 +688,7 @@
       "price": 361.0,
       "change_pct": -3.08,
       "reasons": [
-        "换手率10600.0%"
+        "换手率91343.0%"
       ],
       "severity": "medium"
     },
@@ -677,37 +698,17 @@
       "price": 36.87,
       "change_pct": 3.02,
       "reasons": [
-        "换手率69400.0%"
+        "换手率167600.0%"
       ],
       "severity": "medium"
     },
     {
-      "code": "601688",
-      "name": "华泰证券",
-      "price": 20.03,
-      "change_pct": -2.96,
+      "code": "601225",
+      "name": "陕西煤业",
+      "price": 23.55,
+      "change_pct": 2.97,
       "reasons": [
-        "换手率2500.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "600276",
-      "name": "恒瑞医药",
-      "price": 54.01,
-      "change_pct": -2.44,
-      "reasons": [
-        "换手率6440.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "688256",
-      "name": "寒武纪",
-      "price": 1413.55,
-      "change_pct": 1.84,
-      "reasons": [
-        "换手率5744.0%"
+        "换手率27400.0%"
       ],
       "severity": "medium"
     }
