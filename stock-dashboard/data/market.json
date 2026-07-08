@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08 15:24:07",
+  "updated": "2026-07-08 15:28:07",
   "indices": [
     {
       "name": "上证指数",
@@ -626,7 +626,7 @@
       "price": 98.15,
       "change_pct": 4.97,
       "reasons": [
-        "换手率93500.0%"
+        "换手率103900.0%"
       ],
       "severity": "medium"
     },
@@ -636,7 +636,7 @@
       "price": 35.45,
       "change_pct": -4.63,
       "reasons": [
-        "换手率13900.0%"
+        "换手率12600.0%"
       ],
       "severity": "medium"
     },
@@ -647,7 +647,7 @@
       "change_pct": 4.59,
       "reasons": [
         "振幅10%",
-        "换手率39004.0%"
+        "换手率39148.0%"
       ],
       "severity": "medium"
     },
@@ -657,7 +657,7 @@
       "price": 35.98,
       "change_pct": -3.62,
       "reasons": [
-        "换手率17000.0%"
+        "换手率21800.0%"
       ],
       "severity": "medium"
     },
@@ -667,7 +667,7 @@
       "price": 361.0,
       "change_pct": -3.08,
       "reasons": [
-        "换手率9500.0%"
+        "换手率10600.0%"
       ],
       "severity": "medium"
     },
@@ -677,7 +677,7 @@
       "price": 36.87,
       "change_pct": 3.02,
       "reasons": [
-        "换手率58700.0%"
+        "换手率69400.0%"
       ],
       "severity": "medium"
     },
@@ -687,7 +687,17 @@
       "price": 20.03,
       "change_pct": -2.96,
       "reasons": [
-        "换手率18900.0%"
+        "换手率2500.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "600276",
+      "name": "恒瑞医药",
+      "price": 54.01,
+      "change_pct": -2.44,
+      "reasons": [
+        "换手率6440.0%"
       ],
       "severity": "medium"
     },
@@ -697,17 +707,7 @@
       "price": 1413.55,
       "change_pct": 1.84,
       "reasons": [
-        "换手率5544.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "002594",
-      "name": "比亚迪",
-      "price": 87.8,
-      "change_pct": 1.79,
-      "reasons": [
-        "换手率11700.0%"
+        "换手率5744.0%"
       ],
       "severity": "medium"
     }
