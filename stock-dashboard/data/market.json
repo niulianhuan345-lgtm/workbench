@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08 15:16:05",
+  "updated": "2026-07-08 15:20:05",
   "indices": [
     {
       "name": "上证指数",
@@ -616,8 +616,7 @@
       "change_pct": -11.19,
       "reasons": [
         "暴跌11%",
-        "振幅12%",
-        "换手率26700.0%"
+        "振幅12%"
       ],
       "severity": "high"
     },
@@ -627,7 +626,7 @@
       "price": 98.15,
       "change_pct": 4.97,
       "reasons": [
-        "换手率59900.0%"
+        "换手率73100.0%"
       ],
       "severity": "medium"
     },
@@ -637,7 +636,7 @@
       "price": 35.45,
       "change_pct": -4.63,
       "reasons": [
-        "换手率17000.0%"
+        "换手率12700.0%"
       ],
       "severity": "medium"
     },
@@ -648,7 +647,7 @@
       "change_pct": 4.59,
       "reasons": [
         "振幅10%",
-        "换手率33547.0%"
+        "换手率40755.0%"
       ],
       "severity": "medium"
     },
@@ -658,7 +657,7 @@
       "price": 11.74,
       "change_pct": -3.85,
       "reasons": [
-        "换手率31760.0%"
+        "换手率33760.0%"
       ],
       "severity": "medium"
     },
@@ -668,7 +667,7 @@
       "price": 35.98,
       "change_pct": -3.62,
       "reasons": [
-        "换手率2600.0%"
+        "换手率7300.0%"
       ],
       "severity": "medium"
     },
@@ -678,7 +677,7 @@
       "price": 20.41,
       "change_pct": -3.18,
       "reasons": [
-        "换手率48500.0%"
+        "换手率54500.0%"
       ],
       "severity": "medium"
     },
@@ -688,7 +687,7 @@
       "price": 361.0,
       "change_pct": -3.08,
       "reasons": [
-        "换手率5500.0%"
+        "换手率8400.0%"
       ],
       "severity": "medium"
     },
@@ -698,7 +697,7 @@
       "price": 36.87,
       "change_pct": 3.02,
       "reasons": [
-        "换手率69800.0%"
+        "换手率62700.0%"
       ],
       "severity": "medium"
     },
@@ -708,7 +707,7 @@
       "price": 20.03,
       "change_pct": -2.96,
       "reasons": [
-        "换手率13500.0%"
+        "换手率17500.0%"
       ],
       "severity": "medium"
     }
