@@ -1,15 +1,141 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-08 09:26:20",
+  "updated_at": "2026-07-09 09:44:42",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-08 09:26:20",
-      "total_articles": 21,
+      "last_check": "2026-07-09 09:44:42",
+      "total_articles": 30,
       "status": "ok"
     }
   },
   "articles": [
+    {
+      "id": 38762,
+      "title": "家享生活人群推广布局",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "文聘",
+      "publish_time": "2026-07-08 14:50:57",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38762&platform=",
+      "status": "ACTIVING",
+      "description": "一节课快速掌握，平销突围-家享生活爆品布局-家享生活人群推广布局技巧，手把手教学",
+      "file": "家享生活人群推广布局_38762.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38763,
+      "title": "家享生活爆品人群破圈布局",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "文聘",
+      "publish_time": "2026-07-09 09:38:12",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38763&platform=",
+      "status": "ACTIVING",
+      "description": "一节课快速掌握，平销突围-家享生活爆品引爆技巧-家享生活爆品人群破圈布局技巧，手把手教学",
+      "file": "家享生活爆品人群破圈布局_38763.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38766,
+      "title": "家享生活货品全站推布局",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "南庭",
+      "publish_time": "2026-07-08 14:51:19",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38766&platform=",
+      "status": "ACTIVING",
+      "description": "一节课讲清家居家装如何使用货品全站推广进行店铺布局 南庭 7月9日 15:30～18:00",
+      "file": "家享生活货品全站推布局_38766.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38767,
+      "title": "家享生活爆品预算提效布局",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "南庭",
+      "publish_time": "2026-07-09 09:38:05",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38767&platform=",
+      "status": "ACTIVING",
+      "description": "一节课讲清家居家装行业如何提高爆款的拉升和维稳策略 南庭 7月10日 15:30～18:00",
+      "file": "家享生活爆品预算提效布局_38767.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38768,
+      "title": "新店专属曝光派发手把手教学",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "十二",
+      "publish_time": "2026-07-08 17:05:08",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38768&platform=",
+      "status": "ACTIVING",
+      "description": "新店专属曝光派发手把手教学",
+      "file": "新店专属曝光派发手把手教学_38768.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38769,
+      "title": "平销突围-家享生活场景爆品布局！",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-09 09:31:24",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38769&platform=",
+      "status": "ACTIVING",
+      "description": "平销突围-家享生活场景爆品布局！",
+      "file": "平销突围-家享生活场景爆品布局！_38769.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38770,
+      "title": "家享生活关键词推广布局",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "青丝",
+      "publish_time": "2026-07-08 16:12:56",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38770&platform=",
+      "status": "ACTIVING",
+      "description": "关键词推广如何布局计划类型才能取得更好的数据效果？",
+      "file": "家享生活关键词推广布局_38770.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38771,
+      "title": "家享生活爆品潜力锁定布局",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "青丝",
+      "publish_time": "2026-07-09 09:37:52",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38771&platform=",
+      "status": "ACTIVING",
+      "description": "爆品潜力品如何搭建不同的计划类型可以更好的提升全店销售额？",
+      "file": "家享生活爆品潜力锁定布局_38771.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
+    {
+      "id": 38772,
+      "title": "新手商家流量问题解决",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "随风",
+      "publish_time": "2026-07-09 09:34:53",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38772&platform=",
+      "status": "ACTIVING",
+      "description": "新手商家流量问题解决",
+      "file": "新手商家流量问题解决_38772.md",
+      "fetched_at": "2026-07-09 09:44:42"
+    },
     {
       "id": 38758,
       "title": "《新商专属》限时福利发放与手把手教学",
@@ -337,6 +463,24 @@
       ],
       "total_articles": 21,
       "timestamp": "2026-07-08 09:26:20"
+    },
+    {
+      "date": "2026-07-09",
+      "action": "fetch_new_courses",
+      "new_count": 9,
+      "new_ids": [
+        38772,
+        38771,
+        38770,
+        38769,
+        38768,
+        38767,
+        38766,
+        38763,
+        38762
+      ],
+      "total_articles": 30,
+      "timestamp": "2026-07-09 09:44:42"
     }
   ]
 }
