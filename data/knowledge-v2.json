@@ -1,15 +1,43 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-09 09:44:42",
+  "updated_at": "2026-07-10 09:31:57",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-09 09:44:42",
-      "total_articles": 30,
+      "last_check": "2026-07-10 09:31:57",
+      "total_articles": 32,
       "status": "ok"
     }
   },
   "articles": [
+    {
+      "id": 38773,
+      "title": "《新商专属》官方测品福利与手把手教学",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-09 10:15:21",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38773&platform=",
+      "status": "LIVING",
+      "description": "新手商户起量难？没保证？不敢花钱？  \r\n官方赠送使用额度，用好再投入，更有老师手把手进行手实操教学！  \r\n点击领取福利+免费曝光，更有讲师专项答疑！",
+      "file": "《新商专属》官方测品福利与手把手教学_38773.md",
+      "fetched_at": "2026-07-10 09:31:57"
+    },
+    {
+      "id": 38775,
+      "title": "平销期突围-家享生活爆品引爆技巧！",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-09 14:33:49",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38775&platform=",
+      "status": "ACTIVING",
+      "description": "平销期突围-家享生活爆品引爆技巧！",
+      "file": "平销期突围-家享生活爆品引爆技巧！_38775.md",
+      "fetched_at": "2026-07-10 09:31:57"
+    },
     {
       "id": 38762,
       "title": "家享生活人群推广布局",
@@ -481,6 +509,17 @@
       ],
       "total_articles": 30,
       "timestamp": "2026-07-09 09:44:42"
+    },
+    {
+      "date": "2026-07-10",
+      "action": "fetch_new_courses",
+      "new_count": 2,
+      "new_ids": [
+        38775,
+        38773
+      ],
+      "total_articles": 32,
+      "timestamp": "2026-07-10 09:31:57"
     }
   ]
 }
