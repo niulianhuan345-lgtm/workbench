@@ -1,15 +1,127 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-10 09:31:57",
+  "updated_at": "2026-07-11 09:06:30",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-10 09:31:57",
-      "total_articles": 32,
+      "last_check": "2026-07-11 09:06:30",
+      "total_articles": 40,
       "status": "ok"
     }
   },
   "articles": [
+    {
+      "id": 38779,
+      "title": "新商成长-新手商家必做的第一个计划",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "随风",
+      "publish_time": "2026-07-10 10:09:25",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38779&platform=",
+      "status": "END",
+      "description": "新商成长-新手商家必做的第一个计划",
+      "file": "新商成长-新手商家必做的第一个计划_38779.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
+    {
+      "id": 38780,
+      "title": "小店成交宝的基础概念",
+      "category": "权益类课程",
+      "course_type": "VIDEO",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-10 17:30:23",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38780&platform=",
+      "status": "ACTIVING",
+      "description": "万堂书院带你了解什么是小店成交宝的基础概念：小店成交宝是什么工具、小店成交宝的优势在哪，已经如何应用。",
+      "file": "小店成交宝的基础概念_38780.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
+    {
+      "id": 38781,
+      "title": "小店成交宝的实操应用",
+      "category": "权益类课程",
+      "course_type": "VIDEO",
+      "cost_type": "FREE",
+      "lector": "万堂书院小二",
+      "publish_time": "2026-07-10 17:30:35",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38781&platform=",
+      "status": "ACTIVING",
+      "description": "万堂书院带你了解小店成交宝的实操应用，如何更好用好小店成交宝，让店铺实现快速增长！",
+      "file": "小店成交宝的实操应用_38781.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
+    {
+      "id": 38783,
+      "title": "爆品放量",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "南瓜",
+      "publish_time": "2026-07-10 17:06:45",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38783&platform=",
+      "status": "ACTIVING",
+      "description": "爆品放量",
+      "file": "爆品放量_38783.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
+    {
+      "id": 38784,
+      "title": "标品爆款破圈答疑",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "随风",
+      "publish_time": "2026-07-10 17:11:48",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38784&platform=",
+      "status": "ACTIVING",
+      "description": "标品爆款破圈答疑",
+      "file": "标品爆款破圈答疑_38784.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
+    {
+      "id": 38786,
+      "title": "爆品选品与数据判断",
+      "category": "技巧提升",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "蛋蛋",
+      "publish_time": "2026-07-10 17:34:16",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38786&platform=",
+      "status": "ACTIVING",
+      "description": "爆品选品与数据判断",
+      "file": "爆品选品与数据判断_38786.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
+    {
+      "id": 38788,
+      "title": "夏日非标爆品种草推广提效",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "老关",
+      "publish_time": "2026-07-10 17:51:41",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38788&platform=",
+      "status": "ACTIVING",
+      "description": "夏日非标爆品种草推广提效",
+      "file": "夏日非标爆品种草推广提效_38788.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
+    {
+      "id": 38789,
+      "title": "非标类目爆品放量与预算节奏",
+      "category": "入门实操",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "土豆",
+      "publish_time": "2026-07-10 18:21:21",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38789&platform=",
+      "status": "ACTIVING",
+      "description": "非标类目爆品放量与预算节奏",
+      "file": "非标类目爆品放量与预算节奏_38789.md",
+      "fetched_at": "2026-07-11 09:06:30"
+    },
     {
       "id": 38773,
       "title": "《新商专属》官方测品福利与手把手教学",
@@ -520,6 +632,23 @@
       ],
       "total_articles": 32,
       "timestamp": "2026-07-10 09:31:57"
+    },
+    {
+      "date": "2026-07-11",
+      "action": "fetch_new_courses",
+      "new_count": 8,
+      "new_ids": [
+        38789,
+        38788,
+        38786,
+        38784,
+        38783,
+        38781,
+        38780,
+        38779
+      ],
+      "total_articles": 40,
+      "timestamp": "2026-07-11 09:06:30"
     }
   ]
 }
