@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/workbench/smart-diagnosis/_next/static/chunks/21k-6tcq83-o5.js","/workbench/smart-diagnosis/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
-3:I[97367,["/workbench/smart-diagnosis/_next/static/chunks/21k-6tcq83-o5.js","/workbench/smart-diagnosis/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
-4:"$Sreact.suspense"
-5:I[27201,["/workbench/smart-diagnosis/_next/static/chunks/21k-6tcq83-o5.js","/workbench/smart-diagnosis/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
-0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"天猫店铺智能诊断系统"}],["$","meta","1",{"name":"description","content":"AI 驱动的天猫店铺大盘数据智能诊断与预警监控平台"}],["$","link","2",{"rel":"icon","href":"/workbench/smart-diagnosis/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"HnkoEfS9Y5KqFOMITNGpb"}

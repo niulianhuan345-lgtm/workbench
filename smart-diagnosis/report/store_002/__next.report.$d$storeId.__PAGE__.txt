@@ -1,9 +1,0 @@
-1:"$Sreact.fragment"
-2:I[47257,["/workbench/smart-diagnosis/_next/static/chunks/21k-6tcq83-o5.js","/workbench/smart-diagnosis/_next/static/chunks/14mrh2-p_w84d.js"],"ClientPageRoot"]
-3:I[45679,["/workbench/smart-diagnosis/_next/static/chunks/21k-6tcq83-o5.js","/workbench/smart-diagnosis/_next/static/chunks/14mrh2-p_w84d.js","/workbench/smart-diagnosis/_next/static/chunks/1_hfbw5gw2e4a.js","/workbench/smart-diagnosis/_next/static/chunks/3pzukz5xq2nx0.js"],"default"]
-6:I[97367,["/workbench/smart-diagnosis/_next/static/chunks/21k-6tcq83-o5.js","/workbench/smart-diagnosis/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{"storeId":"store_002"},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/workbench/smart-diagnosis/_next/static/chunks/1_hfbw5gw2e4a.js","async":true}],["$","script","script-1",{"src":"/workbench/smart-diagnosis/_next/static/chunks/3pzukz5xq2nx0.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"HnkoEfS9Y5KqFOMITNGpb"}
-4:{}
-5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
-8:null
