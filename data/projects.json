@@ -1,0 +1,7 @@
+[
+  {"id": "aione", "name": "AIONE", "status": "active"},
+  {"id": "autoonebp", "name": "AutoOneBP", "status": "active"},
+  {"id": "hermes", "name": "Hermes 需求", "status": "active"},
+  {"id": "analysis", "name": "投放分析", "status": "active"},
+  {"id": "design", "name": "产品设计", "status": "active"}
+]
