@@ -1,11 +1,11 @@
 {
   "version": "2.0",
-  "updated_at": "2026-07-11 09:06:30",
+  "updated_at": "2026-07-12 09:14:48",
   "sources": {
     "万堂书院": {
       "url": "https://shuyuan.taobao.com",
-      "last_check": "2026-07-11 09:06:30",
-      "total_articles": 40,
+      "last_check": "2026-07-12 09:14:48",
+      "total_articles": 41,
       "status": "ok"
     }
   },
@@ -569,6 +569,20 @@
       "description": "",
       "file": "新手新店如何获取流量_38725.md",
       "fetched_at": "2026-07-07 09:23:50"
+    },
+    {
+      "id": 38790,
+      "title": "标品爆品提ROI痛点答疑专场",
+      "category": "产品介绍",
+      "course_type": "LIVE",
+      "cost_type": "FREE",
+      "lector": "许文强",
+      "publish_time": "2026-07-11 15:45:37",
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38790&platform=",
+      "status": "ACTIVING",
+      "description": "标品爆品提ROI痛点答疑专场",
+      "file": "标品爆品提ROI痛点答疑专场_38790.md",
+      "fetched_at": "2026-07-12 09:13:42"
     }
   ],
   "daily_log": [
@@ -649,6 +663,16 @@
       ],
       "total_articles": 40,
       "timestamp": "2026-07-11 09:06:30"
+    },
+    {
+      "date": "2026-07-12",
+      "action": "fetch_new_courses",
+      "new_count": 1,
+      "new_ids": [
+        38790
+      ],
+      "total_articles": 41,
+      "timestamp": "2026-07-12 09:13:42"
     }
   ]
 }
