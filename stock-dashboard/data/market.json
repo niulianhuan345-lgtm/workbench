@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13 15:29:46",
+  "updated": "2026-07-13 15:33:45",
   "indices": [
     {
       "name": "上证指数",
@@ -627,7 +627,7 @@
       "reasons": [
         "暴跌9%",
         "振幅9%",
-        "换手率8900.0%"
+        "换手率277074.0%"
       ],
       "severity": "high"
     },
@@ -639,7 +639,7 @@
       "reasons": [
         "暴跌8%",
         "振幅9%",
-        "换手率3478.0%"
+        "换手率255566.0%"
       ],
       "severity": "high"
     },
@@ -650,7 +650,7 @@
       "change_pct": -7.38,
       "reasons": [
         "暴跌7%",
-        "换手率2400.0%"
+        "换手率45721.0%"
       ],
       "severity": "high"
     },
@@ -661,7 +661,7 @@
       "change_pct": -5.09,
       "reasons": [
         "暴跌5%",
-        "换手率14300.0%"
+        "换手率46622.0%"
       ],
       "severity": "medium"
     },
@@ -671,7 +671,7 @@
       "price": 764.3,
       "change_pct": -4.58,
       "reasons": [
-        "换手率1100.0%"
+        "换手率200.0%"
       ],
       "severity": "medium"
     },
@@ -681,7 +681,27 @@
       "price": 6.32,
       "change_pct": -4.53,
       "reasons": [
-        "换手率59800.0%"
+        "换手率82000.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "601225",
+      "name": "陕西煤业",
+      "price": 23.95,
+      "change_pct": 4.49,
+      "reasons": [
+        "换手率33186.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "601088",
+      "name": "XD中国神",
+      "price": 42.65,
+      "change_pct": 4.0,
+      "reasons": [
+        "换手率47600.0%"
       ],
       "severity": "medium"
     },
@@ -691,27 +711,7 @@
       "price": 11.63,
       "change_pct": -3.96,
       "reasons": [
-        "换手率66700.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "002594",
-      "name": "比亚迪",
-      "price": 86.98,
-      "change_pct": -3.36,
-      "reasons": [
-        "换手率14300.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "002241",
-      "name": "歌尔股份",
-      "price": 21.82,
-      "change_pct": -3.32,
-      "reasons": [
-        "换手率46300.0%"
+        "换手率19083.0%"
       ],
       "severity": "medium"
     }
