@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13 15:13:49",
+  "updated": "2026-07-13 15:17:45",
   "indices": [
     {
       "name": "上证指数",
@@ -638,7 +638,7 @@
       "reasons": [
         "暴跌8%",
         "振幅9%",
-        "换手率7900.0%"
+        "换手率12446.0%"
       ],
       "severity": "high"
     },
@@ -649,7 +649,7 @@
       "change_pct": -7.38,
       "reasons": [
         "暴跌7%",
-        "换手率10200.0%"
+        "换手率10300.0%"
       ],
       "severity": "high"
     },
@@ -660,7 +660,7 @@
       "change_pct": -5.09,
       "reasons": [
         "暴跌5%",
-        "换手率6600.0%"
+        "换手率11100.0%"
       ],
       "severity": "medium"
     },
@@ -690,17 +690,7 @@
       "price": 23.95,
       "change_pct": 4.49,
       "reasons": [
-        "换手率1800.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "601088",
-      "name": "XD中国神",
-      "price": 42.65,
-      "change_pct": 4.0,
-      "reasons": [
-        "换手率1000.0%"
+        "换手率2300.0%"
       ],
       "severity": "medium"
     },
@@ -710,7 +700,17 @@
       "price": 11.63,
       "change_pct": -3.96,
       "reasons": [
-        "换手率41400.0%"
+        "换手率53700.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "002594",
+      "name": "比亚迪",
+      "price": 86.98,
+      "change_pct": -3.36,
+      "reasons": [
+        "换手率6400.0%"
       ],
       "severity": "medium"
     }
