@@ -1,8 +1,8 @@
 {
   "version": "2.0",
-  "last_updated": "2026-07-13 09:22:29",
+  "last_updated": "2026-07-14 09:37:07",
   "source": "shuyuan.taobao.com",
-  "total_articles": 10,
+  "total_articles": 23,
   "articles": [
     {
       "id": 38790,
@@ -178,6 +178,233 @@
       "gmt_create": "2026-07-09 14:33:32",
       "gmt_modified": "2026-07-13 09:06:01",
       "fetched_at": "2026-07-13 09:22:29"
+    },
+    {
+      "id": 38808,
+      "title": "新商1元高效推广使用指南",
+      "type": "LIVE",
+      "category": "其他",
+      "status": "ACTIVING",
+      "tags": [
+        "万相台无界版",
+        "新手商家",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38808&platform=",
+      "file": "平台知识/万相台无界/文章/38808_新商1元高效推广使用指南.md",
+      "lector": "雨夜",
+      "gmt_create": "2026-07-13 16:28:51",
+      "gmt_modified": "2026-07-14 09:31:44",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38807,
+      "title": "新手商家流量问题解决",
+      "type": "LIVE",
+      "category": "技巧提升",
+      "status": "ACTIVING",
+      "tags": [
+        "新手商家",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38807&platform=",
+      "file": "平台知识/万相台无界/文章/38807_新手商家流量问题解决.md",
+      "lector": "随风",
+      "gmt_create": "2026-07-13 16:20:01",
+      "gmt_modified": "2026-07-14 09:31:44",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38805,
+      "title": "标品关键词进阶策略",
+      "type": "LIVE",
+      "category": "入门实操",
+      "status": "ACTIVING",
+      "tags": [
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38805&platform=",
+      "file": "平台知识/万相台无界/文章/38805_标品关键词进阶策略.md",
+      "lector": "随风",
+      "gmt_create": "2026-07-13 15:34:11",
+      "gmt_modified": "2026-07-14 09:30:04",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38804,
+      "title": "人群/内容进阶",
+      "type": "LIVE",
+      "category": "技巧提升",
+      "status": "ACTIVING",
+      "tags": [
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38804&platform=",
+      "file": "平台知识/万相台无界/文章/38804_人群-内容进阶.md",
+      "lector": "南瓜",
+      "gmt_create": "2026-07-13 14:40:09",
+      "gmt_modified": "2026-07-14 09:30:04",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38803,
+      "title": "标品全站推进阶策略专场",
+      "type": "LIVE",
+      "category": "产品介绍",
+      "status": "ACTIVING",
+      "tags": [
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38803&platform=",
+      "file": "平台知识/万相台无界/文章/38803_标品全站推进阶策略专场.md",
+      "lector": "许文强",
+      "gmt_create": "2026-07-13 14:06:58",
+      "gmt_modified": "2026-07-14 09:30:04",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38802,
+      "title": "非标爆品调优与持续放量布局",
+      "type": "LIVE",
+      "category": "技巧提升",
+      "status": "ACTIVING",
+      "tags": [
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38802&platform=",
+      "file": "平台知识/万相台无界/文章/38802_非标爆品调优与持续放量布局.md",
+      "lector": "东子",
+      "gmt_create": "2026-07-13 11:39:03",
+      "gmt_modified": "2026-07-14 09:34:28",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38800,
+      "title": "夏日平销季-非标潜力品场景放量布局！",
+      "type": "LIVE",
+      "category": "入门实操",
+      "status": "ACTIVING",
+      "tags": [
+        "万相台无界版",
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38800&platform=",
+      "file": "平台知识/万相台无界/文章/38800_夏日平销季-非标潜力品场景放量布局！.md",
+      "lector": "万堂书院小二",
+      "gmt_create": "2026-07-13 11:22:17",
+      "gmt_modified": "2026-07-14 09:33:20",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38799,
+      "title": "《新商专属》新手订单提升手把手使用教学",
+      "type": "LIVE",
+      "category": "产品介绍",
+      "status": "LIVING",
+      "tags": [
+        "新手商家",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38799&platform=",
+      "file": "平台知识/万相台无界/文章/38799_《新商专属》新手订单提升手把手使用教学.md",
+      "lector": "万堂书院小二",
+      "gmt_create": "2026-07-13 11:16:20",
+      "gmt_modified": "2026-07-14 09:12:02",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38798,
+      "title": "非标类目爆品生命周期提效",
+      "type": "LIVE",
+      "category": "入门实操",
+      "status": "ACTIVING",
+      "tags": [
+        "万相台无界版",
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38798&platform=",
+      "file": "平台知识/万相台无界/文章/38798_非标类目爆品生命周期提效.md",
+      "lector": "老关",
+      "gmt_create": "2026-07-13 11:03:08",
+      "gmt_modified": "2026-07-14 09:12:02",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38797,
+      "title": "新商1元高效推广使用指南!",
+      "type": "LIVE",
+      "category": "入门实操",
+      "status": "END",
+      "tags": [
+        "万相台无界版",
+        "新手商家",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38797&platform=",
+      "file": "平台知识/万相台无界/文章/38797_新商1元高效推广使用指南!.md",
+      "lector": "清晰",
+      "gmt_create": "2026-07-13 11:02:33",
+      "gmt_modified": "2026-07-14 09:12:02",
+      "fetched_at": "2026-07-14 09:28:53"
+    },
+    {
+      "id": 38812,
+      "title": "《新商专属》新手订单提升手把手使用教学",
+      "type": "LIVE",
+      "category": "产品介绍",
+      "status": "ACTIVING",
+      "tags": [
+        "新手商家",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38812&platform=",
+      "file": "平台知识/万相台无界/文章/38812_《新商专属》新手订单提升手把手使用教学.md",
+      "lector": "万堂书院小二",
+      "gmt_create": "2026-07-14 09:31:44",
+      "gmt_modified": "2026-07-14 09:32:07",
+      "fetched_at": "2026-07-14 09:37:07"
+    },
+    {
+      "id": 38811,
+      "title": "测款与潜力孵化布局",
+      "type": "LIVE",
+      "category": "技巧提升",
+      "status": "ACTIVING",
+      "tags": [
+        "其他行业",
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38811&platform=",
+      "file": "平台知识/万相台无界/文章/38811_测款与潜力孵化布局.md",
+      "lector": "星辰",
+      "gmt_create": "2026-07-13 23:38:12",
+      "gmt_modified": "2026-07-14 09:30:32",
+      "fetched_at": "2026-07-14 09:37:07"
+    },
+    {
+      "id": 38810,
+      "title": "场景放量布局",
+      "type": "LIVE",
+      "category": "技巧提升",
+      "status": "ACTIVING",
+      "tags": [
+        "其他行业",
+        "成长进阶",
+        "官方精品"
+      ],
+      "url": "https://shuyuan.taobao.com/#!/knowledge/detail/index?id=38810&platform=",
+      "file": "平台知识/万相台无界/文章/38810_场景放量布局.md",
+      "lector": "星辰",
+      "gmt_create": "2026-07-13 23:34:44",
+      "gmt_modified": "2026-07-14 09:33:20",
+      "fetched_at": "2026-07-14 09:37:07"
     }
   ],
   "daily_log": [
@@ -196,6 +423,27 @@
         38780,
         38779,
         38775
+      ],
+      "source": "shuyuan.taobao.com /course/findList.json"
+    },
+    {
+      "date": "2026-07-14",
+      "action": "daily_fetch",
+      "new_count": 13,
+      "new_ids": [
+        38808,
+        38807,
+        38805,
+        38804,
+        38803,
+        38802,
+        38800,
+        38799,
+        38798,
+        38797,
+        38812,
+        38811,
+        38810
       ],
       "source": "shuyuan.taobao.com /course/findList.json"
     }
