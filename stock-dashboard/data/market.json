@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15 15:28:24",
+  "updated": "2026-07-15 15:32:34",
   "indices": [
     {
       "name": "上证指数",
@@ -616,7 +616,8 @@
       "change_pct": 7.04,
       "reasons": [
         "暴涨7%",
-        "振幅10%"
+        "振幅10%",
+        "换手率500.0%"
       ],
       "severity": "high"
     },
@@ -628,7 +629,7 @@
       "reasons": [
         "暴涨5%",
         "振幅9%",
-        "换手率20100.0%"
+        "换手率346400.0%"
       ],
       "severity": "medium"
     },
@@ -640,7 +641,7 @@
       "reasons": [
         "暴涨5%",
         "振幅9%",
-        "换手率18400.0%"
+        "换手率7100.0%"
       ],
       "severity": "medium"
     },
@@ -650,7 +651,8 @@
       "price": 96.76,
       "change_pct": -5.04,
       "reasons": [
-        "暴跌5%"
+        "暴跌5%",
+        "换手率131000.0%"
       ],
       "severity": "medium"
     },
@@ -660,7 +662,7 @@
       "price": 324.11,
       "change_pct": -4.91,
       "reasons": [
-        "换手率11494.0%"
+        "换手率1445.0%"
       ],
       "severity": "medium"
     },
@@ -670,7 +672,7 @@
       "price": 57.5,
       "change_pct": 4.89,
       "reasons": [
-        "换手率100000.0%"
+        "换手率150500.0%"
       ],
       "severity": "medium"
     },
@@ -680,7 +682,17 @@
       "price": 55.89,
       "change_pct": 4.7,
       "reasons": [
-        "换手率20800.0%"
+        "换手率69600.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "603501",
+      "name": "豪威集团",
+      "price": 111.12,
+      "change_pct": 4.68,
+      "reasons": [
+        "换手率45700.0%"
       ],
       "severity": "medium"
     },
@@ -690,7 +702,7 @@
       "price": 153.64,
       "change_pct": -4.57,
       "reasons": [
-        "换手率243.0%"
+        "换手率1897.0%"
       ],
       "severity": "medium"
     },
@@ -700,17 +712,7 @@
       "price": 1347.46,
       "change_pct": -4.5,
       "reasons": [
-        "换手率5694.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "300760",
-      "name": "迈瑞医疗",
-      "price": 146.0,
-      "change_pct": 4.32,
-      "reasons": [
-        "换手率3900.0%"
+        "换手率364.0%"
       ],
       "severity": "medium"
     }
