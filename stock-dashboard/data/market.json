@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15 15:12:23",
+  "updated": "2026-07-15 15:16:23",
   "indices": [
     {
       "name": "上证指数",
@@ -628,7 +628,7 @@
       "reasons": [
         "暴涨5%",
         "振幅9%",
-        "换手率18400.0%"
+        "换手率15700.0%"
       ],
       "severity": "medium"
     },
@@ -640,7 +640,7 @@
       "reasons": [
         "暴涨5%",
         "振幅9%",
-        "换手率2800.0%"
+        "换手率8500.0%"
       ],
       "severity": "medium"
     },
@@ -651,7 +651,7 @@
       "change_pct": -5.04,
       "reasons": [
         "暴跌5%",
-        "换手率4800.0%"
+        "换手率8600.0%"
       ],
       "severity": "medium"
     },
@@ -661,7 +661,7 @@
       "price": 324.11,
       "change_pct": -4.91,
       "reasons": [
-        "换手率5898.0%"
+        "换手率8954.0%"
       ],
       "severity": "medium"
     },
@@ -671,7 +671,7 @@
       "price": 57.5,
       "change_pct": 4.89,
       "reasons": [
-        "换手率30600.0%"
+        "换手率40200.0%"
       ],
       "severity": "medium"
     },
@@ -681,17 +681,7 @@
       "price": 55.89,
       "change_pct": 4.7,
       "reasons": [
-        "换手率2800.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "688981",
-      "name": "中芯国际",
-      "price": 153.64,
-      "change_pct": -4.57,
-      "reasons": [
-        "换手率605.0%"
+        "换手率11500.0%"
       ],
       "severity": "medium"
     },
@@ -701,7 +691,7 @@
       "price": 1347.46,
       "change_pct": -4.5,
       "reasons": [
-        "换手率4734.0%"
+        "换手率5234.0%"
       ],
       "severity": "medium"
     },
@@ -711,7 +701,17 @@
       "price": 146.0,
       "change_pct": 4.32,
       "reasons": [
-        "换手率2800.0%"
+        "换手率3500.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "price": 742.66,
+      "change_pct": -4.07,
+      "reasons": [
+        "换手率3665.0%"
       ],
       "severity": "medium"
     }
