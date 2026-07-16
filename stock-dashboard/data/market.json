@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16 15:02:05",
+  "updated": "2026-07-16 15:07:21",
   "indices": [
     {
       "name": "上证指数",
@@ -616,7 +616,7 @@
       "change_pct": -5.37,
       "reasons": [
         "暴跌5%",
-        "换手率2438.0%"
+        "换手率50.0%"
       ],
       "severity": "medium"
     },
@@ -627,7 +627,7 @@
       "change_pct": -5.06,
       "reasons": [
         "暴跌5%",
-        "换手率7582.0%"
+        "换手率2511.0%"
       ],
       "severity": "medium"
     },
@@ -637,7 +637,7 @@
       "price": 1113.0,
       "change_pct": -4.82,
       "reasons": [
-        "换手率11900.0%"
+        "换手率30400.0%"
       ],
       "severity": "medium"
     },
@@ -647,7 +647,7 @@
       "price": 33.0,
       "change_pct": -3.82,
       "reasons": [
-        "换手率54260.0%"
+        "换手率7000.0%"
       ],
       "severity": "medium"
     },
@@ -657,7 +657,7 @@
       "price": 19.47,
       "change_pct": -3.76,
       "reasons": [
-        "换手率129687.0%"
+        "换手率1100.0%"
       ],
       "severity": "medium"
     },
@@ -667,7 +667,7 @@
       "price": 23.02,
       "change_pct": 3.46,
       "reasons": [
-        "换手率164028.0%"
+        "换手率31100.0%"
       ],
       "severity": "medium"
     },
@@ -677,27 +677,7 @@
       "price": 127.0,
       "change_pct": -3.42,
       "reasons": [
-        "换手率43100.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "000002",
-      "name": "万 科Ａ",
-      "price": 3.23,
-      "change_pct": 3.19,
-      "reasons": [
-        "换手率952830.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "601225",
-      "name": "陕西煤业",
-      "price": 23.87,
-      "change_pct": -3.01,
-      "reasons": [
-        "换手率816.0%"
+        "换手率14400.0%"
       ],
       "severity": "medium"
     },
@@ -707,7 +687,27 @@
       "price": 150.31,
       "change_pct": 2.95,
       "reasons": [
-        "换手率22300.0%"
+        "换手率4700.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "600276",
+      "name": "恒瑞医药",
+      "price": 55.99,
+      "change_pct": -2.63,
+      "reasons": [
+        "换手率10300.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "002594",
+      "name": "比亚迪",
+      "price": 94.14,
+      "change_pct": 2.59,
+      "reasons": [
+        "换手率400.0%"
       ],
       "severity": "medium"
     }
