@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20 15:24:18",
+  "updated": "2026-07-20 15:28:18",
   "indices": [
     {
       "name": "上证指数",
@@ -617,7 +617,7 @@
       "reasons": [
         "暴涨10%",
         "振幅9%",
-        "换手率139500.0%"
+        "换手率129400.0%"
       ],
       "severity": "high"
     },
@@ -639,7 +639,7 @@
       "change_pct": 6.33,
       "reasons": [
         "暴涨6%",
-        "换手率2400.0%"
+        "换手率6900.0%"
       ],
       "severity": "medium"
     },
@@ -671,17 +671,7 @@
       "change_pct": 5.37,
       "reasons": [
         "暴涨5%",
-        "换手率15800.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "688041",
-      "name": "海光信息",
-      "price": 320.12,
-      "change_pct": 5.0,
-      "reasons": [
-        "换手率10834.0%"
+        "换手率10400.0%"
       ],
       "severity": "medium"
     },
@@ -691,7 +681,7 @@
       "price": 46.14,
       "change_pct": 4.98,
       "reasons": [
-        "换手率31100.0%"
+        "换手率20700.0%"
       ],
       "severity": "medium"
     },
@@ -701,7 +691,17 @@
       "price": 76.24,
       "change_pct": 4.78,
       "reasons": [
-        "换手率16700.0%"
+        "换手率25400.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "001979",
+      "name": "招商蛇口",
+      "price": 6.97,
+      "change_pct": 4.65,
+      "reasons": [
+        "换手率1500.0%"
       ],
       "severity": "medium"
     },
@@ -711,7 +711,7 @@
       "price": 16.36,
       "change_pct": 4.47,
       "reasons": [
-        "换手率13000.0%"
+        "换手率14600.0%"
       ],
       "severity": "medium"
     }
