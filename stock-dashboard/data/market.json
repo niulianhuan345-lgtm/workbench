@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20 15:28:18",
+  "updated": "2026-07-20 15:32:39",
   "indices": [
     {
       "name": "上证指数",
@@ -617,7 +617,7 @@
       "reasons": [
         "暴涨10%",
         "振幅9%",
-        "换手率129400.0%"
+        "换手率2340205.0%"
       ],
       "severity": "high"
     },
@@ -628,7 +628,8 @@
       "change_pct": 7.37,
       "reasons": [
         "暴涨7%",
-        "振幅8%"
+        "振幅8%",
+        "换手率1786494.0%"
       ],
       "severity": "high"
     },
@@ -639,7 +640,7 @@
       "change_pct": 6.33,
       "reasons": [
         "暴涨6%",
-        "换手率6900.0%"
+        "换手率7230.0%"
       ],
       "severity": "medium"
     },
@@ -650,7 +651,8 @@
       "change_pct": -6.31,
       "reasons": [
         "暴跌6%",
-        "振幅8%"
+        "振幅8%",
+        "换手率415957.0%"
       ],
       "severity": "medium"
     },
@@ -660,7 +662,8 @@
       "price": 1327.5,
       "change_pct": 5.95,
       "reasons": [
-        "暴涨6%"
+        "暴涨6%",
+        "换手率7618.0%"
       ],
       "severity": "medium"
     },
@@ -671,7 +674,17 @@
       "change_pct": 5.37,
       "reasons": [
         "暴涨5%",
-        "换手率10400.0%"
+        "换手率4500.0%"
+      ],
+      "severity": "medium"
+    },
+    {
+      "code": "688041",
+      "name": "海光信息",
+      "price": 320.12,
+      "change_pct": 5.0,
+      "reasons": [
+        "换手率63430.0%"
       ],
       "severity": "medium"
     },
@@ -681,7 +694,7 @@
       "price": 46.14,
       "change_pct": 4.98,
       "reasons": [
-        "换手率20700.0%"
+        "换手率211860.0%"
       ],
       "severity": "medium"
     },
@@ -691,7 +704,7 @@
       "price": 76.24,
       "change_pct": 4.78,
       "reasons": [
-        "换手率25400.0%"
+        "换手率90600.0%"
       ],
       "severity": "medium"
     },
@@ -701,17 +714,7 @@
       "price": 6.97,
       "change_pct": 4.65,
       "reasons": [
-        "换手率1500.0%"
-      ],
-      "severity": "medium"
-    },
-    {
-      "code": "601633",
-      "name": "长城汽车",
-      "price": 16.36,
-      "change_pct": 4.47,
-      "reasons": [
-        "换手率14600.0%"
+        "换手率349800.0%"
       ],
       "severity": "medium"
     }
