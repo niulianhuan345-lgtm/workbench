@@ -1,0 +1,10 @@
+[
+  [{"value":"城市","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}},
+   {"value":"配送费","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}},
+   {"value":"省份","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}},
+   {"value":"天气","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}},
+   {"value":"温度","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}},
+   {"value":"配送费占比","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}},
+   {"value":"城市分层","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}},
+   {"value":"日期","cell_styles":{"font_weight":"bold","font_color":"#FFFFFF","background_color":"#4A90D9","horizontal_alignment":"center"}}]
+]

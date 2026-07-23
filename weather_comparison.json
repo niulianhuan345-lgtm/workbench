@@ -1,0 +1,11 @@
+{
+  "fee_up": 0,
+  "fee_down": 0,
+  "rain_new": 0,
+  "rain_new_cities": [],
+  "free_cities": [],
+  "half_cities": [
+    "秦皇岛"
+  ],
+  "total_cities": 289
+}

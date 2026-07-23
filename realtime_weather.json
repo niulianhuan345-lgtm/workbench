@@ -1,0 +1,1252 @@
+{
+  "上海": {
+    "temp": 36.7,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "北京": {
+    "temp": 27.7,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "广州": {
+    "temp": 27.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "深圳": {
+    "temp": 26.4,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "天津": {
+    "temp": 26.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "合肥": {
+    "temp": 32.4,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "青岛": {
+    "temp": 26.0,
+    "code": 80,
+    "wmo_text": "阵雨"
+  },
+  "东莞": {
+    "temp": 27.9,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "佛山": {
+    "temp": 28.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "南京": {
+    "temp": 31.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "苏州": {
+    "temp": 31.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "郑州": {
+    "temp": 22.4,
+    "code": 81,
+    "wmo_text": "中阵雨"
+  },
+  "杭州": {
+    "temp": 34.0,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "武汉": {
+    "temp": 33.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "长沙": {
+    "temp": 32.7,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "西安": {
+    "temp": 14.4,
+    "code": 45,
+    "wmo_text": "雾"
+  },
+  "昆明": {
+    "temp": 22.2,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "长春": {
+    "temp": 25.2,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "临沂": {
+    "temp": 25.4,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "济南": {
+    "temp": 24.1,
+    "code": 63,
+    "wmo_text": "中雨"
+  },
+  "烟台": {
+    "temp": 23.9,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "太原": {
+    "temp": 22.0,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "中山": {
+    "temp": 28.3,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "惠州": {
+    "temp": 28.8,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "珠海": {
+    "temp": 27.3,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "南宁": {
+    "temp": 28.9,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "南通": {
+    "temp": 33.4,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "常州": {
+    "temp": 34.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "徐州": {
+    "temp": 28.9,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "无锡": {
+    "temp": 34.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "南昌": {
+    "temp": 31.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "保定": {
+    "temp": 25.0,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "石家庄": {
+    "temp": 23.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "嘉兴": {
+    "temp": 33.2,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "温州": {
+    "temp": 33.0,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "金华": {
+    "temp": 32.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "五指山": {
+    "temp": 26.7,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "兰州": {
+    "temp": 22.1,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "厦门": {
+    "temp": 30.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "泉州": {
+    "temp": 30.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "漳州": {
+    "temp": 30.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "福州": {
+    "temp": 32.5,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "贵阳": {
+    "temp": 25.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "沈阳": {
+    "temp": 27.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "哈尔滨": null,
+  "南充": {
+    "temp": 29.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "绵阳": {
+    "temp": 25.0,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "银川": {
+    "temp": 23.1,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "六安": {
+    "temp": 18.4,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "安庆": {
+    "temp": 31.7,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "宿州": {
+    "temp": 31.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "滁州": {
+    "temp": 31.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "芜湖": {
+    "temp": 32.2,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "蚌埠": {
+    "temp": 32.4,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "阜阳": {
+    "temp": 32.7,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "马鞍山": {
+    "temp": 21.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "威海": {
+    "temp": 23.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "德州": {
+    "temp": 23.2,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "枣庄": {
+    "temp": 25.5,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "泰安": {
+    "temp": 26.5,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "济宁": {
+    "temp": 25.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "淄博": {
+    "temp": 24.0,
+    "code": 63,
+    "wmo_text": "中雨"
+  },
+  "聊城": {
+    "temp": 24.3,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "菏泽": {
+    "temp": 24.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "运城": {
+    "temp": 24.3,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "揭阳": {
+    "temp": 28.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "汕头": {
+    "temp": 28.5,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "江门": {
+    "temp": 28.5,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "清远": {
+    "temp": 25.9,
+    "code": 55,
+    "wmo_text": "大毛毛雨"
+  },
+  "湛江": {
+    "temp": 30.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "潮州": {
+    "temp": 29.4,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "肇庆": {
+    "temp": 28.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "柳州": {
+    "temp": 28.2,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "桂林": {
+    "temp": 28.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "宿迁": {
+    "temp": 29.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "扬州": {
+    "temp": 32.1,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "淮安": null,
+  "盐城": {
+    "temp": 31.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "连云港": {
+    "temp": 25.6,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "镇江": {
+    "temp": 32.3,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "上饶": {
+    "temp": 31.7,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "九江": {
+    "temp": 32.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "宜春": {
+    "temp": 32.7,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "赣州": {
+    "temp": 31.1,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "唐山": {
+    "temp": 28.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "廊坊": {
+    "temp": 25.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "沧州": {
+    "temp": 24.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "邢台": {
+    "temp": 22.0,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "邯郸": {
+    "temp": 21.1,
+    "code": 55,
+    "wmo_text": "大毛毛雨"
+  },
+  "信阳": {
+    "temp": 32.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "南阳": {
+    "temp": 28.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "周口": {
+    "temp": 32.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "商丘": {
+    "temp": 27.0,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "开封": {
+    "temp": 22.7,
+    "code": 80,
+    "wmo_text": "阵雨"
+  },
+  "新乡": {
+    "temp": 22.5,
+    "code": 81,
+    "wmo_text": "中阵雨"
+  },
+  "洛阳": {
+    "temp": 24.9,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "驻马店": {
+    "temp": 33.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "台州": {
+    "temp": 33.1,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "湖州": {
+    "temp": 33.4,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "三亚": {
+    "temp": 30.1,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "海口": {
+    "temp": 30.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "琼海": {
+    "temp": 30.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "宜昌": {
+    "temp": 32.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "荆州": {
+    "temp": 31.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "岳阳": {
+    "temp": 31.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "株洲": {
+    "temp": 31.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "衡阳": {
+    "temp": 31.4,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "宁德": {
+    "temp": 33.6,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "莆田": {
+    "temp": 32.3,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "遵义": {
+    "temp": 27.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "咸阳": {
+    "temp": 27.2,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "渭南": {
+    "temp": 27.7,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "大理白族自治州": null,
+  "昭通": {
+    "temp": 20.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "曲靖": {
+    "temp": 21.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "红河哈尼族彝族自治州": null,
+  "赤峰": {
+    "temp": 26.5,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "吉林": {
+    "temp": 26.0,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "乐山": {
+    "temp": 26.0,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "内江": {
+    "temp": 27.4,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "宜宾": {
+    "temp": 27.1,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "德阳": {
+    "temp": 24.2,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "泸州": {
+    "temp": 28.2,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "眉山": {
+    "temp": 26.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "自贡": {
+    "temp": 29.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "达州": {
+    "temp": 27.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "亳州": {
+    "temp": 29.8,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "宣城": {
+    "temp": 32.5,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "淮北": {
+    "temp": 28.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "淮南": {
+    "temp": 32.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "铜陵": {
+    "temp": 31.8,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "黄山": {
+    "temp": 31.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "东营": {
+    "temp": 26.0,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "日照": {
+    "temp": 24.8,
+    "code": 80,
+    "wmo_text": "阵雨"
+  },
+  "滨州": {
+    "temp": 24.0,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "临汾": {
+    "temp": 25.0,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "大同": {
+    "temp": 22.2,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "晋中": {
+    "temp": 22.5,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "长治": {
+    "temp": 27.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "云浮": {
+    "temp": 29.4,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "梅州": {
+    "temp": 30.3,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "汕尾": {
+    "temp": 26.6,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "河源": {
+    "temp": 26.3,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "茂名": {
+    "temp": 29.3,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "韶关": {
+    "temp": 28.6,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "梧州": {
+    "temp": 28.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "玉林": {
+    "temp": 28.9,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "百色": {
+    "temp": 27.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "吉安": {
+    "temp": 19.7,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "抚州": {
+    "temp": 32.5,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "新余": {
+    "temp": 32.9,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "景德镇": {
+    "temp": 30.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "张家口": {
+    "temp": 27.5,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "承德": {
+    "temp": 26.6,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "秦皇岛": {
+    "temp": 27.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "衡水": {
+    "temp": 22.0,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "平顶山": {
+    "temp": 26.1,
+    "code": 61,
+    "wmo_text": "小雨"
+  },
+  "濮阳": {
+    "temp": 22.8,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "焦作": {
+    "temp": 22.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "许昌": {
+    "temp": 25.6,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "丽水": {
+    "temp": 33.4,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "舟山": {
+    "temp": 32.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "衢州": {
+    "temp": 33.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "文昌": {
+    "temp": 28.7,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "十堰": {
+    "temp": 30.4,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "咸宁": {
+    "temp": 33.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "孝感": {
+    "temp": 31.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "鄂州": {
+    "temp": 32.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "黄冈": {
+    "temp": 32.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "黄石": {
+    "temp": 32.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "娄底": {
+    "temp": 31.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "常德": {
+    "temp": 31.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "怀化": {
+    "temp": 29.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "永州": {
+    "temp": 30.3,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "湘潭": {
+    "temp": 32.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "益阳": {
+    "temp": 25.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "邵阳": {
+    "temp": 30.5,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "郴州": {
+    "temp": 31.5,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "武威": {
+    "temp": 26.3,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "白银": {
+    "temp": 22.3,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "三明": {
+    "temp": 31.2,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "南平": {
+    "temp": 31.3,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "龙岩": {
+    "temp": 27.8,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "六盘水": {
+    "temp": 22.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "毕节": {
+    "temp": 25.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "黔东南苗族侗族自治州": null,
+  "黔南布依族苗族自治州": null,
+  "丹东": {
+    "temp": 25.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "盘锦": {
+    "temp": 27.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "营口": {
+    "temp": 26.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "锦州": {
+    "temp": 27.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "鞍山": {
+    "temp": 27.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "宝鸡": {
+    "temp": 29.4,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "榆林": {
+    "temp": 28.9,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "汉中": {
+    "temp": 28.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "西宁": {
+    "temp": 17.2,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "大庆": {
+    "temp": 25.3,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "德宏傣族景颇族自治州": null,
+  "文山壮族苗族自治州": null,
+  "普洱": {
+    "temp": 20.2,
+    "code": 61,
+    "wmo_text": "小雨"
+  },
+  "楚雄彝族自治州": null,
+  "玉溪": {
+    "temp": 22.4,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "西双版纳傣族自治州": null,
+  "乌兰察布": null,
+  "通辽": {
+    "temp": 28.0,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "四平": {
+    "temp": 25.5,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "延边": {
+    "temp": 22.7,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "松原": {
+    "temp": 26.5,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "白城": {
+    "temp": 26.1,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "辽源": {
+    "temp": 25.9,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "通化": {
+    "temp": 24.6,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "凉山彝族自治州": null,
+  "巴中": {
+    "temp": 27.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "广元": {
+    "temp": 30.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "广安": {
+    "temp": 31.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "资阳": {
+    "temp": 29.5,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "遂宁": {
+    "temp": 31.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "雅安": {
+    "temp": 22.9,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "中卫": {
+    "temp": 23.3,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "吴忠": {
+    "temp": 24.0,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "固原": {
+    "temp": 22.1,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "石嘴山": {
+    "temp": 22.6,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "池州": {
+    "temp": 31.7,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "忻州": {
+    "temp": 21.4,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "崇左": {
+    "temp": 29.2,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "来宾": {
+    "temp": 26.8,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "贺州": {
+    "temp": 28.2,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "钦州": {
+    "temp": 28.2,
+    "code": 95,
+    "wmo_text": "雷暴"
+  },
+  "防城港": {
+    "temp": 27.3,
+    "code": 53,
+    "wmo_text": "毛毛雨"
+  },
+  "萍乡": {
+    "temp": 31.9,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "鹰潭": {
+    "temp": 31.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "济源": {
+    "temp": 24.5,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "鹤壁": {
+    "temp": 21.0,
+    "code": 81,
+    "wmo_text": "中阵雨"
+  },
+  "万宁": {
+    "temp": 31.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "东方": {
+    "temp": 33.2,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "儋州": {
+    "temp": 30.1,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "仙桃": {
+    "temp": 31.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "恩施土家族苗族自治州": null,
+  "潜江": {
+    "temp": 30.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "荆门": {
+    "temp": 31.0,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "随州": {
+    "temp": 33.7,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "张家界": {
+    "temp": 31.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "湘西土家族苗族自治州": null,
+  "临夏回族自治州": null,
+  "天水": {
+    "temp": 22.3,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "庆阳": {
+    "temp": 21.6,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "金昌": {
+    "temp": 27.6,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "陇南": {
+    "temp": 27.2,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "铜仁": {
+    "temp": 17.3,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "抚顺": {
+    "temp": 27.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "朝阳": {
+    "temp": 32.6,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "本溪": {
+    "temp": 27.8,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "葫芦岛": {
+    "temp": 26.6,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "辽阳": {
+    "temp": 28.3,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "铁岭": {
+    "temp": 27.1,
+    "code": 2,
+    "wmo_text": "多云"
+  },
+  "阜新": {
+    "temp": 26.2,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "安康": {
+    "temp": 28.9,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "延安": {
+    "temp": 26.2,
+    "code": 51,
+    "wmo_text": "小毛毛雨"
+  },
+  "七台河": {
+    "temp": 25.0,
+    "code": 1,
+    "wmo_text": "晴"
+  },
+  "伊春": {
+    "temp": 32.7,
+    "code": 3,
+    "wmo_text": "阴"
+  },
+  "佳木斯": {
+    "temp": 24.7,
+    "code": 0,
+    "wmo_text": "晴"
+  },
+  "绥化": {
+    "temp": 23.7,
+    "code": 0,
+    "wmo_text": "晴"
+  }
+}
